@@ -1,0 +1,2 @@
+#!/bin/bash
+rofi -no-lazy-grab -show window -modi window -theme ~/.config/rofi/launchers/text/style_2.rasi

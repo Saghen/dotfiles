@@ -1,0 +1,12 @@
+[submodule "styling/beautiful-discord"]
+	path = styling/beautiful-discord
+	url = https://github.com/Saghen/BeautifulDiscord
+[submodule "styling/btop/catppuccin"]
+	path = styling/btop/catppuccin
+	url = ssh://git@github.com/catppuccin/btop
+[submodule "styling/grub/catppuccin"]
+	path = styling/grub/catppuccin
+	url = ssh://git@github.com/catppuccin/grub
+[submodule "styling/mtslack"]
+	path = styling/mtslack
+	url = ssh://git@github.com/Saghen/mtslack
