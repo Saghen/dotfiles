@@ -51,23 +51,23 @@ antibody bundle zdharma/fast-syntax-highlighting
 antibody bundle zsh-users/zsh-autosuggestions
 antibody bundle zsh-users/zsh-history-substring-search
 antibody bundle zsh-users/zsh-completions
-antibody bundle softmoth/zsh-vim-mode
+#antibody bundle softmoth/zsh-vim-mode
 
 # Remove all ESC bindings so that normal mode is instant
 # NOTE: Can be very problematic but seems to be fine so far
-bindkey -rpM viins '^['
+#bindkey -rpM viins '^['
 
 # Search substring up and down with j and k
-bindkey -M vicmd "k" history-substring-search-up
-bindkey -M vicmd "j" history-substring-search-down
+#bindkey -M vicmd "k" history-substring-search-up
+#bindkey -M vicmd "j" history-substring-search-down
 
 # Keybindings
-#bindkey '^[[A' history-substring-search-up
-#bindkey '^[[B' history-substring-search-down
-#bindkey '^[[3~' delete-char
-#bindkey '^H' backward-kill-word
-#bindkey ';5D' backward-word
-#bindkey ';5C' forward-word
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+bindkey '^[[3~' delete-char
+bindkey '^H' backward-kill-word
+bindkey ';5D' backward-word
+bindkey ';5C' forward-word
 
 # Prompt
 eval "$(starship init zsh)"

@@ -1,3 +1,5 @@
+source ~/.profile
+
 # Move all the DIRs to .local/share
 export CARGO_HOME="${HOME}/.local/share/cargo"
 export RUSTUP_HOME="${HOME}/.local/share/rust"
@@ -44,6 +46,3 @@ export FZF_DEFAULT_OPTS='
 
 # pfetch information
 export PF_INFO="ascii title os kernel uptime pkgs memory editor palette"
-
-# Cargo env
-. "$HOME/.cargo/env"
