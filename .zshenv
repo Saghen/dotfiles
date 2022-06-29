@@ -1,5 +1,11 @@
 source ~/.profile
 
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:/home/$USER/scripts/bin:$PATH"
+
+# https://cloud.google.com/blog/products/containers-kubernetes/kubectl-auth-changes-in-gke
+# CAN PROBABLY DELETE IDK
+export USE_GKE_GCLOUD_AUTH_PLUGIN=True
+
 # Move all the DIRs to .local/share
 export CARGO_HOME="${HOME}/.local/share/cargo"
 export RUSTUP_HOME="${HOME}/.local/share/rust"
@@ -22,6 +28,9 @@ export XDG_DATA_HOME="$HOME/.local/share"
 export EDITOR='nvim'
 export VISUAL='less'
 export PAGER='less'
+export MANPAGER='less'
+#export MANPAGER='nvimpager'
+
 
 # FZF settings
 export FZF_DEFAULT_OPTS='
@@ -46,3 +55,4 @@ export FZF_DEFAULT_OPTS='
 
 # pfetch information
 export PF_INFO="ascii title os kernel uptime pkgs memory editor palette"
+. "/home/saghen/.local/share/cargo/env"
