@@ -43,7 +43,6 @@ antigen bundle zdharma-continuum/fast-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-history-substring-search
 antigen bundle zsh-users/zsh-completions
-antigen bundle aperezdc/zsh-fzy
 antigen bundle MichaelAquilina/zsh-you-should-use
 #antigen bundle marzocchi/zsh-notify
 antigen bundle hlissner/zsh-autopair
@@ -57,16 +56,6 @@ antigen apply
 # VIM bindings
 bindkey -v
 export KEYTIMEOUT=1 # Wait 1 second for another key
-
-# fzy
-# ALT-C: cd into the selected directory
-# CTRL-T: Place the selected file path in the command line
-# CTRL-R: Place the selected command from history in the command line
-# CTRL-P: Place the selected process ID in the command line
-bindkey '\ec' fzy-cd-widget
-bindkey '^T'  fzy-file-widget
-bindkey '^R'  fzy-history-widget
-bindkey '^P'  fzy-proc-widget
 
 # Remove all ESC bindings so that normal mode is instant
 # NOTE: Can be very problematic but seems to be fine so far
