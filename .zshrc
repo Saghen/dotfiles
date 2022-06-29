@@ -11,16 +11,6 @@ else
 	compinit -C;
 fi;
 
-# Antibody
-# Enable autocompletions
-#typeset -i updated_at=$(date +'%j' -r ~/.zcompdump 2>/dev/null || stat -f '%Sm' -t '%j' ~/.zcompdump 2>/dev/null)
-#if [ $(date +'%j') != $updated_at ]; then
-#  compinit -i
-#else
-#  compinit -C -i
-#fi
-#zmodload -i zsh/complist
-
 # Save history so we get auto suggestions
 HISTFILE=$HOME/.zsh_history
 HISTSIZE=100000
@@ -83,8 +73,8 @@ bindkey '^P'  fzy-proc-widget
 # bindkey -rpM viins '^['
 
 # Search substring up and down with j and k
-#bindkey -M vicmd "j" history-substring-search-down
-#bindkey -M vicmd "k" history-substring-search-up
+bindkey -M vicmd "j" history-substring-search-down
+bindkey -M vicmd "k" history-substring-search-up
 
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
