@@ -1,10 +1,17 @@
 #! /bin/sh
 
+source ~/.profile
+
+# Windows like repeating speed
+xset r rate 240 40
+
+# This fixed my cursor size for some reason
+xsetroot -cursor_name left_ptr
+
+# Note: Display envs are now in .profile
 # TODO: Make get-monitors order consistent or do some ordering?
 #DISPLAY1=$(~/scripts/bspwm/get-monitors.sh | sed -n '2p')
 #DISPLAY2=$(~/scripts/bspwm/get-monitors.sh | sed -n '1p')
-export DISPLAY1=DP-0
-export DISPLAY2=DP-2
 
 gap=8
 
@@ -17,11 +24,12 @@ bspc config borderless_monocle true
 bspc config single_monocle true
 bspc config paddingless_monocle false
 
+bspc config pointer_motion_interval 7 # Makes pointer movements update windows every 6ms
 bspc config pointer_modifier mod3
 bspc config pointer_action1 move          # Left click
 bspc config pointer_action2 resize_side   # Right Click
 bspc config pointer_action3 resize_corner # Middle Click
-bspc config remove_disabled_monitors true
+bspc config remove_disabconled_monitors true
 bspc config remove_unplugged_monitors false
 
 bspc config split_ratio 0.52
@@ -40,12 +48,11 @@ bspc monitor $DISPLAY2 -d VI VII VIII IX X
 bspc wm -O $DISPLAY1 $DISPLAY2 # Re-order displays to be correct
 
 # Rules
-bspc config external_rules_command "~/scripts/bspwm/external-rules/spotify.sh"
-
-bspc rule -a \* state=floating center=on layer=above
-bspc rule -a discord desktop='^6' state=tiled split_ratio=0.4
+bspc rule -a \* state=floating center=on
+bspc rule -a spotify desktop='^7' state=tiled
+bspc rule -a discord desktop='^7' state=tiled split_ratio=0.35
 bspc rule -a Steam desktop='^5'
-bspc rule -a Slack desktop='^9'
+bspc rule -a Slack desktop='^10'
 
 bspc rule -a Google-chrome state=tiled
 bspc rule -a firefox:Navigator state=tiled
@@ -56,10 +63,18 @@ bspc rule -a Emacs rectangle=1920x1200+0+0
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # Polybar
-~/scripts/polybar/launch.sh --catppuccin
+# Setup pomodoro timer module
+# [ ! -f /tmp/polypomo.status ] && <- For checking. Not sure if i'll need this later and i always forget this
+rm /tmp/polypomo.status
+~/scripts/polybar/polypomo.py --worktime 6000 --breaktime 1200 > /tmp/polypomo.status &
+~/scripts/polybar/launch.sh --catppuccin # Launch the bar
 
 # Desktop Wallpaper
-feh --bg-fill /home/saghen/styling/current-wallpaper.*
+# feh --bg-scale /home/saghen/styling/current-wallpaper.*
+mpvbg ~/pictures/wallpapers/pixel-art/forest-city-night.gif
+
+# Load keymap
+xmodmap ~/scripts/x11-keymap
 
 # Change kb layout in /usr/share/X11/xkb/symbols/pc
 # https://askubuntu.com/questions/1133312/how-do-i-remap-caps-lock-to-hyper-key-in-ubuntu-18-04#1133327
@@ -67,13 +82,14 @@ feh --bg-fill /home/saghen/styling/current-wallpaper.*
 sxhkd &
 
 # Compsitor
-picom &
-
-# Notifications
-dunst &
+#picom --experimental-backends & # Cause i live life on the edge https://github.com/yshui/picom#--experimental-backends
 
 # Autostart applications
+bspswallow & # Automatically swallow terminals when they launch a UI
 flameshot & # Screenshots
+dunst & # Notifications
+bspc rule -a Ulauncher border=off monitor=focused
+ulauncher --no-window & # application launcher
 
 spotify &
 # https://github.com/baskerville/bspwm/issues/291#issuecomment-761493966
@@ -81,27 +97,24 @@ spotify &
 
 # Communication
 discord &
+#gtk-launch webapp-Discord5945 & # In .local/share/applications and created by webapp-manager by linuxmint
 steam &
 slack &
 
-# Code
-bspc rule -a Code desktop='^1'
-code &
+# # Code
+# bspc rule -a -o Code desktop='^10'
+# code -n ~/notes &
 
 # Browser
 bspc rule -a firefox desktop='^2'
 firefox &
 
-# Settings
-bspc rule -a Gnome-control-center desktop='^10'
-gnome-control-center &
-
-sleep 5
+sleep 4
 bspc rule -r firefox desktop='^2'
 bspc rule -r Code desktop='^1'
 bspc rule -a Code state=tiled
 bspc rule -a firefox:Navigator state=tiled
 
 # Load cava late so spotify is loaded
-bspc rule -o -a \*:cava node='@^6:/first' state=tiled border=off split_ratio=0.3 split_dir=north
+bspc rule -a \*:cava node='@^7:/first' -o state=tiled border=off split_ratio=0.3 split_dir=north
 kitty --name cava -e cava

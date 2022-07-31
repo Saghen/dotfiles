@@ -3,7 +3,7 @@ source ~/.profile
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:/home/$USER/scripts/bin:$PATH"
 
 # https://cloud.google.com/blog/products/containers-kubernetes/kubectl-auth-changes-in-gke
-# CAN PROBABLY DELETE IDK
+# Cab probably delete
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 
 # Move all the DIRs to .local/share
@@ -53,6 +53,4 @@ export FZF_DEFAULT_OPTS='
     --color=spinner:-1
     --color=border:#A4B9EF'
 
-# pfetch information
-export PF_INFO="ascii title os kernel uptime pkgs memory editor palette"
 . "/home/saghen/.local/share/cargo/env"

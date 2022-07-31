@@ -82,3 +82,28 @@ npr() {
 
 if command_exists lsd; then alias ls="lsd"; fi
 if command_exists lazygit; then alias lg="lazygit"; fi
+
+# bun completions
+[ -s "/home/saghen/.bun/_bun" ] && source "/home/saghen/.bun/_bun"
+
+# Bun
+export BUN_INSTALL="/home/saghen/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Use this for setting up conda
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+#__conda_setup="$('/opt/miniconda/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+#if [ $? -eq 0 ]; then
+#    eval "$__conda_setup"
+#else
+#    if [ -f "/opt/miniconda/etc/profile.d/conda.sh" ]; then
+#        . "/opt/miniconda/etc/profile.d/conda.sh"
+#    else
+#        export PATH="/opt/miniconda/bin:$PATH"
+#    fi
+#fi
+#unset __conda_setup
+# <<< conda initialize <<<
+

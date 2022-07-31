@@ -4,37 +4,33 @@
 
 # terminal
 hyper + Return
-  ~/scripts/term
+  term
 
-hyper + ctrl + Return
+hyper + shift + Return
   bspc rule -a kitty -o rectangle=1920x1080+0+0;\
-  ~/scripts/term
+  term
 
-# Show shortcuts
+# show shortcuts
 hyper + slash
   showkeys
 
-# file manager
-hyper + r
-  ~/scripts/file-manager
-
 # program launcher
 hyper + space
-  ~/scripts/program-launcher
-
-# program launcher - window
-ctrl + hyper + space
-  ~/scripts/program-launcher-window
+  program-launcher
 
 # make sxhkd reload its configuration files:
+# TODO: Should be something else
 hyper + Escape
 	pkill -USR1 -x sxhkd
 
 # screenshot
 Print
+	flameshot gui -s -c
+
+ctrl + Print
 	flameshot gui
 
-# Play/Pause Spotify
+# media control
 XF86AudioPlay
 	playerctl --player=ncspot,spotify play-pause
 
@@ -44,21 +40,28 @@ XF86AudioNext
 XF86AudioPrev
 	playerctl --player=ncspot,spotify previous
 
-shift + {_,alt +} XF86AudioNext
-  ~/scripts/audio/change-spotify-volume.py {+10%,100%}
+shift + XF86AudioNext
+  ~/scripts/audio/change-spotify-volume.py +10%
 
-shift + {_,alt +} XF86AudioPrev
-  ~/scripts/audio/change-spotify-volume.py {-10%, 40%}
+shift + XF86AudioPrev
+  ~/scripts/audio/change-spotify-volume.py -10%
 
 hyper + XF86AudioPlay
 	playerctl --player=firefox play-pause
 
+# Note: Make sure to isntall the mpv-mpris package
+ctrl + XF86AudioPlay
+  playerctl --player=mpv play-pause
+
+ctrl + XF86AudioNext
+  playerctl --player=mpv volume 0
+
+ctrl + XF86AudioPrev
+  playerctl --player=mpv volume 1.2
+
 #
 # bspwm hotkeys
 #
-
-alt + Tab
-  bspc node -f last
 
 # quit/restart bspwm
 hyper + alt + {n,m}
@@ -76,20 +79,27 @@ hyper + alt + w
 hyper + shift + w
   bspc node -k
 
-# alternate between the tiled and monocle layout
-hyper + m
-	bspc desktop -l next
-
 #
 # state/flag
 #
 
 # set the window state
-hyper + {s,f}
-	bspc node -t {\~floating,\~fullscreen}
+hyper + f
+	if [ -z "$(bspc query -N -n focused.floating)" ]; then \
+      bspc node focused -t floating; \
+  else \
+      bspc node focused -t tiled; \
+  fi
 
-hyper + ctrl + s
+hyper + shift + f
+  bspc node -t \~fullscreen
+
+hyper + shift + s
   bspc node -g sticky
+
+# alternate between the tiled and monocle layout
+hyper + m
+	bspc desktop -l next
 
 #
 # move/resize
@@ -99,15 +109,16 @@ hyper + ctrl + s
 hyper + ctrl + {h,j,k,l}
 	bspc node -v {-200 0,0 200,0 -200,200 0}
 
-hyper + shift + r
+# center
+hyper + g
   ~/scripts/bspwm/center-window.sh
 
-
-# expand and contract
+# expand
 hyper + x
   bspc node -z bottom_right 200 120;\
   bspc node -z top_left -200 -120
 
+# contract
 hyper + z
   bspc node -z bottom_right -200 -120;\
   bspc node -z top_left 200 120
@@ -121,55 +132,49 @@ hyper + {_,shift + ,alt + }{h,j,k,l}
 	bspc node -{f,s,n} {west,south,north,east} --follow
 
 # focus the next/previous window in the current desktop
-hyper + {_,shift + }c
+hyper + {v,c}
 	bspc node -f {next,prev}.local.!hidden.window
 
-# focus the last desktop
-hyper + alt + q
-	bspc desktop -f last.local
-
-# swap desktops with last local desktop and follow
-hyper + alt + d
-  bspc desktop focused -s last.local
-
-# send node to last local desktop and follow
-hyper + alt + a
-	bspc node -d last.local --follow
-
 # focus/send to the given desktop
-hyper + {_,shift + }{1-5}
-  ~/.config/sxhkd/select-local-desktop.sh "{desktop -f,node -d}" {1-5} --follow
+hyper + {_,shift + }{1-9,0}
+  ~/scripts/bspwm/select-local-desktop.sh "{desktop -f,node -d}" {1-9,10} --follow
 
 # focus/send to other monitor and follow
 hyper + {q,a}
 	bspc {monitor -f,node -m} next --follow
 
+# send node to last local desktop and follow
+hyper + ctrl + a
+	bspc node -d last.local --follow
+
 # swap with other monitor
-hyper + d
+hyper + s
 	bspc desktop focused -s any.active.\!local
 
-# reset desktops
-hyper + alt + r
-  node ~/.config/sxhkd/reset-desktops.js $(~/scripts/get-monitors.sh | sed -n '2p') $(~/scripts/get-monitors.sh | sed -n '1p')
+# reset swapped desktops
+hyper + shift + s
+  node ~/scripts/bspwm/reset-desktops.js $DISPLAY1 $DISPLAY2
 
-#
-# preselect
-#
+# return focus to last node
+hyper + r
+  bspc node -f last
 
-# preselect the ratio
-hyper + ctrl + {1-9}
-	bspc node -o 0.{1-9}
-
-# cancel the preselection for the focused desktop
-hyper + ctrl + Escape
-	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+# return to the last local desktop
+hyper + shift + r
+	bspc desktop -f last.local
 
 #
 # applications
 #
 
 hyper + e ; hyper + {d,c,f,s,n,w,g}
-  {discord,code,firefox,spotify,nautilus,slack,steam}
+  {discord,code -n,firefox,spotify,nautilus,slack,steam}
 
 super + {d,c,f,s,n,w,g,b}
   wmctrl -a {discord,code,firefox,spotify,nautilus,slack,steam,"google chrome"}
+
+hyper + d
+  wmctrl -a discord
+
+hyper + n
+  bspc desktop -f ^10

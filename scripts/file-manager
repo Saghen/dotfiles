@@ -1,2 +1,0 @@
-#!/bin/bash
-$(dirname "$0")/term --name ranger ranger

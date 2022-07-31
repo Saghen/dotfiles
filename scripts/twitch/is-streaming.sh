@@ -16,4 +16,4 @@ if [[ ($1 == "--help") || $1 == "-h" ]]; then
   exit 0
 fi
 
-twitch api get streams -q user_id=$(twitch api get search channels -q query=$1 | jq '.data[0].id' -r) | jq '.data | length > 0'
+twitch api get streams -q user_id=$(twitch api get search channels -q query=$1 | jq '.data[0].id' -r || echo "1") | jq '.data | length > 0' || echo "false"
