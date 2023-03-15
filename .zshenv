@@ -1,6 +1,6 @@
 source ~/.profile
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:/home/$USER/scripts/bin:$PATH"
+export PATH="/home/saghen/.local/share/go/bin:${KREW_ROOT:-$HOME/.krew}/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # https://cloud.google.com/blog/products/containers-kubernetes/kubectl-auth-changes-in-gke
 # Cab probably delete
@@ -26,7 +26,7 @@ export XDG_DATA_HOME="$HOME/.local/share"
 
 # editor and viewers
 export EDITOR='nvim'
-export VISUAL='less'
+export VISUAL='nvim'
 export PAGER='less'
 export MANPAGER='less'
 #export MANPAGER='nvimpager'

@@ -10,6 +10,8 @@ if [[ -n ${ZDOTDIR}/.zcompdump(#qN.mh+24) ]]; then
 else
 	compinit -C;
 fi;
+# Completions go in ~/.zfunc
+fpath+=~/.zfunc
 
 # Save history so we get auto suggestions
 HISTFILE=$HOME/.zsh_history
@@ -45,27 +47,12 @@ antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-history-substring-search
 antigen bundle zsh-users/zsh-completions
 antigen bundle MichaelAquilina/zsh-you-should-use
-#antigen bundle marzocchi/zsh-notify
 antigen bundle hlissner/zsh-autopair
 antigen bundle wfxr/forgit
-#antigen bundle softmoth/zsh-vim-mode
 
 antigen apply
 
 # Keybindings
-
-# VIM bindings
-bindkey -v
-export KEYTIMEOUT=1 # Wait 1 second for another key
-
-# Remove all ESC bindings so that normal mode is instant
-# NOTE: Can be very problematic but seems to be fine so far
-# bindkey -rpM viins '^['
-
-# Search substring up and down with j and k
-bindkey -M vicmd "j" history-substring-search-down
-bindkey -M vicmd "k" history-substring-search-up
-
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 bindkey '^[[3~' delete-char
@@ -80,30 +67,27 @@ npr() {
     npm run --silent $1 -- ${@:2}
 }
 
+fix-kube-config-perms() {
+  chmod go-r ~/.kube/config
+}
+
+ssh-kube() {
+  eval $(ssh-agent -s) && ssh-add ~/.ssh/kube && ssh root@super.fish
+}
+
+nvim() {
+  kitty @ set-spacing padding=0
+  /usr/bin/nvim $@
+  kitty @ set-spacing padding=default
+}
+
+if command_exists kubectl; then alias k="kubectl"; fi
 if command_exists lsd; then alias ls="lsd"; fi
 if command_exists lazygit; then alias lg="lazygit"; fi
 
-# bun completions
-[ -s "/home/saghen/.bun/_bun" ] && source "/home/saghen/.bun/_bun"
+if [ -f "/usr/share/doc/git-extras/git-extras-completion.zsh" ]; then
+  source /usr/share/doc/git-extras/git-extras-completion.zsh
+fi
 
-# Bun
-export BUN_INSTALL="/home/saghen/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-# Use this for setting up conda
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-#__conda_setup="$('/opt/miniconda/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-#if [ $? -eq 0 ]; then
-#    eval "$__conda_setup"
-#else
-#    if [ -f "/opt/miniconda/etc/profile.d/conda.sh" ]; then
-#        . "/opt/miniconda/etc/profile.d/conda.sh"
-#    else
-#        export PATH="/opt/miniconda/bin:$PATH"
-#    fi
-#fi
-#unset __conda_setup
-# <<< conda initialize <<<
-
+# FNM
+if command_exists fnm; then eval "$(fnm env --use-on-cd)"; fi
