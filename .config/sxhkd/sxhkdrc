@@ -47,7 +47,7 @@ shift + XF86AudioPrev
   ~/scripts/audio/change-spotify-volume.py -10%
 
 hyper + XF86AudioPlay
-	playerctl --player=firefox play-pause
+	playerctl --player=firefox-nightly play-pause
 
 # Note: Make sure to isntall the mpv-mpris package
 ctrl + XF86AudioPlay
@@ -132,7 +132,7 @@ hyper + {_,shift + ,alt + }{h,j,k,l}
 	bspc node -{f,s,n} {west,south,north,east} --follow
 
 # focus the next/previous window in the current desktop
-hyper + {v,c}
+hyper + {c,v}
 	bspc node -f {next,prev}.local.!hidden.window
 
 # focus/send to the given desktop
@@ -167,14 +167,11 @@ hyper + shift + r
 # applications
 #
 
-hyper + e ; hyper + {d,c,f,s,n,w,g}
-  {discord,code -n,firefox,spotify,nautilus,slack,steam}
+hyper + e ; hyper + {d,c,f,s,n,w}
+  {discord,code -n,firefox-nightly,spotify,nautilus,slack}
 
-super + {d,c,f,s,n,w,g,b}
-  wmctrl -a {discord,code,firefox,spotify,nautilus,slack,steam,"google chrome"}
+super + {d,c,f,s,n,w,b}
+  wmctrl -a {discord,code,firefox-nightly,spotify,nautilus,slack,"google chrome"}
 
 hyper + d
   wmctrl -a discord
-
-hyper + n
-  bspc desktop -f ^10

@@ -1,2 +1,0 @@
-#!/bin/bash
-sqlite3 cookies.sqlite "select name, value from moz_cookies where host like '%$1%'" | sed 's/|/=/' | paste -sd '; ' -
