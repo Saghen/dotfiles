@@ -1,0 +1,2 @@
+cp "$1" "$HOME/.config/WebCord/Themes/theme.theme.css"
+webcord --add-css-theme=$HOME/.config/WebCord/Themes/theme.theme.css

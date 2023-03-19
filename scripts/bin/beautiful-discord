@@ -1,0 +1,3 @@
+#!/bin/bash
+# Example usage script --path /usr/lib/discord --css ~/styling/discord/style.css
+python3 ~/styling/beautiful-discord/beautifuldiscord $@
