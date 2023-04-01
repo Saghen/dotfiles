@@ -5,4 +5,4 @@ export DISPLAY2=DP-2
 export WLR_RENDERER=vulkan
 # Multi threaded XZ compression/decrompression (if compressed with multi threading)
 export XZ_DEFAULTS="-T 0"
-. "/home/saghen/.local/share/cargo/env"
+. "/home/<user>/.local/share/cargo/env"

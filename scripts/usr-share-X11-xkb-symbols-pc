@@ -4,7 +4,7 @@ xkb_symbols "pc105" {
 
     key  <ESC> {[  Escape  ]};
     key  <TAB> {[  Tab,  ISO_Left_Tab  ]};
-    key <CAPS> {[  Hyper_L  ]};
+    key <CAPS> {[  Caps_Lock  ]};
 
     key <BKSP> {[  BackSpace,  BackSpace  ]};
     key <BKSL> {[  backslash,  bar  ]};
@@ -16,28 +16,33 @@ xkb_symbols "pc105" {
     key <SPCE> {[  space  ]};
 
     key <LFSH> {[  Shift_L    ]};
-    key <LCTL> {[  Control_L  ]};
-    key <LWIN> {[  Super_L    ]};
-
     key <RTSH> {[  Shift_R    ]};
+    key <LCTL> {[  Control_L  ]};
     key <RCTL> {[  Control_R  ]};
+    key <LALT> {[  Alt_L,  Meta_L  ]};
+    key <RALT> {[  Alt_R,  Meta_R  ]};
+    key <LWIN> {[  Super_L    ]};
     key <RWIN> {[  Super_R    ]};
-    key <MENU> {[  Menu       ]};
+
+    key <MENU> {[  Menu  ]};
 
     modifier_map Shift   { Shift_L, Shift_R };
     modifier_map Lock    { Caps_Lock };
     modifier_map Control { Control_L, Control_R };
+    modifier_map Mod1    { Alt_L, Alt_R, Meta_L, Meta_R };
     modifier_map Mod2    { Num_Lock };
-    modifier_map Mod3    { Hyper_L  };
+    modifier_map Mod3    { Hyper_L };
     modifier_map Mod4    { Super_L, Super_R };
 
     // Six fake keys for virtual<->real modifiers mapping:
     key <LVL3> {[  ISO_Level3_Shift  ]};
-    key <MDSW> {[  Mode_switch  ]};
-    modifier_map Mod5  { <LVL3>, <MDSW> };
+    modifier_map Mod5  { <LVL3> };
 
-    key <ALT>  {[  NoSymbol, Alt_L  ]};
-    include "altwin(meta_alt)"
+    key <LVL5> {[  ISO_Level5_Shift  ]};
+    modifier_map Mod3  { <LVL5> };
+
+    key  <ALT> {[  NoSymbol, Alt_L  ]};
+    modifier_map Mod1  { <ALT> };
 
     key <META> {[  NoSymbol, Meta_L  ]};
     modifier_map Mod1  { <META> };
