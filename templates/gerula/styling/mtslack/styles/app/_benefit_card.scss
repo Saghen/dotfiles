@@ -1,0 +1,74 @@
+.p-benefit_card__container {
+  background-color: $bg;
+}
+
+.p-benefit_card__card_link {
+  color: $primary;
+}
+
+.p-benefit_card__text_link {
+  color: $primary;
+}
+
+.p-paid_benefits_header {
+  background-color: $contrast;
+}
+
+.p-paid_benefits_header__title {
+  color: $fg;
+}
+
+.p-paid_benefits_header__subtitle {
+  color: $text;
+}
+
+.p-benefit_card__image {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-paid_benefits_view {
+  background-color: $bg2;
+}
+
+.p-paid_benefits_view__heading {
+  color: $fg;
+}
+
+.p-paid_benefits_view__fine_print {
+  border-bottom: 1px solid $border;
+}
+
+.p-paid_benefits_view__alert_container {
+  background-color: $bg;
+}
+
+.p-paid_benefits_view__alert .p-paid_benefits_view__alert-link {
+  color: $accent2;
+}
+
+.p-paid_benefits_card__container {
+  background-color: $bg2;
+}
+
+.p-paid_benefits_card__link--dark,
+.p-paid_benefits_card__link {
+  > div:first-child {
+    border-right: 1px solid $borderLight;
+  }
+}
+
+.p-paid_benefits_card__content_container {
+  color: $fg;
+}
+
+.p-paid_benefits_card__heading {
+  color: $text;
+}
+
+.p-paid_benefits_card__title {
+  color: $fg;
+}
+
+.p-paid_benefits_card__subtitle {
+  color: $fg;
+}

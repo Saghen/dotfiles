@@ -1,0 +1,57 @@
+.sk-client-theme--dark .c-mrkdwn__quote:before {
+  background: $fg;
+}
+
+.c-mrkdwn__user_group--link {
+  background: $active;
+  color: $primary;
+
+  &:hover {
+    background: $selectBg;
+    color: $selectFg;
+  }
+}
+
+.sk-client-theme--dark .c-mrkdwn__mention,
+.sk-client-theme--dark .c-mrkdwn__user_group--mention,
+.sk-client-theme--dark .c-mrkdwn__broadcast--mention,
+.c-mrkdwn__mention,
+.c-mrkdwn__user_group--mention,
+.c-mrkdwn__broadcast--mention {
+  background: $active;
+  color: $primary;
+  border-radius: 16px;
+  padding: 2px 4px;
+
+  &:hover {
+    background: $selectBg;
+    color: $selectFg;
+  }
+}
+
+.sk-client-theme--dark .c-mrkdwn__highlight,
+.c-mrkdwn__highlight {
+  background: $hl;
+  color: $accent;
+}
+
+.c-mrkdwn__mention, .c-mrkdwn__user_group--mention {
+  background: $active;
+
+  &:hover {
+    background: $selectBg;
+  }
+}
+
+.sk-client-theme--dark .c-mrkdwn__user_group--mention {
+  color: $fg;
+}
+
+.c-mrkdwn__hex {
+  border: 1px solid $disabled;
+}
+
+.sk-client-theme--dark .c-mrkdwn__code,
+.c-mrkdwn__code.c-mrkdwn__code--dark {
+  color: $accent2;
+}

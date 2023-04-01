@@ -1,0 +1,299 @@
+.c-button {
+  transition: background-color 0.3s ease-in;
+}
+
+.c-deprecated_button--link {
+  color: $primary;
+}
+
+.c-deprecated_button--disabled {
+  color: $disabled;
+}
+
+.c-deprecated_rounded_button {
+  background-color: $button;
+  color: $text;
+
+  &:link,
+  &:visited {
+    color: $selectFg;
+  }
+}
+
+.c-deprecated_rounded_button--outline {
+  &:active,
+  &:link,
+  &:visited {
+    color: $text;
+  }
+}
+
+.c-deprecated_rounded_button {
+  &:hover {
+    color: $selectFg;
+
+    &:after {
+      box-shadow: inset 0 -2px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  &:active:after {
+    box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.c-deprecated_rounded_button--outline,
+.c-deprecated_rounded_button--transparent {
+  color: $text;
+  box-shadow: inset 0 0 0 1px rgba(29, 28, 29, 0.3);
+}
+
+.c-deprecated_rounded_button--outline {
+  background-color: transparent;
+
+  &:active,
+  &:hover {
+    background-color: $hl;
+    color: $selectFg;
+  }
+}
+
+.c-deprecated_rounded_button--danger {
+  background-color: $red;
+  color: $selectFg;
+}
+
+.c-deprecated_rounded_button--disabled {
+  background: $button;
+  color: $disabled;
+}
+
+.sk-client-theme--dark .c-link--button,
+.c-link--button {
+  color: $primary;
+
+  &:active,
+  &:hover {
+    color: $selectFg;
+  }
+}
+
+.c-link--focus-visible:focus {
+  color: $primary;
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+}
+
+.c-link--disabled {
+  color: $disabled;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $fg;
+  }
+}
+
+.sk-client-theme--dark .c-link--invert,
+.c-link--invert {
+  color: $primary;
+
+  &:active,
+  &:hover,
+  &:visited {
+    color: $fg;
+  }
+}
+
+.sk-client-scheme--purple .c-button--primary,
+.c-button--primary {
+  background: $accentT;
+  color: $selectFg;
+
+  &:link,
+  &:visited {
+    color: $selectFg;
+  }
+
+  &:hover {
+    color: $selectFg;
+    background: $accent;
+  }
+
+  &:active {
+    background: $accent;
+    border-color: $primary;
+  }
+
+  &.c-button--disabled {
+    background: $bg;
+    color: $disabled;
+    border-color: $bg;
+
+    &:active,
+    &:hover {
+      background: $bg;
+      color: $fg;
+      border-color: $bg;
+    }
+  }
+}
+
+.sk-client-theme--dark .c-button--danger,
+.c-button--danger {
+  background: $red;
+  color: $selectFg;
+  opacity: 0.8;
+
+  &:link,
+  &:visited {
+    color: $selectFg;
+  }
+
+  &:hover {
+    color: $selectFg;
+    background: $red;
+    opacity: 1;
+  }
+
+  &:active {
+    background: $red;
+    opacity: 1;
+  }
+}
+
+.sk-client-theme--dark .c-button--outline,
+.c-button--outline {
+  background: $button;
+  border: 1px solid $borderLight;
+  color: $fg;
+
+  &:link {
+    color: $primary;
+  }
+
+  &:visited {
+    color: $accent2;
+  }
+
+  &:active {
+    background: $hl;
+    border-color: $borderLight;
+    color: $selectFg;
+  }
+
+  &.c-button--focus-visible:focus,
+  &.focus-ring:focus:not(:hover) {
+    border: 1px solid $primary;
+  }
+
+  &:hover {
+    background: $hl;
+    color: $selectFg;
+  }
+}
+
+.sk-client-scheme--purple .c-button--outline-primary,
+.sk-client-theme--dark .c-button--outline-primary,
+.c-button--outline-primary {
+  background: transparent;
+  border: 1px solid $primary;
+  color: $primary;
+
+  &:link,
+  &:visited {
+    color: $primary;
+  }
+
+  &:active {
+    background: $hl;
+    border-color: $primary;
+  }
+
+  &:hover {
+    background: $hl;
+    color: $selectFg;
+  }
+
+  &.c-button--disabled {
+    background: $bg;
+    color: $disabled;
+  }
+
+  &.c-button--disabled:active,
+  &.c-button--disabled:hover {
+    background: $bg;
+    color: $fg;
+  }
+}
+
+.sk-client-theme--dark .c-button--outline-danger,
+.c-button--outline-danger {
+  background: transparent;
+  border: 1px solid $red;
+  color: $red;
+
+  &:link,
+  &:visited {
+    color: $red;
+  }
+
+  &:active {
+    background: $hl;
+    border-color: $red;
+  }
+
+  &:hover {
+    background: $red;
+    color: $selectFg;
+  }
+
+  &.c-button--disabled {
+    background: $bg;
+    color: $red2;
+    border-color: $red2;
+
+    &:active,
+    &:hover {
+      background: $bg;
+      color: $selectFg;
+      border-color: $bg;
+    }
+  }
+}
+
+.p-about_modal__badge {
+  color: $primary;
+  background-color: $excluded;
+}
+
+.sk-client-theme--dark .c-button--disabled,
+.c-button--disabled {
+  background: $bg;
+  color: $disabled;
+
+  &:active,
+  &:hover {
+    background: $bg;
+    color: $fg;
+    border-color: $bg;
+  }
+}
+
+.c-button--focus-visible:focus {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+}
+
+.c-button.c-button--sonic-placeholder {
+  background: $button;
+  color: $text;
+
+  &:hover {
+    background: $hl;
+    color: $selectFg;
+  }
+}
+
+.sk-client-theme--dark .p-button,
+.p-button {
+  border-top: 1px solid $button;
+}

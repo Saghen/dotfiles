@@ -1,0 +1,29 @@
+.p-client_container {
+  background-color: $bg;
+}
+
+.black_always__u1RkQA2 {
+  color: $black;
+}
+
+.white_always__1zCuEuI {
+  color: $silver;
+}
+
+.supports_custom_scrollbar .p-wb_app > div:first-child {
+  &::-webkit-scrollbar-thumb {
+    background: $accent;
+  }
+}
+
+.foreground__855Q5_W {
+  color: $fg;
+}
+
+.foreground_max__1pizGfR {
+  color: $text;
+}
+
+.foreground_max_solid__NnncJM9 {
+  color: $primary;
+}

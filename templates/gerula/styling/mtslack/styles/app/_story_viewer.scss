@@ -1,0 +1,816 @@
+.p-story_viewer__modal {
+  background-color: $bg;
+  color: $text;
+
+  .c-sk-modal__close_button {
+    color: $text;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.p-story_viewer_modal__footer__progress {
+  background: $accent;
+}
+
+.p-story_viewer__progress {
+  background-color: $button;
+
+  &.p-story_viewer__progress--viewed {
+    background-color: $accent;
+  }
+}
+
+.p-story_viewer_modal__footer__paging--prev {
+  background: linear-gradient(270deg, transparent, $bg 60%);
+}
+
+.p-story_viewer_modal__footer__paging--next {
+  background: linear-gradient(90deg, transparent, $bg 60%);
+}
+
+.p-story_viewer_modal__footer__paging__icon {
+  background: $bg;
+}
+
+.c-texty_input__container--large .p-stories_uploader__custom_topic_input.c-texty_input {
+  background: $bg;
+  color: $fg;
+}
+
+.p-stories_uploader__custom_topic_clear,
+.p-stories_uploader__custom_topic_emoji {
+  color: $disabled;
+}
+
+.p-stories_uploader__prompt {
+  &.p-stories_uploader__prompt--selected,
+  &:hover {
+    border: 1px solid $borderLight;
+  }
+}
+
+.p-story_viewer_modal__awaiting_reply_button {
+  color: $fg;
+
+  &:hover {
+    border-color: $borderLight;
+  }
+}
+
+.p-stories_uploader__footer__note {
+  color: $text;
+}
+
+.p-story_viewer__progress__bar {
+  background: $button;
+}
+
+.p-story_viewer__control {
+  background: $contrast;
+  color: $selectFg;
+}
+
+.p-story_viewer__reaction-active,
+.p-story_viewer__reaction:hover {
+  background: $bg;
+}
+
+.p-story_viewer__reaction-reacted {
+  background: $accent;
+  border-color: $accent;
+}
+
+.p-stories_screen_selector__screen {
+  &:hover {
+    background: $contrast;
+  }
+}
+
+.p-stories_uploader {
+  background: $bg;
+  color: $fg;
+}
+
+.p-stories_uploader__header {
+  @include pane;
+  background: $bg2;
+}
+
+.p-stories_uploader__header__name {
+  font-size: 24px;
+}
+
+.p-stories_uploader__header__wink {
+  color: $text;
+}
+
+.p-stories_uploader__video {
+  background: $bg;
+}
+
+.p-stories_uploader__video_container {
+  background: $bg;
+}
+
+.p-stories_uploader__topic {
+  color: $primary;
+}
+
+.p-stories_uploader__footer {
+  background: $bg2;
+  @include pane;
+}
+
+.p-stories_uploader__footer__button {
+  background: $button;
+  color: $fg;
+  border: $button;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background: $hl;
+    border-color: $hl;
+    color: $selectFg;
+  }
+}
+
+.p-stories_uploader__footer__button--upload {
+  color: $green;
+  border-color: $green;
+  opacity: 0.9;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $green;
+    border-color: $green;
+    opacity: 1;
+  }
+}
+
+.p-stories_uploader__footer__more {
+  color: $text;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $selectFg;
+  }
+}
+
+.p-stories_uploader__record {
+  border: 2px solid $button;
+}
+
+.p-stories_uploader__record__inner {
+  background-color: $red;
+}
+
+.p-stories_uploader__footer__timer {
+  color: $fg;
+}
+
+.p-stories_uploader__footer__control--camera.p-stories_uploader__footer__control--off
+  .p-stories_uploader__footer__control__icon {
+  background: $red;
+  color: $selectFg;
+}
+
+.p-stories_uploader__footer__control--screen.p-stories_uploader__footer__control--on {
+  background: $accent;
+  color: $selectFg;
+
+  .p-stories_uploader__footer__control__icon {
+    background: $accent;
+    color: $selectFg;
+  }
+
+  &:hover {
+    background: $accentT;
+  }
+}
+
+.p-stories_uploader__footer__control--screen.p-stories_uploader__footer__control--on
+  .p-stories_uploader__footer__control__icon {
+  background: $accent;
+  color: $selectFg;
+}
+
+.p-stories_uploader__footer__control__icon {
+  background: $button;
+}
+
+.p-stories_uploader__mention,
+.p-stories_uploader__retry {
+  color: $text;
+
+  &:hover {
+    background: $hl;
+  }
+
+  &:active,
+  &:focus {
+    background: $hl;
+    color: $primary;
+  }
+}
+
+.p-stories_uploader__footer__status--pending {
+  background: $text;
+}
+
+.p-stories_uploader__footer__status--recording {
+  background: $red;
+}
+
+.p-stories_uploader__footer__status--done {
+  background: $green;
+}
+
+.p-story_viewer_modal__reactions__reaction {
+  background: $excluded;
+
+  &:hover {
+    box-shadow: inset 0 0 0 1px $primary;
+    background: $bg2;
+    color: $primary;
+  }
+}
+
+.p-story_viewer_modal__reactions__reaction--reacted .p-story_viewer_modal__reactions__reaction__count:not(:empty) {
+  color: $primary;
+}
+
+.p-story_viewer_modal__reactions__reaction--reacted {
+  background: $active;
+  box-shadow: inset 0 0 0 1px $accentT;
+
+  &:hover {
+    background: $hl;
+    box-shadow: inset 0 0 0 1px $accent;
+  }
+}
+
+.p-story_viewer_modal__reactions__toggle {
+  background: $button;
+  color: $fg;
+  box-shadow: inset 0 0 0 1px $primaryT;
+
+  &:hover {
+    background: $hl;
+    color: $primary;
+  }
+}
+
+.p-stories_uploader__footer__camera_toggle_label {
+  color: $fg;
+}
+
+.p-story_viewer_modal {
+  background: $bg;
+  color: $fg;
+
+  .c-pillow_file__video {
+    background: $bg;
+  }
+}
+
+.p-story_viewer_modal__header {
+  @include pane;
+  background: $bg;
+  box-shadow: 0 1px 0 $border;
+}
+
+.p-story_viewer_modal__header__separator,
+.p-story_viewer_modal__header__divider {
+  background: $borderLight;
+}
+
+.p-story_viewer_modal__footer__add {
+  background: $button;
+  color: $fg;
+
+  &:hover {
+    background: $hl;
+    color: $primary;
+  }
+}
+
+.p-story_viewer_modal__footer__paging {
+  background: $button;
+  color: $fg;
+}
+
+.p-story_viewer_modal__navigation__button {
+  background: $button;
+  box-shadow: inset 0 0 0 1px $button;
+  color: $fg;
+
+  &:hover {
+    color: $selectFg;
+    background: $hl;
+    box-shadow: inset 0 0 0 1px $primary, 0 2px 4px $primaryT;
+  }
+}
+
+.p-stories_button__add,
+.p-stories_button__unreads,
+.p-stories_input_button,
+.p-stories_input_button__add {
+  background: $button;
+  color: $text;
+  border-color: $button;
+}
+
+.p-stories_scroller--chrono {
+  .p-gallery_scroller__wrapper {
+    background: $bg;
+  }
+}
+
+.p-stories_scroller__container {
+  .c-avatar {
+    &:after {
+      background: $fg;
+    }
+  }
+}
+
+.p-stories_scroller__container--placeholder .c-avatar .c-base_icon,
+.p-stories_scroller__container--unreads .c-avatar .c-base_icon {
+  --saf-0: $bg;
+  border: 2px solid $borderLight;
+}
+
+.p-stories_scroller__you_add--chrono {
+  background: $bg2;
+}
+
+.p-stories_scroller__you_add_icon {
+  box-shadow: 0 0 0 2px $button;
+  background-color: $button;
+  color: $fg;
+}
+
+.p-stories_scroller__header {
+  &:after {
+    border-bottom: 1px solid $borderLight;
+  }
+}
+
+.p-stories_button__container {
+  box-shadow: 0 0 0 1px $primary, 0 4px 12px 0 $primaryT;
+}
+
+.p-stories_button {
+  background-color: $button;
+}
+
+.p-stories_button__unreads {
+  border: 1px solid $button;
+}
+
+.p-story_audio_only {
+  background: $contrast;
+
+  &:before {
+    background: $contrast;
+  }
+}
+
+.p-stories_ribbon,
+.p-stories_scroller__header:after {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-stories_ribbon {
+  background: $contrast;
+  border-top: 1px solid $borderLight;
+  @include pane;
+}
+
+.p-stories_ribbon__poster_container {
+  background-color: $button;
+  border: 1px solid $button;
+}
+
+.p-stories_ribbon__poster_thumb {
+  background-color: $button;
+  border: 2px solid $button;
+}
+
+.p-stories_ribbon__create_plus {
+  background: $button;
+}
+
+.p-ia__view_header--stories-collapsed-and-has-stories .p-ia__view_header__button--stories_entrypoint {
+  border: 2px solid $button;
+  background: $button;
+
+  &:hover {
+    border: 2px solid $hl;
+    background: $hl;
+  }
+
+  .c-icon,
+  &:hover .c-icon {
+    color: $primary;
+    text-shadow: 0 1px 2px $fg;
+  }
+}
+
+.p-ia__view_header--stories-unreads.p-ia__view_header--stories-collapsed-and-has-stories
+  .p-ia__view_header__button--stories_entrypoint
+  .c-icon {
+  border-color: $accent;
+}
+
+.p-ia__view_header--stories-unreads.p-ia__view_header--stories-collapsed-and-has-stories
+  .p-ia__view_header__button--stories_entrypoint
+  .c-icon {
+  color: $accent;
+}
+
+.p-ia__view_header--stories-expanded .p-ia__view_header__button--stories_entrypoint {
+  &:before {
+    border-color: transparent transparent $notif transparent;
+  }
+
+  &:after {
+    border-color: transparent transparent $notif transparent;
+  }
+}
+
+.p-ia__view_header__button.p-ia__view_header__button--stories_entrypoint_disabled {
+  &:active,
+  &:hover {
+    background-color: $hl;
+    color: $text;
+  }
+}
+
+.p-stories_uploader--new {
+  background: $bg;
+  color: $fg;
+
+  .p-story_audio_only {
+    background: $bg;
+  }
+}
+
+.p-stories_uploader--new .p-stories_uploader__video {
+  background: $bg;
+}
+
+.p-story_progress_bar {
+  background: $bg2;
+}
+
+.p-stories_uploader--new .p-stories_uploader__header__close.c-button-unstyled {
+  background: $button;
+
+  &:hover {
+    background: $hl;
+  }
+}
+
+.p-stories_uploader__footer__control {
+  color: $fg;
+  border: 1px solid transparent;
+
+  &:not(:disabled):hover {
+    border: 1px solid $borderLight;
+  }
+}
+
+.p-stories_uploader--recording .p-stories_uploader__footer__control {
+  background: $button;
+  color: $fg;
+}
+
+.p-stories_uploader--new {
+  &.p-stories_uploader--recording .p-stories_uploader__footer__control {
+    background: $button;
+  }
+
+  .p-stories_uploader__footer__control:not(:disabled):hover {
+    background: $hl;
+  }
+}
+
+.p-stories_uploader--new .p-stories_uploader__footer__control--camera.p-stories_uploader__footer__control--off {
+  background: $red;
+
+  &:hover {
+    background: $red2;
+  }
+
+  .p-stories_uploader__footer__control__icon {
+    background: unset;
+    color: unset;
+  }
+}
+
+.p-stories_uploader--new {
+  .p-stories_uploader__footer__control--screen.p-stories_uploader__footer__control--on {
+    background: $accent;
+
+    &:hover {
+      background: $accentT;
+    }
+
+    .p-stories_uploader__footer__control__icon {
+      background: unset;
+      color: unset;
+    }
+  }
+
+  .p-stories_uploader__footer .p-story_progress_bar {
+    background: $excluded;
+  }
+
+  .p-stories_uploader__record--recording {
+    background: $excluded;
+    color: $disabled;
+
+    &:hover {
+      background: $excluded;
+    }
+  }
+}
+
+.p-stories_uploader__custom_topic_wrapper {
+  background: $bg;
+  color: $fg;
+}
+
+.p-stories_uploader__action {
+  color: $text;
+}
+
+.p-stories_uploader_preview__video {
+  background: $contrast;
+}
+
+.p-stories_uploader_preview__pane__header {
+  box-shadow: 0 1px 0 $border;
+}
+
+.p-stories_uploader_preview__pane__header__channel {
+  color: $text;
+}
+
+.p-story_progress_bar--scrubbable {
+  &:hover {
+    background: $tree;
+  }
+}
+
+.p-message_file--video-story.c-pillow_file_container {
+  .c-pillow_file__video_container {
+    &:hover .c-pillow_file__video__placeholder_button {
+      background-color: $bg;
+    }
+  }
+
+  .c-pillow_file__video--placeholder-poster {
+    background-color: $disabled;
+  }
+
+  .c-pillow_file__video__placeholder_button {
+    background-color: $button;
+    color: $fg;
+  }
+}
+
+.p-ia__view_header--details-popover {
+  .p-classic_nav__model__button.p-classic_nav__model__button--calls,
+  .p-ia__view_header__button {
+    border: 1px solid $button;
+  }
+
+  .p-ia_details_popover_entry {
+    border: 1px solid $border;
+  }
+
+  .p-classic_nav__model__title__name__shared_icon {
+    color: $text;
+  }
+}
+
+.p-stories_ribbon_error {
+  background: $bg2;
+  border-top: 1px solid $borderLight;
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-stories_ribbon__poster_container {
+  background-color: $bg;
+  border: 1px solid $borderLight;
+}
+
+.p-stories_ribbon__poster_thumb {
+  background-color: $bg;
+  border: 2px solid $borderLight;
+}
+
+.p-stories_ribbon__create_plus {
+  background: $borderLight;
+}
+
+.p-stories_threads_ribbon {
+  background: $contrast;
+  @include dropShadow;
+}
+
+.p-stories_threads_ribbon__create {
+  color: $text;
+
+  &:focus,
+  &:hover {
+    background: $contrast;
+    color: $fg;
+  }
+}
+
+.p-stories_threads_ribbon__pill {
+  background: $bg;
+  color: $text;
+}
+
+.p-stories_threads_ribbon__pill--unread {
+  background: $accent;
+  color: $selectFg;
+}
+
+.p-story_viewer_modal__reactions__add {
+  background: $button;
+  color: $text;
+
+  &:hover {
+    box-shadow: inset 0 0 0 1px $primaryT;
+    background: $hl;
+    color: $selectFg;
+  }
+}
+
+.p-story_viewer_modal__reactions__add__cookie {
+  color: $accent;
+}
+
+.p-story_viewer_modal__footer__captions {
+  background: $bg;
+  color: $selectFg;
+}
+
+.p-story_viewer_modal__footer__captions--on {
+  background: $green;
+}
+
+.p-story_flexpane_reply_button {
+  background: $green;
+  color: $selectFg;
+
+  &:focus,
+  &:hover {
+    box-shadow: inset 0 0 0 1px $bg, 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  &.c-button--focus-visible:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+}
+
+.p-story_viewer_threads {
+  box-shadow: -1px 0 0 $borderLight;
+}
+
+.p-story_viewer_threads__header--border {
+  box-shadow: 0 1px 0 $borderLight;
+}
+
+.p-story_viewer_threads__separator {
+  box-shadow: 0 1px 0 0 $borderLight;
+}
+
+.p-story_viewer_threads__separator__label {
+  background: $bg;
+  color: $text;
+}
+
+.p-story_viewer_modal__footer__poster__image {
+  box-shadow: inset 0 0 0 2px, inset 0 0 0 4px $bg;
+}
+
+.p-story_viewer_modal__footer__reply {
+  border: 1px solid $borderLight;
+}
+
+.p-story_viewer_modal__navigation__button {
+  background: $button;
+  box-shadow: inset 0 0 0 1px $border;
+  color: $text;
+
+  &:hover {
+    color: $fg;
+    background: $bg;
+  }
+}
+
+.p-story_viewer_modal__footer__button {
+  background: $button;
+  color: $fg;
+}
+
+.p-story_viewer_modal__footer__button_captions--on {
+  background: $green;
+}
+
+.p-story_viewer_modal--threads .p-story_audio_only {
+  background: $contrast;
+}
+
+.p-story_viewer_modal--threads {
+  .p-story_viewer_modal__footer {
+    background: $bg2;
+  }
+
+  .p-story_viewer_modal__footer__reply {
+    background: $bg;
+  }
+}
+
+.p-story_viewer__messages_header {
+  background: $bg;
+}
+
+.p-story_viewer_modal ::cue {
+  font-family: $fontFamily;
+}
+
+.p-story_mini_player {
+  background: $contrast;
+  color: $fg;
+}
+
+.p-story_mini_player__icon_button {
+  background: $button;
+  color: $fg;
+
+  &.c-icon_button--dark:hover {
+    background: $hl;
+    color: $selectFg;
+  }
+}
+
+.p-story_preview_topic {
+  &:not(.p-story_preview_topic--fixed):hover {
+    color: $primary;
+  }
+}
+
+.p-story_preview_topic__empty {
+  color: $primary;
+}
+
+.p-story_preview_topic__popover {
+  background: $bg2;
+}
+
+.p-story_preview_topic__popover__prompts__header {
+  color: $text;
+}
+
+.p-story_preview_topic__popover__prompt {
+  &:focus,
+  &:hover {
+    background: $primary;
+    color: $selectFg;
+  }
+}
+
+.p-story_message_file__poster__content {
+  background: $bg2;
+  color: $selectFg;
+}
+
+.p-story_message_file__controls {
+  background: $bg;
+  border: 1px solid $border;
+}
+
+.p-stories_uploader__countdown {
+  background: $bg;
+}
+
+.p-stories_uploader__countdown_number {
+  color: $primary;
+}
+
+.p-story_viewer_add_annotation_popover {
+  background-color: $bg;
+}

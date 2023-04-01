@@ -1,0 +1,140 @@
+.p-integrations_page {
+  background: $bg;
+}
+
+.p-integrations_banner {
+  background: $contrast;
+}
+
+.p-integrations__icon_container {
+  background-color: $button;
+}
+
+.p-integrations__icon {
+  color: $primary;
+}
+
+.p-integrations__list_entity_row {
+  &:not(.p-integrations__list_entity_row--disabled):hover {
+    background-color: $bg2;
+  }
+}
+
+.p-integrations_page__category_item_button {
+  background: $button;
+
+  &:hover {
+    background: $hl;
+    color: $selectFg;
+    box-shadow: none;
+  }
+}
+
+.p-integrations_page__category_item_button--selected {
+  background-color: $accent;
+  color: $selectFg;
+}
+
+.p-integrations_banner__subtext {
+  color: $fg;
+}
+
+.p-integrations_modal__text {
+  color: $text;
+
+  span {
+    color: $accent;
+  }
+}
+
+.p-integrations_modal__trigger-config-section {
+  background: $bg;
+  border: 1px solid $border;
+}
+
+.p-integrations_modal__trigger-config-header {
+  background: $bg;
+  color: $primary;
+}
+
+.p-integrations_modal__trigger-config-icon {
+  background: $green;
+  color: $selectFg;
+}
+
+.p-integrations_modal__trigger-config-text {
+  p {
+    color: $text;
+  }
+}
+
+.p-integrations_modal__integration-config-section {
+  background: $bg;
+  border: 1px solid $border;
+}
+
+.p-integrations_modal__integration-config-header {
+  background: $bg;
+  color: $text;
+}
+
+.p-integrations_modal__integration-config-icon {
+  background: $accent;
+  color: $selectFg;
+}
+
+.p-integrations_modal__integration-config-text {
+  p {
+    color: $text;
+  }
+}
+
+.p-integrations_modal__integration-inputs-list {
+  border: 1px solid $border;
+}
+
+.p-integrations_modal__integration-input-info {
+  color: $fg;
+  border-bottom: 1px solid $borderLight;
+
+  span {
+    background: $bg2;
+    color: $text;
+  }
+}
+
+.p-integrations_item {
+  background: #fff;
+  border: 1px solid rgba(29, 28, 29, 0.13);
+
+  &:hover {
+    background: rgba(var(--sk_foreground_min_solid, 248, 248, 248), 1);
+  }
+}
+
+.p-integrations_item__name {
+  span {
+    color: rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
+    background-color: rgba(var(--sk_foreground_low_solid, 221, 221, 221), 1);
+  }
+}
+
+.p-integrations_item__details {
+  color: #616061;
+}
+
+.p-integrations_item__author {
+  color: #1264a3;
+}
+
+.p-integrations_page {
+  background: rgba(var(--sk_foreground_min, 29, 28, 29), 0.04);
+}
+
+.p-integrations_page__category_filter_title {
+  color: rgba(29, 28, 29, 0.7);
+}
+
+.p-integrations_page__no_results {
+  color: rgba(var(--sk_primary_foreground, 29, 28, 29), 1);
+}

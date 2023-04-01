@@ -1,0 +1,233 @@
+.p-ia__main_menu {
+  border-top: 1px solid $borderLight;
+}
+
+.p-ia__main_menu__separator {
+  border-top: 1px solid $borderLight;
+}
+
+.p-ia__main_menu__user__name_container {
+  background: $notif;
+}
+
+.p-ia__user_menu__blurb__status {
+  color: $text;
+}
+
+.p-ia__main_menu__user__status {
+  color: $text;
+}
+
+.p-ia__main_menu__user__status_alt {
+  color: $text;
+}
+
+.p-ia__nav__search {
+  border: 1px solid $borderLight;
+}
+
+.p-ia__nav__history,
+.p-ia__nav__search {
+  background: $bg;
+  color: $fg;
+}
+
+.p-ia__nav__history {
+  border: 1px solid $borderLight;
+}
+
+.p-ia__nav__user__presence--stroke {
+  color: $bg;
+  -webkit-text-stroke: 4px $bg;
+}
+
+.p-ia__view_header {
+  border-bottom: 1px solid transparent;
+  box-shadow: 0px 10px 7px -17px rgba(0, 0, 0, 0.55), 5px 5px 15px 5px rgba(0, 0, 0, 0.11);
+}
+
+.p-ia__view_header__info {
+  .p-classic_nav__model__title__info__topic {
+    color: $fg;
+  }
+}
+
+.p-ia__view_header__more,
+.p-ia__view_header__tab {
+  color: $text;
+}
+
+.p-ia__view_header__more:hover,
+.p-ia__view_header__tab--active,
+.p-ia__view_header__tab:hover {
+  color: $selectFg;
+}
+
+.p-ia__view_header__tab--active:after {
+  background: $active;
+}
+
+.p-classic_nav__model__title__info__actions {
+  &.c-button--focus-visible:focus,
+  &:hover {
+    color: $primary;
+  }
+}
+
+.p-ia__view_header__info .p-classic_nav__model__title__info__topic,
+.p-ia__view_header__metadata,
+.p-ia__view_header__subtitle {
+  color: $text;
+}
+
+.p-ia__view_header__details {
+  color: $text;
+
+  &:hover {
+    background-color: $active;
+    color: $selectFg;
+  }
+}
+
+.p-channel_details_section__header--iap1 {
+  .p-channel_details_section__count {
+    color: $text;
+  }
+
+  .c-icon--inline.p-channel_details_section__icon {
+    color: $text;
+  }
+
+  .p-channel_details_section__caret_icon {
+    color: $fg;
+  }
+}
+
+.p-ia__main_menu__open_slack_app_icon {
+  background: $bg;
+}
+
+.p-ia__view_header__divider {
+  background-color: $border;
+}
+
+.p-ia__view_header__button {
+  color: $text;
+
+  &:hover {
+    background-color: $hl;
+    color: $selectFg;
+  }
+
+  &:active {
+    background: $hl;
+    color: $selectFg;
+  }
+}
+
+.p-ia__view_header__button--open {
+  background-color: $button;
+  color: $fg;
+
+  &:focus,
+  &:hover {
+    background-color: $active;
+    color: $selectFg;
+  }
+}
+
+.p-ia__view_header .p-classic_nav__model__button--calls {
+  color: $text;
+
+  &:hover {
+    background-color: $active;
+    color: $selectFg;
+  }
+
+  &:active {
+    background: $hl;
+    color: $selectFg;
+  }
+}
+
+.p-user_group_base_row--active {
+  animation: p-user_group_base_row--highlighter 1s ease-out;
+}
+
+@keyframes p-user_group_base_row--highlighter {
+  0% {
+    background: transparent;
+  }
+
+  10% {
+    background: $excluded;
+  }
+
+  to {
+    background: transparent;
+  }
+}
+
+.p-ia__main_menu__user__presence {
+  color: $text;
+}
+
+.p-top_nav--iap2 .p-ia__nav__user__presence--stroke.c-presence--away {
+  background: transparent;
+}
+
+.p-ia__main_menu__user__availability-toggle:hover .c-presence {
+  color: $primary;
+}
+
+.p-ia__sidebar_header__mode__find_button {
+  background-color: $bg;
+}
+
+.p-top_nav--iap2 {
+  .p-ia__nav__user__presence--stroke {
+    -webkit-text-stroke: 3px $bg2;
+  }
+}
+
+.p-ia__view_header__sidebar_toggle_button {
+  color: $text;
+
+  &:hover {
+    background: $active;
+    color: $fg;
+
+    .p-ia__view_header__sidebar_toggle_dot.p-team_sidebar__unread_dot {
+      border-color: $accent;
+    }
+  }
+
+  &:active {
+    background: $active;
+
+    .p-ia__view_header__sidebar_toggle_dot.p-team_sidebar__unread_dot {
+      border-color: $accent;
+    }
+  }
+}
+
+.p-ia__view_header__sidebar_toggle_badge {
+  background: $accent;
+}
+
+.p-ia__view_header__sidebar_toggle_badge.p-team_sidebar__mentions_badge {
+  border-color: $borderLight;
+}
+
+.p-ia__view_header__sidebar_toggle_dot.p-team_sidebar__unread_dot {
+  background: $accent;
+  border-color: $borderLight;
+}
+
+.p-ia__sidebar_header__user__status {
+  background: $active;
+
+  &:hover {
+    background: $accentT;
+  }
+}

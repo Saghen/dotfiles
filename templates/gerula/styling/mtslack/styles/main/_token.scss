@@ -1,0 +1,146 @@
+.c-token--dark,
+.c-token {
+  background: $button;
+  color: $text;
+
+  &:hover {
+    background: $active;
+    color: $primary;
+
+    .c-token__unknown_icon_container {
+      color: $selectFg;
+      background: $primary;
+    }
+  }
+}
+
+.c-token--dark.c-token--medium,
+.c-token--medium {
+  .c-basic_unified_entity__description::-moz-selection,
+  .c-base_entity__text-contents::-moz-selection,
+  .c-basic_unified_entity__label::-moz-selection,
+  .c-token_content__label::-moz-selection,
+  .c-base_entity__text-contents::selection,
+  .c-basic_unified_entity__label::selection,
+  .c-token_content__label::selection {
+    background-color: none;
+  }
+}
+
+.c-token--selected {
+  &:not(.c-token--loading):not(.c-token--invalid):not(.c-token--disabled):not(.c-token--error):not(.c-token--unknown) {
+    background: $accentT;
+    color: $selectFg;
+
+    &:hover {
+      background: $accent;
+    }
+  }
+
+  .c-app_badge {
+    color: $selectFg;
+  }
+}
+
+.c-token--dark.c-token--invalid,
+.c-token--invalid {
+  box-shadow: inset 0 0 0 1px $red;
+
+  &:hover {
+    box-shadow: inset 0 0 0 1px $red;
+  }
+}
+
+.c-token--dark.c-token--error,
+.c-token--error {
+  background: $button;
+  border-color: $red;
+
+  &:hover {
+    background: $hl;
+    color: $selectFg;
+  }
+
+  &.c-token--selected {
+    color: $selectFg;
+    background: $red;
+
+    .c-token__error_icon_container {
+      color: $selectFg;
+      background: $button;
+    }
+  }
+}
+
+.c-token__error_icon_container {
+  color: $red;
+  background: $hl;
+}
+
+.c-token--dark.c-token--disabled,
+.c-token--disabled {
+  background: $button;
+  color: $disabled;
+
+  &:hover {
+    background: $button;
+    color: $fg;
+  }
+}
+
+.c-token--dark.c-token--loading,
+.c-token--loading {
+  background: $button;
+  color: $disabled;
+
+  .c-token__loading_icon_container {
+    background: $button;
+  }
+
+  &:hover {
+    background: $button;
+    color: $fg;
+  }
+
+  &.c-token--selected {
+    background: $accentT;
+    color: $selectFg;
+
+    .c-token__loading_icon_container {
+      background: $button;
+    }
+  }
+}
+
+.c-token--dark.c-token--unknown,
+.c-token--unknown {
+  background: $button;
+  border: 1px dashed $accent2;
+  box-shadow: none;
+
+  &:hover {
+    background: $hl;
+  }
+
+  &.c-token--selected {
+    color: $selectFg;
+    background: $accent;
+
+    .c-token__unknown_icon_container {
+      background: $button;
+    }
+  }
+}
+
+.c-token__unknown_icon_container {
+  color: $primary;
+  background: $button;
+}
+
+.p-border {
+  border-bottom: 1px solid $borderLight;
+}
+
+.c-base_list_entity--highlight-dark .c-small_mpim_entity__mpim_counter {
+  box-shadow: 0 0 0 2px $primary;
+}

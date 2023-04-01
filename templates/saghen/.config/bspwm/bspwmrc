@@ -1,0 +1,133 @@
+#! /bin/sh
+
+source ~/.profile
+
+# Windows like repeating speed
+xset r rate 240 40
+
+# This fixed my cursor size for some reason
+xsetroot -cursor_name left_ptr
+
+# Note: Display envs are now in .profile
+# TODO: Make get-monitors order consistent or do some ordering?
+#DISPLAY1=$(~/scripts/bspwm/get-monitors.sh | sed -n '2p')
+#DISPLAY2=$(~/scripts/bspwm/get-monitors.sh | sed -n '1p')
+
+gap=8
+
+# Simple gap
+bspc config window_gap $gap
+5
+# Various settings
+bspc config gapless_monocle true
+bspc config borderless_monocle true
+bspc config single_monocle true
+bspc config paddingless_monocle false
+
+bspc config pointer_motion_interval 10 # Makes pointer movements update windows every X ms
+bspc config pointer_modifier mod3
+bspc config pointer_action1 move          # Left click
+bspc config pointer_action2 resize_side   # Right Click
+bspc config pointer_action3 resize_corner # Middle Click
+bspc config remove_disabconled_monitors true
+bspc config remove_unplugged_monitors false
+
+bspc config split_ratio 0.52
+
+# Color settings
+bspc config focused_border_color "#A4B9EF"
+bspc config normal_border_color "#1E1E28"
+bspc config active_border_color "#575268"
+bspc config presel_feedback_color "#E5C07B"
+bspc config border_width 2
+
+# Monitors/Desktops
+xrandr --output $DISPLAY1 --right-of $DISPLAY2 # Sets the second monitor to be on the left side
+bspc wm -O $DISPLAY1 $DISPLAY2 # Re-order displays to be correct
+bspc monitor $DISPLAY1 -d I II III IV V
+bspc monitor $DISPLAY2 -d VI VII VIII IX X
+
+sleep 0.1
+
+# Rules
+bspc rule -a \* state=floating center=on
+bspc config external_rules_command ~/scripts/bspwm/external-rules/spotify.sh
+bspc rule -a discord desktop='^6' state=tiled split_ratio=0.40
+# bspc rule -a Steam -o state=tiled
+bspc rule -a Steam desktop='^5'
+# bspc rule -a Slack desktop='^10'
+
+bspc rule -a Google-chrome state=tiled
+bspc rule -a firefox-nightly:Navigator state=tiled
+bspc rule -a Code state=tiled
+bspc rule -a neovide state=tiled
+bspc rule -a Logseq state=tiled desktop='^5'
+bspc rule -a Mailspring state=tiled desktop='^5'
+bspc rule -a Emacs rectangle=1920x1200+0+0
+
+# Polkit for sudo authentication prompts
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+# For Wifi prompts (network-manager-applet)
+# nm-applet &
+
+# Polybar
+# Setup pomodoro timer module
+rm /tmp/polypomo.status
+~/scripts/polybar/polypomo.py --worktime 6000 --breaktime 1200 > /tmp/polypomo.status &
+~/scripts/polybar/launch.sh --catppuccin # Launch the bar
+
+# Desktop Wallpaper
+
+WALLPAPER=~/pictures/wallpapers/pixel-art/forest-city-night.gif
+
+# Always run feh because fig does not allow us to click on an empty monitor to focus it
+# Running feh behind fig fixes the issue
+# feh --bg-scale $WALLPAPER 
+
+# Less resource efficient but doesn't require SDL2
+mpvbg $WALLPAPER
+
+# Install with: cargo install --git https://github.com/whytheplatypus/fig.git
+# Lowest resource usage but REQUIRES A COMPOSITOR
+# fig $WALLPAPER &
+
+# Load keymap
+xmodmap ~/scripts/x11-keymap
+
+# Change kb layout in /usr/share/X11/xkb/symbols/pc
+# https://askubuntu.com/questions/1133312/how-do-i-remap-caps-lock-to-hyper-key-in-ubuntu-18-04#1133327
+# Shortcuts
+sxhkd &
+
+# Compsitor
+picom & 
+
+# Autostart applications
+bspswallow & # Automatically swallow terminals when they launch a UI
+flameshot & # Screenshots
+dunst & # Notifications
+# bspc rule -a Ulauncher border=off monitor=focused
+# ulauncher --no-window & # application launcher
+
+discord &
+spotify &
+steam &
+mailspring &
+logseq &
+
+aw-qt &
+
+# Browser
+bspc rule -a firefox-nightly desktop='^1'
+firefox-nightly &
+
+# Wait for applications to open
+sleep 10
+
+bspc rule -r firefox-nightly desktop='^1'
+bspc rule -a firefox-nightly:Navigator state=tiled
+
+# Load cava late so spotify is loaded
+bspc rule -a \*:cava -o node=@^6:/first state=tiled border=off split_ratio=0.3 split_dir=north
+kitty --single-instance --name cava -e cava

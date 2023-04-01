@@ -1,0 +1,111 @@
+.p-huddle_avatar_stack__icon_container {
+  background-color: $accent2;
+  color: $bg;
+}
+
+.p-channel_sidebar__channel:not(.p-channel_sidebar__channel--selected):hover .p-huddle_avatar_stack__icon_container {
+  background-color: $primary;
+  color: $bg;
+}
+
+.p-huddle_avatar_stack__icon_container.p-huddle_avatar_stack--multiple-members {
+  background-color: $accent2;
+  color: $bg;
+}
+
+.p-channel_sidebar__channel--selected .p-huddle_avatar_stack__icon_container {
+  background-color: $primary;
+  color: $bg;
+
+  &.p-huddle_avatar_stack--multiple-members {
+    background-color: $primary;
+    color: $bg;
+  }
+}
+
+.p-huddle_antenna_icon__outer_wave--text_color {
+  fill: $bg;
+}
+
+.p-huddle_antenna_icon__inner_wave--text_color {
+  fill: $bg;
+}
+
+.p-huddle_antenna_icon__antenna--text_color {
+  fill: $bg;
+}
+
+.p-huddle_antenna_icon__outer_wave--active_item_text {
+  fill: $bg;
+}
+
+.p-huddle_antenna_icon__inner_wave--active_item_text {
+  fill: $bg;
+}
+
+.p-huddle_antenna_icon__antenna--active_item_text,
+.p-huddle_antenna_icon__antenna--active_item_text_all,
+.p-huddle_antenna_icon__inner_wave--active_item_text_all,
+.p-huddle_antenna_icon__outer_wave--active_item_text_all {
+  fill: $bg;
+}
+
+.p-huddle_antenna_icon__antenna--text_color_all,
+.p-huddle_antenna_icon__inner_wave--text_color_all,
+.p-huddle_antenna_icon__outer_wave--text_color_all {
+  fill: $bg;
+}
+
+.p-huddle_antenna_icon__antenna--text_color_opacity_50,
+.p-huddle_antenna_icon__inner_wave--text_color_opacity_50,
+.p-huddle_antenna_icon__outer_wave--text_color_opacity_50 {
+  fill: $bg;
+}
+
+.p-huddle_sidebar_footer--join_non_active:hover {
+  .p-huddle_antenna_icon__outer_wave {
+    fill: $bg;
+  }
+
+  .p-huddle_antenna_icon__inner_wave {
+    fill: $bg;
+  }
+
+  .p-huddle_antenna_icon__antenna {
+    fill: $bg;
+  }
+}
+
+.p-huddle_avatar_stack {
+  &.p-huddle_avatar_stack--not-last {
+    background: $bg2;
+  }
+}
+
+.p-channel_sidebar__channel--selected .p-huddle_avatar_stack.p-huddle_avatar_stack--not-last {
+  background-color: $bg2;
+}
+
+.p-huddle_antenna_icon__antenna--sk_sapphire_blue,
+.p-huddle_antenna_icon__inner_wave--sk_sapphire_blue,
+.p-huddle_antenna_icon__outer_wave--sk_sapphire_blue {
+  fill: $accent;
+}
+
+.p-huddle_antenna_icon__antenna--sk_true_white,
+.p-huddle_antenna_icon__inner_wave--sk_true_white,
+.p-huddle_antenna_icon__outer_wave--sk_true_white {
+  fill: $bg;
+}
+
+.p-huddle_avatar_stack__avatars_container {
+  &.p-huddle_avatar_stack__quick_switcher_icon {
+    background: $accent;
+    color: $accent;
+
+    &.p-huddle_avatar_stack__avatars_container--selected {
+      background: $accent;
+      color: $bg;
+    }
+  }
+}

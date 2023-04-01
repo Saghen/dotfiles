@@ -1,0 +1,48 @@
+.p-team_row--actionable {
+  &.p-team_row--active,
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: $active;
+  }
+}
+
+.p-team_row__additional_info {
+  color: $text;
+}
+
+.p-team_row__disconnect_button {
+  background-color: $button;
+}
+
+.p-team_row--muted {
+  color: $text;
+}
+
+.p-team_row__team_info_separator {
+  color: $borderLight;
+}
+
+.p-team_row__team_verified_icon {
+  color: $green;
+}
+
+.sk-client-theme--dark .p-team_row__team_verified_icon {
+  color: $green;
+}
+
+.p-team_row__remove_menu_item:not(.c-menu_item__button--highlighted) {
+  color: $red;
+}
+
+.p-team_row__manage_item:not(.c-menu_item__button--highlighted) {
+  color: $red;
+}
+
+.p-rename_team_modal_icon {
+  color: $text;
+}
+
+.c-menu_item__li--highlighted .p-classic_nav__team_menu__blurb__sub {
+  color: $primary;
+}

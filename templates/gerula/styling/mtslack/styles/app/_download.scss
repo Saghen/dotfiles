@@ -1,0 +1,251 @@
+.c-virtual_list__item--focus .p-download_item {
+  border-color: $borderLight;
+}
+
+.p-download_item {
+  &.p-download_item--focus-within,
+  &:hover {
+    border-color: $borderLight;
+  }
+}
+
+@keyframes p-download_item--highlighter {
+  0% {
+    background: transparent;
+  }
+
+  10% {
+    background: $hl;
+  }
+
+  to {
+    background: transparent;
+  }
+}
+
+.p-download_item__action_icon {
+  background: $accent;
+  box-shadow: 0 0 0 3px $bg;
+  color: $selectFg;
+
+  &.snippet {
+    background: $accent2;
+  }
+
+  &.post,
+  &.space {
+    background: $green;
+  }
+
+  &.doc,
+  &.docx {
+    background: $blue;
+  }
+
+  &.xls,
+  &.xlsm,
+  &.xlsx,
+  &.xltx {
+    background: $green;
+  }
+
+  &.ppt,
+  &.pptx {
+    background: $yellow;
+  }
+
+  &.ai,
+  &.sketch {
+    background: $red;
+  }
+
+  &.psd {
+    background: $cyan;
+  }
+
+  &.indd {
+    background: $purple;
+  }
+
+  &.fla,
+  &.swf {
+    background: $red;
+  }
+
+  &.ipa {
+    background: $gray;
+  }
+
+  &.apk {
+    background: $green;
+  }
+
+  &.dropbox {
+    background: $primary;
+  }
+
+  &.gpres {
+    background: $orange;
+  }
+
+  &.gsheet {
+    background: $green;
+  }
+
+  &.gdoc {
+    background: $cyan;
+  }
+
+  &.gdraw,
+  &.gform,
+  &.pdf {
+    background: $red;
+  }
+}
+
+.p-download_item__image {
+  border: 1px solid $borderLight;
+}
+
+.p-download_item__container {
+  .p-download_item__name_row {
+    color: $fg;
+  }
+}
+
+.p-download_item__link--cancel,
+.p-download_item__link--pause,
+.p-download_item__link--resume {
+  color: $text;
+}
+
+.p-download_item__link--remove {
+  &:focus,
+  &:hover {
+    color: $red;
+  }
+}
+
+.p-download_item__size_row {
+  color: $text;
+}
+
+.p-download_item__actions {
+  background: $bg;
+}
+
+.p-download_item__link--open,
+.p-download_item__link--retry,
+.p-download_item__link--show {
+  color: $text;
+}
+
+.p-download_item__progress_row {
+  opacity: 1;
+  background-color: $bg2;
+}
+
+.p-download_item__progress {
+  background-color: $accent;
+}
+
+.p-downloads__clear_all {
+  border-right: 1px solid $borderLight;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+.p-downloads_modal__title__clear:after {
+  background: $active;
+}
+
+.p-download_toast__progress_outer {
+  background: $button;
+}
+
+.p-download_toast__item:focus {
+  box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
+}
+
+.p-download_toast__progress_inner {
+  background: $accent;
+}
+
+.p-download_toast__progress_inner--complete {
+  background: $primary;
+}
+
+.p-download_toast_item--completed {
+  .c-pillow_file_meta_icon {
+    color: $selectFg;
+    background-image: linear-gradient($accent, $accentT);
+  }
+}
+
+.p-download_progress__outer {
+  background: $hl;
+}
+
+.p-download_progress__inner {
+  background: $accent;
+}
+
+.p-downloads_modal__content {
+  .c-pillow_file--active_download .c-pillow_file__slide,
+  .c-pillow_file_container--active_download {
+    background: $bg2;
+  }
+}
+
+.p-download_modal__body {
+  background-color: $notif;
+}
+
+.p-download_modal__content_text--fullscreen {
+  color: $fg;
+}
+
+.p-download_modal__content_text {
+  .p-download_modal__title {
+    font-family: $headerFont;
+  }
+
+  .p-download_modal__instructions_list_item {
+    &:before {
+      background-color: $accent;
+      color: $selectFg;
+    }
+  }
+
+  .p-download_modal__connect_account_button {
+    background-color: $button;
+  }
+
+  .p-download_modal__connect_account_button--fullscreen {
+    background-color: $button;
+  }
+
+  .p-download_modal__try_download_again {
+    color: $text;
+  }
+
+  .p-download_modal__try_download_again--fullscreen {
+    color: $text;
+  }
+}
+
+.p-download_modal__close {
+  color: $fg;
+
+  &:hover {
+    background-color: $accent;
+    color: $selectFg;
+  }
+
+  &:active {
+    background-color: $accent;
+    color: $selectFg;
+  }
+}

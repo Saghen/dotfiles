@@ -1,0 +1,188 @@
+[lang] {
+  .p-message_pane_input__disabled,
+  .p-message_pane_input__preview {
+    font-family: $fontFamily;
+  }
+
+  .c-texty_input {
+    font-family: $fontFamily;
+  }
+
+  .c-basic_container,
+  .c-texty_input_unstyled {
+    font-family: $fontFamily;
+  }
+
+  .c-menu {
+    font-family: $fontFamily;
+  }
+
+  .p-huddle_details {
+    font-family: $fontFamily;
+  }
+}
+
+.Unreachable-Webdata,
+.p-trouble_loading {
+  font-family: $fontFamily !important;
+}
+
+.p-shared_channel_creator_welcome_modal__header--error,
+.p-shared_channel_creator_welcome_modal__content--error,
+.p-shared_channel_creator_welcome_modal__body,
+.p-shared_channel_creator_welcome_modal__header {
+  font-family: $fontFamily;
+}
+
+.p-slack_connect_empty_landing_page__header_text {
+  font-family: $headerFont;
+}
+
+.p-setup_channel_banner__heading {
+  font-family: $headerFont;
+}
+
+.p-mini_browser_file_selector__app_name {
+  font-family: $fontFamily;
+}
+
+.p-message_input_roadblock {
+  font-family: $fontFamily;
+}
+
+.p-shared_invite_creator_welcome_modal .p-shared_invite_creator_welcome_modal__header {
+  font-family: $headerFont;
+}
+
+.p-shared_invite_creator_welcome_modal .p-shared_invite_creator_welcome_modal__body {
+  font-family: $fontFamily;
+}
+
+.p-shared_invite_creator_welcome_modal__header--error {
+  font-family: $fontFamily;
+}
+
+.p-shared_invite_creator_welcome_modal__content--error {
+  font-family: $fontFamily;
+}
+
+.p-rimeto_org_chart_page__item_name {
+  font-family: $fontFamily;
+}
+
+.p-rimeto_org_chart_page__reports_header {
+  font-family: $fontFamily;
+}
+
+.p-rimeto_org_chart_page__item_image_overlay {
+  font-family: $fontFamily;
+}
+
+.p-slack_connect_edu_modal__banner {
+  font-family: $headerFont;
+}
+
+.p-slack_connect_empty_landing_page__cta_container_prompt--user-hub {
+  font-family: $headerFont;
+}
+
+.p-slack_connect_empty_landing_page__cta_container_prompt__link {
+  font-family: $fontFamily;
+}
+
+.p-slack_connect_empty_landing_page__setup_container__content__title {
+  font-family: $headerFont;
+}
+
+.p-slack_connect_tab_empty_state__title {
+  font-family: $headerFont;
+}
+
+.p-slack_connect_tab_empty_state__subtitle {
+  font-family: $fontFamily;
+}
+
+.p-slack_connect_tab_empty_state_footer__title,
+.p-slack_connect_tab_empty_state__sent_steps {
+  font-family: $fontFamily;
+}
+
+[lang] .p-message_input_roadblock {
+  font-family: $fontFamily;
+}
+
+.p-shared_invite_creator_welcome_modal {
+  .p-shared_invite_creator_welcome_modal__header {
+    font-family: $headerFont;
+  }
+
+  .p-shared_invite_creator_welcome_modal__body {
+    font-family: $fontFamily;
+  }
+}
+
+.p-slack_connect_dm_trial_base_banner {
+  .c-alert__heading {
+    font-family: $headerFont;
+  }
+}
+
+.p-setup_page__step_calendar_contact_import_loading_header {
+  font-family: $headerFont;
+}
+
+.p-shared_channel_invite_flow_modal_tip__text {
+  font-family: $fontFamily;
+}
+
+[lang] .p-huddle_popover {
+  font-family: $fontFamily;
+}
+
+.p-video_message_file {
+  .p-media_viewer__video {
+    &::cue {
+      font-family: $fontFamily;
+    }
+  }
+}
+
+.p-integrations_banner__text {
+  font-family: $headerFont;
+}
+
+.p-media_viewer_modal ::cue {
+  font-family: $fontFamily;
+}
+
+.p-setup_page__header_tagline {
+  font-family: $fontFamily;
+}
+
+.p-slack_connect_hub_edu_banner__header {
+  font-family: $headerFont;
+}
+
+.p-inbox_empty_landing_page__header_text {
+  font-family: $headerFont;
+}
+
+.p-inbox_page__prototype {
+  font-family: $monoFont;
+}
+
+.p-rimeto_org_chart_member_card_name {
+  font-family: $fontFamily;
+}
+
+.p-setup_channel_banner__heading--joiner_banner {
+  font-family: $headerFont;
+}
+
+.p-setup_channel_banner__heading--joiner_banner {
+  font-family: $headerFont;
+}
+
+.p-setup_channel_banner__text--joiner_banner {
+  font-family: $fontFamily;
+}

@@ -1,0 +1,61 @@
+.p-edit_profile__centered_primary--background {
+  background: $border;
+}
+
+.p-edit_profile__upload_preview_label {
+  color: $text;
+}
+
+.p-edit_profile__date_button {
+  border: 1px solid $borderLight;
+}
+
+.p-edit_profile__rules {
+  color: $fg;
+}
+
+.p-edit_profile__cropper {
+  background-color: $bg !important;
+}
+
+.p-edit_profile_item__container {
+  .c-menu_item__icon {
+    color: $primary;
+  }
+
+  &.c-menu_item__button--highlighted .c-menu_item__icon {
+    color: $selectFg;
+  }
+}
+
+.p-edit_profile__drag_and_drop {
+  border: 4px dashed $hl;
+}
+
+.p-edit_profile__centered_primary--background {
+  background: $bg2;
+}
+
+.p-edit_profile__cropper {
+  background-color: $bg !important;
+}
+
+.p-edit_profile__upload_preview_label {
+  color: $text;
+}
+
+.p-edit_profile__date_button {
+  border: 1px solid $primary;
+}
+
+.p-edit_profile__rules {
+  color: $fg;
+}
+
+.p-edit_prefs_settings_modal__footer_text {
+  color: $text;
+}
+
+.p-edit_profile_section_form_pane__current_location_clear--text {
+  color: $primary;
+}

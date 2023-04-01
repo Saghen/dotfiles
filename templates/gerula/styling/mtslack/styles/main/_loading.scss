@@ -1,0 +1,24 @@
+.p-message_container_loading {
+  background-color: $bg;
+}
+
+.p-message_container_loading__msg {
+  color: $disabled;
+}
+
+.p-degraded_list__loading {
+  color: $disabled;
+  background: $excluded;
+}
+
+.p-degraded_list__loading--offline {
+  color: $disabled;
+}
+
+.p-flexpane_loading {
+  color: $text;
+}
+
+.p-app_view__loading_spinner {
+  background: transparent;
+}

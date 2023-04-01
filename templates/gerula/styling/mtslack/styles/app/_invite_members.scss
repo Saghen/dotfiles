@@ -1,0 +1,189 @@
+.p-invite_members_form__header_icon {
+  color: $accent2;
+}
+
+.p-invite_members_form__add_row_and_bulk_button {
+  color: $primary;
+}
+
+.p-invite_members_form__sent_invites_header_cell--successful {
+  border-bottom: 2px solid $green;
+}
+
+.p-invite_members_form__sent_invites_header_cell--unsuccessful,
+tr:first-child th:not(:only-of-type).p-invite_members_form__sent_invites_header_cell--unsuccessful {
+  border-bottom: 2px solid $red;
+}
+
+.p-invite_members_form__pending_invites {
+  &:hover {
+    color: $fg;
+  }
+}
+
+.p-bulk_invite_emails__note {
+  color: $disabled;
+}
+
+.p-invites_channel_picker__note {
+  color: $disabled;
+
+  a {
+    color: $fg;
+  }
+}
+
+.p-invite_members_form__pricing_banner {
+  border: 1px solid $accent;
+  color: $selectFg;
+  background: $accent;
+}
+
+.p-invite_members_form__pricing_banner__icon {
+  color: $accent;
+}
+
+.p-invite_members_form__footer_message {
+  color: $text;
+}
+
+.p-invite_members_form__footer_link {
+  color: $text;
+
+  &:hover,
+  &:visited {
+    color: $fg;
+  }
+}
+
+.p-invite_members_form__google_directory_group {
+  background-color: $bg2;
+}
+
+.p-invite_members_form__add_row_and_bulk_button_disabled {
+  color: $disabled;
+}
+
+.p-select_invite_type__link--subtitle {
+  color: $text;
+}
+
+.p-select_invite_type__header_icon {
+  color: $accent;
+}
+
+.p-select_invite_type__arrow_icon {
+  color: $accent;
+}
+
+.p-select_invite_type__link--learn {
+  color: $disabled;
+
+  &:hover,
+  &:visited {
+    color: $disabled;
+  }
+}
+
+.p-select_invite_type__link--disabled {
+  .p-select_invite_type__link--subtitle,
+  h2 {
+    color: $disabled;
+  }
+}
+
+.p-select_invite_type__pending {
+  color: $accent2;
+}
+
+.p-invite_users_input__label_title {
+  color: $text;
+
+  strong {
+    color: $fg;
+  }
+}
+
+.p-invite_users_input__label_error {
+  color: $red;
+}
+
+.p-invite_users_input__input_subtext {
+  color: $text;
+}
+
+.p-shared_channel_creation_modal__breadcrumbs {
+  color: $fg;
+}
+
+.p-shared_channel_invitation_modal__subtitle {
+  color: $text;
+}
+
+.p-shared_channel_orgs_list__org_row_member_count {
+  color: $text;
+}
+
+.p-invite_members_form__request_members_reason {
+  color: $text;
+}
+
+.p-members_dialog_item {
+  &:hover {
+    background-color: $hl;
+  }
+}
+
+.p-invite_members_form__invite_row_field--optional {
+  color: $text;
+}
+
+.p-invite_members_form__add_to_team_button {
+  background-color: $button;
+  border: 1px solid $button;
+  color: $text;
+
+  &:hover {
+    background-color: $active;
+  }
+
+  &:active,
+  &:hover {
+    color: $selectFg;
+  }
+}
+
+.p-shared_channel_org_list__current_connections_header,
+.p-shared_channel_org_list__previous_connections_header {
+  color: $text;
+}
+
+.p-shared_channel_creator_welcome_modal__header--channel {
+  background: $notif;
+  color: $fg;
+}
+
+.p-shared_channel_creator_welcome_modal__body--pending {
+  color: $text;
+}
+
+.p-shared_channel_creator_welcome_modal__ok_button {
+  color: $selectFg;
+  background-color: $accent;
+
+  &:active,
+  &:hover {
+    background-color: $hl;
+  }
+
+  &[disabled] {
+    background-color: $disabled;
+    color: $fg;
+  }
+}
+
+.p-shared_channel_creator_welcome_modal {
+  .p-shared_channel_creator_welcome_modal__team_icons--dot {
+    background-color: $bg2;
+  }
+}

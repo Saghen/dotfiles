@@ -1,0 +1,199 @@
+.p-prefs_modal__radiogroup {
+  label {
+    border: 1px solid $border;
+
+    &.p-prefs_modal__radiogroup--selected {
+      background: $selectBg;
+      border-color: $accent;
+    }
+  }
+
+  .p-prefs_modal__radio_decorator {
+    background: $bg;
+
+    &.p-prefs_modal__radio_decorator--light {
+      background-color: $bg;
+    }
+
+    &.p-prefs_modal__radio_decorator--dark {
+      background-color: $bg;
+    }
+  }
+
+  &:disabled .p-prefs_modal__radiogroup--selected {
+    background: $button;
+    border-color: $primaryT;
+  }
+}
+
+.p-prefs_modal__notification_example {
+  &.p-prefs_modal__notification_example--mac {
+    background: $notif;
+    color: $fg;
+
+    &.p-prefs_modal__notification_example--dark {
+      border: 1px solid $border;
+    }
+  }
+
+  &.p-prefs_modal__notification_example--linux {
+    background: $notif;
+    color: $fg;
+
+    &.p-prefs_modal__notification_example--dark {
+      border: 1px solid $border;
+    }
+  }
+
+  &.p-prefs_modal__notification_example--windows {
+    background: $notif;
+    color: $fg;
+
+    &.p-prefs_modal__notification_example--dark {
+      border: 1px solid $border;
+    }
+  }
+}
+
+.p-prefs_dialog {
+  .p-prefs_modal__channel_overrides_row {
+    background: $excluded;
+    border: 1px solid $borderLight;
+
+    &:hover {
+      background: $bg2;
+      border: 1px solid $borderLight;
+      box-shadow: none;
+    }
+
+    &:hover + .p-prefs_modal__channel_overrides_row,
+    + .p-prefs_modal__channel_overrides_row {
+      border: 1px solid $borderLight;
+    }
+  }
+
+  .p-prefs_modal__channel_overrides_row--isDm {
+    &:hover {
+      border: 1px solid $borderLight;
+
+      &.p-prefs_modal__channel_overrides_row--last {
+        border: 1px solid $borderLight;
+      }
+
+      + .p-prefs_modal__channel_overrides_row {
+        border: 1px solid $borderLight;
+      }
+    }
+  }
+
+  .p-prefs_modal__channel_overrides_row--last {
+    border: 1px solid $borderLight;
+  }
+
+  .p-prefs_modal__channel_overrides_row__name--muted {
+    color: $text;
+  }
+
+  .p-prefs_modal__channel_overrides_row__setting {
+    color: $disabled;
+  }
+
+}
+
+.p-prefs_modal__message_example {
+  &.p-prefs_modal__message_example--light {
+    .c-message__sender,
+    .c-timestamp,
+    .p-prefs_modal__message_example__message_body,
+    .p-prefs_modal__message_example__message_content {
+      color: $text;
+    }
+  }
+
+  &.p-prefs_modal__message_example--dark {
+    .c-message__sender,
+    .c-timestamp,
+    .p-prefs_modal__message_example__message_body,
+    .p-prefs_modal__message_example__message_content {
+      color: $text;
+    }
+  }
+}
+
+.p-prefs_dialog {
+  .p-prefs_dialog__message_example_label {
+    color: $text;
+  }
+
+  .p-prefs_dialog__spellcheck_system_prefs_hint {
+    color: $text;
+  }
+
+  .p-prefs_dialog__message_example_pillow--hovered-example {
+    background: $notif;
+  }
+}
+
+.p-prefs_dialog__content:after {
+  border-top: 1px solid $border;
+}
+
+.p-prefs_dialog__section {
+  &:hover {
+    background: $bg;
+  }
+}
+
+.p-prefs_dialog__section:not(.is_active) .p-prefs_dialog__section__icon {
+  color: $primary;
+}
+
+.p-prefs_dialog__section__emoji {
+  border: 1px solid $border;
+}
+
+.p-prefs_dialog__section__description {
+  color: $text;
+}
+
+.p-prefs_dialog__layout {
+  border-top: 1px solid $borderLight;
+}
+
+.p-prefs_dialog__menu {
+  border-right: 1px solid $borderLight;
+
+  .c-tabs__tab:not(.c-tabs__tab--active) .c-tabs__tab_icon--left {
+    color: $text;
+  }
+}
+
+.p-prefs_modal__radio {
+  box-shadow: 0 0 0 1px $hl, 0 1px 3px 0 $hl;
+  color: $fg;
+}
+
+.p-prefs_modal__radio--selected {
+  box-shadow: 0 1px 3px 0 $accent, 0 0 0 1px $accentT;
+  color: $primary;
+}
+
+.p-prefs_modal__radio__image {
+  border-bottom: 1px solid $border;
+}
+
+.p-prefs_modal__radio--selected .p-prefs_modal__radio__image {
+  border-color: $accent;
+}
+
+.p-prefs_modal__radio--selected .p-prefs_modal__radio__content {
+  background: $active;
+}
+
+.p-prefs_modal--video_audio_camera_video {
+  background-color: $bg2;
+}
+
+.p-block_kit_max_selected_items__info {
+  color: $fg;
+}

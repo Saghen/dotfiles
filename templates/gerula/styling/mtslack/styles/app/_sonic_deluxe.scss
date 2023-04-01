@@ -1,0 +1,138 @@
+.p-sonic_deluxe_toast {
+  background: $notif;
+  color: $fg;
+
+  .c-button--focus-visible:focus,
+  .c-link--focus-visible:focus,
+  .focus-ring {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+}
+
+.p-sonic_deluxe_toast__close {
+  background: $notif;
+  color: $fg;
+
+  &:active,
+  &:hover {
+    color: $primary;
+  }
+}
+
+button:focus > .p-sonic_deluxe_toast__close {
+  color: $primary;
+}
+
+a.p-sonic_deluxe_toast__link {
+  color: $fg;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $primary;
+  }
+}
+
+.p-workflow_builder_deluxe_toast {
+  background: $notif;
+  color: $fg;
+}
+
+.p-workflow_builder_deluxe_toast__close {
+  background: $notif;
+  color: $fg;
+
+  &:active,
+  &:hover {
+    color: $selectFg;
+  }
+}
+
+button:focus > .p-workflow_builder_deluxe_toast__close {
+  color: $accent;
+}
+
+.c-button--focus-visible:focus .p-workflow_builder_deluxe_toast__close {
+  box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
+}
+
+.p-workflow_builder_deluxe_toast__img {
+  background-color: $accent2;
+}
+
+a.p-workflow_builder_deluxe_toast__link {
+  color: $primary;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $selectFg;
+  }
+}
+
+.p-workflowtoken__channel {
+  .c-link--button {
+    color: $primary;
+  }
+}
+
+.p-workflowtoken__user {
+  .c-link--button {
+    color: $primary;
+  }
+}
+
+.p-workflowtoken__missing {
+  color: $red;
+  background: $bg2;
+}
+
+.p-workflow_details__subtitle {
+  color: $text;
+}
+
+.p-workflow_config__input_button {
+  border-bottom: 2px dashed $accent;
+}
+
+.p-workflow_config__input_button--warning {
+  border-bottom-color: $orange;
+}
+
+.p-workflow_config_modal__content_section {
+  background-color: $contrast;
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
+}
+
+.p-workflow_config_modal__trigger_preview_icon {
+  background-color: $accent;
+  color: $selectFg;
+
+  &:before {
+    background-color: $accent;
+  }
+}
+
+.p-workflow_config_modal__step_preview_icon {
+  background-color: $contrast;
+  color: $text;
+}
+
+.p-workflow_config_modal__trigger_button {
+  border: 1px solid $border;
+  background-color: $bg;
+}
+
+.p-workflow_config_modal__trigger_button--selected {
+  background-color: $tree;
+  border-color: $accent;
+}
+
+.p-workflow_config_modal__trigger_icon {
+  color: $fg;
+}
+
+.p-workflow_config_modal__trigger_container {
+  background-color: $bg2;
+}

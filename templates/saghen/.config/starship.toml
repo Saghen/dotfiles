@@ -1,0 +1,24 @@
+# Inserts a blank line between shell prompts
+add_newline = false
+
+format = """
+$container\
+$kubernetes\
+$directory\
+$git_branch\
+$git_state\
+$docker_context\
+$conda\
+$jobs\
+$sudo\
+$character\
+"""
+
+[container]
+format = "[$symbol]($style) "
+style = "bold red"
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character] # The name of the module we are configuring is "character"
+success_symbol = "[➜](bold green)"
+error_symbol = "[➜](bold red)"

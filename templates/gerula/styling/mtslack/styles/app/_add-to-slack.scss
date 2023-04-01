@@ -1,0 +1,114 @@
+.p-add_to_slack_confirmation__title_icon--success {
+  color: $bg;
+  background-color: $green;
+}
+
+.p-add_to_slack_confirmation__title_icon--error {
+  color: $bg;
+  background-color: $yellow;
+}
+
+.p-add_to_slack_confirmation__title {
+  color: $fg;
+}
+
+.p-add_to_slack_confirmation__summary_list_header--success {
+  color: $green;
+  border-bottom: 1px solid $green;
+}
+
+.p-add_to_slack_confirmation__summary_list_header--error {
+  color: $red;
+  border-bottom: 1px solid $red;
+}
+
+.p-add_to_slack_confirmation__summary_divider {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-add_to_slack_confirmation__summary_message_invitees_overflow {
+  color: $fg;
+}
+
+.p-add_to_slack_confirmation__summary_message_description {
+  color: $fg;
+}
+
+.p-add_to_slack_confirmation__see_past_invites {
+  color: $text;
+}
+
+.p-add_to_slack_radio {
+  border: 1px solid $borderLight;
+  background: $bg2;
+  @include card;
+
+  &:hover {
+    border: 1px solid $primaryT;
+    background-color: $bg2;
+
+    .p-add_to_slack_radio__icon,
+    .p-add_to_slack_radio__checkbox_icon {
+      color: $accent;
+    }
+  }
+
+  &:focus-within {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+}
+
+.p-add_to_slack_radio--selected {
+  background-color: $bg2;
+  border: 1px solid $primary;
+  @include card;
+
+  &:hover {
+    border: 1px solid $primary;
+    background-color: $bg2;
+
+    .p-add_to_slack_radio__icon,
+    .p-add_to_slack_radio__checkbox_icon {
+      color: $accent;
+    }
+  }
+}
+
+.p-add_to_slack_radio__icon,
+.p-add_to_slack_radio__checkbox_icon {
+  color: $accent;
+}
+
+.p-add_to_slack_radio--disabled {
+  background-color: $bg;
+  color: $disabled;
+}
+
+.p-add_to_slack_radio__disabled_text {
+  background-color: $bg;
+  color: $disabled;
+}
+
+.p-add_to_slack_radio__icon--disabled {
+  color: $disabled;
+}
+
+.p-add_to_slack_confirmation__footer_link {
+  color: $accent2;
+
+  &:hover {
+    color: $selectFg;
+  }
+}
+
+.p-add_to_slack_confirmation__channel_name {
+  color: $text;
+}
+
+.p-add_to_slack_confirmation__comprehensible_container {
+  background-color: $bg2;
+}
+
+.p-setup_prog_disc_invite_modal_explainer_tip {
+  background-color: $notif;
+}

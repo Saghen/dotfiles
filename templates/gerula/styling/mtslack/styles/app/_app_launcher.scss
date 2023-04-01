@@ -1,0 +1,134 @@
+.p-app-launcher {
+  .c-filter_input {
+    border-color: $borderLight;
+  }
+}
+
+.p-app-launcher__link {
+  color: $primary;
+
+  &:active,
+  &:hover,
+  &:link,
+  &:visited {
+    color: $accent2;
+  }
+}
+
+.p-app-launcher__result--icon {
+  box-shadow: 0 0 0 1px $borderLight, 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+}
+
+.p-app-launcher__result--card {
+  box-shadow: 0 0 0 1px $borderLight, 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+}
+
+.p-app-launcher__footer {
+  background-color: $bg2;
+}
+
+.p-app_launcher__app_card {
+  background-color: $bg2;
+  @include card;
+
+  &:active {
+    box-shadow: 0 0 0 1px $accent, 0 1px 3px 0 $accentT;
+  }
+
+  &:hover {
+    .p-app_launcher__app_card__pseudobutton {
+      background: $button;
+    }
+  }
+
+  &:active .p-app_launcher__app_card__pseudobutton {
+    background: $button;
+    border-color: $button;
+  }
+}
+
+.p-app_launcher__app_card__text {
+  color: $text;
+}
+
+.p-app_launcher__app_card__text--org {
+  color: $text;
+}
+
+.p-app_launcher__category_header__link,
+.p-app_launcher__category_header__title {
+  color: $primary;
+}
+
+.p-app_launcher__category_header__link {
+  color: $primary;
+
+  &:active,
+  &:hover,
+  &:link,
+  &:visited {
+    color: $selectFg;
+  }
+}
+
+.p-app_launcher__empty_state {
+  color: $text;
+}
+
+.p-app_launcher__list_container--loading {
+  &:before {
+    background-color: $bg;
+  }
+}
+
+.p-app_launcher_banner {
+  &.p-app_launcher_banner--focused,
+  &:hover {
+    background-color: $bg;
+  }
+}
+
+.p-app_launcher_banner__post_script {
+  border-top: 1px solid $border;
+}
+
+.p-app_launcher_filter_trigger {
+  &.active {
+    color: $fg;
+    background: $active;
+  }
+}
+
+.p-app_launcher {
+  .c-filter_input:not(.c-filter_input--active) {
+    border-color: $borderLight;
+  }
+}
+
+.p-app_launcher--non_ia .c-filter_input:not(.c-filter_input--active) {
+  border-color: $borderLight;
+}
+
+.p-app_launcher__app_card__org {
+  color: $text;
+}
+
+.p-activity_page {
+  background: $bg2;
+}
+
+.p-app_launcher_actions__button_link:hover {
+  color: $selectFg;
+}
+
+.c-virtual_list__item--focus .p-activity_page__education {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+}
+
+.p-activity_page__list .c-virtual_list__item--focus .p-xws_education {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+}
+
+.p-xws_education__icon {
+  color: $accent2;
+}

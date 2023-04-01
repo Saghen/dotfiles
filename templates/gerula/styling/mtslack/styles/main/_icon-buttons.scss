@@ -1,0 +1,71 @@
+.c-icon_button {
+  border-radius: 25px;
+
+  &.c-texty_input__button {
+    color: $fg;
+  }
+
+  &.c-texty_input__button--send {
+    background: $hl;
+    color: $fg;
+
+    &:hover {
+      color: $selectFg;
+      background: $primary;
+    }
+  }
+}
+
+.p-help_flexpane__whats_new_icon .c-icon_button__badge {
+  background-color: $accent;
+}
+
+.c-icon_button__badge {
+  background: $contrast;
+}
+
+.c-icon_button--light .c-icon_button__badge {
+  background-color: $accent;
+}
+
+.c-icon_button--dark .c-icon_button__badge {
+  background-color: $accent;
+}
+
+.c-icon_button--light {
+  color: $selectFg;
+
+  &.c-button-unstyled, &:link {
+    color: $text;
+  }
+
+  &.c-button-unstyled:hover, &:hover, &:link:hover {
+    background: $accent;
+    color: $selectFg;
+  }
+
+  &.c-button-unstyled:active, &:active, &:link:active {
+    background: $active;
+  }
+}
+
+.c-icon_button--dark {
+  color: $selectFg;
+
+  &.c-button-unstyled, &:link {
+    color: $text;
+  }
+
+  &.c-button-unstyled:hover, &:hover, &:link:hover {
+    color: $accent;
+    background: $hl;
+  }
+
+  &.c-button-unstyled:active, &:active, &:link:active {
+    background: $active;
+  }
+}
+
+.c-texty_input__expand_button {
+  color: $fg;
+}

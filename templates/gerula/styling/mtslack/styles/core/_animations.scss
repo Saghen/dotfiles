@@ -1,0 +1,103 @@
+@keyframes c-highlight {
+  0% {
+    background: $notif;
+  }
+
+  to {
+    background: $bg;
+  }
+}
+
+.c-animation_wrapper-pulse--orange > button {
+  animation: btn-shadow-pulse-orange 2s 5;
+
+  &:before {
+    background: $yellow;
+  }
+
+  &:after {
+    box-shadow: 0 0 4px 2px $yellow;
+  }
+}
+
+@keyframes btn-shadow-pulse-orange {
+  0% {
+    box-shadow: none;
+  }
+
+  5% {
+    box-shadow: inset 0 0 0 1px $orange;
+  }
+
+  10%, 50% {
+    box-shadow: inset 0 0 0 1px $orange;
+  }
+
+  95%, to {
+    box-shadow: none;
+  }
+}
+
+.c-animation_wrapper--dark.c-animation_wrapper-pulse--orange > button {
+  animation: btn-shadow-pulse-orange-dark 2s 5;
+
+  &:before {
+    background: $primaryT;
+  }
+
+  &:after {
+    box-shadow: 0 0 4px 2px $primaryT;
+  }
+}
+
+@keyframes btn-shadow-pulse-orange-dark {
+  0% {
+    box-shadow: none;
+  }
+
+  5% {
+    border: 1px solid $orange;
+  }
+
+  10%, 50% {
+    border: 1px solid $orange;
+  }
+
+  95%, to {
+    box-shadow: none;
+  }
+}
+
+@keyframes btn-shadow-pulse-aubergine {
+  0% {
+    box-shadow: none;
+  }
+  5% {
+    border: 1px solid $accent;
+  }
+  10%,
+  50% {
+    border: 1px solid $accent;
+  }
+  95%,
+  to {
+    box-shadow: none;
+  }
+}
+
+@keyframes btn-shadow-pulse-orange-dark {
+  0% {
+    box-shadow: none;
+  }
+  5% {
+    border: 1px solid $primary;
+  }
+  10%,
+  50% {
+    border: 1px solid $primary;
+  }
+  95%,
+  to {
+    box-shadow: none;
+  }
+}

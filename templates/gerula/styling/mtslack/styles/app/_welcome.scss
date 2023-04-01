@@ -1,0 +1,170 @@
+.welcome-card {
+  &.default {
+    background-color: $bg2;
+    color: $fg;
+  }
+}
+
+.p-welcome-place.newxp3100_v1_a {
+  .sendMessageVariantStyle.c-workflow-item-card .c-button {
+    background-color: $primary;
+    color: $selectFg;
+  }
+}
+
+.message-suggestion-button {
+  background: $button;
+  color: $fg;
+
+  &:hover {
+    background: $hl;
+    color: $selectFg;
+  }
+
+  &:active {
+    color: $primary;
+    background: $active;
+    box-shadow: none;
+  }
+}
+
+.welcome-message-workflow-card__dialog-box {
+  background: $bg;
+  border: 1px solid $borderLight;
+
+  &:after {
+    border: 8px solid $borderLight;
+    border-color: transparent transparent $primary $primary;
+  }
+}
+
+.joiner-welcome-message__contents {
+  background: $bg;
+  border: 1px solid $borderLight;
+}
+
+.welcome-message {
+  &:hover {
+    background-color: $bg2;
+  }
+}
+
+.welcome-place-send-message-pane {
+  background: $bg2;
+}
+
+.welcome-place-message-input {
+  background-color: $contrast;
+}
+
+.welcome-place-send-message-card {
+  border: 1px solid $borderLight;
+}
+
+.welcome-place-send-message-card--header-subtitle {
+  color: $text;
+}
+
+.welcome-place-page-container--border-inset {
+  box-shadow: inset 1px 0 0 0 $borderLight;
+}
+
+.supports_custom_scrollbar .welcome-place-channel-preview {
+  &:hover {
+    border-right: 0.25rem solid transparent;
+
+    &::-webkit-scrollbar-thumb {
+      background: $accent;
+    }
+  }
+}
+
+.welcome-place-channel-description {
+  color: $text;
+}
+
+.welcome-place-header__text__arrow {
+  color: $primary;
+}
+
+.sk-client-theme--dark {
+  .welcome-place-header__text,
+  .welcome-place-header__text__arrow {
+    color: $selectFg;
+  }
+}
+
+.welcome-place-header-gradient {
+  background-image: $bg2;
+}
+
+.sk-client-theme--dark .welcome-place-header-gradient {
+  background-image: $bg2;
+}
+
+.p-welcome-place {
+  background: $bg;
+}
+
+.p-welcome-place__sidebar_content__link_caption {
+  color: $fg;
+}
+
+.p-welcome-place--iap1__sidebar_content__link_progress,
+.p-welcome-place__sidebar_content__link_progress {
+  background-color: $button;
+}
+
+.p-welcome-place__sidebar_content__link_progress_inner {
+  background-color: $accent;
+}
+
+.p-welcome-place__sidebar_content__gradient {
+  background-image: linear-gradient(180deg, $bg, transparent);
+}
+
+.welcome-place-send-message-card--caret_left {
+  &:after {
+    border-right-color: $borderLight;
+  }
+
+  &:before {
+    border-right-color: $borderLight;
+  }
+}
+
+.welcome-place-send-message-card--caret_right {
+  &:after {
+    border-left-color: $borderLight;
+  }
+
+  &:before {
+    border-left-color: $borderLight;
+  }
+}
+
+.welcome-message-option {
+  background: $bg;
+  border: 1px solid $borderLight;
+}
+
+.welcome-message-option--custom {
+  color: $text;
+}
+
+.welcome-remote-banner__subtitle {
+  color: $text;
+
+  .c-link {
+    color: $primary;
+
+    &:hover {
+      color: $selectFg;
+    }
+  }
+}
+
+.p-message_pane_input__wrapper--welcome-place {
+  background: $bg;
+  color: $fg;
+}

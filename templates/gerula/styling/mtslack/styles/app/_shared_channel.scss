@@ -1,0 +1,509 @@
+.p-shared_channel_invitation_message_editor__member {
+  background-color: $bg;
+}
+
+.p-shared_channel_invitation_message_editor__team_name {
+  color: $text;
+}
+
+.p-channel_name_input__label_title {
+  color: $text;
+
+  strong {
+    color: $fg;
+  }
+}
+
+.p-channel_name_input__label_error {
+  color: $red;
+}
+
+.p-channel_name_input__input_subtext {
+  color: $text;
+}
+
+.p-channel_share_channel_modal__header {
+  border-bottom: $border;
+}
+
+.p-channel_share_channel_modal__copy {
+  color: $text;
+}
+
+.sk-client-theme--dark .p-channel_share_channel_modal__copy {
+  color: $text;
+}
+
+.p-channel_share_channel_modal__color {
+  color: $fg;
+}
+
+.sk-client-theme--dark .p-channel_share_channel_modal__color {
+  color: $fg;
+}
+
+.p-channel_share_channel_modal__learn {
+  color: $text;
+}
+
+.p-channel_invite_form__input_subtext {
+  color: $text;
+}
+
+.p-channel_invite_modal__header {
+  border-bottom: $border;
+}
+
+.p-channel_invite_modal_coachmark {
+  background-color: $notif;
+}
+
+.sk-client-theme--dark .p-channel_invite_modal_coachmark {
+  background-color: $notif;
+}
+
+.p-channel_invite_modal_coachmark__caret {
+  border-top: 12px solid $border;
+}
+
+.sk-client-theme--dark .p-channel_invite_modal_coachmark__caret {
+  border-top-color: $notif;
+}
+
+.p-channel_invite_modal__link {
+  color: $accent2;
+}
+
+.p-message_pane_modal_rooster__header {
+  background: $bg2;
+}
+
+.p-message_pane_modal_rooster__header--feature_at_here_warning {
+  background: $bg2;
+}
+
+.p-message_pane_modal_rooster__header--dark {
+  background: $bg2;
+}
+
+.p-channel_share_channel_paywall_modal__copy {
+  color: $text;
+}
+
+.p-channel_share_channel_paywall_modal__learn_more {
+  color: $text;
+
+  &:hover {
+    color: $selectFg;
+  }
+}
+
+.p-shared_channel_introduction_modal__sub_header {
+  color: $text;
+}
+
+.p-shared_channel_introduction_modal__divider {
+  border: 0.5px solid $borderLight;
+}
+
+.p-channel_share_channel_by_email_modal__header {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-channel_share_channel_by_email_modal__copy {
+  color: $text;
+}
+
+.p-channel_share_channel_by_email_modal__copy_link {
+  color: $accent2;
+
+  &:hover {
+    color: $selectFg;
+  }
+}
+
+.p-channel_share_channel_by_email_modal__success_icon {
+  color: $green;
+  background-color: $button;
+}
+
+.p-channel_share_channel_by_email_modal__toast_icon {
+  color: $primary;
+}
+
+.p-channel_share_channel_by_email_modal__success_caption {
+  color: $fg;
+}
+
+.p-channel_share_channel_by_email_modal__success_subtitle {
+  color: $fg;
+}
+
+.p-channel_share_channel_by_email_modal__success_copy {
+  color: $primary;
+}
+
+.p-channel_share_channel_education_modal__copy {
+  color: $text;
+}
+
+.p-channel_share_channel_education_modal__learn_more {
+  font-weight: 400;
+  color: $accent2;
+
+  &:hover {
+    color: $accent2;
+  }
+}
+
+.p-channel_invite_form__default_channel_fieldset {
+  border: 1px solid $primary;
+
+  .p-channel_invite_form__default_channel_fieldset_legend {
+    color: $primary;
+  }
+}
+
+.p-channel_type_button {
+  border: 1px solid $borderLight;
+
+  &.c-button--focus-visible:focus {
+    box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
+  }
+}
+
+.p-channel_type_button__icon {
+  color: $bg;
+}
+
+.p-channel_type_button--large-with-icon {
+  &.p-channel_type_button--type-announcements .p-channel_type_button__icon_wrapper {
+    background-color: $purple;
+  }
+
+  &.p-channel_type_button--type-sync .p-channel_type_button__icon_wrapper {
+    background-color: $yellow;
+  }
+
+  &.p-channel_type_button--type-project .p-channel_type_button__icon_wrapper {
+    background-color: $blue;
+  }
+
+  &.p-channel_type_button--type-team .p-channel_type_button__icon_wrapper {
+    background-color: $green;
+  }
+
+  &.p-channel_type_button--type-brainstorming .p-channel_type_button__icon_wrapper {
+    background-color: $red;
+  }
+
+  &.p-channel_type_button--type-other .p-channel_type_button__icon_wrapper {
+    background-color: $text;
+  }
+
+  &:hover {
+    &.p-channel_type_button--type-announcements {
+      border-color: $purple;
+    }
+
+    &.p-channel_type_button--type-sync {
+      border-color: $yellow;
+    }
+
+    &.p-channel_type_button--type-project {
+      border-color: $blue;
+    }
+
+    &.p-channel_type_button--type-team {
+      border-color: $green;
+    }
+
+    &.p-channel_type_button--type-brainstorming {
+      border-color: $red;
+    }
+
+    &.p-channel_type_button--type-other {
+      border-color: $text;
+    }
+  }
+
+  &.p-channel_type_button--selected {
+    &.p-channel_type_button--type-announcements {
+      background-color: $purple;
+    }
+
+    &.p-channel_type_button--type-sync {
+      background-color: $yellow;
+    }
+
+    &.p-channel_type_button--type-project {
+      background-color: $blue;
+    }
+
+    &.p-channel_type_button--type-team {
+      background-color: $green;
+    }
+
+    &.p-channel_type_button--type-brainstorming {
+      background-color: $red;
+    }
+
+    &.p-channel_type_button--type-other {
+      background-color: $text;
+    }
+  }
+}
+
+.p-channel_type_button__plus {
+  color: $primary;
+}
+
+input[type='text'].c-input_text {
+  &.p-channel_name_input--input_with_warning {
+    background-color: $bg;
+  }
+}
+
+.p-channel_invite_modal_tokenized_option {
+  background-color: $bg2;
+  color: $text;
+  border-color: $borderLight;
+}
+
+.p-channel_invite_modal_access_choice_button_box {
+  color: $fg;
+  border: 1px solid $button;
+
+  &:hover {
+    color: $selectFg;
+    background-color: $active;
+    border: 1px solid $borderLight;
+  }
+}
+
+.p-channel_invite_modal_access_choice_button_box_selected {
+  background-color: $hl;
+  border: 1px solid $primaryT;
+
+  &:hover {
+    background-color: $selectBg;
+    border: 1px solid $primary;
+  }
+}
+
+.p-channel_invite_modal_option_not_available {
+  background-color: $bg;
+  color: $text;
+  border: 1px solid $border;
+}
+
+.p-channel_invite_modal_tokenized_option_container {
+  scrollbar-color: $accent $bg;
+
+  &::-webkit-scrollbar-track {
+    background: $bg;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $accent;
+  }
+}
+
+.p-channel_invite_modal__confirmation_radio {
+  border: 1px solid $borderLight;
+
+  &:hover {
+    background-color: $active;
+    border-color: $borderLight;
+  }
+}
+
+.p-channel_invite_modal_subtitle {
+  color: $text;
+}
+
+.p-channel_invite_modal_shared_channel_not_available {
+  background-color: $bg2;
+}
+
+.p-channel_invite_modal__opinionated_access_choice_bullet_section {
+  background-color: $accentT;
+}
+
+.p-channel_invite_modal__opinionated_access_choice_bullet_header {
+  color: $accent;
+}
+
+.p-channel_invite_modal__opinionated_access_choice_bullet_text {
+  color: $fg;
+}
+
+.p-channel_share_unhappy_path_modal__color,
+.p-channel_share_legacy_conversion_modal__color {
+  color: $text;
+}
+
+.p-step_channels_channel_info {
+  background-color: $bg2;
+}
+
+.p-step_channels_channel_info--type-project {
+  .p-step_channels_channel_info__type,
+  svg {
+    color: $purple;
+  }
+}
+
+.p-step_channels_channel_info--type-announcements {
+  .p-step_channels_channel_info__type,
+  svg {
+    color: $blue;
+  }
+}
+
+.p-step_channels_channel_info--type-team {
+  .p-step_channels_channel_info__type,
+  svg {
+    color: $green;
+  }
+}
+
+.p-step_channels_channel_info--type-brainstorming {
+  .p-step_channels_channel_info__type,
+  svg {
+    color: $red;
+  }
+}
+
+.p-step_channels_channel_info--type-sync {
+  .p-step_channels_channel_info__type,
+  svg {
+    color: $yellow;
+  }
+}
+
+.p-step_channels_channel_info--type-other {
+  .p-step_channels_channel_info__type,
+  svg {
+    color: $text;
+  }
+}
+
+.p-channel_invite_modal_learn_more {
+  color: $text;
+
+  &:hover {
+    color: $selectFg;
+  }
+}
+
+.p-channel_invite_modal_lock_icon {
+  color: $primary;
+}
+
+.p-channel_invite_modal_full_member_invites {
+  color: $text;
+}
+
+.p-channel_invite_modal_full_member_invites--overflow {
+  color: $text;
+}
+
+.p-channel_invite_modal_full_member_invites--light {
+  color: $text;
+}
+
+.p-channel_invite_modal__share_disabled {
+  color: $disabled;
+}
+
+.p-shared_invite_creator_welcome_modal__header--channel {
+  color: $primary;
+  background: $bg2;
+}
+
+.p-shared_invite_creator_welcome_modal {
+  .p-shared_invite_creator_welcome_modal__body--pending {
+    color: $text;
+  }
+
+  .p-shared_invite_creator_welcome_modal__footer {
+    background-color: $bg2;
+  }
+
+  .p-shared_invite_creator_welcome_modal__footer--dark_mode {
+    background-color: $bg2;
+  }
+
+  .p-shared_invite_creator_welcome_modal__footer_body {
+    color: $text;
+  }
+
+  .p-shared_invite_creator_welcome_modal__ok_button {
+    background: $accent;
+    color: $selectFg;
+  }
+
+  .p-shared_invite_creator_welcome_modal__ok_button:active,
+  .p-shared_invite_creator_welcome_modal__ok_button:hover {
+    background-color: $accentT;
+    border: none;
+  }
+
+  .p-shared_invite_creator_welcome_modal__ok_button[disabled] {
+    background-color: $button;
+    color: $disabled;
+  }
+
+  .p-shared_invite_creator_welcome_modal__team_icons--dot {
+    background-color: $bg2;
+  }
+
+  .p-shared_invite_creator_welcome_modal__header--channel {
+    background: $excluded;
+    color: $primary;
+  }
+}
+
+.p-shared_channel_invite_flow_modal_tip__container {
+  border-top: 1px solid $borderLight;
+  background: $notif;
+}
+
+.p-shared_channel_invite_flow_modal_tip__icon {
+  background-color: $button;
+  color: $accent;
+}
+
+.sk-client-theme--dark .p-shared_channel_invite_flow_modal_tip__icon {
+  background-color: $button;
+  color: $accent;
+}
+
+.p-shared_channel_invite_flow_modal_tip__text {
+  color: $text;
+}
+
+.p-message_pane_modal_pigeon__header--dark {
+  background: $bg2;
+}
+
+.p-channel_share_channel_by_email_modal__success_channel_name {
+  color: $text;
+}
+
+.p-shared_channel_member_orgs_modal__team_info_separator {
+  color: $border;
+}
+
+.p-shared_channel_member_orgs_modal__team_verified_icon {
+  color: $accent;
+}
+
+.sk-client-theme--dark .p-shared_channel_member_orgs_modal__team_verified_icon {
+  color: $accent;
+}
+
+.p-shared_channel_member_orgs_modal__team_additional_info {
+  color: $text;
+}

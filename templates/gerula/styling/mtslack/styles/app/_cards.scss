@@ -1,0 +1,35 @@
+.c-card {
+  @include card;
+  border: 1px solid $borderLight;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.c-card--info {
+  border-color: $accent;
+}
+
+.c-card--warning {
+  border-color: $orange;
+}
+
+.c-card__header {
+  background-color: $bg2;
+  border-bottom: 1px solid $borderLight;
+  color: $fg;
+}
+
+.c-card__section {
+  border-bottom: 1px solid $borderLight;
+}
+
+.c-card_container--elevation_0 {
+  box-shadow: none;
+}
+
+.c-card_container--elevation_1 {
+  box-shadow: none;
+}
+
+.c-card_container--elevation_0.c-card_container--active {
+  box-shadow: none;
+}

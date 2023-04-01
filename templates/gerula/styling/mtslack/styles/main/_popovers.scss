@@ -1,0 +1,330 @@
+.c-sk-overlay {
+  &:before {
+    background: none;
+  }
+}
+
+.p-ia_details_popover_container {
+  &:after,
+  &:before {
+    background: $bg;
+    border: 1px solid $borderLight;
+  }
+
+  &:after {
+    border-color: transparent;
+  }
+}
+
+.p-ia_details_popover__actions__button:hover {
+  background-color: $hl;
+  color: $selectFg;
+}
+
+.p-ia_details_popover__member_header {
+  .p-member_profile_card__full_profile_link:hover,
+  .p-member_profile_rimeto_link:hover {
+    background-color: $hl;
+    color: $selectFg;
+  }
+
+  .p-member_profile_card__full_profile_link,
+  .p-member_profile_rimeto_link {
+    color: $primary;
+  }
+}
+
+.p-ia_details_popover__members_header__title {
+  color: $text;
+}
+
+.p-ia_details_popover__members_loading {
+  color: $disabled;
+}
+
+.p-ia_details_popover__members_list_item_heading {
+  color: $fg;
+  border-top: 1px solid $borderLight;
+  background: $bg;
+
+  h3 {
+    color: $text;
+  }
+}
+
+.p-ia_details_popover__members_list_item_member--non-channel {
+  background: $bg2;
+
+  &:hover {
+    background: $hl;
+  }
+}
+
+.p-ia_details_popover__add_member_icon {
+  background: $button;
+  color: $accent;
+}
+
+.p-ia_details_popover__members_search_input_wrapper--scrolled {
+  border-bottom: 1px solid $hl;
+}
+
+.p-ia_details_popover__members_list_item_button {
+  background: $bg;
+
+  &:hover {
+    background: $tree;
+  }
+}
+
+.p-ia_details_popover__members_list_item_button--non-channel {
+  background: $excluded;
+
+  &:hover {
+    background: $tree;
+  }
+}
+
+.p-ia_details_popover__members_list_item_button__secondary {
+  color: $primary;
+}
+
+.p-ia_details_popover__members_list__empty_state__sub_heading {
+  color: $disabled;
+}
+
+.p-ia_details_popover {
+  background: $bg;
+}
+
+.p-ia_details_popover__nested_header {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-ia_details_popover__notifications__edit {
+  color: $accent;
+}
+
+.p-ia_details_popover__subtitle {
+  color: $text;
+}
+
+.p-ia_details_popover__description_edit {
+  color: $primary;
+}
+
+.p-ia_details_popover__description__created_text {
+  color: $text;
+}
+
+.c-popover .c-popover__content {
+  .c-tooltip__tip {
+    @include dropShadow;
+  }
+}
+
+.p-ia_details_popover_prototype {
+  color: $text;
+}
+
+.p-ia_details_popover_prototype__badge {
+  background-color: $button;
+}
+
+.p-ia_details_popover_prototype__button {
+  color: $accent2;
+}
+
+.p-ia_details_popover__pins_count {
+  color: $text;
+}
+
+.p-ia_pins_popover_container {
+  background-color: $notif;
+
+  &:after,
+  &:before {
+    background: $notif;
+    border: 1px solid $notif;
+  }
+
+  &:after {
+    border-color: transparent;
+  }
+}
+
+.p-ia_pins_popover {
+  background-color: $notif;
+
+  .c-message_kit__pillow {
+    border-color: $borderLight;
+  }
+}
+
+.p-ia_pins_popover_placeholder {
+  background: $bg;
+  border: 1px solid $borderLight;
+}
+
+.p-ia_pins_popover_placeholder_avatar,
+.p-ia_pins_popover_placeholder_member,
+.p-ia_pins_popover_placeholder_message {
+  background: $bg2;
+}
+
+.p-ia_pins_popover__files {
+  color: $primary;
+}
+
+.p-ia_details_popover__orgs_list__show_more {
+  color: $primary;
+}
+
+.p-ia_details_popover__orgs__previous {
+  .p-ia_details_popover__orgs_list_item {
+    color: $text;
+  }
+
+  .c-team_entity__icon {
+    filter: none;
+  }
+}
+
+.p-ia_details_popover__orgs_list_item {
+  .c-base_list_entity__secondary_content {
+    color: $text;
+  }
+}
+
+.p-ia_details_popover__members_header__add {
+  border: none;
+
+  .c-icon {
+    color: $fg;
+  }
+}
+
+.p-ia_details_popover__members_header__add_button {
+  color: $accent;
+}
+
+.p-ia_details_popover__members_more {
+  color: $accent;
+}
+
+.p-ia_details_popover__more_button {
+  color: $accent2;
+}
+
+.p-ia_details_popover__add_button {
+  color: $accent2;
+}
+
+.p-ia_details_popover__footer {
+  color: $accent;
+}
+
+.p-ia_details_popover__members_loading {
+  color: $text;
+}
+
+.p-ia_details_popover__members--non-channel-results {
+  background: $bg;
+
+  .p-ia_details_popover__members_list {
+    background: $bg2;
+  }
+
+  .p-ia_details_popover__members_list_item_heading {
+    background: $bg;
+  }
+
+  .p-ia_details_popover__members_list_item_heading--out_of_channel {
+    background: $bg2;
+  }
+
+  .p-ia_details_popover__members_list__empty_state {
+    background: $bg;
+  }
+}
+
+.p-ia_details_popover--members {
+  background: $bg;
+}
+
+.p-ia_details_popover__member_header__picture_hint {
+  background-color: $bg2;
+  color: $selectFg;
+}
+
+.p-ia_details_popover__member_header__basics {
+  .p-ia_details_popover__member_header__status {
+    color: $text;
+  }
+}
+
+.p-ia_details_popover__orgs_list--active
+  .p-ia_details_popover__orgs_list_item_entity:hover
+  .c-base_list_entity__secondary_content {
+  color: $primary;
+}
+
+.p-ia_details_popover__members_list_item_heading--out_of_channel {
+  border-top: 1px solid $borderLight;
+  background: $excluded;
+}
+
+.p-ia_details_popover__members_search_input_wrapper {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-ia_details_popover__edit {
+  color: $primary;
+}
+
+.p-ia_details_popover__created,
+.p-ia_details_popover__empty {
+  color: $text;
+}
+
+.p-ia_details_popover__members_list__empty_state {
+  &:not(.p-ia_details_popover__members_list__empty_state--entirely):after {
+    background: $bg;
+    border-bottom: 1px solid $borderLight;
+  }
+}
+
+.p-ia_details_popover__heading_placeholder {
+  background: $active;
+}
+
+.p-ia_details_popover__item_placeholder__avatar,
+.p-ia_details_popover__item_placeholder__name,
+.p-ia_details_popover__item_placeholder__title {
+  background: $active;
+}
+
+.p-channel_org_members_modal__remove_button {
+  color: $red;
+
+  &:hover {
+    color: $red;
+  }
+}
+
+.p-ia_details_popover__members {
+  background: $bg;
+}
+
+.p-ia_details_popover__members_list_item {
+  background: $bg;
+
+  &:not(.p-ia_details_popover__members_list_item--no_hover):hover {
+    background: $bg2;
+  }
+}
+
+.p-ia_pins_popover_header {
+  background: $bg;
+  box-shadow: 0 1px 0 0 $border;
+}

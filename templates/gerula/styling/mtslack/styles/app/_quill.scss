@@ -1,0 +1,341 @@
+.ql-editor {
+  ul {
+    &[data-checked='false'] > li:before {
+      color: $button;
+    }
+
+    &[data-checked='true'] > li:before {
+      color: $button;
+    }
+  }
+
+  .ql-bg-black {
+    background-color: $silver;
+  }
+
+  .ql-bg-red {
+    background-color: $red;
+  }
+
+  .ql-bg-orange {
+    background-color: $orange;
+  }
+
+  .ql-bg-yellow {
+    background-color: $yellow;
+  }
+
+  .ql-bg-green {
+    background-color: $green;
+  }
+
+  .ql-bg-blue {
+    background-color: $blue;
+  }
+
+  .ql-bg-purple {
+    background-color: $purple;
+  }
+
+  .ql-color-white {
+    color: $bg;
+  }
+
+  .ql-color-red {
+    color: $red;
+  }
+
+  .ql-color-orange {
+    color: $orange;
+  }
+
+  .ql-color-yellow {
+    color: $yellow;
+  }
+
+  .ql-color-green {
+    color: $green;
+  }
+
+  .ql-color-blue {
+    color: $blue;
+  }
+
+  .ql-color-purple {
+    color: $purple;
+  }
+
+  &.ql-blank:before {
+    color: $text;
+  }
+}
+
+.c-texty_input.c-texty_input--sticky_composer.focus .c-texty_input__button_composer--active,
+.c-texty_input.c-texty_input--sticky_composer.focus ~ .c-texty_buttons .c-texty_input__button_composer--active {
+  background-color: $button;
+  color: $fg;
+
+  &:hover {
+    background-color: $hl;
+    color: $primary;
+  }
+}
+
+.p-message_input__input_container_unstyled--day1 .c-texty_input_unstyled__container--size_medium .ql-placeholder {
+  color: $primary;
+}
+
+.p-message_input__input_container_unstyled {
+  .p-message_input__attachments .p-composer_attachments__separator,
+  .p-message_input__files .p-composer_attachments__separator {
+    border-left: 1px solid $borderLight;
+  }
+}
+
+.c-texty_input_unstyled__container,
+.c-texty_input {
+  &.c-texty_input--sticky_composer {
+    &.focus {
+      .ql-attachments,
+      .ql-files {
+        box-shadow: 0 -1px 0 0 $borderLight;
+      }
+
+      .ql-composer-sticky {
+        background: $bg;
+      }
+    }
+
+    ::-moz-selection,
+    ::selection {
+      background-color: $selectBg;
+      color: $selectFg;
+    }
+  }
+
+  &.focus {
+    .c-texty_input__button_composer--active {
+      background-color: $button;
+      color: $fg;
+
+      &:hover {
+        background-color: $hl;
+        color: $primary;
+      }
+    }
+
+    .p-composer__body--sticky {
+      background: $bg;
+    }
+
+    ~ .c-texty_buttons .c-texty_input__button_composer--active {
+      color: $fg;
+      background-color: $active;
+    }
+
+    ~ .c-texty_buttons .c-texty_input__button_composer--active:hover {
+      background-color: $hl;
+      color: $primary;
+    }
+
+    .ql-composer-sticky {
+      border-color: $borderLight;
+    }
+
+    .ql-buttons,
+    .ql-composer-sticky,
+    ~ .c-texty_buttons {
+      background: $button;
+    }
+  }
+
+  .ql-editor {
+    .ql-code-block {
+      border-left: 1px solid $borderLight;
+      border-right: 1px solid $borderLight;
+      background: $contrast;
+
+      &:after {
+        background: $contrast;
+        border-bottom: 1px solid $borderLight;
+        border-left: 1px solid $borderLight;
+        border-right: 1px solid $borderLight;
+      }
+
+      &[class*='ql-border-'] {
+        &:before {
+          background-color: $borderLight;
+        }
+      }
+    }
+
+    > {
+      .ql-code-block:first-child,
+      :not(.ql-code-block) + .ql-code-block {
+        border-top: 1px solid $borderLight;
+      }
+    }
+
+    ul {
+      &[data-checked='false'] > li:before {
+        color: $fg;
+      }
+
+      &[data-checked='true'] > li {
+        &:before {
+          color: $accent;
+        }
+
+        > .slack-docs-list-item-checkbox:before {
+          color: $accent;
+        }
+
+        color: $fg;
+      }
+
+      &[data-checked='true'] > li:before {
+        background: $accent;
+        color: $bg;
+      }
+
+      &[data-checked='false'] > li > .slack-docs-list-item-checkbox:before {
+        color: $fg;
+      }
+
+      &[data-checked='false'] > li > .slack-docs-list-item-checkbox:focus:before {
+        color: $hl;
+      }
+
+      &[data-checked='true'] > li > .slack-docs-list-item-checkbox {
+        &:focus:before {
+          box-shadow: none;
+          color: $accent;
+        }
+
+        &:before {
+          color: $accent;
+        }
+      }
+    }
+  }
+
+  .ql-placeholder {
+    opacity: 1;
+    filter: none;
+    color: $disabled;
+  }
+}
+
+.sk-client-theme--dark .c-texty_input .ql-editor .ql-code-block[class*='ql-border-']:before {
+  background-color: $bg2;
+}
+
+.c-texty_input .ql-editor {
+  ol[class*='ql-border-']:before,
+  ul[class*='ql-border-']:before {
+    background-color: $bg2;
+  }
+}
+
+.c-texty_input__warning {
+  background: $red;
+  color: $selectFg;
+}
+
+.c-texty_input__button {
+  color: $fg;
+
+  &:hover {
+    .c-texty_input__button_icon--mention {
+      color: $primary;
+    }
+
+    .c-texty_input__button_icon--emoji_background {
+      color: $bg2;
+    }
+
+    .c-texty_input__button_icon--emoji_active {
+      color: $selectFg;
+    }
+  }
+}
+
+.c-texty_input__button_emoji,
+.c-texty_input__button_mention {
+  color: $fg;
+}
+
+.c-texty_input__button_emoji:hover .c-texty_input__button_icon--mention,
+.c-texty_input__button_mention:hover .c-texty_input__button_icon--mention {
+  color: $selectFg;
+}
+
+.c-texty_input__button_emoji:hover .c-texty_input__button_icon--emoji_background,
+.c-texty_input__button_mention:hover .c-texty_input__button_icon--emoji_background {
+  color: $selectFg;
+}
+
+.c-texty_input__button_emoji:hover .c-texty_input__button_icon--emoji_active,
+.c-texty_input__button_mention:hover .c-texty_input__button_icon--emoji_active {
+  color: $primary;
+}
+
+.c-icon_button.c-texty_input__button--emoji:hover {
+  color: $selectFg;
+
+  .c-icon {
+    background: $button;
+  }
+}
+
+.sk-client-theme--dark .c-icon_button.c-texty_input__button--emoji:hover .c-icon {
+  color: $selectFg;
+}
+
+.c-texty_workflow_token {
+  > button {
+    background: $button;
+    color: $fg;
+    border: 1px solid $button;
+
+    &:hover {
+      background: $hl;
+      color: $selectFg;
+    }
+  }
+
+  &.is-missing {
+    > button {
+      color: $red;
+      background: $button;
+      border: 1px solid $button;
+
+      &:hover {
+        cursor: text;
+        background: $hl;
+        border: 1px solid $hl;
+      }
+    }
+  }
+
+  .c-texty_workflow_token__property {
+    border-left: 1px solid $accent;
+    color: $text;
+  }
+}
+
+.c-texty_input.c-texty_input--invalid {
+  border-color: $red;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
+  }
+
+  &.c-texty_input--use_focus_ring.focus {
+    box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
+  }
+}
+
+.sk-client-theme--dark .c-texty_input code {
+  color: $fg;
+}

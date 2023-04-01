@@ -1,0 +1,41 @@
+.p-huddle_invite {
+  background: $bg;
+}
+
+.p-huddle_invite__content {
+  background: $notif;
+  color: $selectFg;
+  @include card;
+}
+
+.p-huddle_invite__button {
+  background: $button;
+  color: $selectFg;
+
+  &:hover {
+    background: $hl;
+    color: $selectFg;
+  }
+}
+
+.p-huddle_invite__button--accept {
+  background: $accentT;
+  color: $fg;
+
+  &:hover {
+    background: $accent;
+    color: $selectFg;
+
+    > * {
+      color: $selectFg;
+    }
+
+    .p-huddle_invite__icon--join {
+      fill: $selectFg;
+    }
+  }
+}
+
+.p-huddle_invite__icon--join {
+  fill: $fg;
+}

@@ -1,0 +1,45 @@
+.p-client_desktop--ia-top-nav {
+  .c-keyboard_key,
+  .c-keyboard_key--dark {
+    background: $button;
+    color: $fg;
+    border: 1px solid $borderLight;
+    box-shadow: 0 1px 0 $borderLight;
+  }
+
+  .c-keyboard_key__tooltip_text {
+    color: $text;
+  }
+
+  .p-file_viewer__header {
+    border-bottom: 1px solid $hl;
+  }
+}
+
+.p-keyboard_shortcuts_list__subtitle {
+  color: $text;
+}
+
+.c-keyboard_key {
+  background: $button;
+  color: $fg;
+  --saf-0: $fg;
+}
+
+.c-keyboard_key--dark {
+  background: $button;
+  color: $fg;
+}
+
+.c-keyboard_key__tooltip {
+  background: $notif;
+  color: $fg;
+}
+
+.c-keyboard_keys--title {
+  color: $fg;
+}
+
+.c-keyboard_key__tooltip_text {
+  color: $text;
+}

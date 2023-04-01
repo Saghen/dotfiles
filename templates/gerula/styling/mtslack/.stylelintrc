@@ -1,0 +1,13 @@
+{
+  "plugins": [
+    "stylelint-prettier"
+  ],
+  "customSyntax": "postcss-sass",
+  "rules": {
+    "prettier/prettier": true,
+    "color-hex-length": "short",
+    "string-quotes": "single",
+    "number-leading-zero": "always",
+    "selector-list-comma-newline-after": "always"
+  }
+}

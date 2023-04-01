@@ -1,0 +1,21 @@
+.c-infinite_spinner__bg {
+  stroke: $primary;
+}
+
+.c-infinite_spinner--button-white {
+  .c-infinite_spinner__bg, .c-infinite_spinner__path {
+    stroke: $bg;
+  }
+}
+
+.c-infinite_spinner--white .c-infinite_spinner__path {
+  stroke: $bg;
+}
+
+.c-infinite_spinner--blue .c-infinite_spinner__path {
+  stroke: $accent;
+}
+
+.c-message_list__spinner {
+  color: $hl;
+}

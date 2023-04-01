@@ -1,0 +1,146 @@
+.p-huddle_switch__input {
+  border: 1px solid $hl;
+  background: transparent;
+
+  + .p-huddle_switch_button__toggle_animation-exit.p-huddle_switch__visual:after {
+    border: 1px solid $border;
+    background-color: $bg;
+  }
+
+  &:hover {
+    border-color: $primary;
+    background-color: transparent;
+  }
+
+  &:checked {
+    background-color: $accent;
+    border-color: $accent;
+
+    + .p-huddle_switch__visual {
+      &:before {
+        color: $selectFg;
+      }
+
+      &:after {
+        border: 1px solid $border;
+        background-color: $selectFg;
+      }
+    }
+
+    ~ .p-huddle_switch__headphones_icon {
+      color: $accent;
+    }
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
+
+    &:-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-moz-placeholder,
+    &::-webkit-input-placeholder {
+      color: $disabled;
+    }
+  }
+
+  &:disabled {
+    background-color: $disabled;
+
+    + .p-huddle_switch__visual {
+      &:before {
+        color: $disabled;
+      }
+
+      &:after {
+        background-color: $disabled;
+      }
+    }
+  }
+}
+
+.p-huddle_sidebar_footer--join_active,
+.p-huddle_sidebar_footer--join_non_active {
+  &:hover {
+    .p-huddle_switch__input {
+      border: 1px solid $fg;
+
+      &:hover {
+        border: 1px solid $primary;
+
+        + .p-huddle_switch__visual:after {
+          background-color: $primary;
+        }
+
+        .p-huddle_switch__headphones_icon {
+          color: $primary;
+        }
+      }
+    }
+
+    .p-huddle_switch__visual:after {
+      background-color: $fg;
+    }
+
+    .p-huddle_switch__headphones_icon {
+      color: $fg;
+
+      &.p-huddle_switch__headphones_icon--toggled {
+        color: $selectFg;
+      }
+    }
+
+    .p-huddle_switch:hover .p-huddle_switch__headphones_icon {
+      color: $primary;
+    }
+  }
+}
+
+.p-huddle_switch__visual {
+  &:after {
+    background-color: $fg;
+  }
+}
+
+.p-huddle_switch__headphones_icon {
+  color: $fg;
+}
+
+.p-huddle_nav_button__svg--headset path:last-of-type {
+  fill: $text;
+}
+
+.p-huddle_nav_button {
+  &:hover .p-huddle_nav_button__svg--headset path:last-of-type {
+    fill: $primary;
+  }
+}
+
+.p-huddle_sidebar_footer--join_active:hover .p-huddle_switch__visual:after,
+.p-huddle_sidebar_footer--join_non_active:hover .p-huddle_switch__visual:after {
+  background-color: $bg;
+}
+
+.p-huddle_screen_viewer__mic_button {
+  color: $bg;
+  background-color: $button;
+
+  &:hover {
+    background-color: $button;
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+}
+
+.p-huddle_screen_viewer__mic_button--mute .p-huddle_mic_icon__microphone--input_level {
+  background-color: $bg;
+}
+
+.p-huddle_screen_picker_modal {
+  .p-video_recorder_screen_picker_tile--selected,
+  .p-video_recorder_screen_picker_tile:hover {
+    background-color: $accent;
+    color: $primary;
+  }
+}

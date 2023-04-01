@@ -1,0 +1,33 @@
+.p-tasks_page_controls {
+  color: $text;
+}
+
+.p-tasks_page_controls__content_action_container {
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.p-tasks_page_controls__content--total {
+  color: $text;
+}
+
+.p-tasks_page__title_icon {
+  color: $accent;
+}
+
+.p-tasks_page__board_channel {
+  color: $text;
+}
+
+.p-tasks_flexpane__table {
+  border-top: 1px solid $borderLight;
+}
+
+.p-tasks_page_controls__list_button_selected {
+  background-color: $button;
+
+  &:hover {
+    background-color: $hl;
+  }
+}

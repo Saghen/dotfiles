@@ -1,0 +1,68 @@
+.p-identity_transfer_modal__member {
+  border: 1px solid $borderLight;
+}
+
+.p-identity_transfer_modal__member_email {
+  color: $accent2;
+}
+
+.split_input_item {
+  border: 1px solid $borderLight;
+
+  &.focused {
+    border: 1px double $primary;
+    box-shadow: 0 0 7px $primaryT;
+  }
+
+  input {
+    color: $fg;
+  }
+}
+
+.confirmation_code[data-state='error'] .split_input_item {
+  border-color: $red;
+}
+
+.confirmation_code_checker {
+  .confirmation_code_state_message {
+    color: $fg;
+  }
+}
+
+.p-identity_transfer_modal .c-sk-modal__close_button {
+  color: $fg;
+}
+
+.p-identity_transfer_modal__header__logo--left {
+  background-color: $accent;
+
+  img {
+    border: 2px solid $borderLight;
+  }
+}
+
+.p-identity_transfer_modal__header__logo__lock {
+  background: $bg;
+  color: $fg;
+}
+
+.p-identity_transfer_modal__header__redirect {
+  background-color: $bg2;
+  color: $primary;
+}
+
+.p-identity_transfer_modal__marketing_consent {
+  border-top: 1px solid $borderLight;
+}
+
+.p-identity_transfer_modal__legal {
+  color: $accent2;
+}
+
+.p-identity_transfer_modal__member_card {
+  @include card;
+}
+
+.p-identity_transfer_modal__content_section {
+  background-color: $bg2;
+}

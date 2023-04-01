@@ -1,0 +1,49 @@
+.p-client {
+  background: $bg;
+}
+
+.p-client_desktop--ia-top-nav .p-prefs_dialog--peek_sidebar {
+  &:after {
+    background: linear-gradient(180deg, $bg2 0, $bg2 39px, transparent 40px);
+  }
+}
+
+.p-client_container_placeholder .p-view_header_placeholder {
+  border-bottom: 1px solid $border;
+}
+
+.p-client_container_placeholder .p-message_input_placeholder {
+  border: 1px solid $border;
+}
+
+.p-client_desktop--ia-top-nav {
+  .c-message_list__day_divider__label__pill {
+    box-shadow: 0 0 0 1px $bg2, 0 1px 3px 0 $tree;
+
+    &:focus,
+    &.c-button--focus-visible:focus {
+      box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    }
+
+    &:hover,
+    &.c-button--focus-visible:hover {
+      background: $hl;
+    }
+  }
+
+  .p-info_blurb__link {
+    color: $primary;
+  }
+
+  .p-info_blurb__link--highlighted {
+    color: $selectFg;
+  }
+
+  .p-info_blurb__sub_text {
+    color: $text;
+  }
+
+  .p-info_blurb__sub_text--highlighted {
+    color: $selectFg;
+  }
+}

@@ -1,0 +1,95 @@
+.c-tabs__tab_menu {
+  box-shadow: none;
+  background: $contrast;
+}
+
+.c-tabs__tab_menu--vertical {
+  color: $fg;
+
+  .c-tabs__tab {
+    color: $fg;
+    border-left: 2px solid transparent;
+
+    &.c-tabs__tab--active,
+    &:active {
+      background: $tree;
+      color: $selectFg;
+      border-left: 2px solid $accent;
+      border-radius: 0;
+    }
+
+    &:not(.c-tabs__tab--active):hover {
+      background-color: $tree;
+      color: $selectFg;
+      border-left: 2px solid $hl;
+      border-radius: 0;
+    }
+  }
+}
+
+.sk-client-theme--dark.sk-client-scheme--purple .c-tabs__tab,
+.sk-client-scheme--purple .c-tabs__tab,
+.c-tabs__tab {
+  color: $text;
+
+  &:hover {
+    color: $fg;
+  }
+
+  &.c-button--focus-visible:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+
+  &.c-tabs__tab--active,
+  &:active {
+    color: $fg;
+    box-shadow: inset 0 -2px 0 0 $accent;
+  }
+
+  &.c-tabs__tab--active.c-button--focus-visible:focus {
+    box-shadow: inset 0 -2px 0 0 $accent;
+  }
+}
+
+.c-tabs__tab_count {
+  background-color: $active;
+  min-width: 22px;
+  border-radius: 25px;
+  padding: 2px;
+}
+
+.c-tabs__tab_count_placeholder,
+.c-tabs__tab_placeholder {
+  background-color: $bg;
+}
+
+.p-external_directory_item {
+  &:hover {
+    background-color: $active;
+  }
+
+  &.p-external_directory_item_selected {
+    background-color: $tree;
+
+    &:hover {
+      background-color: $hl;
+    }
+  }
+}
+
+.p-external_directory_item_icon {
+  background-color: $accent;
+  color: $selectFg;
+}
+
+.p-external_directory_item_details_email {
+  color: $text;
+}
+
+.p-external_directory_footer_link {
+  color: $fg;
+
+  &:hover {
+    color: $selectFg;
+  }
+}

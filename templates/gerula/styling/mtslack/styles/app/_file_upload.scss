@@ -1,0 +1,249 @@
+.p-multi_file_upload__add_file_btn {
+  color: $primary;
+}
+
+.p-multi_file_upload__file_count {
+  color: $text;
+}
+
+.p-multi_file_upload__remove_btn_circle {
+  color: $text;
+}
+
+.p-multi_file_upload__remove_btn_times {
+  color: $button;
+}
+
+.p-multi_file_upload__file_container:hover
+  .p-multi_file_upload__remove_btn:hover
+  .p-multi_file_upload__remove_btn_circle,
+.p-multi_file_upload__remove_btn:focus:hover .p-multi_file_upload__remove_btn_circle {
+  color: $selectFg;
+}
+
+.p-file_upload_dialog__preview {
+  background-color: $bg2;
+  border: 1px solid $borderLight;
+}
+
+.p-file-upload_dialog__preview_file_name {
+  color: $text;
+}
+
+.c-dialog__footer .p-file_upload_dialog__footer_share_inputs {
+  color: $fg;
+}
+
+.p-file_upload_dialog__section--retention_duration {
+  font-size: 13px;
+  color: $text;
+}
+
+.p-file_upload_dialog__thread_label {
+  .p-thread_participant_list {
+    color: $disabled;
+  }
+}
+
+.p-file_upload_banner {
+  color: $bg;
+}
+
+.p-file_upload_banner__progress {
+  background: $hl;
+}
+
+.p-file_upload_banner__progress--complete {
+  background: $green;
+}
+
+.p-file_upload_banner__progress--canceled {
+  background: $red;
+}
+
+.p-file_upload_banner__cancel {
+  color: $fg;
+}
+
+.p-multi_file_upload__add_file_btn {
+  color: $primary;
+}
+
+.p-multi_file_upload__file_count {
+  color: $fg;
+}
+
+.p-multi_file_upload__file_status_btn {
+  background: $button;
+}
+
+.p-multi_file_upload__file_status_icon--error {
+  color: $red2;
+}
+
+.p-multi_file_upload__file_status_icon--remove {
+  color: $text;
+}
+
+.p-email_reply_modal .p-reply_to_email_input,
+.p-multi_file_upload__file_status_icon--remove:hover {
+  color: $accent;
+}
+
+.p-email_reply_modal .p-reply_to_email_input {
+  border: 1px solid $hl;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+
+    &:-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-moz-placeholder,
+    &::-webkit-input-placeholder {
+      color: $disabled;
+    }
+  }
+
+  &[disabled] {
+    background: $disabled;
+  }
+}
+
+.p-email_reply_modal {
+  .p-reply_to_email_input {
+    &.ql-disabled {
+      background: $active;
+    }
+  }
+
+  .p-email_reply_modal__quote_toggle {
+    color: $text;
+  }
+
+  .p-email_reply_modal__quote_container {
+    color: $text;
+  }
+
+  .p-email_reply_modal__discard_draft_btn {
+    color: $text;
+
+    &:focus,
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+.p-reply_to_email_quick_reply__recipients {
+  background: $bg;
+  border: 1px solid $borderLight;
+  color: $fg;
+
+  &:hover {
+    color: $selectFg;
+  }
+}
+
+.p-reply_to_email_quick_reply__recipients--focus {
+  border-color: $text;
+}
+
+.p-reply_to_email_quick_reply_input {
+  border-color: $borderLight;
+  background: $bg;
+
+  &.focus {
+    border-color: $accent;
+  }
+
+  &.ql-disabled {
+    background: $button;
+
+    .ql-composer-sticky {
+      background: $button;
+    }
+  }
+}
+
+.p-workflowtoken__channel {
+  .c-link--button {
+    color: $accent2;
+  }
+}
+
+.p-workflowtoken__user {
+  .c-link--button {
+    color: $accent2;
+  }
+}
+
+.p-workflowtoken__missing {
+  color: $red;
+  background: $bg;
+}
+
+.p-file_card {
+  @include card;
+  background: $bg2;
+
+  &:active,
+  &:hover {
+    box-shadow: 0 0 0 1px $primary;
+  }
+}
+
+.p-file_card__preview {
+  background-color: $bg;
+}
+
+.p-file_card__content {
+  border-top: 1px solid $borderLight;
+}
+
+.p-file_card__name--empty {
+  color: $disabled;
+}
+
+.p-file_card__info {
+  color: $text;
+}
+
+.p-file_card__justification_icon {
+  color: $yellow;
+}
+
+.p-email_link_menu__title {
+  color: $text;
+}
+
+.p-recently_uploaded_files__datestamp {
+  color: $text;
+}
+
+.p-recently_uploaded_files {
+  .c-menu_item__button--highlighted .p-recently_uploaded_files__datestamp {
+    color: $selectFg;
+  }
+
+  &.p-recently_uploaded_files--disable_highlight.c-menu_item__button.c-menu_item__button--highlighted {
+    background: none;
+    color: $fg;
+
+    .c-menu_item__description {
+      color: $text;
+    }
+  }
+}
+
+.p-file_upload_malware_dialog__alert {
+  background: $excluded;
+  border: 1px solid $orange;
+
+  .p-file_upload_malware_dialog__alert_warning_icon {
+    color: $orange;
+  }
+}
+
+.p-new_file_menu_source_header--composer_ia {
+  color: $fg;
+}

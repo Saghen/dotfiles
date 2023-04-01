@@ -1,0 +1,13 @@
+@import 'icons';
+@import 'dim';
+@import 'overlay';
+@import 'title';
+@import 'hljs';
+
+#pluginsSection {
+  padding-top: 8px;
+
+  > button {
+    padding: 0 16px;
+  }
+}

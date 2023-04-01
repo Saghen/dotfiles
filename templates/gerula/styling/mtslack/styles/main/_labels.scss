@@ -1,0 +1,35 @@
+
+.c-label--disabled {
+  color: $disabled;
+}
+
+.c-label__subtext {
+  color: $text;
+}
+
+.c-label__optional_tag {
+  color: $text;
+}
+
+
+.c-message_kit__labels__label {
+  color: $text;
+}
+
+.c-message_kit__labels--pinned .c-message_kit__labels__icon {
+  color: $orange;
+}
+
+.c-message_kit__labels--starred .c-message_kit__labels__icon {
+  color: $yellow;
+
+  .c-icon--bookmark-filled {
+    color: $accent2;
+  }
+}
+
+.c-message_kit__labels--broadcast .c-message_kit__labels__icon,
+.c-message_kit__labels--custom_response .c-message_kit__labels__icon,
+.c-message_kit__labels--sli_highlight .c-message_kit__labels__icon {
+  color: $primary;
+}

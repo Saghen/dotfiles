@@ -1,0 +1,157 @@
+.p-saved_item {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-saved_item__file {
+  border-bottom: 1px solid $borderLight;
+
+  &:hover {
+    background: $active;
+  }
+}
+
+.p-saved_item_header__permalink {
+  color: $accent2;
+}
+
+.p-saved_page {
+  background: $bg2;
+
+  .c-pillow_file_container {
+    border: 1px solid $borderLight;
+  }
+}
+
+.p-saved_page--empty {
+  background: $bg;
+  color: $fg;
+}
+
+.p-saved_page__title_icon {
+  color: $accent;
+}
+
+.p-saved_page__item {
+  background: $bg;
+  @include card;
+}
+
+.p-saved_page__item--tombstone {
+  background: $bg;
+  color: $disabled;
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+    background: $excluded;
+    color: $fg;
+  }
+}
+
+.p-saved_page__item--docked.p-saved_page__item--tombstone {
+  border-color: $borderLight;
+}
+
+.c-virtual_list__item--focus .p-saved_page__item {
+  box-shadow: 0 0 0 1px $primary, 0 1px 3px $primaryT;
+}
+
+.p-saved_page__item--docked {
+  border-bottom: 1px solid $borderLight;
+
+  &:hover {
+    background: $hl;
+  }
+}
+
+.c-virtual_list__item--focus .p-saved_page__item--docked {
+  @include pane;
+}
+
+.p-saved_page__item--file {
+  .c-pillow_file_container--full_width:hover {
+    background: $active;
+  }
+
+  .c-icon--bookmark-filled {
+    color: $accent;
+  }
+}
+
+.p-saved_page__item__header {
+  color: $primary;
+}
+
+.p-stars_page {
+  background: $bg2;
+
+  .c-pillow_file_container {
+    border: 1px solid $borderLight;
+  }
+}
+
+.p-files_page__container {
+  background: $bg2;
+}
+
+.p-files_page__filetype {
+  color: $text;
+}
+
+.p-files_page__controls {
+  background: $bg2;
+}
+
+.p-activity_page__item {
+  background: $bg;
+  @include card;
+}
+
+.c-virtual_list__item--focus .p-activity_page__item {
+  @include pane;
+}
+
+.p-activity_page__item--docked {
+  border-bottom: 1px solid $borderLight;
+
+  &:hover {
+    background: $bg2;
+    box-shadow: none;
+  }
+}
+
+.p-activity_page__item--unread {
+  background: $excluded;
+}
+
+.c-virtual_list__item--focus .p-activity_page__item--docked {
+  @include pane;
+}
+
+.p-activity_page__item__header {
+  color: $primary;
+}
+
+.p-activity_page__floating_loader {
+  background: $bg;
+}
+
+.p-activity_page__top_anchor_hack_item {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-activity_page__top_anchor_hack_item--docked {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-activity_page__title_icon {
+  color: $accent;
+}
+
+.c-virtual_list__item--focus .p-saved_page__item--education {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+}
+
+.p-activity_page__item_background {
+  background: $bg;
+}

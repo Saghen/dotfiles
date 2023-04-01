@@ -1,0 +1,514 @@
+.p-add_alias_dialog__container .focus-ring,
+.p-add_custom_emoji_dialog__container .focus-ring,
+.p-add_emoji_dialog .focus-ring,
+.p-customize_emoji_list__single_delete .focus-ring,
+.p-customize_emoji_wrapper__container .focus-ring,
+.p-delete_custom_emoji_dialog__container .focus-ring,
+.p-rename_emoji_dialog__container .focus-ring {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+}
+
+.p-customize_emoji_list__disabled_table .c-table_view_container {
+  border: 1px solid $border;
+}
+
+.p-customize_emoji_list__container {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-customize_emoji_list__header {
+  &.c-table_view_header_item .c-icon {
+    color: $fg;
+  }
+}
+
+.p-customize_emoji_list__header--active {
+  &.c-table_view_header_item .c-icon,
+  .c-table_view_header_item_value {
+    color: $primary;
+  }
+}
+
+.p-customize_emoji_list__download_btn {
+  .p-customize_emoji_list__icon {
+    color: $text;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.p-add_alias_dialog__container .c-dialog__header,
+.p-add_custom_emoji_dialog__container .c-dialog__header,
+.p-rename_emoji_dialog__container .c-dialog__header {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-add_alias_dialog__container .c-dialog__footer,
+.p-add_custom_emoji_dialog__container .c-dialog__footer,
+.p-rename_emoji_dialog__container .c-dialog__footer {
+  border-top: 1px solid $borderLight;
+}
+
+.p-add_custom_emoji_dialog__upload_preview {
+  background: $bg;
+}
+
+.p-add_custom_emoji_dialog__upload_preview--dark {
+  background: $bg;
+}
+
+.p-add_custom_emoji_dialog__icon:before {
+  color: $fg;
+}
+
+.p-add_custom_emoji_dialog__upload_preview--dark .p-add_custom_emoji_dialog__icon:before {
+  color: $fg;
+}
+
+.p-add_custom_emoji_dialog__icon_broken:before {
+  color: $disabled;
+}
+
+.p-add_custom_emoji_dialog__upload_preview--dark .p-add_custom_emoji_dialog__icon_broken:before {
+  color: $disabled;
+}
+
+.p-add_alias_dialog__icon {
+  &:before {
+    color: $text;
+  }
+}
+
+.p-delete_custom_emoji_dialog__message {
+  .c-table_view_container {
+    border-bottom: 1px solid $border;
+  }
+}
+
+.p-customize_emoji_wrapper__search {
+  .c-icon--search-medium:before {
+    color: $fg;
+  }
+}
+
+.p-customize_emoji_wrapper__container .c-token {
+  color: $accent2;
+}
+
+.p-customize_emoji_wrapper__reset_icon {
+  cursor: pointer;
+  color: $text;
+}
+
+.c-select_options_list__option--active {
+  .p-customize_emoji_wrapper__multi_select_input__heading,
+  .p-customize_emoji_wrapper__multi_select_input__heading__query {
+    color: $bg;
+  }
+}
+
+.p-customize_emoji_wrapper__multi_select_input__heading {
+  color: $fg;
+}
+
+.p-customize_emoji_wrapper__multi_select_input__heading__query {
+  color: $fg;
+}
+
+.c-select_options_list__option--active .p-customize_emoji_wrapper__multi_select_input__token_wrapper .c-token {
+  background: $accent;
+  color: $selectFg;
+}
+
+.p-emoji_picker,
+.c-menu.p-emoji_picker {
+  background: $bg2;
+  color: $fg;
+}
+
+.p-emoji_picker__list_container {
+  background: $bg2;
+}
+
+.supports_custom_scrollbar .p-emoji_picker__list_scroller {
+  &::-webkit-scrollbar-thumb {
+    color: $accent;
+  }
+
+  &::-webkit-scrollbar-track {
+    color: $bg;
+    background: $bg2;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $accent;
+  }
+
+  &::-webkit-scrollbar-corner {
+    background: $bg;
+  }
+}
+
+.p-emoji_picker__list_item {
+  text-shadow: 0 1px $bg;
+}
+
+.p-emoji_picker__list_item {
+  &[data-color-index='0'] {
+    &.key_selection,
+    &:hover {
+      background: $green;
+    }
+  }
+
+  &[data-color-index='1'] {
+    &.key_selection,
+    &:hover {
+      background: $yellow;
+    }
+  }
+
+  &[data-color-index='2'] {
+    &.key_selection,
+    &:hover {
+      background: $blue;
+    }
+  }
+
+  &[data-color-index='3'] {
+    &.key_selection,
+    &:hover {
+      background: $purple;
+    }
+  }
+
+  &[data-color-index='4'] {
+    &.key_selection,
+    &:hover {
+      background: $orange;
+    }
+  }
+
+  &[data-color-index='5'] {
+    &.key_selection,
+    &:hover {
+      background: $red;
+    }
+  }
+}
+
+.p-emoji_picker__group_tabs {
+  background: $bg;
+  border-bottom: 1px solid $border;
+}
+
+.p-emoji_picker__group_tab {
+  color: $fg;
+
+  &:hover {
+    color: $primary;
+    background: $hl;
+  }
+}
+
+.sk-client-scheme--purple .p-emoji_picker__group_tab--active,
+.sk-client-theme--dark.sk-client-scheme--purple .p-emoji_picker__group_tab--active,
+.p-emoji_picker__group_tab--active {
+  background: $active;
+  border-bottom: 3px solid $accent;
+}
+
+.p-emoji_picker__group_tab--active {
+  color: $selectFg;
+  border-bottom: 3px solid $accent;
+}
+
+.p-emoji_picker__heading {
+  background: $bg2;
+}
+
+input[type='text'].c-input_text.p-emoji_picker__input {
+  &:focus {
+    box-shadow: inset 0 0 0 $primaryT;
+    border-color: $primary;
+  }
+}
+
+.p-emoji_picker__input_container {
+  background: $bg2;
+}
+
+.p-emoji_picker__icon_search {
+  color: $text;
+}
+
+.p-emoji_picker__no_results i {
+  color: $text;
+}
+
+.p-emoji_picker__tip {
+  i {
+    color: $text;
+  }
+
+  color: $text;
+}
+
+.p-emoji_picker__no_results {
+  color: $text;
+}
+
+.p-emoji_picker[data-using-keyboard='true'] .p-emoji_picker__list_item {
+  &[data-color-index='0'] {
+    &.key_selection {
+      background: $green;
+    }
+  }
+
+  &[data-color-index='1'] {
+    &.key_selection {
+      background: $cyan;
+    }
+  }
+
+  &[data-color-index='2'] {
+    &.key_selection {
+      background: $yellow;
+    }
+  }
+
+  &[data-color-index='3'] {
+    &.key_selection {
+      background: $purple;
+    }
+  }
+
+  &[data-color-index='4'] {
+    &.key_selection {
+      background: $orange;
+    }
+  }
+
+  &[data-color-index='5'] {
+    &.key_selection {
+      background: $red;
+    }
+  }
+}
+
+.p-emoji_picker__footer {
+  background: $bg;
+  border-top: 1px solid $borderLight;
+  @include pane;
+}
+
+.p-emoji_picker__emoji_deluxe_label {
+  color: $text;
+}
+
+.p-emoji_picker__preview_text {
+  background: $bg;
+  color: $fg;
+}
+
+.p-emoji_picker__skintone_btn_container,
+.p-emoji_picker__skintone_options,
+.p-emoji_picker__skintone_tip {
+  color: $text;
+  background: $button;
+
+  &:hover {
+    color: $selectFg;
+  }
+}
+
+.p-emoji_picker__content:hover .p-emoji_picker__skintone_btn_container {
+  border: 1px solid $hl;
+  background: $hl;
+}
+
+.p-emoji_picker__skintone_options {
+  background: $active;
+
+  .p-emoji_picker__skintone_choice {
+    &[data-preferred='true'] {
+      background: $accent;
+    }
+  }
+}
+
+.p-emoji_picker__update_overlay {
+  background-color: $bg;
+
+  p {
+    color: $text;
+  }
+}
+
+.p-emoji_pack_card {
+  border: 1px solid $borderLight;
+}
+
+.p-emoji_pack_card__header {
+  color: $text;
+}
+
+.p-emoji_pack_card__subheader {
+  color: $text;
+}
+
+.p-emoji_pack_card__checkmark {
+  color: $accent;
+}
+
+.p-emoji_pack_coming_soon {
+  background: $bg;
+}
+
+.p-emoji_pack_coming_soon__pill {
+  background: $bg2;
+  color: $fg;
+}
+
+.p-emoji_pack__header {
+  color: $text;
+}
+
+.p-emoji_pack__pill {
+  background: $bg2;
+  color: $fg;
+}
+
+.p-emoji_pack__help {
+  color: $text;
+  border-top: $border;
+}
+
+.p-emoji_pack_details__subtitle_author {
+  color: $text;
+
+  &:after {
+    color: $borderLight;
+  }
+}
+
+.p-emoji_pack_details__tip {
+  color: $text;
+}
+
+.p-emoji_pack_details__button {
+  &[data-color-index='0'] {
+    &.key_selection,
+    &:hover {
+      background: $green;
+    }
+  }
+
+  &[data-color-index='1'] {
+    &.key_selection,
+    &:hover {
+      background: $blue;
+    }
+  }
+
+  &[data-color-index='2'] {
+    &.key_selection,
+    &:hover {
+      background: $yellow;
+    }
+  }
+
+  &[data-color-index='3'] {
+    &.key_selection,
+    &:hover {
+      background: $purple;
+    }
+  }
+
+  &[data-color-index='4'] {
+    &.key_selection,
+    &:hover {
+      background: $orange;
+    }
+  }
+
+  &[data-color-index='5'] {
+    &.key_selection,
+    &:hover {
+      background: $cyan;
+    }
+  }
+}
+
+.p-emoji_picker_skintone {
+  color: $primary;
+}
+
+.p-emoji_picker__content:hover .p-emoji_picker_skintone__toggle_btn {
+  border: 1px solid $hl;
+  background: $hl;
+}
+
+.p-emoji_picker_skintone__radio_buttons {
+  background: $button;
+}
+
+.p-emoji_picker_skintone__radio_button_container--focus-visible img {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+}
+
+.p-emoji_picker__pack_cta_wrapper {
+  background: $bg;
+}
+
+.p-emoji_picker__pack_cta_inner_wrapper,
+.p-emoji_picker__pack_cta {
+  background: $bg2;
+}
+
+.p-emoji_picker__pack_cta_link {
+  color: $primary;
+}
+
+.p-productivity_emoji_content-aliases--light {
+  border: 1px solid $borderLight;
+}
+
+.p-productivity_emoji_content-aliases--dark {
+  border: 1px solid $borderLight;
+}
+
+.p-emoji_picker__productivity_emoji_text {
+  background: transparent;
+  color: $fg;
+}
+
+.c-reaction__tip--emoji {
+  .c-emoji__large {
+    background-color: transparent;
+  }
+}
+
+.p-emoji_skin_tone_picker_radio_button__container {
+  box-shadow: 0 1px 3px 0 $primaryT;
+  border: 1px solid $primary;
+
+  &:hover {
+    background-color: $hl;
+  }
+
+  &:focus-within {
+    border-color: $primary;
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+}
+
+.p-emoji_skin_tone_picker_radio_button__container--selected {
+  border-color: $primary;
+}
+
+.p-emoji_skin_tone_prefs_section__description {
+  color: $text;
+}

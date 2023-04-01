@@ -1,0 +1,46 @@
+.c-presence--active {
+  color: $accent !important;
+}
+
+.c-presence--away {
+  color: $text;
+}
+
+.c-presence--inverted {
+  color: $selectFg;
+}
+
+.c-team_icon--default {
+  background-color: $active;
+  color: $fg;
+}
+
+.c-team_icon--pending {
+  border: 2px dashed $border;
+  color: $disabled;
+}
+
+.p-deprecated_channel_name--archived {
+  color: $text;
+}
+
+.p-deprecated_channel_name__team_name {
+  color: $text;
+}
+
+.p-deprecated_channel_name__team_name--xws {
+  color: $fg;
+}
+
+.p-channel_sidebar__presence_icon {
+  &.c-presence {
+    &.p-channel_sidebar__channel_icon_prefix--comfy {
+      margin-right: 8px;
+    }
+  }
+
+  &.c-presence--away {
+    opacity: 0.64;
+    color: var(--p-channel_sidebar__computed-text-color);
+  }
+}

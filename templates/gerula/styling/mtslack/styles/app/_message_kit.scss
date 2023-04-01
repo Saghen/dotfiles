@@ -1,0 +1,87 @@
+
+.c-message_kit__file__remove {
+  color: $fg;
+}
+
+.c-message_kit__file__meta {
+  color: $text;
+}
+
+.c-message_kit__file__meta__attribution__link {
+  color: $fg;
+
+  &:active, &:focus, &:hover {
+    color: $primary;
+  }
+}
+
+.c-message_kit__file__meta__separator {
+  color: $border;
+}
+
+
+.c-message_kit__tombstone__icon {
+  background: $tree;
+  color: $disabled;
+}
+
+.c-message_kit__tombstone__text {
+  color: $fg;
+}
+
+.c-message_kit__inline_channel_context {
+  color: $text;
+}
+
+.c-message_kit__footer {
+  color: $fg;
+}
+
+.c-message_kit__footer_spacer:before {
+  color: $hl;
+}
+
+.c-message_kit__resend--with_buttons {
+  color: $text;
+}
+
+.c-message_kit__resend__footer__border {
+  background: $border;
+}
+
+.c-message_kit__resend__separator {
+  color: $border;
+}
+
+@keyframes c-message_kit--to-grey {
+  0% {
+    color: inherit;
+  }
+
+  to {
+    color: $text;
+  }
+}
+
+@keyframes c-message_kit--highlight {
+  20% {
+    background: $hl;
+  }
+  60% {
+    background: $hl;
+  }
+}
+
+.p-message_file__email_draft {
+  border: 1px solid $borderLight;
+  background: $bg;
+
+  &:hover {
+    border-color: $borderLight;
+  }
+}
+
+.p-message_file__email_draft_prefix {
+  color: $primary;
+  background: $accent;
+}

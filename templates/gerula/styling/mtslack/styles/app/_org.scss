@@ -1,0 +1,123 @@
+.c-team_entity__verified_icon {
+  color: $green;
+}
+
+.sk-client-theme--dark .c-team_entity__verified_icon,
+.c-team_entity__verified_link {
+  color: $green;
+
+  &:hover {
+    color: $green;
+  }
+}
+
+.sk-client-theme--dark .c-team_entity__verified_icon {
+  color: $green;
+}
+
+.p-org_card_container {
+  background-color: $contrast;
+  box-shadow: 0 0 0 1px $contrast, 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+}
+
+.p-org_card_header__verified_icon {
+  color: $green;
+}
+
+.sk-client-theme--dark .p-org_card_header__verified_icon {
+  color: $green;
+}
+
+.p-org_card_footer_expanded {
+  background-color: $bg2;
+}
+
+.p-org_card_footer_icon {
+  color: $green;
+}
+
+.sk-client-theme--dark .p-org_card_footer_icon {
+  color: $green;
+}
+
+.p-org_card_footer_text {
+  color: $text;
+}
+
+.p-add_approved_org_modal__learn_more {
+  color: $text;
+
+  .p-add_approved_org_modal__learn_more_link {
+    color: $accent2;
+  }
+}
+
+.p-org_card {
+  background-color: $bg2;
+  @include card;
+
+  &:not(.p-org_card--loading) {
+    &:active,
+    &:hover {
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+      @include card;
+    }
+  }
+}
+
+.p-show_all_contacts__copy {
+  color: $text;
+}
+
+.p-load_more_button {
+  background-color: $button;
+  @include card;
+
+  &:active,
+  &:hover {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+    @include card;
+  }
+}
+
+.p-organization__page_header {
+  background-color: $bg;
+}
+
+.p-organization__banner {
+  background-color: $bg2;
+}
+
+.p-organization__banner_image {
+  background-color: $bg2;
+}
+
+.p-organization__team_icon {
+  border: 4px solid $button;
+  background-color: $button;
+}
+
+.p-organization__header {
+  color: $text;
+}
+
+.p-organizations__conversations {
+  background-color: $bg;
+}
+
+.p-organization__verified_icon {
+  color: $accent;
+}
+
+.p-org_card_cta,
+.p-org_card_cta:active,
+.p-org_card_cta:hover {
+  background-color: $bg2;
+  @include card;
+}
+
+.p-conversation_row:active,
+.p-conversation_row:hover {
+  background-color: $active;
+  color: $primary;
+}

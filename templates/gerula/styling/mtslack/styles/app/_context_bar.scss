@@ -1,0 +1,33 @@
+.p-context_bar {
+  color: $text;
+  background: $bg;
+}
+
+.p-context_bar__icon_container {
+  .p-context_bar__icon + .p-context_bar__icon {
+    box-shadow: -2px 0 0 $bg, -2px 1px 0 $bg, -2px -1px 0 $bg;
+  }
+}
+
+.p-context_bar__link.c-link--button {
+  color: $primary;
+}
+
+.p-context_bar__prog_disc_tip .p-context_bar__prog_disc_tip_flag {
+  background: $primary;
+  color: $selectFg;
+}
+
+.p-context_bar__govslack__icon {
+  color: $accent;
+}
+
+.p-context_bar__prog_disc_tip .p-context_bar__prog_disc_tip_flag {
+  background: $notif;
+  color: $fg;
+}
+
+.p-context_bar__composer-nux {
+  background: $notif;
+  color: $fg;
+}

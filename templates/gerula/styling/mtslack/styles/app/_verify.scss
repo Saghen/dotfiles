@@ -1,0 +1,21 @@
+.p-verify_email_modal_success__header {
+  i {
+    color: $green;
+  }
+}
+
+.p-unverified_email_received_empty_page {
+  background-color: $contrast;
+}
+
+.p-unverified_email_received_empty_page__subtitle {
+  color: $text;
+}
+
+.p-unverified_email_received_empty_page__alert_subtext {
+  color: $text;
+}
+
+.p-unverified_email_received_empty_page__alert .c-link--button {
+  color: $accent2;
+}

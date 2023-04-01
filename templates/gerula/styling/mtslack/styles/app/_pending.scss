@@ -1,0 +1,139 @@
+.p-pending__empty {
+  background-color: transparent;
+}
+
+.p-pending_image_file {
+  &.p-pending_image_file__thumbnail_container {
+    box-shadow: inset 0 0 0 1px $borderLight;
+  }
+}
+
+.p-file_upload_dialog__section .p-multi_file_upload__container .p-gallery_scroller__wrapper {
+  background: $bg2;
+  border: 1px solid $borderLight;
+}
+
+.p-multi_file_upload__container {
+  min-width: 100%;
+
+  .p-gallery_scroller__wrapper {
+    background: $bg2;
+    border: 1px solid $bg2;
+    border-radius: 4px;
+  }
+}
+
+.p-multi_file_upload__file_gallery {
+  display: flex;
+  padding: 12px;
+  overflow-y: hidden;
+  min-width: 100%;
+}
+
+.p-multi_file_upload__file_container {
+  position: relative;
+  line-height: 0;
+
+  &:not(:last-child) {
+    margin-right: 12px;
+  }
+}
+
+.p-pending_file {
+  border-color: $border;
+}
+
+.p-pending_image_file__thumbnail {
+  &:after {
+    box-shadow: inset 0 0 0 1px $border;
+  }
+
+  &:hover {
+    box-shadow: 0 1px 1px $primaryT;
+
+    &:after {
+      box-shadow: inset 0 0 0 1px $primaryT;
+    }
+  }
+}
+
+.p-draft_image_file {
+  background-color: $bg;
+}
+
+.p-draft_image_file__pencil {
+  color: $fg;
+}
+
+.p-draft_image_file__dropping_divider {
+  background: $borderLight;
+}
+
+.p-pending_requests_v2_channel_card {
+  border: 1px solid $borderLight;
+}
+
+.p-pending_requests_v2_header {
+  background-color: $bg2;
+}
+
+.p-pending_requests_v2_footer {
+  border-top: 1px solid $borderLight;
+}
+
+.p-pending_requests_v2_request_date {
+  color: $text;
+}
+
+.p-pending_requests_v2_acted_on_state {
+  border-top: 1px solid $borderLight;
+  background: $bg2;
+}
+
+.p-pending_requests_v2_acted_on_subtext {
+  color: $text;
+}
+
+.p-pending_requests_v2_accept_icon {
+  color: $green;
+}
+
+.p-pending_requests_v2_decline_icon {
+  color: $red;
+}
+
+.p-pending_requests_v2_header_copy_color {
+  color: $text;
+}
+
+.p-pending_requests_v2_acted_on_state__approved_orgs {
+  border-top: 1px solid $border;
+}
+
+.p-pending_requests_v2_accept_icon__approved_orgs {
+  color: $green;
+}
+
+.p-connection_info_icon__icon + .p-connection_info_icon__icon {
+  margin-left: -6px;
+  box-shadow: -2px 0 0 $primary, (-2px) 1px 0 $primary, (-2px) -1px 0 $primary;
+}
+
+.p-connection_info {
+  color: $text;
+}
+
+.p-connection_info--link {
+  &:active,
+  &:hover {
+    color: $text;
+  }
+}
+
+.p-file_image_toolbar_controls {
+  color: $fg;
+}
+
+.p-file_image_toolbar_controls__bar {
+  background: $bg;
+}

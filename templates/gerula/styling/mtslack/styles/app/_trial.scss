@@ -1,0 +1,342 @@
+.p-trial_modal_content_row_item__subtitle {
+  color: $text;
+}
+
+.p-trial_modal_content_row_item__title {
+  color: $fg;
+}
+
+.p-trial_modal__icon_container {
+  background-color: $notif;
+
+  > i {
+    color: $accent;
+  }
+}
+
+.p-trial_modal__icon_container--warning_high {
+  background-color: $excluded;
+}
+
+.p-trial_modal__icon_container--warning_medium {
+  background-color: $excluded;
+}
+
+.p-trial_modal__icon_container--warning_high > i {
+  color: $red;
+}
+
+.p-trial_modal__icon_container--warning_medium > i {
+  color: $orange;
+}
+
+.p-trial_awareness_modal__img_text {
+  color: $text;
+}
+
+.p-trial_message_limit_header {
+  color: $fg;
+  background-color: $bg2;
+  border-color: $accent;
+}
+
+.p-trial_message_limit_header__icon {
+  color: $accent;
+}
+
+.p-trial_message_limit_header a {
+  color: $accent2;
+}
+
+.p-trial_persistent_banner__container {
+  background-color: $notif;
+  box-shadow: 0 0 0 1px $borderLight;
+}
+
+.p-trials_alert {
+  background-color: $notif;
+  border: 1px solid $accent;
+
+  > i {
+    color: $accent;
+
+    &.c-alert__icon {
+      color: $accent;
+    }
+  }
+}
+
+.p-trials_gold_color {
+  color: $yellow;
+}
+
+.p-trials_notification {
+  border-top: 5px solid $accent;
+
+  &.p-global_banner {
+    border-top: 5px solid $accent;
+  }
+}
+
+.p-trial_awareness_modal__secondary_cta {
+  color: $text;
+
+  &:focus,
+  &:hover {
+    color: $selectFg;
+  }
+}
+
+.p-new_year_discount_offer_start_modal .c-sk-modal__close_button.c-icon_button--light {
+  color: $fg;
+
+  &:hover {
+    background: $accent;
+    color: $selectFg;
+  }
+}
+
+.p-trial_seven_days_left_banner__alert {
+  background-color: $bg;
+}
+
+.p-new_year_discount_offer_banner__subtitle,
+.p-new_year_discount_offer_banner__title {
+  color: $primary;
+}
+
+.p-client_footer__icon {
+  color: $yellow;
+}
+
+.p-client_footer__trial_awareness {
+  background-color: $notif;
+  color: $fg;
+
+  .c-icon_button--dark,
+  .c-icon_button--light {
+    color: $fg;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.p-trials_alert--v2 {
+  border-color: $border;
+}
+
+.sk-client-theme--dark {
+  .p-trials_alert--v2 {
+    background-color: $notif;
+    border-color: $border;
+  }
+
+  .p-trials_alert > i {
+    color: $primary;
+
+    &.c-alert__icon {
+      color: $primary;
+    }
+  }
+}
+
+.p-trial_slack_connect_awareness_modal_content__subtitle {
+  color: $fg;
+}
+
+.p-trial_slack_connect_awareness_modal_content__nav_btn,
+.p-trial_slack_connect_awareness_modal_content__nav_btn--next {
+  color: $fg;
+  background-color: $bg;
+}
+
+.p-trial_slack_connect_awareness_modal_content__nav_btn--prev {
+  color: $fg;
+  background-color: $bg;
+}
+
+.p-trial_slack_connect_awareness_modal_content__dots_container {
+  color: $fg;
+}
+
+.p-trial_slack_connect_awareness_modal_content__dot_icon--selected {
+  color: $selectFg;
+}
+
+.p-trial_slack_connect_awareness_modal__light_bg .c-sk-modal__close_button.c-icon_button--light {
+  color: $fg;
+
+  &:hover {
+    background: $accent;
+    color: $selectFg;
+  }
+}
+
+.p-trial_slack_connect_awareness_modal__invite_users_content_title {
+  background-color: $notif;
+}
+
+.p-trial_slack_connect_awareness_modal__wait_for_admins_content_title {
+  background-color: $notif;
+}
+
+.p-trial_slack_connect_awareness_modal__get_to_work_content_title {
+  background-color: $notif;
+}
+
+.sk-client-theme--dark .p-trial_search_message_limit_header__icon {
+  color: $primary;
+}
+
+.p-trial_search_message_limit_header a {
+  color: $accent2;
+}
+
+.sk-client-theme--dark .p-message_limit_trial_offer_banner__icon {
+  color: $primary;
+}
+
+.p-trial_modal_coachmark {
+  background-color: $notif;
+}
+
+.sk-client-theme--dark .p-trial_modal_coachmark {
+  background-color: $notif;
+  border-top: 1px solid $borderLight;
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-trial_modal_coachmark:before {
+  background: $notif;
+}
+
+.sk-client-theme--dark .p-trial_modal_coachmark:before {
+  border-right: 1px solid $borderLight;
+  border-bottom: 1px solid $borderLight;
+  background: $notif;
+}
+
+.p-trial_modal_coachmark__icon {
+  color: $primary;
+}
+
+.p-trial_modal_coachmark__label {
+  color: $text;
+}
+
+.p-trial_modal_coachmark__heading {
+  color: $fg;
+}
+
+.p-survey_cancellation__option_label_subtext {
+  color: $text;
+}
+
+.p-slack_connect_dm_trial_admin_coachmark_content {
+  background-color: $notif;
+  border: 1px solid $borderLight;
+}
+
+.sk-client-theme--dark .p-slack_connect_dm_trial_admin_coachmark_content {
+  background-color: $notif;
+  border-color: $borderLight;
+}
+
+.p-slack_connect_dm_trial_admin_coachmark_content--left:before {
+  border-left-color: $borderLight;
+}
+
+.sk-client-theme--dark .p-slack_connect_dm_trial_admin_coachmark_content--left:before {
+  border-left-color: $borderLight;
+}
+
+.p-slack_connect_dm_trial_admin_coachmark_content--left:after {
+  border-left-color: $notif;
+}
+
+.sk-client-theme--dark .p-slack_connect_dm_trial_admin_coachmark_content--left:after {
+  border-left-color: $borderLight;
+}
+
+.p-slack_connect_dm_trial_admin_coachmark_content__message_body {
+  color: $text;
+}
+
+.p-slack_connect_dm_trial_admin_coachmark_content__icon {
+  color: $primary;
+}
+
+.sk-client-theme--dark .p-slack_connect_dm_trial_admin_coachmark_content__icon {
+  color: $primary;
+}
+
+.p-trial_slack_connect_hub_trial_offer_banner {
+  background: $bg;
+  border: 1px solid $borderLight;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+}
+
+.p-trial_slack_connect_hub_trial_offer_banner__description {
+  color: $text;
+}
+
+.p-trial_slack_connect_hub_in_trial_learn_more_banner {
+  background: $bg;
+  border: 1px solid $borderLight;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+}
+
+.p-trial_slack_connect_hub_in_trial_learn_more_banner__description {
+  color: $text;
+}
+
+.p-trial_modal_coachmark__popup {
+  border: 1px solid #ddca97;
+
+  &:before {
+    border-top-color: #ddca97;
+  }
+}
+
+.sk-client-theme--dark .p-trial_modal_coachmark__popup:before {
+  border-top-color: rgba(241, 176, 23, 0.3);
+}
+
+.p-trial_modal_coachmark__popup:after {
+  border-top-color: #fcf4da;
+  border-width: 16px;
+}
+
+.sk-client-theme--dark .p-trial_modal_coachmark__popup:after {
+  border-top-color: #2e2a1a;
+}
+
+.sk-client-theme--dark .p-trial_modal_coachmark__inline:before {
+  border-right: 1px solid rgba(241, 176, 23, 0.3);
+  border-bottom: 1px solid rgba(241, 176, 23, 0.3);
+  background: #2e2a1a;
+}
+
+.p-slack_connect_dm_trial_admin_coachmark_content--top-right:before {
+  border-bottom-color: rgba(185, 138, 9, 0.4);
+}
+
+.sk-client-theme--dark .p-slack_connect_dm_trial_admin_coachmark_content--top-right:before {
+  border-bottom-color: rgba(241, 176, 23, 0.3);
+}
+
+.p-slack_connect_dm_trial_admin_coachmark_content--top-right:after {
+  border-bottom-color: #fcf4da;
+}
+
+.sk-client-theme--dark .p-slack_connect_dm_trial_admin_coachmark_content--top-right:after {
+  border-bottom-color: #2e2a1a;
+}

@@ -1,0 +1,34 @@
+.p-mixed_results_module_card {
+  @include card;
+}
+
+.p-mixed_results_module_card--see_all {
+  background-color: $bg;
+
+  &:focus,
+  &:hover {
+    color: $selectFg;
+  }
+}
+
+.p-mixed_results_module_card__text {
+  color: $text;
+}
+
+.p-mixed_results_module_card__text--focused,
+.p-mixed_results_module_card__text--hovered {
+  color: $selectFg;
+}
+
+.p-mixed_results_module__feedback_link .c-link--button {
+  color: $text;
+}
+
+.p-mixed_results_module--channel_result {
+  background: $bg;
+  border: 1px solid $borderLight;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+}

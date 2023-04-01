@@ -1,0 +1,133 @@
+.c-pillow_file__email__sender__address {
+  color: $text;
+}
+
+.c-pillow_file__email__meta__field {
+  color: $text;
+}
+
+.c-pillow_file__email--alt-collapsed {
+  &:after {
+    background: $bg2;
+  }
+}
+
+.c-pillow_file__email__header {
+  background: $bg2;
+}
+
+.c-pillow_file__email__attachments {
+  background: $bg2;
+}
+
+.c-pillow_file__email--expanded {
+  .c-pillow_file__email__content--dark-mode {
+    background: $bg;
+    color: $fg;
+  }
+
+  .c-pillow_file__email__header {
+    border-bottom: 1px solid $border;
+  }
+}
+
+.c-pillow_file__email__content--scale-btn {
+  background: $button;
+
+  &:hover {
+    background: $hl !important;
+  }
+}
+
+.c-pillow_file__email__attachments {
+  border-top: 1px solid $border;
+}
+
+.c-pillow_file__email__attachments__count {
+  color: $text;
+}
+
+.c-pillow_file__email__attachment {
+  border: 1px solid $borderLight;
+}
+
+.c-pillow_file__email__attachment__icon {
+  color: $selectFg;
+  background: $accent2;
+}
+
+.c-pillow_file__email__attachment__meta {
+  color: $text;
+}
+
+.c-pillow_file__email__content {
+  blockquote {
+    border-left: 2px solid $hl;
+  }
+}
+
+.c-pillow_file__email__meta__forwarded {
+  color: $primary;
+}
+
+.c-pillow_file__email__tip {
+  background: transparent;
+
+  &:after {
+    border-bottom-color: transparent;
+  }
+}
+
+.c-pillow_file__email__attachment_alt--file {
+  border: 1px solid $borderLight;
+}
+
+.c-pillow_file__email__medium_header {
+  border-bottom: 1px solid $borderLight;
+}
+
+.c-pillow_file__email__medium_large_icon,
+.c-pillow_file__email__small_icon {
+  background: $accent;
+}
+
+.c-pillow_file__email__small_density__date {
+  color: $text;
+}
+
+.c-pillow_file__email__small_density__attachment_icon {
+  color: $text;
+}
+
+.c-pillow_file__email__small_density__sender {
+  color: $text;
+}
+
+.c-pillow_file__email__small_density__body {
+  color: $fg;
+}
+
+.c-pillow_file__email__medium_density__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.c-pillow_file__email__medium_density__date {
+  color: $text;
+}
+
+.c-pillow_file__email__medium_density__attachment_icon {
+  color: $text;
+}
+
+.c-pillow_file__email__medium_density__body {
+  color: $fg;
+}
+
+.c-pillow_file__email__medium_density__sender {
+  color: $text;
+}
+
+.p-survey_cancellation__option_label_subtext {
+  color: $text;
+}

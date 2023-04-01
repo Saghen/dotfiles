@@ -1,0 +1,24 @@
+.p-app-card {
+  background-color: $bg;
+  @include card;
+
+  &:hover {
+    box-shadow: 0 0 0 1px $borderLight, 0 4px 12px 0 $borderLight;
+  }
+
+  .p-app-card__text {
+    color: $fg;
+  }
+
+  .p-app-card__plus {
+    color: $accent;
+  }
+}
+
+.c-card_container {
+  background-color: $bg;
+}
+
+.c-card_container__actions {
+  background-color: $bg;
+}

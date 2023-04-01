@@ -1,0 +1,14 @@
+.p-one_on_one_calls_discovery_tip {
+  background: $bg2;
+  color: $fg;
+}
+
+.p-one_on_one_calls_discovery_tip--dark {
+  color: $fg;
+  background-color: transparent;
+  border-left: 2px solid $accent;
+}
+
+.p-one_on_one_calls_discovery_tip__dismiss_button {
+  color: $text;
+}

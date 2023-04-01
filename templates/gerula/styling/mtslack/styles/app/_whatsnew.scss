@@ -1,0 +1,29 @@
+.p-whats_new__item {
+  &:not(.p-whats_new__item_last) {
+    border-bottom: 1px solid $borderLight;
+  }
+}
+
+.p-whats_new__date {
+  color: $text;
+}
+
+.p-whats_new__blue_dot {
+  color: $accent;
+}
+
+.p-whats_new_dialog__content:after {
+  border-top: 1px solid $border;
+}
+
+.p-whats_new__notify {
+  color: $text;
+}
+
+.p-whats_new__entry {
+  border: 1px solid $borderLight;
+
+  img {
+    border: 1px solid $borderLight;
+  }
+}

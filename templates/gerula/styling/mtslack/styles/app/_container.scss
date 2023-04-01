@@ -1,0 +1,50 @@
+.p-container {
+  background: $bg;
+}
+
+.p-container__item__controls {
+  background: $bg;
+}
+
+.p-container__item__control {
+  border-left: 1px solid $borderLight;
+
+  &:first-child {
+    border-left: none;
+  }
+}
+
+//.p-container__add__button {
+//  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+//  box-shadow: 0 0 0 1px var(--saf-0), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+//}
+//
+//.p-container__actions {
+//  --saf-0: rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+//  box-shadow: 0 0 0 1px var(--saf-0), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+//}
+
+.p-container__actions__button {
+  color: $text;
+
+  &:focus,
+  &:hover {
+    background: $button;
+    color: $fg;
+  }
+}
+
+.p-container__actions__huddle--active {
+  background: $accentT;
+  color: $selectFg;
+
+  &:focus,
+  &:hover {
+    background: $accent;
+    color: $selectFg;
+  }
+}
+
+.p-container--placeholder {
+  color: $disabled;
+}

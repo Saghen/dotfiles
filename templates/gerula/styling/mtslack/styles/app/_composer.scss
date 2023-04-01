@@ -1,0 +1,592 @@
+.p-composer__body {
+  background: $contrast;
+}
+
+.p-composer__body--overflow {
+  background: $bg;
+}
+
+.p-composer__button--sticky {
+  color: $fg;
+
+  &[disabled] {
+    color: $disabled;
+
+    &:hover {
+      background-color: $fg;
+    }
+  }
+
+  &:focus,
+  &:hover {
+    color: $selectFg;
+    background-color: $hl;
+  }
+
+  &:focus {
+    border: 1px solid $borderLight;
+  }
+
+  &.p-composer__button--selected,
+  &:active {
+    color: $primary;
+    background-color: $hl;
+  }
+
+  &.p-composer__button--selected {
+    &:focus,
+    &:hover {
+      background-color: $selectBg;
+    }
+  }
+}
+
+.p-composer__button--sticky.c-icon_button {
+  background: $button;
+  color: $fg;
+
+  &[disabled] {
+    color: $disabled;
+
+    &:hover {
+      color: $fg;
+      background-color: transparent;
+    }
+  }
+
+  &.p-composer__button--selected {
+    color: $selectFg;
+    background-color: $hl;
+
+    &:focus,
+    &:hover {
+      background-color: $selectBg;
+    }
+  }
+}
+
+.p-composer__body--sticky {
+  color: $fg;
+
+  &[disabled] {
+    color: $disabled;
+
+    &:hover {
+      background-color: $bg;
+    }
+  }
+
+  &:focus,
+  &:hover {
+    color: $fg;
+    background-color: $hl;
+  }
+
+  &:focus {
+    border: 1px solid $primary;
+  }
+
+  &.p-composer__button--selected,
+  &:active {
+    color: $primary;
+    background-color: $hl;
+  }
+
+  &.p-composer__button--selected {
+    &:focus,
+    &:hover {
+      background-color: $selectBg;
+    }
+  }
+}
+
+.p-composer__button {
+  background: $button;
+
+  &[disabled] {
+    color: $disabled;
+
+    &:hover {
+      background-color: $hl;
+    }
+  }
+
+  &:focus,
+  &:hover {
+    background-color: $hl;
+    color: $selectFg;
+  }
+
+  &:focus {
+    border: 1px solid $primary;
+  }
+}
+
+.p-composer__button--selected,
+.p-composer__button:active {
+  background-color: $hl;
+  color: $fg;
+}
+
+.p-composer__button--selected:focus:not(:active) {
+  box-shadow: inset 0 0 1px $borderLight;
+}
+
+.p-composer__separator {
+  background: $borderLight;
+}
+
+.p-composer__link_form {
+  background: $contrast;
+
+  .p-composer__link_form_button {
+    &:focus {
+      box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    }
+  }
+
+  .p-composer__link_remove_button {
+    background: transparent;
+
+    &:focus {
+      box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+    }
+  }
+}
+
+.p-composer__tip_subtitle {
+  color: $text;
+}
+
+.p-composer__body--floating {
+  @include dropShadow;
+  background: $bg;
+
+  .p-composer__separator {
+    background: $border;
+  }
+}
+
+.p-composer__button--floating {
+  background: $button;
+
+  &[disabled] {
+    color: $disabled;
+
+    &:hover {
+      color: $fg;
+    }
+  }
+
+  &:hover {
+    background-color: $hl;
+    color: $selectFg;
+  }
+}
+
+.p-composer__button--floating.c-icon_button {
+  background: $button;
+  color: $fg;
+
+  &[disabled] {
+    color: $disabled;
+
+    &:hover {
+      background-color: $hl;
+      color: $fg;
+    }
+  }
+
+  &:hover {
+    background-color: $hl;
+    color: $selectFg;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+
+  &.p-composer__button--selected {
+    background-color: $hl;
+    color: $selectFg;
+
+    &:focus,
+    &:hover {
+      background-color: $selectBg;
+      color: $selectFg;
+    }
+  }
+
+  &:active {
+    background-color: $hl;
+    color: $selectFg;
+  }
+}
+
+.p-composer__button--floating--selected {
+  background-color: $hl;
+  color: $selectFg;
+
+  &:focus,
+  &:hover {
+    background-color: $selectBg;
+    color: $selectFg;
+  }
+}
+
+.p-composer__button--floating:active {
+  background-color: $hl;
+  color: $selectFg;
+}
+
+.p-composer__separator--floating {
+  background: $borderLight;
+}
+
+.p-composer_page {
+  background: $bg;
+}
+
+.p-composer_page__subheader {
+  background: $bg;
+  border-bottom: $borderLight;
+}
+
+.p-composer_page__subheader--focused {
+  box-shadow: 0 1px 0 0 $borderLight, 0 4px 12px -2px rgba(0, 0, 0, 0.08);
+}
+
+.p-composer_page__header {
+  background: $bg;
+}
+
+.p-composer_page__destination_text--invalid .p-composer_page__destination_recipients {
+  color: $red;
+}
+
+.p-composer_page__destination_prefix {
+  color: $primary;
+}
+
+.p-composer_page__destination_text--emphasized {
+  color: $primary;
+
+  .c-channel_team {
+    color: $fg;
+  }
+}
+
+.p-composer_page__destination_text--disabled {
+  color: $disabled;
+}
+
+.p-composer_page__destination_text--invalid {
+  color: $accent;
+}
+
+.p-composer_page__destination_recipients_wrapper {
+  color: $text;
+}
+
+.p-composer_page__destination_recipients {
+  color: $accent;
+}
+
+.p-composer_page__destination_control {
+  color: $fg;
+}
+
+.p-composer_page__destination_select_icon {
+  color: $fg;
+}
+
+.p-cp_composer {
+  background: $bg;
+  border: 1px solid $border;
+}
+
+.p-cp_composer__header {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-cp_composer__body,
+.p-cp_composer__header {
+  background: $bg;
+}
+
+.p-cp_composer__body {
+  border-bottom: $borderLight;
+  border-left: $borderLight;
+  border-right: $borderLight;
+}
+
+.p-cp_composer__footer {
+  color: $fg;
+}
+
+.p-cp_composer__destination_text {
+  border: 1px solid $border;
+}
+
+.p-cp_composer__destination_text--invalid {
+  border-color: $red;
+
+  .p-cp_composer__destination_recipients_names {
+    color: $red;
+  }
+}
+
+.p-cp_composer__destination_recipients_wrapper {
+  color: $text;
+}
+
+.p-cp_composer__destination_recipients {
+  color: $primary;
+}
+
+.p-cp_composer__destination_controls {
+}
+
+.p-cp_composer__destination_control {
+  color: $fg;
+}
+
+.p-cp_composer__destination_subtext {
+  background: linear-gradient($bg 38px, transparent);
+}
+
+.p-cp_composer__destination_subtext--error {
+  color: $red;
+}
+
+.p-cp_composer__message_input {
+  .ql-placeholder {
+    color: $disabled;
+  }
+}
+
+.p-composer_page__destination_subtext--error {
+  color: $red;
+}
+
+.p-composer_page__message_pane_wrapper {
+  border: 1px solid $borderLight;
+}
+
+.p-composer_page__context {
+  .c-message_kit__message,
+  .c-message_list__placeholders,
+  .p-composer_page__context_list_divider {
+    border-left: 1px solid $borderLight;
+    border-right: 1px solid $borderLight;
+  }
+
+  .c-message_list__placeholders,
+  .p-composer_page__context_list_divider {
+    background-color: $bg;
+  }
+
+  .p-composer_page__context_item--top {
+    border-top: 1px solid $borderLight;
+  }
+
+  .p-composer_page__context_item--bottom {
+    border-bottom: 1px solid $borderLight;
+  }
+
+  .c-virtual_list__item {
+    &:first-child {
+      .c-message_kit__message,
+      .c-message_list__placeholders,
+      .p-composer_page__context_list_divider {
+        border-top: 1px solid $borderLight;
+      }
+    }
+
+    &:nth-last-child(2) {
+      .c-message_kit__message,
+      .c-message_list__placeholders,
+      .p-composer_page__context_list_divider {
+        border-bottom: 1px solid $borderLight;
+      }
+    }
+  }
+}
+
+.p-composer_page--noncontextual {
+  background: $bg;
+
+  .p-context_bar {
+    background: $notif;
+  }
+}
+
+.p-composer_page__message_input {
+  .ql-attachments,
+  .ql-files {
+    background: $bg2;
+    box-shadow: 0 -1px 0 0 $primaryT;
+  }
+
+  &.p-message_input--attachments-visible
+    .c-texty_input__container:not(.c-texty_input__container--expanded)
+    .p-message_input_field:not(.c-texty_input--double_decker)
+    .ql-composer-sticky,
+  &.p-message_input--files-visible
+    .c-texty_input__container:not(.c-texty_input__container--expanded)
+    .p-message_input_field:not(.c-texty_input--double_decker)
+    .ql-composer-sticky {
+    background: $bg2;
+  }
+
+  &.p-message_input--attachments-visible .p-message_input_field:not(.c-texty_input--sticky_composer) {
+    .ql-attachments,
+    .ql-files {
+      box-shadow: 0 1px 0 0 $primary, 0 -1px 0 0 $primaryT;
+    }
+  }
+
+  &.p-message_input--files-visible .p-message_input_field:not(.c-texty_input--sticky_composer) {
+    .ql-attachments,
+    .ql-files {
+      box-shadow: 0 1px 0 0 $primary, 0 -1px 0 0 $primaryT;
+    }
+  }
+
+  &.p-message_input--day1:not(.p-message_input--disabled) {
+    .c-icon_button.c-texty_input__button--send {
+      background: $accentT;
+      color: $selectFg;
+
+      &:hover {
+        color: $selectFg;
+        background: $accent;
+      }
+    }
+
+    .c-texty_input .ql-placeholder {
+      color: $disabled;
+    }
+
+    .p-message_input_field {
+      border-color: $active;
+      box-shadow: 0 0 0 1px $primaryT;
+      background: $contrast;
+
+      .ql-composer-sticky {
+        border-color: $primaryT;
+      }
+    }
+
+    &.p-message_input--dark .p-message_input_field {
+      background: $contrast;
+    }
+  }
+
+  .p-message_input__attachments,
+  .ql-attachments {
+    .p-composer_attachments__separator {
+      border-left: 1px solid $borderLight;
+    }
+  }
+
+  &.p-message_input--focus-visible .p-message_input_field.focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+
+  .p-message_input_file_button {
+    color: $text;
+
+    &.p-message_input_file_button--active,
+    &:hover {
+      color: $selectFg;
+      background: $primary;
+    }
+
+    &.p-message_input_file_button--disabled {
+      &:hover {
+        color: $selectFg;
+      }
+    }
+  }
+
+  &.p-message_input--dark {
+    .p-message_input_field {
+      border-color: $borderLight;
+      background: $contrast;
+
+      &.focus {
+        border-color: $primary;
+
+        ~ .p-texty_sticky_formatting_bar {
+          border-color: $primary;
+        }
+      }
+    }
+
+    ::-moz-selection,
+    ::selection,
+    ::-moz-selection {
+      background-color: $accent2;
+    }
+  }
+
+  .p-message_input_field {
+    background: $contrast;
+    border-color: $borderLight;
+
+    &.focus {
+      border-color: $primary;
+
+      ~ .p-message_input_file_button:not(:hover) {
+        border-color: $primary;
+        color: $primary;
+      }
+
+      ~ .p-texty_sticky_formatting_bar {
+        border-color: $primary;
+      }
+    }
+
+    &.ql-disabled {
+      background: $bg2 !important;
+
+      .ql-composer-sticky {
+        background: $bg2 !important;
+      }
+    }
+  }
+}
+
+.p-composer_page--context_bar_showing {
+  .p-composer_page__context_bar {
+    background-color: $bg;
+  }
+}
+
+.p-browse_page_education_card {
+  background-color: $bg2;
+  color: $fg;
+}
+
+.p-composer_page__destination_select_suggestions {
+  color: $disabled;
+}
+
+.p-composer_page__destination_select_member_suggestion {
+  color: $disabled;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $fg;
+  }
+}
+
+.p-composer_page__destination_select_escape_hatch_label {
+  color: $text;
+}
+
+.p-composer_page__sending_invites_status {
+  color: $text;
+}

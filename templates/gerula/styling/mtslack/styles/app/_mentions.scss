@@ -1,0 +1,34 @@
+.c-mention_badge {
+  background: $accent;
+  color: $selectFg;
+}
+
+.c-mention_badge--red {
+  background: $red;
+  color: $bg;
+}
+
+.c-mention_badge--white {
+  background: $bg;
+  color: $primary;
+}
+
+.c-mention_badge--black {
+  background: $bg;
+  color: $primary;
+}
+
+.c-mention_badge--blue {
+  background: $accent;
+  color: $selectFg;
+}
+
+.c-badge {
+  background-color: $accent2;
+  color: $selectFg;
+}
+
+.sk-client-theme--dark .c-badge {
+  background-color: $accent2;
+  color: $selectFg;
+}

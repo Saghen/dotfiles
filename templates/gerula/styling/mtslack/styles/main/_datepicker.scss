@@ -1,0 +1,218 @@
+.c-date_picker__input {
+  border: 1px solid $border;
+  color: $disabled;
+}
+
+.c-date_picker__input--with_default {
+  border: 1px solid $border;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $disabled, 0 0 0 5px $tree;
+  }
+}
+
+.c-date_picker__input--with_info {
+  border: 1px solid $blue;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $blue, 0 0 0 5px $blue;
+  }
+}
+
+.c-date_picker__input--with_success {
+  border: 1px solid $green;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $green, 0 0 0 5px $green;
+  }
+}
+
+.c-date_picker__input--with_warning {
+  border: 1px solid $orange;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $orange, 0 0 0 5px $orange;
+  }
+}
+
+.c-date_picker__input--with_error {
+  border: 1px solid $red;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
+  }
+}
+
+.c-date_picker__input {
+  &:hover {
+    border-color: $borderLight;
+  }
+
+  &.c-date_picker__input--active {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+}
+
+.c-date_picker__input--disabled {
+  color: $disabled;
+  background: $excluded;
+}
+
+.c-date_picker__input__input {
+  &[disabled] {
+    color: $disabled;
+    background: $excluded;
+  }
+
+  &[type='text'] {
+    &::-webkit-input-placeholder,
+    &:-moz-placeholder,
+    &::-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-webkit-input-placeholder,
+    &::-moz-placeholder,
+    &::-ms-input-placeholder,
+    &::placeholder {
+      color: $disabled;
+    }
+  }
+}
+
+.c-date_range_picker_inputs {
+  > * {
+    border-color: $bg2;
+  }
+}
+
+.c-date_range_picker_input__button {
+  border: 1px solid $borderLight;
+  background-color: $bg2;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+
+    &:-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-moz-placeholder,
+    &::-webkit-input-placeholder {
+      color: $disabled;
+    }
+  }
+
+  &[disabled] {
+    background: $disabled;
+    border: 1px solid $borderLight;
+  }
+}
+
+.c-date_range_picker_calendar {
+  background-color: transparent;
+}
+
+.c-date_range_picker_calendar__date {
+  background-color: $bg;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: $tree;
+    color: $selectFg;
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+}
+
+.c-date_range_picker_calendar__date--is_today {
+  color: $accent;
+
+  &:after {
+    border: 1px solid $accent;
+  }
+}
+
+.c-date_range_picker_calendar__date--select_range_end,
+.c-date_range_picker_calendar__date--select_range_start {
+  color: $primary;
+  background-color: $button;
+  border-color: $button;
+}
+
+.c-date_range_picker_calendar__date--select_range_end:hover,
+.c-date_range_picker_calendar__date--select_range_start:hover {
+  background-color: $hl;
+  color: $selectFg;
+}
+
+.c-date_range_picker_calendar__date--in_selected_range {
+  background-color: $active;
+  border-color: $active;
+
+  &:hover,
+  &:focus {
+    background-color: $selectBg;
+  }
+}
+
+.c-date_range_picker_calendar__date--disabled {
+  color: $disabled;
+  background-color: $excluded;
+
+  &:hover {
+    background-color: $excluded;
+  }
+}
+
+.c-date_range_picker_calendar__date--is_invalid {
+  background-color: $red;
+  border-color: $red;
+
+  &:hover {
+    background-color: $red;
+  }
+}
+
+.c-date_picker__icon,
+.c-date_picker__select_btn {
+  color: $primary;
+}
+
+.c-date_picker__clear_selection_container {
+  border-top: 1px solid $borderLight;
+}
+
+.c-date_picker__clear_selection_btn {
+  &:focus,
+  &:hover {
+    color: $accent;
+  }
+}
+
+.c-date-time_picker__date_picker_button {
+  border: 1px solid $borderLight;
+  background: $button;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
+
+    &:-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-moz-placeholder,
+    &::-webkit-input-placeholder {
+      color: $disabled;
+    }
+  }
+
+  &[disabled] {
+    background: $button;
+    border: 1px solid $borderLight;
+  }
+}
+
+.c-date-time_picker__calendar_icon,
+.c-date-time_picker__caret_icon {
+  color: $text;
+}
+
+.c-date_range_picker_calendar--popover {
+  background-color: $bg;
+  @include dropShadow;
+}

@@ -2,9 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/styling/beautiful-discord" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/styling/btop/catppuccin" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/styling/grub/catppuccin" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/styling/mtslack" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/yay" vcs="Git" />
   </component>
 </project>

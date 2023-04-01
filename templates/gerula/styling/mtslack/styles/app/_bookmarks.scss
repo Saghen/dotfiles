@@ -1,0 +1,283 @@
+.p-bookmarks_bar {
+  background: $contrast;
+  @include shadow;
+
+  .c-button-unstyled:hover {
+    background: $button;
+    color: $selectFg;
+  }
+}
+
+.p-bookmarks_bar_modal__preview {
+  border: 1px solid $borderLight;
+  box-shadow: 0 0 4px $borderLight;
+}
+
+.p-bookmarks_bar__pins_popover_button__icon {
+  color: $fg;
+}
+
+.p-tiles__tile {
+  &:not(:last-child) {
+    border-right: 1px solid $border;
+  }
+}
+
+.p-tiles__tile:not(.p-tiles__tile--active) {
+  .c-message_kit__background,
+  .c-message_list__day_divider,
+  .c-virtual_list__item,
+  .c-virtual_list__item--sticky,
+  .p-activity_page__item_background,
+  .p-bookmarks_bar,
+  .p-flexpane--iap1 .p-flexpane_header,
+  .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before,
+  .p-threads_flexpane,
+  .p-threads_view__default_background,
+  .p-threads_view_load_older_message,
+  .p-view_header--tiles,
+  .workspace__primary_view_footer {
+    background: $bg;
+  }
+
+  .c-wysiwyg_container--theme_light_bordered {
+    border-color: $borderLight;
+  }
+
+  .c-wysiwyg_container--theme_dark_bordered {
+    border-color: $borderLight;
+  }
+
+  &::after {
+    background-color: $contrast;
+  }
+}
+
+.p-bookmarks_bar--dropping {
+  border-top: 1px solid $border;
+}
+
+.p-bookmarks_bar--with-hide-on-scroll {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-bookmarks_bar__folder_bookmarks_button button {
+  color: $fg;
+
+  &:active {
+    background-color: $border;
+  }
+}
+
+.p-bookmarks_bar__folder_bookmarks_button--collapsed button {
+  color: $fg;
+
+  &:active {
+    background-color: $border;
+  }
+}
+
+.p-bookmarks_bar__folder_bookmarks_add_bookmark {
+  &.c-menu_item__button {
+    color: $fg;
+  }
+
+  &.c-menu_item__button--highlighted {
+    color: $selectFg;
+  }
+}
+
+.p-bookmarks_bar__item {
+  color: $fg;
+
+  &:active {
+    background-color: $button;
+  }
+}
+
+.p-bookmarks_bar__retry {
+  color: $disabled;
+}
+
+.p-bookmarks_bar__bookmark {
+  color: $fg;
+
+  &:active {
+    background-color: $button;
+  }
+}
+
+.p-bookmarks_bar__bookmark--dragging {
+  background: none !important;
+  color: $text !important;
+}
+
+.p-bookmarks_bar__bookmark__icon {
+  background: $contrast;
+  border: 1px solid $border;
+}
+
+.p-bookmarks_bar__bookmark__tooltip_url {
+  color: $accent2;
+}
+
+.p-bookmarks_bar__add_bookmark_button {
+  color: $text;
+
+  &:active {
+    background-color: $button;
+  }
+}
+
+.p-bookmarks_bar__add_bookmark_button--add_new {
+  color: $text;
+
+  &:active {
+    background-color: $button;
+  }
+}
+
+.p-bookmarks_bar__add_bookmark_button__add_new_bookmark .c-menu_item__icon,
+.p-bookmarks_bar__add_bookmark_button__suggested_bookmark .c-menu_item__icon {
+  background: $accent;
+}
+
+.p-bookmarks_bar__add_bookmark_button__add_new_bookmark {
+  &.c-menu_item__button--highlighted .c-icon:before,
+  &.c-menu_item__button .c-icon:before {
+    color: $primary;
+  }
+}
+
+.p-bookmarks_bar__add_bookmark_button__suggested_bookmark {
+  &.c-menu_item__button--highlighted .c-icon:before,
+  &.c-menu_item__button .c-icon:before {
+    color: $primary;
+  }
+}
+
+.p-bookmarks_bar__collapsed_bookmarks_button--hovering .c-button-unstyled {
+  background: $button;
+  color: $fg;
+}
+
+.p-bookmarks_bar__collapsed_bookmarks_button button {
+  color: $fg;
+
+  &:active {
+    background-color: $hl;
+  }
+}
+
+.p-bookmarks_bar__collapsed_bookmarks_button__item {
+  &.c-menu_item__button--highlighted .p-bookmarks_bar__bookmark {
+    color: $accent;
+
+    .p-bookmarks_bar__bookmark__icon {
+      color: $fg;
+    }
+
+    &:active {
+      background: none;
+      color: $selectFg;
+    }
+  }
+}
+
+.p-bookmarks_bar__bookmark--dropping_on_left {
+  border-left: 2px solid $hl;
+}
+
+.p-bookmarks_bar__bookmark--dropping_on_right {
+  border-right: 2px solid $hl;
+}
+
+.p-bookmarks_bar__bookmark--dropping_on_bottom {
+  border-bottom: 2px solid $hl !important;
+}
+
+.p-bookmarks_bar__bookmark--dropping_on_top {
+  border-top: 2px solid $hl !important;
+}
+
+.p-bookmarks_bar__folder_bookmarks_button__bookmark {
+  .p-bookmarks_bar__bookmark {
+    color: $fg;
+  }
+}
+
+.p-bookmarks_bar__folder_bookmarks_button__bookmark_pin_option,
+.p-bookmarks_bar__collapsed_bookmarks_button__bookmark_pin_option {
+  color: $primary;
+}
+
+.p-bookmarks_bar__collapsed_bookmarks__add_bookmarks_option.c-menu_item__button--highlighted {
+  .p-bookmarks_bar__folder_bookmarks_button__bookmark_pin_option,
+  .p-bookmarks_bar__collapsed_bookmarks_button__bookmark_pin_option {
+    color: $primary;
+  }
+}
+
+.p-bookmarks_bar__pins_popover_button {
+  color: $primary;
+
+  &:active {
+    background-color: $button;
+  }
+}
+
+.p-bookmarks_bar_modal__input_section_title__container__image__icon {
+  color: $primary;
+}
+
+.p-bookmarks_bar_modal__bookmarks_intro {
+  background: $bg2;
+}
+
+.p-bookmarks_bar_modal__bookmarks_intro--dark {
+  background: $bg2;
+}
+
+.p-bookmarks_bar__meetings_popover_button {
+  color: $fg;
+}
+
+.p-bookmarks_bar__meetings_popover_button__icon {
+  color: $fg;
+}
+
+.p-bookmarks_bar__pins_popover_button__overflow--highlighted {
+  color: $primary;
+}
+
+.p-bookmarks_bar_modal__input_section_title__container__image__icon--chevron-down {
+  &:after {
+    border-left: 1px solid $borderLight;
+  }
+}
+
+.p-bookmarks_bar__calls_button {
+  button {
+    color: $fg;
+
+    &:active {
+      background-color: $border;
+    }
+  }
+}
+
+.p-bookmarks_bar__ez_subscribe_button {
+  color: $fg;
+
+  &:active {
+    background-color: $border;
+  }
+}
+
+.p-bookmarks_bar__ez_subscribe_button__overflow--highlighted {
+  color: $primary;
+}
+
+.p-bookmarks_bar__last_updated_indicator {
+  background: $accent;
+}

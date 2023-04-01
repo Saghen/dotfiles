@@ -1,0 +1,33 @@
+.p-ignore_all_success_modal__icon_container {
+  background-color: rgba(224, 30, 90, 0.1);
+
+  i {
+    color: $red;
+  }
+}
+
+.p-ignore_forked_modal__button {
+  color: $fg;
+
+  i {
+    color: $text;
+  }
+
+  &.c-button-unstyled:hover {
+    background-color: $button;
+
+    i {
+      color: $fg;
+    }
+  }
+}
+
+.p-ignore_forked_modal__button--icon_container {
+  &:first-of-type {
+    background-color: $button;
+  }
+}
+
+.p-ignore_forked_modal__button--subtext {
+  color: $text;
+}

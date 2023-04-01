@@ -1,0 +1,162 @@
+.c-search_filter_section__title {
+  color: $text;
+
+  &:after {
+    border-bottom: thin solid $borderLight;
+  }
+}
+
+.p-search_filter__option--active .p-search_filter__in_channel > .c-presence {
+  color: $fg;
+}
+
+.c-search_filter_section .p-file_list__file_type_select {
+  border-color: $bg2;
+}
+
+.p-deprecated_channel_name {
+  font-style: italic;
+}
+
+.c-select_options_list__option--active .c-channel_name .p-deprecated_channel_name__team_name {
+  color: $fg;
+}
+
+.p-search_filter__close {
+  color: $disabled;
+}
+
+.p-search_filter__checkbox_label--disabled {
+  color: $disabled;
+}
+
+.p-search_filter__dates {
+  border-radius: 4px;
+  background-color: $bg;
+  border: 1px solid $borderLight;
+}
+
+.p-search_filter__date {
+  color: $text;
+
+  &:first-child {
+    border-bottom: 1px solid $bg2;
+  }
+}
+
+.p-search_filter__datepicker_trigger {
+  &:hover {
+    color: $fg;
+  }
+}
+
+.p-search_filter__date_readout {
+  color: $fg;
+}
+
+.p-search_filter__date_close:hover {
+  color: $fg;
+}
+
+.p-search_filter__placeholder_avatar {
+  background-color: $contrast;
+}
+
+.p-search_filter__placeholder_name {
+  background-color: $contrast;
+}
+
+.p-search_filter__block_item {
+  &:hover {
+    background: $hl;
+
+    .p-avatar_stack__avatar {
+      background-color: $bg2;
+      box-shadow: 0 0 0 2px $bg2;
+    }
+  }
+
+  &.active {
+    border: 1px solid $accent;
+    color: $selectFg;
+
+    &:hover {
+      background: $hl;
+    }
+  }
+}
+
+.p-search_filter__block_item--clearable {
+  border: 1px solid $button;
+  color: $fg;
+
+  &:hover {
+    background: $hl;
+  }
+}
+
+.p-search_filter__block_item_close {
+  .c-icon {
+    color: $fg;
+  }
+}
+
+.p-search_filter__panel {
+  background-color: $contrast;
+  @include pane;
+}
+
+.p-search_filter__block_item_icon {
+  &:before {
+    color: $primary;
+  }
+}
+
+.p-search_filter__block_item_icon--selected:before {
+  color: $primary;
+}
+
+.p-search_filter__multi-select-list {
+  .c-member_name--deactivated {
+    color: $disabled;
+  }
+
+  .c-select_options_list__clear_option {
+    color: $primary;
+  }
+
+  .c-select_options_list__option--active.c-select_options_list__clear_option {
+    color: $selectFg;
+  }
+
+  .c-select_options_list__option--empty-state {
+    color: $text;
+  }
+}
+
+.p-search_filter__list_item--selected {
+  color: $primary;
+}
+
+.p-search_filter__list_item--active {
+  .p-search_filter__mpim_avatars--bottom {
+    box-shadow: 0 0 0 1px $primary;
+  }
+}
+
+.p-search_filter__mpim_avatars--bottom {
+  box-shadow: 0 0 0 1px $bg2;
+}
+
+.p-search_filter__modal_divider {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-search_filter__select-label--open,
+.p-search_filter__select-label:hover {
+  color: $fg;
+}
+
+.p-search_filter__emoji_picker {
+  background-color: $bg2;
+}

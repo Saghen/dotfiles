@@ -1,0 +1,70 @@
+.p-omnipicker_dialog__menu {
+  background-color: $contrast;
+  margin-right: 0;
+  @include dropShadow;
+
+  .c-menu {
+    .c-menu_item__button {
+      border: 1px solid $contrast;
+    }
+
+    .c-menu_item__button--highlighted {
+      background-color: $tree;
+      border: 1px solid $tree;
+      color: $fg;
+
+      .c-menu_item__icon {
+        color: $fg;
+      }
+    }
+  }
+}
+
+.p-omnipicker_dialog__file.c-pillow_file_container--full_width {
+  border-bottom: 1px solid $border;
+}
+
+.p-omnipicker_dialog__list--loading {
+  color: $text;
+}
+
+.p-omnipicker_dialog__list--empty {
+  color: $fg;
+}
+
+.p-omnipicker_dialog__storage-warning-container {
+  background-color: $bg;
+  border-bottom: 1px solid $borderLight;
+}
+
+.c-menu_item__button__selected {
+  background-color: $selectBg;
+  color: $selectFg;
+
+  .c-menu_item__icon {
+    color: $selectFg;
+  }
+}
+
+.c-menu_item__browsefiles:hover,
+.c-menu_item__button--highlighted .c-menu_item__browsefiles {
+  background-color: $hl;
+}
+
+.c-missing_menu_item__button--loading {
+  background: $button;
+  opacity: 0.7;
+}
+
+.p-omnipicker_dialog__list_section {
+  background-color: $bg;
+}
+
+.p-omnipicker_dialog__footer {
+  background-color: $bg;
+}
+
+.p-omnipicker_dialog__header.c-sk-modal_header,
+.p-omnipicker_dialog {
+  background-color: $bg;
+}

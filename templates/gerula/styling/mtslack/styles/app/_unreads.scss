@@ -1,0 +1,128 @@
+@keyframes unread-highlight {
+  0% {
+    background: $hl;
+  }
+  60% {
+    background: transparent;
+  }
+}
+
+.p-message_pane__unread_banner {
+  background: $accent;
+  color: $selectFg;
+}
+
+.p-message_pane__unread_banner__banner {
+  &:hover {
+    background: $accent;
+    color: $selectFg;
+  }
+}
+
+.p-message_pane__unread_banner__close {
+  text-shadow: 0 1px $borderLight;
+
+  &:hover {
+    background: $accent;
+  }
+}
+
+.p-unreads_view__header {
+  background: $bg2;
+}
+
+.p-unreads_view__header--was_marked {
+  background: $bg;
+  box-shadow: inset 0 -1px $borderLight;
+}
+
+.p-unreads_view__header--collapsed {
+  box-shadow: inset 0 -1px $borderLight;
+}
+
+.p-unreads_view__spacer--bottom {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-unreads_view__show_newer {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-unreads_view__empty__button_caption {
+  color: $text;
+}
+
+.p-unreads_view__empty__undo_inner {
+  background: $excluded;
+  color: $disabled;
+}
+
+.p-unreads_view__empty__undo_button {
+  color: $disabled;
+
+  &:active, &:focus, &:hover {
+    color: $fg;
+  }
+}
+
+.p-unreads_view__top_banners {
+  &:not(:empty):before {
+    background: $bg2;
+  }
+}
+
+.p-message_pane__unread_banner__close--detached {
+  background: $accent;
+  border-left: 1px solid $accent;
+}
+
+.p-client_desktop--ia-top-nav {
+  .p-team_sidebar {
+    box-shadow: inset -1px 0 0 0 $border !important;
+  }
+
+  .p-message_pane__unread_banner__banner {
+    &:hover {
+      background: $accentT;
+    }
+  }
+
+  .p-message_pane__unread_banner__msg {
+    &:hover {
+      background: $accent;
+    }
+  }
+
+  .p-message_pane__unread_banner__close_icon {
+    &:hover {
+      background: $accent;
+    }
+  }
+}
+
+.p-all_unreads_header__header__sort_dropdown {
+  color: $text;
+}
+
+.p-unreads_view__jump_to_section_button {
+  color: $accent2;
+}
+
+.p-unreads_view__header--new {
+  background: $bg2;
+}
+
+.p-unreads_view__header--was_marked {
+  background: $bg2;
+  box-shadow: inset 0 -1px $borderLight;
+}
+
+.p-unreads_view__header--was_marked--new {
+  background: $bg2;
+  box-shadow: inset 0 -1px $borderLight;
+  color: $text;
+}
+
+.p-unreads_view__header--collapsed {
+  box-shadow: inset 0 -1px $borderLight;
+}

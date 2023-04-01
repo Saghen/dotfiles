@@ -1,0 +1,159 @@
+.p-block_kit_button_element {
+  border-color: $button;
+}
+
+.p-block_kit_overflow_element__button {
+  border-color: $button;
+}
+
+.p-block_kit_error_message {
+  color: $selectFg;
+}
+
+.c-multi_select_input__placeholder {
+  color: $disabled;
+}
+
+.p-block_kit_input_block--invalid {
+  .c-input_text,
+  .c-input_textarea,
+  .c-multi_select_input,
+  .c-select_input,
+  .p-block_kit_date_picker_button,
+  .p-block_kit_date_picker__datepicker_trigger {
+    border-color: $red;
+  }
+
+  .c-input_text:focus,
+  .c-input_textarea:focus,
+  .c-multi_select_input:focus,
+  .c-select_input:focus,
+  .p-block_kit_date_picker__datepicker_trigger:focus {
+    box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
+  }
+
+  .c-input_text:focus-within,
+  .c-input_textarea:focus-within,
+  .c-multi_select_input:focus-within,
+  .c-select_input:focus-within,
+  .p-block_kit_date_picker__datepicker_trigger:focus-within {
+    box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
+  }
+
+  .c-accessible_multi_select_input {
+    border-color: $accent;
+
+    &:focus,
+    &:focus-within {
+      box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
+    }
+  }
+}
+
+.p-block_kit_input_block__enter_help_text,
+.p-block_kit_input_block__hint_text {
+  color: $text;
+}
+
+.p-block_kit_select_element {
+  &.c-input_select {
+    .c-input_select__filter_input {
+      background-color: $contrast;
+
+      &::-webkit-input-placeholder,
+      &::-moz-placeholder,
+      &::-ms-input-placeholder,
+      &::placeholder {
+        color: $disabled;
+      }
+    }
+
+    &:not(.c-input_select--with_error) {
+      box-shadow: inset 0 0 0 1px $borderLight;
+    }
+  }
+}
+
+.p-block_kit_date_picker {
+  color: $text;
+}
+
+.p-block_kit_date_picker__datepicker_trigger {
+  border-color: $borderLight;
+}
+
+.p-block_kit_date_picker__date_readout {
+  color: $fg;
+}
+
+.p-block_kit_date_picker__calendar_icon {
+  color: $text;
+}
+
+.p-block_kit_date_picker__date_close {
+  &:hover {
+    color: $fg;
+  }
+}
+
+.p-block_kit_date_picker_button {
+  border-color: $button;
+}
+
+.p-block_kit_date_picker_button--invalid {
+  border: 1px solid $red;
+}
+
+.p-block_kit_date_picker_button .c-icon {
+  color: $text;
+}
+
+.p-block_kit_date_picker__placeholder {
+  color: $disabled;
+}
+
+.p-block_kit_element__error {
+  color: $text;
+}
+
+.p-block_kit_element__no-results-message {
+  color: $text;
+}
+
+.p-block-kit-select_options__description {
+  color: $text;
+}
+
+.p-context_block__text {
+  color: $fg;
+}
+
+.p-image_block_container {
+  color: $text;
+}
+
+.p-divider_block {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-block_kit_renderer__expand_blocks {
+  color: $primary;
+}
+
+.p-event_block__details_title {
+  color: $primary;
+}
+
+.p-event_block__divider {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-block_kit_renderer_error,
+.p-top_level_error_element {
+  background: $bg2;
+  color: $red;
+}
+
+.p-block_kit_modal__title_text {
+  color: $fg;
+}

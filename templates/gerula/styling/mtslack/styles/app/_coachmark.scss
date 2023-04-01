@@ -1,0 +1,234 @@
+.c-coachmark {
+  background: $notif;
+  @include dropShadow;
+}
+
+.c-coachmark--top-left,
+.c-coachmark--top {
+  &:after {
+    border-top-color: $notif;
+  }
+
+  &:before {
+    border-top-color: $borderLight;
+  }
+}
+
+.c-coachmark--bottom {
+  &:after {
+    border-bottom-color: $notif;
+  }
+
+  &:before {
+    border-bottom-color: $borderLight;
+  }
+}
+
+.c-coachmark--bottom-left {
+  &:after {
+    border-bottom-color: $notif;
+  }
+
+  &:before {
+    border-bottom-color: $borderLight;
+  }
+}
+
+.c-coachmark--left-top,
+.c-coachmark--left {
+  &:after {
+    border-left-color: $notif;
+  }
+
+  &:before {
+    border-left-color: $borderLight;
+  }
+}
+
+.c-coachmark--right {
+  &:after {
+    border-right-color: $notif;
+  }
+
+  &:before {
+    border-right-color: $borderLight;
+  }
+}
+
+.c-coachmark__overlay {
+  background-color: transparent;
+}
+
+.p-shared_channels_coachmark_div {
+  background: $bg;
+
+  .coachmark_interior,
+  .p-coachmark__skip_button {
+    color: $fg;
+  }
+
+  .p-coachmark__continue_button {
+    background-color: $accent;
+    color: $bg;
+  }
+
+  .p-coachmark__callout {
+    background-color: $bg;
+  }
+}
+
+.p-shared_channels_coachmark_title {
+  color: $fg;
+}
+
+.p-shared_channels_coachmark_subtitle {
+  color: $fg;
+}
+
+.p-coachmark {
+  color: $selectFg;
+  background-color: $accent;
+}
+
+.p-coachmark__callout {
+  background-color: $accent;
+}
+
+.p-coachmark__close_btn {
+  color: $selectFg;
+}
+
+.p-coachmark__skip_link_button {
+  color: $fg;
+}
+
+.p-coachmark__skip_button {
+  color: $fg;
+  box-shadow: inset 0 0 0 1px $borderLight;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+.p-coachmark__continue_button {
+  color: $accent;
+  background-color: $button;
+
+  &:hover {
+    color: $accent;
+    background-color: $button;
+    box-shadow: inset 0 0 0 1px $button;
+  }
+}
+
+.p-setup_create_channel_coachmark__ReactModal__Body--open .p-workspace__primary_view_contents:before {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.p-setup_create_channel_coachmark {
+  background: $notif;
+  box-shadow: 0 0 0 1px $contrast, 0 18px 48px 0 $contrast;
+
+  &.c-coachmark--right {
+    &:after,
+    &:before {
+      border-right-color: $notif;
+    }
+  }
+}
+
+.p-setup_create_channel_coachmark__header {
+  font-family: $headerFont;
+}
+
+.p-setup_create_channel_coachmark__header_highlighted {
+  color: $accent;
+}
+
+.p-setup_create_channel_coachmark__body {
+  color: $text;
+}
+
+.p-setup_create_channel_coachmark__channels {
+  .p-setup_create_channel_coachmark__channel {
+    color: $fg;
+  }
+
+  .p-setup_create_channel_coachmark__channel_icon {
+    background: $button;
+
+    .c-icon {
+      color: $fg;
+    }
+  }
+
+  .p-setup_create_channel_coachmark__channel--active {
+    color: $selectFg;
+
+    .p-setup_create_channel_coachmark__channel_icon {
+      background: $hl;
+    }
+
+    .c-icon {
+      color: $hl;
+    }
+  }
+}
+
+.p-setup_create_channel_coachmark__illustrations {
+  .msg-bubble {
+    color: $fg;
+    background: $excluded;
+  }
+}
+
+.p-setup_create_channel_coachmark__skip_link {
+  color: $accent2;
+
+  &:hover {
+    color: $accent2;
+    border-bottom: 1px solid $accent2;
+  }
+}
+
+.sk-client-theme--dark {
+  .p-setup_create_channel_coachmark {
+    background: $notif;
+
+    &.c-coachmark--right {
+      &:after,
+      &:before {
+        border-right-color: $notif;
+      }
+    }
+  }
+
+  .p-setup_create_channel_coachmark__channel--active {
+    color: $selectFg;
+
+    .p-setup_create_channel_coachmark__channel_icon {
+      background: $hl;
+    }
+
+    .c-icon {
+      color: $selectFg;
+    }
+  }
+}
+
+.p-directory_buttons_coachmark {
+  background-color: $bg2;
+
+  &:after {
+    border-top: 12px solid $bg2;
+  }
+}
+
+.p-introductions_education__coachmark_icon_container {
+  background-color: $notif;
+}
+
+.sk-client-theme--dark .p-introductions_education__coachmark_icon_container {
+  background-color: $notif;
+}

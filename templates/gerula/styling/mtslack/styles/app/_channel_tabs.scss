@@ -1,0 +1,43 @@
+.p-channel_tabs__header {
+  background: $bg2;
+
+  .p-classic_nav__model__title__info__tab {
+    color: $text;
+  }
+
+  .p-classic_nav__model__title__info__tab--active {
+    color: $primary;
+
+    &:after {
+      background: $green;
+    }
+  }
+}
+
+.p-workspace--channel-tabs-header {
+  .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before,
+  .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar2__hider:before {
+    background: $bg;
+  }
+}
+
+.p-workspace--feature_message_actions_refresh .c-message_actions__container,
+.p-workspace--feature_message_actions_refresh .c-message_actions__group {
+  background-color: $bg;
+}
+
+.p-workspace--feature_message_actions_refresh .c-message_actions__button {
+  &:active,
+  &:focus {
+    color: $selectFg;
+  }
+
+  &:hover {
+    color: $fg;
+    background: $hl;
+  }
+
+  &:active {
+    background: $active;
+  }
+}

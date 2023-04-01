@@ -1,0 +1,320 @@
+.p-setup_page__header {
+  font-family: $headerFont;
+}
+
+.p-setup_page__content_button {
+  background-color: $accentT;
+
+  &:hover {
+    background-color: $accent;
+  }
+}
+
+.p-setup_page__content_link {
+  color: $accent2;
+  border-bottom: 1px solid $borderLight;
+
+  &:hover {
+    color: $selectFg;
+  }
+}
+
+.p-setup_suggest_message__btn--primary {
+  &:after {
+    border-top-color: $borderLight;
+  }
+
+  &:before {
+    border-top-color: $borderLight;
+  }
+}
+
+.p-setup_page__content_button--aubergine {
+  background-color: $accentT;
+  color: $selectFg;
+
+  &:hover {
+    background-color: $accent;
+    color: $selectFg;
+  }
+}
+
+.p-setup_suggest_message__btn--soft {
+  color: $text;
+}
+
+.p-setup_suggest_message__btn {
+  &:active:after,
+  &:hover:after {
+    border-top-color: $borderLight;
+  }
+
+  &:active:before,
+  &:hover:before {
+    border-top-color: $borderLight;
+  }
+}
+
+.p-setup_suggest_message__hint_text {
+  color: $accent2;
+}
+
+.p-setup_channel_banner__hidden_button--hover {
+  background-color: $hl;
+  border-color: $tree;
+}
+
+.p-setup_channel_banner--welcome {
+  background: $contrast;
+}
+
+.p-setup_channel_banner--announcements {
+  background: $contrast;
+}
+
+.p-setup_channel_banner--ideas {
+  background: $contrast;
+}
+
+.p-setup_channel_banner--generic,
+.p-setup_channel_banner--project {
+  background: $contrast;
+}
+
+.p-setup_channel_banner--team {
+  background: $contrast;
+}
+
+.p-setup_channel_banner--dm,
+.p-setup_channel_banner--page {
+  background: $contrast;
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-setup_channel_banner__text--button {
+  &:hover {
+    background-color: $button;
+    border-color: $button;
+  }
+}
+
+.p-setup_channel_banner__text_edit {
+  color: $text;
+}
+
+.p-setup_channel_banner__heading--dm-invited {
+  color: $disabled;
+}
+
+.p-setup_channel_banner__heading_edit_text {
+  color: $text;
+}
+
+.p-setup_channel_banner__heading--with-button:hover {
+  .p-setup_channel_banner__heading_button {
+    background-color: $button;
+    border-color: $button;
+  }
+}
+
+.p-setup_channel_banner__cta_text {
+  color: $disabled;
+}
+
+.p-setup_channel_banner__btn {
+  &:hover {
+    background: $active;
+    border: 1px solid $active;
+  }
+}
+
+.p-setup_channel_banner__btn--completed {
+  border: 1px solid transparent;
+  background: $accent;
+}
+
+.p-setup_channel_banner__close_icon {
+  color: $fg;
+}
+
+.p-setup_channel_banner__tooltip {
+  background: $notif;
+  border: 0.5px solid $border;
+  color: $fg;
+}
+
+.p-setup_channel_banner__app_icon {
+  border: 1px solid $borderLight;
+}
+
+.p-setup_page__header_highlighted {
+  color: $primary;
+}
+
+.p-setup_page__header_highlighted--bordered {
+  border-bottom: 1px dashed $borderLight;
+}
+
+.sk-client-theme--dark {
+  .p-setup_page__header_highlighted {
+    color: $primary;
+  }
+
+  .p-setup_page__header_highlighted--bordered {
+    border-bottom: 1px dashed $borderLight;
+  }
+}
+
+.p-setup_suggest_message__mention_text {
+  color: $accent2;
+}
+
+.p-setup_send_message_input {
+  .c-texty_input.focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+}
+
+.p-setup_send_message_input__input--error {
+  .p-message_input_field {
+    border-color: $red;
+  }
+
+  .c-texty_input.focus {
+    box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
+  }
+}
+
+.p-setup_step_start_first_convo__title {
+  background: $notif;
+  font-family: $fontFamily;
+}
+
+.p-setup_step_start_first_convo__email {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-setup_step_start_first_convo__email_input {
+  .c-token {
+    background-color: $accent;
+  }
+
+  .c-token--disabled {
+    color: $disabled;
+  }
+}
+
+.p-setup_page__step_tada_skip {
+  color: $fg;
+}
+
+.p-setup_page__content_secondary_link {
+  color: $accent2;
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    color: $selectFg;
+    border-bottom: 1px solid $borderLight;
+  }
+}
+
+.p-setup_page__step_calendar_contact_import_loading_body {
+  color: $text;
+}
+
+.p-setup_page__content__select_teammates_step_email {
+  color: $text;
+}
+
+.p-setup_prog_disc_invite_modal_explainer_tip {
+  background-color: $notif;
+}
+
+.p-setup_page__footer--fixed {
+  background: $bg;
+  border-top: 1px solid $borderLight;
+}
+
+.p-setup_page__content__select_teammates_step_list {
+  border: 1px solid $borderLight;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+
+    &:-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-moz-placeholder,
+    &::-webkit-input-placeholder {
+      color: $disabled;
+    }
+  }
+
+  &[disabled] {
+    background: $bg;
+    --saf-0: $disabled;
+  }
+}
+
+.p-setup_page__content__select_teammates_step_list_item {
+  border-bottom: 1px solid $border;
+}
+
+.p-setup_page__content__select_teammates_step_list_item_invite {
+  color: $text;
+  border-bottom: 1px solid $border;
+
+  &:focus,
+  &:hover {
+    background: $hl;
+    color: $selectFg;
+  }
+}
+
+.p-setup_page__step_summary {
+  .p-setup_page__step_summary_card {
+    @include card;
+    border: 1px solid $border;
+  }
+
+  .p-setup_page__step_summary_card_avatar_stack_wrapper {
+    .p-setup_page__step_summary_card_avatar_stack {
+      .p-setup_page__step_summary_card_avatar {
+        border: 1px solid $button;
+      }
+    }
+
+    .p-setup_page__step_summary_card_avatar_count {
+      color: $text;
+    }
+  }
+
+  .p-setup_page__summary_card_main {
+    background: $excluded;
+  }
+
+  .p-setup_page__summary_card_main--external {
+    background: $excluded;
+    border-left: 2px solid $accent;
+  }
+
+  .p-setup_page__summary_card_main--internal {
+    border-left: 2px solid $accentT;
+  }
+
+  .p-setup_page__summary_no_contacts_copy {
+    color: $disabled;
+  }
+}
+
+.p-setup_page___google_icon_container {
+  background-color: $bg;
+}
+
+.p-setup_channel_banner--channel_joiner_banner,
+.p-setup_channel_banner--people_joiner_banner {
+  background: $tree;
+}
+
+.p-setup_channel_banner__text--joiner_banner {
+  color: $disabled;
+}

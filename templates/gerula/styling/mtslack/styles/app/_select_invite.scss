@@ -1,0 +1,47 @@
+.p-select_invite_type__option {
+  border-bottom: $hl;
+
+  &:hover:not(.p-select_invite_type__option--disabled) {
+    .p-select_invite_type__member_type_name {
+      color: $selectFg;
+    }
+
+    .p-select_invite_type__chevron {
+      color: $accent;
+    }
+  }
+}
+
+.p-select_invite_type__option--disabled {
+  color: $disabled;
+}
+
+
+.p-select_invite_type__chevron {
+  color: $text;
+}
+
+.p-select_invite_type__footer {
+  color: $fg;
+}
+
+.p-invite_dialog__footer_link {
+  color: $accent2;
+
+  &:hover {
+    color: $selectFg;
+  }
+}
+
+.p-invite_modal_header {
+  border-bottom: $border;
+}
+
+.p-invite_form--learn-more {
+  color: $accent2;
+
+  &:hover,
+  &:visited {
+    color: $selectFg;
+  }
+}

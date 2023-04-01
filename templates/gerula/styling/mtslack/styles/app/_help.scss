@@ -1,0 +1,464 @@
+.p-help_search__popular_topics {
+  color: $text;
+}
+
+.p-help_search__list__item {
+  border-top: 1px solid $borderLight;
+  text-indent: 1em;
+
+  &:focus,
+  &:hover {
+    background-color: $hl;
+    text-decoration: none;
+  }
+}
+
+.p-help_search__list__item__focus {
+  background-color: $hl;
+  border: 1px solid $primary;
+}
+
+.p-help_search__list__icon {
+  color: $accent;
+}
+
+.p-help_modal__browse {
+  color: $fg;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+.p-help_modal__footer {
+  background-color: $bg2;
+}
+
+.p-help_modal__requests:hover {
+  .p-help_modal__requests__message {
+    color: $accent;
+  }
+}
+
+.p-help_modal__requests__message {
+  color: $primary;
+
+  &.read {
+    color: $accent2;
+  }
+}
+
+.p-help_modal__requests_badge {
+  color: $bg2;
+
+  &.read {
+    background-color: $accent2;
+  }
+
+  &.unread {
+    background-color: $excluded;
+  }
+}
+
+.search-help-center-input_input {
+  color: $fg;
+}
+
+.p-help_search__list {
+  .hover_styles {
+    color: $selectFg;
+    background-color: $hl;
+
+    .p-help_search__file__icon:before {
+      color: $selectFg;
+    }
+
+    .p-help_search__list__item__title,
+    .p-help_search_category_item__description {
+      color: $selectFg;
+    }
+  }
+
+  &.p-help_search__list__highlight_first .c-virtual_list__item:first-of-type {
+    color: $selectFg;
+    background-color: $hl;
+
+    .p-help_search__file__icon:before {
+      color: $selectFg;
+    }
+
+    .p-help_search__list__item__title,
+    .p-help_search_category_item__description {
+      color: $selectFg;
+    }
+  }
+
+  .p-help_search__file__icon {
+    &:before {
+      color: $primary;
+    }
+  }
+
+  .c-virtual_list__item {
+    &:active,
+    &:focus,
+    &:hover {
+      color: $selectFg;
+      background-color: $hl;
+    }
+
+    &:active .p-help_search__file__icon:before,
+    &:focus .p-help_search__file__icon:before,
+    &:hover .p-help_search__file__icon:before {
+      color: $selectFg;
+    }
+
+    &:active {
+      .p-help_search__list__item__title,
+      .p-help_search_category_item__description {
+        color: $selectFg;
+      }
+    }
+
+    &:focus {
+      .p-help_search__list__item__title,
+      .p-help_search_category_item__description {
+        color: $selectFg;
+      }
+    }
+
+    &:hover {
+      .p-help_search__list__item__title,
+      .p-help_search_category_item__description {
+        color: $selectFg;
+      }
+    }
+  }
+
+  .p-help_search__list__icon {
+    color: transparent;
+  }
+
+  .p-help_search__list__item__title {
+    color: $primary;
+  }
+
+  .p-help_search_category_item__description {
+    color: $fg;
+  }
+
+  .p-help_search__list__item__article {
+    border-bottom: 1px solid $borderLight;
+  }
+
+  .p-help_search__category__container {
+    border-bottom: 1px solid $borderLight;
+  }
+
+  .p-help_search__list__item__article_active {
+    color: $selectFg;
+    background-color: $hl;
+
+    .p-help_search__file__icon:before {
+      color: $selectFg;
+    }
+
+    .p-help_search__list__item__title,
+    .p-help_search_category_item__description {
+      color: $selectFg;
+    }
+  }
+}
+
+.p-help_search__resource_card__container {
+  border: 1px solid $borderLight;
+  @include card;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+}
+
+.p-help_search__resource_card__text {
+  color: $fg;
+}
+
+.p-help_search__keyboard_card__subtitle {
+  color: $text;
+}
+
+.p-help_search__keyboard_card__container {
+  background-color: $bg2;
+}
+
+.p-help_search__content__card__subtitle {
+  color: $text;
+}
+
+.p-help_search__content__card__slack_connect .p-help_search__resource_card__image img,
+.p-help_search__content__card__new_ia .p-help_search__resource_card__image img {
+  background-color: $accent;
+}
+
+.p-help_search__badge_small {
+  background-color: $accent;
+}
+
+.p-help_search__badge_small__red {
+  background-color: $red;
+}
+
+.p-help_search__badge_small__blue {
+  background-color: $accent;
+}
+
+.p-help_dialog__modal_header {
+  .c-tabs__tab_count {
+    background-color: $red;
+    color: $selectFg;
+  }
+}
+
+.p-help_learning_modal__header {
+  .c-tabs__tab_count {
+    background-color: $red;
+    color: $selectFg;
+  }
+}
+
+.p-help_learning_modal__footer {
+  border-top: 1px solid $borderLight;
+}
+
+.p-help_search__resource_card__image {
+  img {
+    background-color: transparent;
+  }
+}
+
+.p-help_article_flexpane {
+  .tip {
+    border-color: $borderLight;
+    background-color: $contrast;
+
+    &:before {
+      color: $borderLight;
+    }
+  }
+
+  table {
+    tr {
+      &:nth-child(odd) td {
+        background-color: $contrast;
+      }
+
+      &.white td {
+        background: none;
+      }
+
+      &.grey td {
+        background-color: $contrast;
+      }
+    }
+
+    td {
+      border-color: transparent;
+    }
+
+    th {
+      border-color: $border;
+      color: $primary;
+    }
+  }
+
+  ol:not(.takeaway) {
+    li {
+      &:before {
+        background-color: $hl;
+        color: $selectFg;
+      }
+    }
+  }
+
+  .boxed {
+    border: 1px solid $borderLight;
+
+    ul strong {
+      color: $accent;
+    }
+
+    .ts_icon:before {
+      color: $disabled;
+    }
+  }
+}
+
+.p-help_search__resource_card__title {
+  color: $fg;
+}
+
+.p-help_search__resource_card__quick_start_guide__image img {
+  background-color: $accent;
+}
+
+.p-help_search__content__card__quick_start_guide {
+  .p-help_search__resource_card__container {
+    border: 1px solid $primary;
+  }
+
+  .p-help_search__resource_card__image img {
+    background-color: $accent;
+  }
+}
+
+.p-help_search__content__card__app_update .p-help_search__resource_card__image img {
+  background-color: $accent;
+}
+
+.p-help_search__content__card__customer_consult_card {
+  .p-help_search__resource_card__container {
+    border: 1px solid $accent;
+  }
+
+  .p-help_search__resource_card__image img {
+    background-color: $accent;
+  }
+}
+
+.p-help_search__resource_card__badge .c-icon {
+  &:before {
+    color: $accent;
+  }
+}
+
+.p-help_search__content__card__live_chat_support_card {
+  .p-help_search__resource_card__container {
+    border: 1px solid $primary;
+  }
+
+  .p-help_search__content__card__live_chat_support_card_icon {
+    color: $accent;
+    background-color: $bg;
+  }
+}
+
+.p-help_search__product_release_card__container {
+  @include card;
+}
+
+.p-help_search__product_release_card__image {
+  @include card;
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-help_home_actionable_card {
+  background-color: rgba(224, 30, 90, 0.1);
+  border: 1px solid rgba(224, 30, 90, 0.1);
+  color: $fg;
+}
+
+.p-help_home_actionable_card__badge {
+  color: $red;
+}
+
+.p-help_home_slider__arrow {
+  background-color: $bg;
+  border: 1px solid $fg;
+  color: $fg;
+
+  &:focus,
+  &:hover {
+    background: $bg;
+    color: $fg;
+  }
+}
+
+.p-help_home_product_release_card__link {
+  color: $accent2;
+
+  &:active,
+  &:hover,
+  &:visited {
+    color: inherit;
+  }
+}
+
+.p-help_home_product_release_card__container {
+  border: 1px solid $borderLight;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+}
+
+.p-help_home_product_release_card__image {
+  border: 0 solid $borderLight;
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-help_home_product_release_card__badge {
+  background-color: $bg2;
+  color: $primary;
+  box-shadow: 0 1px 3px 0 #000;
+}
+
+.p-help_home_featured__header {
+  color: $text;
+}
+
+.p-help_home {
+  .p-help_modal__browse {
+    color: $accent2;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.p-help_home__actionables_title {
+  color: $text;
+}
+
+.p-help_home {
+  .p-help_modal__footer {
+    border-top: 1px solid $border;
+  }
+
+  .p-help_modal__requests:hover {
+    .p-help_modal__requests__message {
+      color: $primary;
+    }
+  }
+
+  .p-help_modal__requests__message {
+    color: $primary;
+
+    &.read:not(.p-help_modal__requests__message__redesign) {
+      color: $green;
+    }
+  }
+
+  .p-help_modal__requests_badge {
+    color: $selectFg;
+
+    &.read {
+      background-color: $green;
+    }
+
+    &.unread {
+      background-color: $red;
+    }
+
+    &.p-help_modal__requests_badge__redesign {
+      &.read {
+        background-color: transparent;
+        color: $primary;
+      }
+    }
+  }
+
+  .p-help_search_filter_input__prog_disc_explainer {
+    border: 2px solid $primary;
+  }
+}

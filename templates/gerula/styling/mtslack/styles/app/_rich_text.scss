@@ -1,0 +1,25 @@
+.p-rich_text_block {
+  .c-mrkdwn__pre {
+    &[data-border='1'] {
+      &:before {
+        background-color: $bg2;
+      }
+    }
+  }
+}
+
+.sk-client-theme--dark .p-rich_text_block .c-mrkdwn__pre[data-border='1']:before {
+  background-color: $borderLight;
+}
+
+.p-rich_text_list {
+  &[data-border='1'] {
+    &:before {
+      background-color: $borderLight;
+    }
+  }
+}
+
+.sk-client-theme--dark .p-rich_text_list[data-border='1']:before {
+  background-color: $borderLight;
+}

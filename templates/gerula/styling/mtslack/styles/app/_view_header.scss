@@ -1,0 +1,129 @@
+.p-view_header {
+  background: $contrast;
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-view_header__quip_shares_container {
+  color: $text;
+}
+
+.p-view_header__quip_file_viewers {
+  border: 1px solid $border;
+
+  .c-avatar {
+    box-shadow: 0 0 0 2px $bg;
+  }
+}
+
+.p-view_header__quip_file_viewers__additional_users {
+  color: $text;
+}
+
+.p-view_header_quip_actions__divider {
+  border-left: 1px solid $border;
+}
+
+.p-view_header--stacked {
+  .p-ia__view_header__title {
+    border-bottom: 1px solid $border;
+  }
+}
+
+.p-view_header__avatar_stack_wrapper {
+  background-color: $bg;
+}
+
+.p-view_header__avatar_stack_coachmark {
+  background: $bg;
+}
+
+.p-view_header__big_button {
+  &:not(.p-view_header__big_button--inactive) {
+    &:hover {
+      background-color: $button;
+    }
+
+    &:active {
+      background-color: $hl;
+    }
+  }
+}
+
+.p-view_header__avatar__presence--stroke {
+  color: $bg;
+  -webkit-text-stroke: 6px $bg;
+}
+
+.p-view_header__menu {
+  .p-about_modal__mpdm_avatars .p-about_modal__member_avatar img {
+    border-color: $bg2;
+  }
+}
+
+.p-view_header__member_name {
+  color: $fg;
+}
+
+.p-view_header__big_button {
+  &:hover .p-view_header__avatar__presence--stroke {
+    color: $bg2;
+    -webkit-text-stroke: 4px $bg2;
+  }
+
+  &:active .p-view_header__avatar__presence--stroke {
+    color: $active;
+    -webkit-text-stroke: 4px $active;
+  }
+}
+
+.p-view_header__avatar__presence--stroke.c-presence--away:after {
+  background-color: $bg;
+}
+
+.p-view_header__big_button {
+  &:hover .p-view_header__avatar__presence--stroke.c-presence--away:after {
+    background-color: $bg2;
+  }
+
+  &:active .p-view_header__avatar__presence--stroke.c-presence--away:after {
+    background-color: $active;
+  }
+}
+
+.p-view_header__big_button__tooltip_topic {
+  color: $text;
+}
+
+.p-view_header__topic_container {
+  color: $text;
+}
+
+.p-view_header__actions {
+  background: $contrast;
+}
+
+.p-view_header .p-ia__view_header__button:not(.p-ia__view_header__button--close_tile) {
+  color: $fg;
+}
+
+.p-view_header_channel_section_selector {
+  &:hover {
+    background-color: $button;
+  }
+
+  .c-icon--star-o {
+    color: $text;
+  }
+
+  .c-icon--star {
+    color: $primary;
+  }
+}
+
+.p-view_header_channel_section_selector__tooltip_section_name {
+  color: $primary;
+}
+
+.p-view_header--with-bookmarks-bar {
+  background: $contrast;
+}

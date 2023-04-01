@@ -1,0 +1,224 @@
+.p-app_external_team_banner {
+  background: $contrast;
+}
+
+.p-app_external_team_banner__team_icon {
+  box-shadow: 0 0 0 2px $primary;
+}
+
+.c-banner {
+  .c-button--focus-visible:focus,
+  .c-link--focus-visible:focus {
+    color: $selectFg;
+    box-shadow: 0 0 0 1px $selectBg, 0 0 0 5px $selectBg;
+  }
+
+  &.c-banner--neutral {
+    .c-banner__close.c-button--focus-visible:focus,
+    .c-link--focus-visible:not(.c-button):focus {
+      color: $selectFg;
+      @include dropShadow;
+    }
+  }
+}
+
+.c-banner--info {
+  background-color: $blue;
+  color: $selectFg;
+}
+
+.c-banner--success {
+  background-color: $green;
+  color: $bg;
+}
+
+.c-banner--warning {
+  background-color: $orange;
+  color: $selectFg;
+}
+
+.c-banner--urgent {
+  background-color: $red;
+  color: $selectFg;
+}
+
+.c-banner--neutral {
+  background-color: $notif;
+  color: $fg;
+
+  .c-banner__close.c-button-unstyled {
+    color: $selectFg;
+  }
+}
+
+.p-message_pane__degraded_banner {
+  background: $bg2;
+  color: $text;
+}
+
+.p-message_pane__degraded_banner__reload_cta {
+  color: $text;
+
+  &:hover {
+    color: $fg;
+  }
+}
+
+.p-message_pane_banner {
+  background-color: $bg;
+
+  &:before {
+    background-color: $bg;
+    border-bottom: 1px solid $borderLight;
+  }
+}
+
+.p-global_banner {
+  background-color: $bg2;
+}
+
+.p-message_pane_banner__header {
+  color: $fg;
+}
+
+.p-message_pane_banner__body {
+  color: $fg;
+}
+
+.p-message_pane_banner__close_icon {
+  color: $text;
+}
+
+.p-message_pane_banner--persistent {
+  background-color: $bg2;
+}
+
+.p-message_pane_banner__body_icon {
+  color: $primary;
+}
+
+.supports_custom_scrollbar .p-global_banner__container {
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      background: $accent;
+    }
+  }
+}
+
+.p-global_banner--ephemeral {
+  border: 1px $borderLight;
+}
+
+.p-global_banner--persistent {
+  border-bottom: 1px solid $borderLight;
+
+  &:before {
+    border-bottom: 1px solid $borderLight;
+    background-color: $bg;
+  }
+}
+
+.p-global_banner__heading {
+  color: $fg;
+}
+
+.p-global_banner__close_icon {
+  color: $fg;
+}
+
+.p-message_pane_banner__spacer,
+.p-message_pane_banner_common {
+  background-color: $bg;
+}
+
+.p-message_pane_banner__spacer {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-message_pane_banner--persistent {
+  box-shadow: 0 1px 0 $primaryT;
+  background-color: $notif;
+}
+
+.p-message_pane_banner_small {
+  background-color: $notif;
+}
+
+.p-global_banner__spacer {
+  border-bottom: 1px solid $borderLight;
+  background-color: $bg;
+}
+
+.p-workspace_banner__desktop-download-app .p-workspace_banner__desktop_banner_contrasted_text,
+.p-workspace_banner__desktop-notifications .p-workspace_banner__desktop_banner_contrasted_text,
+.p-workspace_banner__download .p-workspace_banner__desktop_banner_contrasted_text,
+.p-workspace_banner__download_ssb .p-workspace_banner__desktop_banner_contrasted_text {
+  color: $text;
+}
+
+.p-workspace_banner__desktop-download-app .p-workspace_banner__desktop_banner_dont_ask_again,
+.p-workspace_banner__desktop-notifications .p-workspace_banner__desktop_banner_dont_ask_again,
+.p-workspace_banner__download .p-workspace_banner__desktop_banner_dont_ask_again,
+.p-workspace_banner__download_ssb .p-workspace_banner__desktop_banner_dont_ask_again {
+  color: $text;
+}
+
+.p-workspace_banner__download_ssb,
+.p-workspace_banner__download {
+  .p-workspace_banner__download_content_link--secondary,
+  .p-workspace_banner__download_ssb_content_link--secondary {
+    color: $text;
+  }
+
+  .p-workspace_banner__download_content_link--primary {
+    &:focus {
+      color: $fg;
+    }
+  }
+
+  .p-workspace_banner__download_content_link--secondary {
+    color: $text;
+
+    &:focus {
+      color: $text;
+    }
+  }
+}
+
+.p-status_banner {
+  color: $fg;
+  background-color: $notif;
+}
+
+.p-status_banner__text {
+  color: $fg;
+
+  a {
+    color: $accent2;
+
+    &:active,
+    &:hover,
+    &:visited {
+      color: $selectFg;
+    }
+  }
+}
+
+.p-status_banner--priority {
+  color: $fg;
+  background-color: $bg2;
+
+  .p-status_banner__text {
+    color: $fg;
+
+    a {
+      color: $primary;
+
+      &:active,
+      &:hover,
+      &:visited {
+        color: $selectFg;
+      }
+    }
+  }
+}

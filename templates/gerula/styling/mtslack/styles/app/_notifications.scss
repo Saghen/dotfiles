@@ -1,0 +1,164 @@
+.p-channel_notification_prefs__table {
+  td {
+    border-bottom: 1px solid $fg;
+  }
+
+  th {
+    border-bottom: 1px solid $fg;
+  }
+}
+
+.p-notification_bar__section {
+  color: $text;
+}
+
+.p-notification_bar__offline {
+  color: $fg;
+}
+
+.p-notification_bar__offline_icon {
+  color: $disabled;
+}
+
+.p-channel_notification_prefs_new__empty_icon {
+  color: $text;
+}
+
+.p-channel_notification_prefs_new {
+  .c-sk-modal_content {
+    border-top: 1px solid $border;
+  }
+
+  .p-channel_notification_prefs_new__mentions {
+    background: $bg2;
+    color: $primary;
+  }
+}
+
+.sk-client-theme--dark .p-channel_notification_prefs_new__mentions {
+  background: $bg2;
+  color: $primary;
+}
+
+.p-channel_notification_prefs_new__icon-chevron {
+  color: $text;
+}
+
+.p-channel_notification_prefs_new__platform_icon {
+  color: $fg;
+}
+
+.p-channel_notification_prefs_new__note {
+  color: $text;
+}
+
+.p-channel_notification_prefs_new__prompt__icon {
+  color: $accent;
+}
+
+.p-channel_notification_prefs_new__prompt__muted {
+  .p-channel_notification_prefs_new__prompt__icon {
+    color: $accent2;
+  }
+}
+
+.p-channel_notification_prefs_new__prompt__footer {
+  border-top: 1px solid $border;
+}
+
+.p-notifications_page {
+  background: $bg;
+}
+
+.p-notifications_page__body {
+  .c-tabs__tab_menu {
+    background: $bg;
+  }
+}
+
+.p-notifications_page__bundle_count {
+  color: $primary;
+}
+
+.p-notifications_page__list_divider {
+  color: $border;
+}
+
+.p-notifications_page__title_icon {
+  color: $accent;
+}
+
+.p-notifications_page__list {
+  &.p-notifications_page__list--docked {
+    .p-notifications_page__item--first_in_section {
+      border-top: 1px solid $borderLight;
+    }
+  }
+}
+
+.p-notifications_page__item {
+  background: $bg;
+  box-shadow: 0 0 0 1px $primary;
+}
+
+.c-virtual_list__item--focus .p-notifications_page__item {
+  box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+}
+
+.p-notifications_page__item--docked {
+  border-bottom: 1px solid $borderLight;
+
+  &:hover {
+    background: $notif;
+  }
+}
+
+.c-virtual_list__item--focus .p-notifications_page__item--docked {
+  box-shadow: 0 0 0 1px $bg, 0 0 0 5px $bg;
+}
+
+.p-notifications_page__item__header {
+  color: $fg;
+}
+
+.p-notifications_page__floating_loader {
+  background: $bg;
+}
+
+.p-notifications_flexpane {
+  .p-notifications_page__notification {
+    border-bottom: 1px solid $borderLight;
+
+    &:hover {
+      background: $bg2;
+    }
+  }
+}
+
+.p-channel_notification_prefs__mentions {
+  background: $notif;
+  color: $primary;
+}
+
+.sk-client-theme--dark .p-channel_notification_prefs__mentions {
+  background: $notif;
+  color: $primary;
+}
+
+.p-channel_notification_prefs__icon-chevron {
+  color: $primary;
+}
+
+.p-channel_notification_prefs__note {
+  color: $text;
+}
+
+.p-channel_notification_prefs__prompt__icon {
+  color: $primary;
+}
+
+.p-channel_notification_prefs__prompt__muted {
+  .p-channel_notification_prefs__prompt__icon {
+    color: $red;
+  }
+}

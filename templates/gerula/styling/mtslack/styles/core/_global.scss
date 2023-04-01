@@ -1,0 +1,226 @@
+//* {
+//  transition: background-color 1s ease, color 1s ease;
+//}
+
+html {
+  //background: $bg;
+}
+
+body {
+  //background: $bg;
+  color: $fg;
+
+  input[readonly] {
+    background: $contrast;
+  }
+}
+
+header,
+footer {
+  background: $bg;
+  border-top-color: $border;
+  color: $fg;
+
+  ul a,
+  ul a:link {
+    color: $fg;
+
+    &:hover {
+      color: $selectFg;
+    }
+  }
+
+  label,
+  .label {
+    background: transparent;
+    color: $fg;
+
+    &:hover {
+      background: $hl;
+      color: $selectFg;
+    }
+  }
+}
+
+a {
+  color: $accent;
+}
+
+a:active,
+a:focus,
+a:hover {
+  color: $selectFg;
+}
+
+a:visited,
+a:link {
+  color: $accent2;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: $fg;
+
+  a {
+    color: $fg;
+  }
+}
+
+code {
+  background-color: $hl;
+  border: 1px solid $border;
+  color: $fg;
+}
+
+blockquote:before {
+  background: $bg2;
+}
+
+hr,
+.divider {
+  border-top: 1px solid $borderLight;
+}
+
+textarea,
+input[type='text'] {
+  background-color: $contrast;
+  border-color: $border;
+  color: $fg;
+
+  &:focus {
+    border-color: $primary;
+    border-width: 2px;
+  }
+}
+
+input {
+  &[type='url'] {
+    &:active,
+    &:focus {
+      border-color: $primary;
+      border-width: 2px;
+    }
+  }
+
+  &[type='text'] {
+    &:active,
+    &:focus {
+      border-color: $primary;
+      border-width: 2px;
+    }
+  }
+
+  &[type='number'] {
+    &:active,
+    &:focus {
+      border-color: $primary;
+      border-width: 2px;
+    }
+  }
+
+  &[type='email'] {
+    &:active,
+    &:focus {
+      border-color: $primary;
+      border-width: 2px;
+    }
+  }
+
+  &[type='password'] {
+    &:active,
+    &:focus {
+      border-color: $primary;
+      border-width: 2px;
+    }
+  }
+}
+
+input {
+  &[type='url'],
+  &[type='text'],
+  &[type='tel'],
+  &[type='number'],
+  &[type='email'],
+  &[type='password'] {
+    background: $contrast;
+    border: 1px solid $borderLight;
+    color: $fg;
+  }
+}
+
+textarea {
+  border: 1px solid $borderLight;
+  color: $fg;
+
+  &:active,
+  &:focus {
+    border-color: $primary;
+    border-width: 2px;
+  }
+}
+
+select {
+  background-color: $button;
+  border-color: $border;
+  color: $text;
+
+  &:active,
+  &:focus {
+    border-color: $primary;
+    border-width: 2px;
+  }
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder,
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder,
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+::-webkit-input-placeholder,
+::-moz-placeholder,
+::-moz-placeholder,
+::-ms-input-placeholder {
+  color: $disabled;
+}
+
+input:disabled,
+select:disabled,
+textarea:disabled {
+  background: $button;
+  border-color: $borderLight;
+  color: $disabled;
+}
+
+abbr {
+  border-color: $border;
+}
+
+blockquote {
+  border-color: $border;
+
+  small {
+    color: $disabled;
+  }
+}
+
+legend {
+  border: none;
+  color: $text;
+
+  small {
+    color: $text;
+  }
+}
+
+.sk-client-theme--dark ::selection,
+::selection {
+  background-color: $tree !important;
+  color: $selectFg !important;
+}
+
+.sk_foreground_max {
+  color: $text;
+}

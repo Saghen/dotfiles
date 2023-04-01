@@ -1,0 +1,123 @@
+.c-tooltip__tip__arrow {
+  background: $notif;
+  border-color: $notif;
+}
+
+
+.sk-client-theme--dark {
+  ::-moz-selection, ::selection {
+    background-color: $selectBg;
+    color: $selectFg;
+  }
+
+  .c-tooltip__tip {
+    background-color: $notif;
+
+    .c-tooltip__tip__arrow {
+      background-color: $notif;
+      border: 1px solid $notif;
+    }
+  }
+
+  .c-tooltip__tip--left .c-tooltip__tip__arrow {
+    border-left-color: $notif;
+  }
+
+  .c-tooltip__tip--right .c-tooltip__tip__arrow {
+    border-right-color: $notif;
+  }
+
+  .c-tooltip__tip--top-left .c-tooltip__tip__arrow, .c-tooltip__tip--top-right .c-tooltip__tip__arrow, .c-tooltip__tip--top .c-tooltip__tip__arrow {
+    border-top-color: $notif;
+  }
+
+  .c-tooltip__tip--bottom-left .c-tooltip__tip__arrow, .c-tooltip__tip--bottom-right .c-tooltip__tip__arrow, .c-tooltip__tip--bottom .c-tooltip__tip__arrow {
+    border-bottom-color: $notif;
+  }
+}
+
+.c-tooltip__tip {
+  color: $fg;
+  background-color: $notif;
+}
+
+.c-tooltip__subtitle {
+  color: $text;
+}
+
+.c-tooltip__tip_shortcut {
+  color: $text;
+}
+
+.c-tooltip__tip--left {
+  .c-tooltip__tip__arrow {
+    border-left-color: $notif;
+  }
+}
+
+.c-tooltip__tip--right {
+  .c-tooltip__tip__arrow {
+    border-right-color: $notif;
+  }
+}
+
+.c-tooltip__tip--top {
+  .c-tooltip__tip__arrow {
+    border-top-color: $notif;
+  }
+}
+
+.c-tooltip__tip--top-left {
+  .c-tooltip__tip__arrow {
+    border-top-color: $notif;
+  }
+}
+
+.c-tooltip__tip--top-right {
+  .c-tooltip__tip__arrow {
+    border-top-color: $notif;
+  }
+}
+
+.c-tooltip__tip--bottom {
+  .c-tooltip__tip__arrow {
+    border-bottom-color: $notif;
+  }
+}
+
+.c-tooltip__tip--bottom-left {
+  .c-tooltip__tip__arrow {
+    border-bottom-color: $notif;
+  }
+}
+
+.c-tooltip__tip--bottom-right {
+  .c-tooltip__tip__arrow {
+    border-bottom-color: $notif;
+  }
+}
+
+.c-tooltip__tip.c-tooltip__tip--success {
+  background-color: $green;
+  color: $bg;
+
+  &.c-tooltip__tip--left .c-tooltip__tip__arrow {
+    border-left-color: $green;
+  }
+
+  &.c-tooltip__tip--right .c-tooltip__tip__arrow {
+    border-right-color: $green;
+  }
+
+  &.c-tooltip__tip--top-left .c-tooltip__tip__arrow, &.c-tooltip__tip--top-right .c-tooltip__tip__arrow, &.c-tooltip__tip--top .c-tooltip__tip__arrow {
+    border-top-color: $green;
+  }
+
+  &.c-tooltip__tip--bottom-left .c-tooltip__tip__arrow, &.c-tooltip__tip--bottom-right .c-tooltip__tip__arrow, &.c-tooltip__tip--bottom .c-tooltip__tip__arrow {
+    border-bottom-color: $green;
+  }
+}
+
+.c-tooltip__sonic_placeholder {
+  color: $disabled;
+}

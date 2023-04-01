@@ -1,0 +1,58 @@
+.p-story_video_controls {
+  color: $fg;
+}
+
+.p-story_video_controls__bar {
+  background: $bg;
+}
+
+.p-story_video_controls__captions_icon--on,
+.p-story_video_controls__captions_icon:hover {
+  box-shadow: inset 0 0 0 1px $primary;
+}
+
+.p-story_video_controls__captions_icon--on {
+  background: $active;
+  color: $primary;
+}
+
+.p-story_video_controls__bar--flexpane {
+  background: $bg;
+  border-bottom: 1px solid $border;
+}
+
+.p-story_video_controls__flexpane__details .p-story_video_controls__timestamp {
+  color: $text;
+}
+
+.p-story_video_controls__flexpane__nav__button {
+  &[disabled] {
+    color: $disabled;
+  }
+
+  &:not([disabled]):hover {
+    background: $active;
+    border: 6px solid $bg;
+  }
+}
+
+.p-story_video_controls__flexpane_toggle_group {
+  .p-story_video_controls__control {
+    background: $contrast;
+    color: $selectFg;
+  }
+
+  .p-story_video_controls__control--on {
+    background: $selectFg;
+    color: $contrast;
+  }
+}
+
+.p-story_video_controls__control[disabled] {
+  color: $disabled;
+}
+
+.p-story_video_controls__captions_icon--on,
+.p-story_video_controls__control:not([disabled]) .p-story_video_controls__captions_icon:hover {
+  box-shadow: inset 0 0 0 1px $accentT;
+}

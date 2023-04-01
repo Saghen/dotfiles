@@ -1,0 +1,47 @@
+.c-message_list__day_divider__label {
+  color: $fg;
+}
+
+.p-message_pane--global-nav .c-message_list__day_divider__label {
+  color: $text;
+}
+
+.c-message_list__day_divider__label__pill {
+  background: $button;
+
+  &:focus,
+  &.c-button--focus-visible:focus {
+    box-shadow: 0 0 0 1px $accent, 0 0 0 5px $accentT;
+  }
+}
+
+.c-message_list__day_divider__line {
+  border-top: 1px solid $borderLight;
+}
+
+.c-message_list__unread_divider__separator {
+  background-image: linear-gradient(90deg, $accent 0, $accent);
+  border-color: $accent;
+}
+
+.c-message_list__unread_divider__label {
+  background: $excluded;
+  color: $accent;
+  padding: 0 6px;
+}
+
+.c-message_list__unread_divider__separator--is-unread-enter-active .c-message_list__unread_divider__separator {
+  box-shadow: 0 0 5px 0 $accent;
+}
+
+.c-message_list--dark,
+.c-message_list__unread_divider__separator--is-unread-enter-active,
+.c-message_list__unread_divider__separator {
+  box-shadow: 0 0 5px 0 $accent, 0 0 5px 0 $accentT;
+}
+
+.c-message_list__pill_banner {
+  background: $bg;
+  box-shadow: 0 0 0 1px $primary, 0 1px 3px 0 $primaryT;
+
+}

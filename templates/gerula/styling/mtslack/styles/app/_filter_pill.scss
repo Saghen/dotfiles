@@ -1,0 +1,32 @@
+.c-filter-pill {
+  &:hover {
+    background: $hl;
+  }
+}
+
+.c-filter-pill.active {
+  background: $active;
+}
+
+.c-filter-pill--active {
+  background: $accent;
+  border-color: $accent;
+  color: $selectFg;
+
+  &.active,
+  &:hover {
+    background: $accentT;
+    border-color: $accentT;
+    color: $selectFg;
+  }
+
+  .p-search_filter__mpim_avatars--bottom {
+    box-shadow: 0 0 0 1px $accent;
+  }
+}
+
+.c-filter-pill--dark.c-filter-pill--active {
+  background: $accent;
+  color: $selectFg;
+  border-color: $accent;
+}

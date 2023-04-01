@@ -1,0 +1,143 @@
+.p-about_tab__pile__count {
+  color: $text;
+}
+
+.p-about_tab__pile__add {
+  color: $fg;
+  border: 1px dashed $borderLight;
+
+  &:hover {
+    border-color: $primary;
+    color: $selectFg;
+  }
+}
+
+.p-about_tab__purpose {
+  background: $bg2;
+}
+
+.p-about_tab__purpose__footer {
+  color: $bg2;
+}
+
+.p-about_tab__purpose__footer__separator {
+  color: $border;
+}
+
+.p-about_modal__contents {
+  background-color: $bg;
+}
+
+.p-about_modal__section,
+.p-about_modal__section_button {
+  border: 1px solid $border;
+  background-color: $bg2;
+}
+
+.p-about_modal__section_button {
+  &:hover {
+    background-color: $hl;
+  }
+}
+
+.p-about_modal__empty_topic {
+  color: $text;
+}
+
+.p-about_modal__notifications {
+  color: $text;
+}
+
+.p-about_modal__meta {
+  color: $text;
+}
+
+.p-about_modal__mpdm_avatars {
+  .p-about_modal__member_avatar {
+    img {
+      border: 2px solid $border;
+    }
+  }
+}
+
+.p-about_modal__connected_section_heading {
+  color: $text;
+}
+
+.p-about_modal__connected_section_item {
+  &:hover {
+    background: $bg;
+
+    .c-team_icon,
+    .p-about_modal__workspace_overflow_icon {
+      border: 2px solid $borderLight;
+    }
+  }
+}
+
+.p-about_modal__connected_subheading {
+  color: $text;
+}
+
+.p-about_modal__connected_icons {
+  .c-team_icon,
+  .p-about_modal__workspace_overflow_icon {
+    border: 2px solid $borderLight;
+  }
+}
+
+.p-about_modal__workspace_overflow_icon {
+  background: $bg;
+  color: $fg;
+}
+
+.p-about_modal__debug_data_text {
+  color: $text;
+}
+
+.p-about_modal__tab_panel {
+  background-color: $bg;
+}
+
+.p-about_modal__header--tabless {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-about_modal__action_icon_prefix {
+  color: $text;
+}
+
+.p-about_modal__notifications--dimmed {
+  color: $text;
+}
+
+.p-about_modal__section_picker {
+  .c-icon--star-o {
+    color: $text;
+  }
+
+  .c-icon--star {
+    color: $primary;
+  }
+}
+
+.p-about_modal__member_title_meta {
+  color: $text;
+}
+
+.p-about_modal__mpdm_avatars {
+  .p-about_modal__member_avatar {
+    img {
+      border: 2px solid $bg;
+    }
+  }
+}
+
+.p-about_modal__debug_data_text {
+  color: $text;
+}
+
+.p-about_modal__badge {
+  color: $primary;
+  background-color: $accent;
+}

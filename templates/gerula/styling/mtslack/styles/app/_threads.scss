@@ -1,0 +1,328 @@
+.p-threads_footer__input.p-message_input--dark,
+.p-threads_footer__input {
+
+  .ql-attachments,
+  .ql-files {
+    background: $bg2;
+  }
+
+  &.p-message_input--focus-visible .p-message_input_field.focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+  }
+
+  .p-message_input_file_button {
+    color: $fg;
+
+    &.p-message_input_file_button--active,
+    &:hover {
+      color: $primary;
+      background: $accent;
+    }
+
+    &.p-message_input_file_button--disabled {
+      &:hover {
+        color: $disabled;
+      }
+    }
+  }
+
+  .p-message_input_field {
+    background: $contrast;
+    border-color: $button;
+
+    .ql-composer-sticky {
+      border-color: $bg;
+    }
+
+    &.focus {
+      border-color: $primary;
+
+      .ql-composer-sticky {
+        border-color: $primary;
+      }
+
+      ~ .p-texty_sticky_formatting_bar {
+        border-color: $primary;
+      }
+    }
+
+    &.focus {
+      ~ .p-message_input_file_button:not(:hover) {
+        border-color: $disabled;
+        color: $disabled;
+      }
+    }
+
+    &.ql-disabled {
+      background: $excluded !important;
+
+      .ql-composer-sticky {
+        background: $excluded !important;
+      }
+    }
+  }
+
+  &.p-message_input--dark {
+    .p-message_input_field {
+      border-color: $button;
+      background: $contrast;
+
+      &.focus {
+        border-color: $primaryT;
+      }
+
+      ~ .p-texty_sticky_formatting_bar {
+        border-color: $primary;
+      }
+    }
+
+    ::-moz-selection,
+    ::selection,
+    ::-moz-selection {
+      background-color: $selectBg;
+    }
+  }
+
+  &.p-message_input--attachments-visible .c-texty_input__container:not(.c-texty_input__container--expanded):not(.c-texty_input--double_decker) .ql-composer-sticky,
+  &.p-message_input--files-visible .c-texty_input__container:not(.c-texty_input__container--expanded):not(.c-texty_input--double_decker) .ql-composer-sticky {
+    background: $active;
+  }
+
+  &.p-message_input--attachments-visible .p-message_input_field:not(.c-texty_input--sticky_composer) {
+    .ql-attachments,
+    .ql-files {
+      box-shadow: 0 1px 0 0 $bg, 0 -1px 0 0 $bg;
+    }
+  }
+
+  &.p-message_input--files-visible .p-message_input_field:not(.c-texty_input--sticky_composer) {
+    .ql-attachments,
+    .ql-files {
+      box-shadow: 0 1px 0 0 $bg, 0 -1px 0 0 $bg;
+    }
+  }
+
+  .p-message_input__attachments,
+  .ql-attachments {
+    .p-composer_attachments__separator {
+      border-left: 1px solid $borderLight;
+    }
+  }
+}
+
+.p-threads_footer__input--legacy {
+  .p-message_input_file_button {
+    border: 1px solid $button;
+    background: $button;
+
+    &.p-message_input_file_button--active,
+    &:hover {
+      color: $selectFg;
+      background: $hl;
+      border-color: $disabled;
+    }
+  }
+
+  .p-message_input_field {
+    border-color: $button;
+  }
+}
+
+.p-threads_footer__info_tooltip {
+  color: $text;
+}
+
+.p-threads_view {
+  background: $bg2;
+}
+
+.p-threads_view_root {
+  border: 1px solid $borderLight;
+}
+
+.p-threads_view_reply {
+  border: 1px solid $borderLight;
+}
+
+.p-threads_view_reply--new_reply {
+  background: $hl;
+}
+
+.p-threads_view_header__permalink {
+  font-weight: 700;
+  color: $fg !important;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $primary;
+  }
+}
+
+.p-threads_view_header__participant_list {
+  color: $text;
+}
+
+.p-threads_view_load_newer_message, .p-threads_view_load_older_message,
+.p-threads_view_load_newer_button,
+.p-threads_view_load_older_button {
+  background: $button;
+  color: $primary;
+  border-left: 1px solid $borderLight;
+  border-right: 1px solid $borderLight;
+}
+
+.p-threads_view_load_newer_message:hover, .p-threads_view_load_older_message:hover,
+.p-threads_view_load_newer_button:hover,
+.p-threads_view_load_older_button:hover {
+  background: $hl;
+  color: $primary;
+}
+
+.p-threads_view_load_newer_message__blue_dot,
+.p-threads_view_load_newer_button__blue_dot {
+  color: $accent;
+}
+
+.p-threads_view__divider_line {
+  border-top: 1px solid $borderLight;
+}
+
+.p-threads_view__divider_label {
+  background: $bg2;
+  color: $text;
+}
+
+.p-threads_view__default_background {
+  background: $bg;
+}
+
+.p-threads_view__footer {
+  border: 1px solid $borderLight;
+}
+
+.p-threads_view .p-threads_view__top_banners:not(:empty):before {
+  background: $bg2;
+}
+
+.p-new_threads_banner {
+  background: $accentT;
+  color: $fg;
+
+  &:hover {
+    background: $accent;
+    color: $selectFg;
+  }
+}
+
+.p-threads_flexpane__header {
+  .p-threads_flexpane__header_back {
+    color: $fg;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.p-threads_flexpane__header_permalink {
+  &:focus,
+  &:hover {
+    color: $accent2;
+  }
+}
+
+.p-threads_flexpane__header_channel_name {
+  color: $fg;
+}
+
+.p-threads_flexpane__separator_count {
+  color: $text;
+}
+
+.p-threads_flexpane__separator_line {
+  border-top-color: $border;
+}
+
+.p-threads_flexpane__loading {
+  color: $text;
+}
+
+.p-threads_view__default_background__drag_overlay {
+  border-left: 1px solid $borderLight;
+  border-right: 1px solid $borderLight;
+  background: $bg;
+}
+
+.p-threads_view__default_background__drag_overlay--first {
+  border-top: 1px solid $borderLight;
+}
+
+.p-threads_view__default_background__drag_overlay--last {
+  border-bottom: 1px solid $borderLight;
+}
+
+.p-threads_view__marked_as_read_divider__separator {
+  background-image: linear-gradient(90deg, $accent 0, $accent);
+}
+
+.p-threads_view__marked_as_read_divider__label {
+  color: $accent;
+}
+
+.p-threads_view__floating_loader {
+  background: $bg;
+}
+
+.p-thread_separator {
+  .p-threads_flexpane__separator_count {
+    color: $text;
+  }
+
+  .p-threads_flexpane__separator_line {
+    border-top-color: $border;
+  }
+
+  .p-threads_flexpane__separator_line__read,
+  .p-threads_flexpane__separator_line__unread {
+    border-top-color: $accent;
+  }
+
+  .p-threads_flexpane__read_divider__label,
+  .p-threads_flexpane__unread_divider__label {
+    background: $bg;
+    color: $accent;
+  }
+
+  .p-thread_separator--dark {
+    .p-threads_flexpane__separator_line--is-unread-appear-active,
+    .p-threads_flexpane__separator_line--is-unread-enter-active {
+      box-shadow: 0 0 5px 0 $accent, 0 0 5px 0 $accentT, 0 0 5px 0 $accentT;
+    }
+  }
+}
+
+.p-threads_flexpane {
+  .p-threads_flexpane__marked_as_read_divider__separator {
+    background-image: linear-gradient(90deg, $accent 0, $accent);
+  }
+
+  .p-threads_flexpane__marked_as_read_divider__label {
+    color: $accent;
+  }
+}
+
+.p-thread_separator--dark {
+  .p-threads_flexpane__separator_line__read, .p-threads_flexpane__separator_line__unread {
+    border-top-color: $accent;
+  }
+
+  .p-threads_flexpane__read_divider__label, .p-threads_flexpane__unread_divider__label {
+    color: $accent;
+  }
+
+  .p-threads_flexpane__separator_line--is-unread-appear-active,
+  .p-threads_flexpane__separator_line--is-unread-enter-active {
+    box-shadow: 0 0 5px 0 $accent, 0 0 5px 0 $accentT, 0 0 5px 0 $accentT;
+  }
+}

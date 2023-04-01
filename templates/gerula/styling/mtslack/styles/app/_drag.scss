@@ -1,0 +1,78 @@
+@keyframes messagePaneDragOverlayOverlayTransition {
+  0% {
+    background: hsla(0, 0%, 100%, 0);
+    opacity: 0;
+  }
+
+  to {
+    background: $bg;
+    opacity: 1;
+  }
+}
+
+.p-message_pane_drag_overlay {
+  background: $bg;
+  animation: messagePaneDragOverlayOverlayTransition 0.12s;
+}
+
+.p-message_pane_drag_overlay__subtitle {
+  color: $text;
+}
+
+.p-message_pane_drag_overlay__anim_readonly {
+  &:before {
+    color: $disabled;
+  }
+}
+
+.p-thread_drag_overlay {
+  background: $bg;
+}
+
+.p-thread_drag_overlay__anim_locked,
+.p-thread_drag_overlay__anim_readonly {
+  &:before {
+    color: $disabled;
+  }
+}
+
+.p-thread_drag_overlay__subtitle {
+  color: $text;
+}
+
+.p-drag_layer__board_item {
+  color: $fg;
+  background-color: $bg;
+  border: 1px solid $accentT;
+}
+
+.p-drag_layer__board_item__overflow_footer {
+  background: linear-gradient(0deg, $bg 10%, transparent);
+}
+
+.p-channel_sidebar--channel_dragging
+  .p-channel_sidebar__drop_target_indicator--channel_above.p-channel_sidebar__drop_target_indicator--channel_sides {
+  box-shadow: inset -4px 0 0 0 $primary, inset 4px 0 0 0 $primary, inset 0 4px 0 0 $primary, inset -5px 0 0 0 $primaryT,
+    inset 5px 0 0 0 $primaryT, inset 0 5px 0 0 $primaryT;
+}
+
+.p-channel_sidebar--channel_dragging .p-channel_sidebar__drop_target_indicator--channel_sides {
+  box-shadow: inset -4px 0 0 0 $primary, inset 4px 0 0 0 $primary, inset -5px 0 0 0 $primaryT, inset 5px 0 0 0 $primaryT;
+}
+
+.p-drag_layer__sidebar_channels,
+.p-drag_layer__sidebar_section_heading {
+  color: $fg;
+  background: $active !important;
+}
+
+.p-drag_layer__sidebar_channels {
+  box-shadow: 0 0 0 1px $bg;
+  color: $text;
+  background: $contrast;
+}
+
+.p-drag_layer__sidebar_section_heading {
+  color: $text;
+  background: $contrast;
+}

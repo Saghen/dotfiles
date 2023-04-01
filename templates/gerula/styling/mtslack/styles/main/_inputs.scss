@@ -1,0 +1,312 @@
+textarea.c-input_textarea,
+.c-input_textarea {
+  border: 1px solid $borderLight;
+  color: $fg;
+  background-color: $contrast;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+
+    &:-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-moz-placeholder,
+    &::-webkit-input-placeholder {
+      color: $disabled;
+    }
+  }
+
+  &[disabled] {
+    background: $button;
+    border: 1px solid $button;
+    color: $disabled;
+  }
+
+  &::-webkit-input-placeholder,
+  &:-moz-placeholder,
+  &::-moz-placeholder,
+  &:-ms-input-placeholder,
+  &::-webkit-input-placeholder,
+  &::-moz-placeholder,
+  &::-ms-input-placeholder,
+  &::placeholder {
+    color: $disabled;
+  }
+}
+
+input.c-input_select__filter_input::placeholder,
+textarea.c-input_textarea::placeholder {
+  color: $disabled;
+}
+
+.c-input_textarea--with_default {
+  border: 1px solid $button;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $border, 0 0 0 5px $border;
+  }
+}
+
+.c-input_textarea--with_info {
+  border: 1px solid $blue;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $blue, 0 0 0 5px $blue;
+  }
+}
+
+.c-input_textarea--with_success {
+  border: 1px solid $green;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $green, 0 0 0 5px $green;
+  }
+}
+
+.c-input_textarea--with_warning {
+  border: 1px solid $orange;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $orange, 0 0 0 5px $orange;
+  }
+}
+
+.c-input_textarea--with_error {
+  border: 1px solid $red;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
+  }
+}
+
+textarea {
+  &.c-input_textarea {
+    border: 1px solid $borderLight;
+    color: $fg;
+    background: $contrast;
+
+    &:focus {
+      box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+
+      &:-moz-placeholder,
+      &:-ms-input-placeholder,
+      &::-moz-placeholder,
+      &::-webkit-input-placeholder {
+        color: $disabled;
+      }
+    }
+
+    &[disabled] {
+      background: $bg2;
+      border: 1px solid $border;
+      color: $disabled;
+    }
+
+    &::-webkit-input-placeholder,
+    &:-moz-placeholder,
+    &::-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-webkit-input-placeholder,
+    &::-moz-placeholder,
+    &::-ms-input-placeholder,
+    &::placeholder {
+      color: $disabled;
+    }
+  }
+
+  &.c-input_textarea--with_default {
+    border: 1px solid $button;
+
+    &:focus {
+      box-shadow: 0 0 0 1px $button, 0 0 0 5px $button;
+    }
+  }
+
+  &.c-input_textarea--with_info {
+    border: 1px solid $blue;
+
+    &:focus {
+      box-shadow: 0 0 0 1px $blue, 0 0 0 5px $blue;
+    }
+  }
+
+  &.c-input_textarea--with_success {
+    border: 1px solid $green;
+
+    &:focus {
+      box-shadow: 0 0 0 1px $green, 0 0 0 5px $green;
+    }
+  }
+
+  &.c-input_textarea--with_warning {
+    border: 1px solid $orange;
+
+    &:focus {
+      box-shadow: 0 0 0 1px $orange, 0 0 0 5px $orange;
+    }
+  }
+
+  &.c-input_textarea--with_error {
+    border: 1px solid $red;
+
+    &:focus {
+      box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
+    }
+  }
+}
+
+.c-input_text {
+  border: 1px solid $button;
+  color: $fg;
+  background: $contrast;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+
+    &:-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-moz-placeholder,
+    &::-webkit-input-placeholder {
+      color: $disabled;
+    }
+  }
+
+  &[disabled] {
+    background: $bg2;
+    border: 1px solid $button;
+    color: $disabled;
+  }
+
+  &::-webkit-input-placeholder,
+  &:-moz-placeholder,
+  &::-moz-placeholder,
+  &:-ms-input-placeholder,
+  &::-webkit-input-placeholder,
+  &::-moz-placeholder,
+  &::-ms-input-placeholder,
+  &::placeholder {
+    color: $disabled;
+  }
+}
+
+.c-input_text--with_default {
+  border: 1px solid $button;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $borderLight, 0 0 0 5px $borderLight;
+  }
+}
+
+.c-input_text--with_info {
+  border: 1px solid $blue;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $blue, 0 0 0 5px $blue;
+  }
+}
+
+.c-input_text--with_success {
+  border: 1px solid $green;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $green, 0 0 0 5px $green;
+  }
+}
+
+.c-input_text--with_warning {
+  border: 1px solid $orange;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $orange, 0 0 0 5px $orange;
+  }
+}
+
+.c-input_text--with_error {
+  border: 1px solid $red;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
+  }
+}
+
+.c-input_text--with_inline_alert {
+  border-color: $red;
+
+  &:focus,
+  &:focus-within {
+    box-shadow: 0 0 0 1px $red, 0 0 0 5px $red;
+  }
+}
+
+.c-input_character_count__characters-remaining {
+  color: $text;
+  background: transparent;
+  border: none;
+}
+
+.c-input_character_count--invalid .c-input_character_count__characters-remaining {
+  color: $red;
+}
+
+.no_touch .plastic_select:hover,
+.no_touch input:hover,
+.no_touch select:hover,
+.no_touch textarea:hover {
+  border-color: $hl;
+}
+
+.c-input_text_overlay {
+  &:before {
+    color: $disabled;
+  }
+
+  &:after {
+    color: $disabled;
+    background: $bg;
+  }
+}
+
+.c-input_text_icon__icon {
+  color: $fg;
+}
+
+.p-public_private_input__label {
+  &[disabled] {
+    color: $disabled;
+  }
+}
+
+input[type='text'].c-input_text {
+  &.p-channel_name_input--input_with_warning {
+    background-color: $contrast;
+  }
+}
+
+.p-message_pane_input__disabled {
+  background-color: $contrast;
+  color: $disabled;
+}
+
+.p-message_pane_input__preview {
+  background-color: $contrast;
+}
+
+.p-message_pane_input__preview_back_to_channel_browser {
+  color: $fg;
+}
+
+.p-message_pane_input__preview_subtitle {
+  color: $fg;
+}
+
+.p-message_pane_input__preview_metadata {
+  color: $text;
+}
+
+.p-message_pane_input_barriered {
+  color: $disabled;
+  border-top: none;
+}
+
+.c-input_text::placeholder {
+  color: $disabled;
+}

@@ -1,0 +1,36 @@
+.p-tiles__container--has_primary_tile {
+  background: $bg2;
+  border-left: 1px solid $borderLight;
+
+  .p-tiles__tile {
+    background: $bg;
+
+    .p-view_header--tiles {
+      &:not(.p-view_header--with-bookmarks-bar, .p-view_header--stacked) {
+        border-bottom: 1px solid $borderLight;
+      }
+    }
+  }
+}
+
+.p-tiles__minimized_tile {
+  box-shadow: 0 0 0 1px $primary, 0 18px 48px 0 $primaryT;
+}
+
+.p-tiles__minimized_tile {
+  background-color: $bg;
+}
+
+.p-tiles__minimized_tile__title,
+.p-tiles__minimized_tile__button.c-icon_button--light,
+.p-tiles__minimized_tile__button.c-icon_button--light.c-button-unstyled:hover:hover {
+  color: $fg;
+}
+
+.p-tiles__heading {
+  border-bottom: 1px solid $border;
+}
+
+.p-tiles__subtitle {
+  color: $text;
+}

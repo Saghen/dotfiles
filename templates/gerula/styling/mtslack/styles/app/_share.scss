@@ -1,0 +1,83 @@
+.p-share_dialog_message_input {
+  border: 1px solid $borderLight;
+  color: $fg;
+
+  &:focus {
+    box-shadow: 0 0 0 1px $primary, 0 0 0 5px $primaryT;
+
+    &:-moz-placeholder,
+    &:-ms-input-placeholder,
+    &::-moz-placeholder,
+    &::-webkit-input-placeholder {
+      color: $disabled;
+    }
+  }
+
+  &[disabled] {
+    background: $excluded;
+    border: 1px solid $borderLight;
+  }
+}
+
+.p-share_dialog_message_input {
+  &.ql-disabled {
+    background: $excluded;
+  }
+}
+
+.p-shared_invite_link {
+  color: $primary;
+
+  .p-edit_settings_button_container {
+    color: $text;
+  }
+
+  .p-edit_settings_link_button {
+    color: $text;
+  }
+}
+
+.p-shared_invite_link--disabled {
+  color: $disabled;
+}
+
+.p-confirmation_modal {
+  .p-confirmation_modal_content {
+    color: $fg;
+  }
+}
+
+.p-shared_invite_link_form {
+  color: $fg;
+
+  .p-shared_invite_link_form_caption {
+    color: $text;
+  }
+
+  .p-shared_invite_link_form_label {
+    color: $fg;
+  }
+}
+
+.p-share_dialog__already_shared_text {
+  border-bottom: 1px solid $border;
+}
+
+.p-share_dialog__already_shared_text_list {
+  li {
+    border-bottom: 1px solid $border;
+  }
+}
+
+.p-share_workflow_block__container {
+  border: 1px solid $border;
+}
+
+.p-share_workflow_block__caption {
+  color: $text;
+}
+
+.p-share_workflow_block__pill {
+  background-color: $button;
+  color: $accent2;
+}

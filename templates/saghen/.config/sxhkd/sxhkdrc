@@ -1,0 +1,177 @@
+#
+# wm independent hotkeys
+#
+
+# terminal
+hyper + Return
+  term
+
+hyper + shift + Return
+  bspc rule -a kitty -o rectangle=1920x1080+0+0;\
+  term
+
+# show shortcuts
+hyper + slash
+  showkeys
+
+# program launcher
+hyper + space
+  program-launcher
+
+# make sxhkd reload its configuration files:
+# TODO: Should be something else
+hyper + Escape
+	pkill -USR1 -x sxhkd
+
+# screenshot
+Print
+	flameshot gui -s -c
+
+ctrl + Print
+	flameshot gui
+
+# media control
+XF86AudioPlay
+	playerctl --player=ncspot,spotify play-pause
+
+XF86AudioNext
+	playerctl --player=ncspot,spotify next
+
+XF86AudioPrev
+	playerctl --player=ncspot,spotify previous
+
+shift + XF86AudioNext
+  ~/scripts/audio/change-spotify-volume.py +10%
+
+shift + XF86AudioPrev
+  ~/scripts/audio/change-spotify-volume.py -10%
+
+hyper + XF86AudioPlay
+	playerctl --player=firefox-nightly play-pause
+
+# Note: Make sure to isntall the mpv-mpris package
+ctrl + XF86AudioPlay
+  playerctl --player=mpv play-pause
+
+ctrl + XF86AudioNext
+  playerctl --player=mpv volume 0
+
+ctrl + XF86AudioPrev
+  playerctl --player=mpv volume 1.2
+
+#
+# bspwm hotkeys
+#
+
+# quit/restart bspwm
+hyper + alt + {n,m}
+	bspc {quit,wm -r}
+
+# close window if not steam game
+hyper + w
+  [[ ! $(xprop -id $(xprop -root | awk '/_NET_ACTIVE_WINDOW\(WINDOW\)/\{print $NF\}') | grep "STEAM_GAME(CARDINAL)") ]] && bspc node -c
+
+# close window regardless of type
+hyper + alt + w
+  bspc node -c
+
+# kill window
+hyper + shift + w
+  bspc node -k
+
+#
+# state/flag
+#
+
+# set the window state
+hyper + f
+	if [ -z "$(bspc query -N -n focused.floating)" ]; then \
+      bspc node focused -t floating; \
+  else \
+      bspc node focused -t tiled; \
+  fi
+
+hyper + shift + f
+  bspc node -t \~fullscreen
+
+hyper + shift + s
+  bspc node -g sticky
+
+# alternate between the tiled and monocle layout
+hyper + m
+	bspc desktop -l next
+
+#
+# move/resize
+#
+
+# move a window
+hyper + ctrl + {h,j,k,l}
+	bspc node -v {-200 0,0 200,0 -200,200 0}
+
+# center
+hyper + g
+  ~/scripts/bspwm/center-window.sh
+
+# expand
+hyper + x
+  bspc node -z bottom_right 200 120;\
+  bspc node -z top_left -200 -120
+
+# contract
+hyper + z
+  bspc node -z bottom_right -200 -120;\
+  bspc node -z top_left 200 120
+
+#
+# focus/swap
+#
+
+# focus/swap/send the node in the given direction
+hyper + {_,shift + ,alt + }{h,j,k,l}
+	bspc node -{f,s,n} {west,south,north,east} --follow
+
+# focus the next/previous window in the current desktop
+hyper + {c,v}
+	bspc node -f {next,prev}.local.!hidden.window
+
+# focus/send to the given desktop
+hyper + {_,shift + }{1-9,0}
+  ~/scripts/bspwm/select-local-desktop.sh "{desktop -f,node -d}" {1-9,10} --follow
+
+# focus/send to other monitor and follow
+hyper + {q,a}
+	bspc {monitor -f,node -m} next --follow
+
+# send node to last local desktop and follow
+hyper + ctrl + a
+	bspc node -d last.local --follow
+
+# swap with other monitor
+hyper + s
+	bspc desktop focused -s any.active.\!local
+
+# reset swapped desktops
+hyper + shift + s
+  node ~/scripts/bspwm/reset-desktops.js $DISPLAY1 $DISPLAY2
+
+# return focus to last node
+hyper + r
+  bspc node -f last
+
+# return to the last local desktop
+hyper + shift + r
+	bspc desktop -f last.local
+
+#
+# applications
+#
+
+hyper + e ; hyper + {d,c,f,s,n,w}
+  {discord,code -n,firefox-nightly,spotify,nautilus,slack}
+
+super + {d,c,f,s,n,w,b}
+  wmctrl -a {discord,code,firefox-nightly,spotify,nautilus,slack,"google chrome"}
+
+hyper + d
+  wmctrl -a discord
