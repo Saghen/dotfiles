@@ -38,7 +38,7 @@ def output_windows():
 
 
     def add_actions_to_node(node):
-        stringified = "%{{A1:bspc node -f {}:}}%{{A2:bspc node -c {}:}}{}%{{A}}%{{A}}".format(
+        stringified = "%{{A1:bspc node -f {}:}}%{{A2:bspc node {} -c:}}{}%{{A}}%{{A}}".format(
             node['id'], node['id'], node['instanceName'])
         if node['id'] == focused_node_id:
             return "%{u#A4B9EF}%{+u}%{F#A4B9EF}" + stringified + "%{F-}%{-u}"
