@@ -27,10 +27,14 @@ if g.neovide then
 	g.neovide_cursor_trail_size = 0.1
 	g.neovide_cursor_animation_length = 0.05
 	g.neovide_scroll_animation_length = 0.1
-  -- https://github.com/neovide/neovide/issues/1325#issuecomment-1281570219
-  -- g.neovide_font_hinting = 'none'
-  g.neovide_font_edging = 'subpixelantialias'
+	-- https://github.com/neovide/neovide/issues/1325#issuecomment-1281570219
+	-- g.neovide_font_hinting = 'none'
+	g.neovide_font_edging = 'subpixelantialias'
 	-- Some plugins like whick key look really weird otherwise
 	-- Doesn't work though
 	-- g.neovide_window_position_animation_length = 0
+
+	-- Fixes a bug with the terminal
+	-- https://github.com/neovide/neovide/issues/1838
+	vim.keymap.set('t', '<MouseMove>', '<NOP>')
 end

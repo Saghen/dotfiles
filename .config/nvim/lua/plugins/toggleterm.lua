@@ -2,11 +2,14 @@ return {
 	'akinsho/nvim-toggleterm.lua',
 	keys = {
 		{ '<leader>t', '<cmd>ToggleTerm direction=vertical size=100<cr>', desc = 'Create vertical terminal' },
-    -- { '<leader>tt', '<cmd>ToggleTermToggleAll<cr>', desc = "Toggle terminals" },
+		-- { '<leader>tt', '<cmd>ToggleTermToggleAll<cr>', desc = "Toggle terminals" },
 		-- { '<leader>th', '<cmd>ToggleTerm direction=horizontal size=20<cr>', desc = 'Create horizontal terminal' },
 	},
 	config = function()
-		require('toggleterm').setup({})
+		require('toggleterm').setup({
+			auto_scroll = false,
+			autochdir = true,
+		})
 		local opts = { buffer = 0 }
 		vim.keymap.set('t', 'jk', [[<C-\><C-n>]], opts)
 		vim.keymap.set('t', '<C-h>', [[<Cmd>wincmd h<CR>]], opts)

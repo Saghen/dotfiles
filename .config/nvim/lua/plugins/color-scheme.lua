@@ -3,10 +3,10 @@ return {
 		'navarasu/onedark.nvim',
 		name = 'onedark',
 		lazy = false,
-    priority = 1000,
+		priority = 1000,
 		config = function(_, opts)
 			require('onedark').setup(opts)
-      require('onedark').load()
+			require('onedark').load()
 		end,
 		opts = {
 			colors = {
@@ -35,21 +35,28 @@ return {
 	},
 
 	-- Rainbow for ({[]})
-	{ 'HiPhish/nvim-ts-rainbow2' },
 	{
-		'nvim-treesitter/nvim-treesitter',
-		opts = {
-			rainbow = {
-				enable = true,
-				hlgroups = {
-					'TSRainbowOrange',
-					'TSRainbowViolet',
-					'TSRainbowBlue',
+		'HiPhish/rainbow-delimiters.nvim',
+		config = function()
+	     local rainbow_delimiters = require('rainbow-delimiters')
+			require('rainbow-delimiters.setup') {
+				strategy = {
+					[''] = rainbow_delimiters.strategy['global'],
+					commonlisp = rainbow_delimiters.strategy['local'],
 				},
-			},
-		},
+				query = {
+					[''] = 'rainbow-delimiters',
+					latex = 'rainbow-blocks',
+				},
+				highlight = {
+					'RainbowDelimiterOrange',
+					'RainbowDelimiterViolet',
+					'RainbowDelimiterBlue',
+				},
+				blacklist = { 'c', 'cpp' },
+			}
+		end,
 	},
-
 	-- NOTE: Uncomment to enable backgorund highlight instead of underline
 	-- {
 	-- 	'RRethy/vim-illuminate',

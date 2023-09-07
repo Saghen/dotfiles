@@ -35,11 +35,10 @@ return {
 		sort_case_insensitive = true,
 		filesystem = {
 			filtered_items = {
-				hide_dotfiles = true,
-				hide_gitignored = false,
+				hide_dotfiles = false,
+				hide_gitignored = true,
 				hide_by_name = {
 					'.git',
-					'.github',
 					'node_modules',
 				},
 				never_show = {
@@ -72,6 +71,37 @@ return {
 					vim.api.nvim_command('silent !open -g ' .. path)
 					-- Linux: open file in default application
 					vim.api.nvim_command(string.format("silent !xdg-open '%s'", path))
+				end,
+				-- Override delete to use trash instead of rm
+				delete = function(state)
+					local path = state.tree:get_node().path
+					vim.fn.system({ 'trash', vim.fn.fnameescape(path) })
+					require('neo-tree.sources.manager').refresh(state.name)
+				end,
+				-- over write default 'delete_visual' command to 'trash' x n.
+				delete_visual = function(state, selected_nodes)
+					local inputs = require('neo-tree.ui.inputs')
+
+					-- get table items count
+					function GetTableLen(tbl)
+						local len = 0
+						for n in pairs(tbl) do
+							len = len + 1
+						end
+						return len
+					end
+
+					local count = GetTableLen(selected_nodes)
+					local msg = 'Are you sure you want to trash ' .. count .. ' files ?'
+					inputs.confirm(msg, function(confirmed)
+						if not confirmed then
+							return
+						end
+						for _, node in ipairs(selected_nodes) do
+							vim.fn.system({ 'trash', vim.fn.fnameescape(node.path) })
+						end
+						require('neo-tree.sources.manager').refresh(state.name)
+					end)
 				end,
 			},
 			event_handlers = {

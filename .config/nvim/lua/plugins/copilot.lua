@@ -6,6 +6,7 @@ return {
 		opts = {
 			suggestion = { enabled = true, debouce = 50, auto_trigger = true, keymap = {} },
 			panel = { enabled = false },
+			filetypes = { yaml = true },
 		},
 	},
 	{
