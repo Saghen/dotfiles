@@ -43,26 +43,35 @@ bspc config border_width 2
 
 # Monitors/Desktops
 xrandr --output $DISPLAY1 --right-of $DISPLAY2 # Sets the second monitor to be on the left side
-bspc wm -O $DISPLAY1 $DISPLAY2 # Re-order displays to be correct
-bspc monitor $DISPLAY1 -d I II III IV V
-bspc monitor $DISPLAY2 -d VI VII VIII IX X
+bspc wm -O $DISPLAY1 $DISPLAY2                 # Re-order displays to be correct
+bspc monitor $DISPLAY1 -d I II III IV V VI
+bspc monitor $DISPLAY2 -d VII VIII IX X
 
 sleep 0.1
 
 # Rules
 bspc rule -a \* state=floating center=on
-bspc config external_rules_command ~/scripts/bspwm/external-rules/spotify.sh
-bspc rule -a discord desktop='^6' state=tiled split_ratio=0.40
-# bspc rule -a Steam -o state=tiled
-bspc rule -a Steam desktop='^5'
+bspc rule -a Spotify "node=@^7:/first" split_dir=west state=tiled
+bspc rule -a webcord desktop='^&' state=tiled split_ratio=0.40
+bspc rule -a discord desktop='^7' state=tiled split_ratio=0.40
+bspc rule -a Steam -o state=tiled
+bspc rule -a Steam desktop='^6'
+bspc rule -a \*:\*:Steam state=tiled
 # bspc rule -a Slack desktop='^10'
 
 bspc rule -a Google-chrome state=tiled
 bspc rule -a firefox-nightly:Navigator state=tiled
+bspc rule -a Mercury:Navigator state=tiled
+
 bspc rule -a Code state=tiled
+bspc rule -a Code:\*:'Open Folder' state=floating
+bspc rule -a Code:\*:'Open File' state=floating
 bspc rule -a neovide state=tiled
-bspc rule -a Logseq state=tiled desktop='^5'
-bspc rule -a Mailspring state=tiled desktop='^5'
+bspc rule -a Logseq state=tiled desktop='^3'
+bspc rule -a obsidian state=tiled desktop='^3'
+# bspc rule -a obsidian sticky=on hidden=on rectangle=1600x1080
+bspc rule -a Mailspring state=tiled desktop='^6'
+bspc rule -a thunderbird state=tiled desktop='^6'
 bspc rule -a Emacs rectangle=1920x1200+0+0
 
 # Polkit for sudo authentication prompts
@@ -74,19 +83,19 @@ bspc rule -a Emacs rectangle=1920x1200+0+0
 # Polybar
 # Setup pomodoro timer module
 rm /tmp/polypomo.status
-~/scripts/polybar/polypomo.py --worktime 6000 --breaktime 1200 > /tmp/polypomo.status &
+~/scripts/polybar/polypomo.py --worktime 6000 --breaktime 1200 >/tmp/polypomo.status &
 ~/scripts/polybar/launch.sh --catppuccin # Launch the bar
 
 # Desktop Wallpaper
 
-WALLPAPER=~/pictures/wallpapers/pixel-art/forest-city-night.gif
+export WALLPAPER=~/pictures/wallpapers/r-wallpaper/mountain-retreat.jpg
 
 # Always run feh because fig does not allow us to click on an empty monitor to focus it
 # Running feh behind fig fixes the issue
-# feh --bg-scale $WALLPAPER 
+feh --bg-fill $WALLPAPER
 
 # Less resource efficient but doesn't require SDL2
-mpvbg $WALLPAPER
+# mpvbg $WALLPAPER
 
 # Install with: cargo install --git https://github.com/whytheplatypus/fig.git
 # Lowest resource usage but REQUIRES A COMPOSITOR
@@ -101,33 +110,41 @@ xmodmap ~/scripts/x11-keymap
 sxhkd &
 
 # Compsitor
-picom & 
+# picom &
 
 # Autostart applications
-bspswallow & # Automatically swallow terminals when they launch a UI
+# bspswallow & # Automatically swallow terminals when they launch a UI
 flameshot & # Screenshots
-dunst & # Notifications
+dunst &     # Notifications
+# greenclip daemon & # Clipboard
 # bspc rule -a Ulauncher border=off monitor=focused
 # ulauncher --no-window & # application launcher
 
-discord &
+# webcord-git &
+discord-ptb &
 spotify &
-steam &
-mailspring &
-logseq &
+# steam-native &
+# mailspring &
+thunderbird &
+# logseq &
+obsidian &
 
-aw-qt &
+# aw-qt &
 
 # Browser
-bspc rule -a firefox-nightly desktop='^1'
-firefox-nightly &
+# BROWSER_BIN="firefox-nightly"
+# BROWSER_CLASS="firefox-nightly"
+BROWSER_BIN="mercury-browser"
+BROWSER_CLASS="Mercury Browser"
+bspc rule -a "$BROWSER_CLASS" desktop='^1'
+$BROWSER_BIN &
 
 # Wait for applications to open
 sleep 10
 
-bspc rule -r firefox-nightly desktop='^1'
-bspc rule -a firefox-nightly:Navigator state=tiled
+bspc rule -r "$BROWSER_CLASS" desktop='^1'
+bspc rule -a "$BROWSER_CLASS":Navigator state=tiled
 
 # Load cava late so spotify is loaded
-bspc rule -a \*:cava -o node=@^6:/first state=tiled border=off split_ratio=0.3 split_dir=north
+bspc rule -a \*:cava -o node=@^7:/first state=tiled border=off split_ratio=0.3 split_dir=north
 kitty --single-instance --name cava -e cava
