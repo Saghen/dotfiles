@@ -80,9 +80,9 @@ html.newBrand {
 .theme-dark [class^="container"] {
   background-color: var(--bg-primary);
 }
-.theme-dark [class^="container"] {
+/*.theme-dark [class^="container"] {
   background-color: unset;
-}
+}*/
 
 /* Modal */
 
@@ -132,7 +132,7 @@ html.newBrand {
   border: 0;
 }
 
-/* Hide retarded reaction popup */
+/* Hide annoying reaction popup */
 [class*="message"][class*="selected"]
   [class*="buttons"]
   .mouse-mode
