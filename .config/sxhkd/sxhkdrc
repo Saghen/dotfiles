@@ -67,9 +67,9 @@ ctrl + XF86AudioPrev
 hyper + alt + {n,m}
 	bspc {quit,wm -r}
 
-# close window if not steam game
+# close window if not fullscreen
 hyper + w
-  [[ ! $(xprop -id $(xprop -root | awk '/_NET_ACTIVE_WINDOW\(WINDOW\)/\{print $NF\}') | grep "STEAM_GAME(CARDINAL)") ]] && bspc node -c
+  [[ ! $(bspc query -n focused -T | jq .client.state | grep "fullscreen") ]] && bspc node -c
 
 # close window regardless of type
 hyper + alt + w
@@ -166,12 +166,15 @@ hyper + shift + r
 #
 # applications
 #
+# Obsidian scratch pad
+# hyper + n
+#   bspc node $(xdo id -N obsidian) -g hidden -f
 
-hyper + e ; hyper + {d,c,f,s,n,w}
-  {discord,code -n,firefox-nightly,spotify,nautilus,slack}
+hyper + e ; hyper + {d,c,f,s,n,w,v}
+  {discord,code -n,mercury-browser,spotify,nautilus,slack,neovide}
 
 super + {d,c,f,s,n,w,b}
-  wmctrl -a {discord,code,firefox-nightly,spotify,nautilus,slack,"google chrome"}
+  wmctrl -a {discord,code,mercury-browser,spotify,nautilus,slack,"google chrome"}
 
 hyper + d
   wmctrl -a discord
