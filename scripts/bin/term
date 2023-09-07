@@ -1,2 +1,6 @@
 #!/bin/bash
-kitty --single-instance $@
+if [[ $XDG_BACKEND == "wayland" ]]; then
+  KITTY_ENABLE_WAYLAND=1 kitty --single-instance $@
+else
+  kitty --single-instance $@
+fi
