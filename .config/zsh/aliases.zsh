@@ -129,6 +129,8 @@ fi
 # alias docker-nuke="docker rm (docker ps -q -a) && docker rmi (docker images -q -a)"
 
 # kubernetes aliases
+alias kx="kubectx"
+alias kn="kubens"
 alias kt="kubetui"
 alias kth="kubetui -s h"
 alias kubectl="kubecolor"
