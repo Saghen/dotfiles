@@ -11,6 +11,8 @@ HISTTIMEFORMAT="[%F %T] "
 
 # emacs bindings because working in neovim
 bindkey -e
+# unbind escape key
+bindkey -r "^["
 
 # zsh options
 setopt auto_cd                    # auto cd into dirs
