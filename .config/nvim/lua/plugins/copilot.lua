@@ -4,7 +4,7 @@ return {
 		cmd = 'Copilot',
 		build = ':Copilot auth',
 		opts = {
-			suggestion = { enabled = true, debouce = 50, auto_trigger = true, keymap = {} },
+			suggestion = { enabled = true, debounce = 50, auto_trigger = true, keymap = {} },
 			panel = { enabled = false },
 			filetypes = { yaml = true },
 		},

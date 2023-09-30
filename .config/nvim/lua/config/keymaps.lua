@@ -47,10 +47,10 @@ wk.register({
 		name = 'keybinds',
 	},
 }, { prefix = '<leader>' })
-map('n', '<leader>kw', "<cmd>WhichKey<cr>", { desc = "Open Which Key" })
+map('n', '<leader>kw', '<cmd>WhichKey<cr>', { desc = 'Open Which Key' })
 
 -- neovide
 if vim.g.neovide then
 	-- map('i', '<C-V>', '<C-o>"+p', { desc = 'Paste from system clipboard' })
-	map('i', '<C-v>', '<C-o>P', { desc = 'Paste' })
+	map('i', '<C-v>', '<C-r>+', { desc = 'Paste from system clipboard' })
 end

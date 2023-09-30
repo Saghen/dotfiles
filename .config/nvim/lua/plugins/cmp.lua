@@ -2,9 +2,9 @@ return {
 	'hrsh7th/nvim-cmp',
 	dependencies = {
 		'hrsh7th/cmp-cmdline',
-    'onsails/lspkind.nvim',
+		'onsails/lspkind.nvim',
 	},
-	opts = function(_, opts)
+	config = function(_, opts)
 		local cmp = require('cmp')
 
 		opts.formatting = {
@@ -30,44 +30,43 @@ return {
 			{ name = 'luasnip', priority = 0 },
 		}, {})
 
-    local function deprio(kind)
-      return function(e1, e2)
-        if e1:get_kind() == kind then
-          return false
-        end
-        if e2:get_kind() == kind then
-          return true
-        end
-      end
-    end
+		local function deprio(kind)
+			return function(e1, e2)
+				if e1:get_kind() == kind then
+					return false
+				end
+				if e2:get_kind() == kind then
+					return true
+				end
+			end
+		end
 		opts.sorting = {
 			priority_weight = 1.0,
 			comparators = {
-        deprio(cmp.lsp.CompletionItemKind.Snippet),
-        cmp.config.compare.offset,
-        cmp.config.compare.exact,
-        cmp.config.compare.score,
+				deprio(cmp.lsp.CompletionItemKind.Snippet),
+				cmp.config.compare.offset,
+				cmp.config.compare.exact,
+				cmp.config.compare.score,
 
-        -- copied from cmp-under, but I don't think I need the plugin for this.
-        -- I might add some more of my own.
-        function(entry1, entry2)
-          local _, entry1_under = entry1.completion_item.label:find "^_+"
-          local _, entry2_under = entry2.completion_item.label:find "^_+"
-          entry1_under = entry1_under or 0
-          entry2_under = entry2_under or 0
-          if entry1_under > entry2_under then
-            return false
-          elseif entry1_under < entry2_under then
-            return true
-          end
-        end,
+				-- copied from cmp-under, but I don't think I need the plugin for this.
+				-- I might add some more of my own.
+				function(entry1, entry2)
+					local _, entry1_under = entry1.completion_item.label:find('^_+')
+					local _, entry2_under = entry2.completion_item.label:find('^_+')
+					entry1_under = entry1_under or 0
+					entry2_under = entry2_under or 0
+					if entry1_under > entry2_under then
+						return false
+					elseif entry1_under < entry2_under then
+						return true
+					end
+				end,
 
-        cmp.config.compare.kind,
-        cmp.config.compare.sort_text,
-        cmp.config.compare.length,
-        cmp.config.compare.order,
-        -- deprio(cmp.lsp.CompletionItemKind.Snippet)
-      }
+				cmp.config.compare.kind,
+				cmp.config.compare.sort_text,
+				cmp.config.compare.length,
+				cmp.config.compare.order,
+			},
 		}
 
 		cmp.setup(opts)
@@ -87,7 +86,5 @@ return {
 				{ name = 'cmdline' },
 			}),
 		})
-
-    return opts
 	end,
 }

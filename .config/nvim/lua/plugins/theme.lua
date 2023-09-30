@@ -34,29 +34,6 @@ return {
 		},
 	},
 
-	-- Rainbow for ({[]})
-	{
-		'HiPhish/rainbow-delimiters.nvim',
-		config = function()
-	     local rainbow_delimiters = require('rainbow-delimiters')
-			require('rainbow-delimiters.setup') {
-				strategy = {
-					[''] = rainbow_delimiters.strategy['global'],
-					commonlisp = rainbow_delimiters.strategy['local'],
-				},
-				query = {
-					[''] = 'rainbow-delimiters',
-					latex = 'rainbow-blocks',
-				},
-				highlight = {
-					'RainbowDelimiterOrange',
-					'RainbowDelimiterViolet',
-					'RainbowDelimiterBlue',
-				},
-				blacklist = { 'c', 'cpp' },
-			}
-		end,
-	},
 	-- NOTE: Uncomment to enable backgorund highlight instead of underline
 	-- {
 	-- 	'RRethy/vim-illuminate',

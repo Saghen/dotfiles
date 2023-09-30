@@ -26,7 +26,7 @@ if g.neovide then
 	g.neovide_refresh_rate = 144
 	g.neovide_cursor_trail_size = 0.1
 	g.neovide_cursor_animation_length = 0.05
-	g.neovide_scroll_animation_length = 0.1
+	g.neovide_scroll_animation_length = 0 -- 0.1 to enable
 	-- https://github.com/neovide/neovide/issues/1325#issuecomment-1281570219
 	-- g.neovide_font_hinting = 'none'
 	g.neovide_font_edging = 'subpixelantialias'

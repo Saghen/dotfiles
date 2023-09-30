@@ -34,22 +34,22 @@ vim.api.nvim_create_autocmd({ 'TextChangedI' }, {
 -- disable null-ls on helm files
 -- Use LspAttach autocommand to only map the following keys
 -- after the language server attaches to the current buffer
-vim.api.nvim_create_autocmd('LspAttach', {
-	callback = function(ev)
-		local filetype = vim.bo[ev.buf].filetype
-		if filetype == 'helm' then
-			local active_clients = vim.lsp.get_active_clients()
-			for _, client in pairs(active_clients) do
-				if client.name == 'null-ls' then
-					-- vim.lsp.stop_client(client.id, true)
-					vim.lsp.buf_detach_client(ev.buf, client.id)
-					vim.diagnostic.disable(ev.buf)
-					vim.defer_fn(function()
-						vim.diagnostic.reset(nil, ev.buf)
-					end, 1000)
-					-- vim.cmd('LspStop null-ls')
-				end
-			end
-		end
-	end,
-})
+-- vim.api.nvim_create_autocmd('LspAttach', {
+-- 	callback = function(ev)
+-- 		local filetype = vim.bo[ev.buf].filetype
+-- 		if filetype == 'helm' then
+-- 			local active_clients = vim.lsp.get_active_clients()
+-- 			for _, client in pairs(active_clients) do
+-- 				if client.name == 'null-ls' then
+-- 					-- vim.lsp.stop_client(client.id, true)
+-- 					vim.lsp.buf_detach_client(ev.buf, client.id)
+-- 					vim.diagnostic.disable(ev.buf)
+-- 					vim.defer_fn(function()
+-- 						vim.diagnostic.reset(nil, ev.buf)
+-- 					end, 1000)
+-- 					-- vim.cmd('LspStop null-ls')
+-- 				end
+-- 			end
+-- 		end
+-- 	end,
+-- })

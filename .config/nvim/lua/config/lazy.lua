@@ -13,18 +13,16 @@ require('lazy').setup({
 		-- import any extras modules here
 		{ import = 'lazyvim.plugins.extras.lang.typescript' },
 		{ import = 'lazyvim.plugins.extras.lang.json' },
-    { import = "lazyvim.plugins.extras.lang.rust" },
-    { import = "lazyvim.plugins.extras.lang.terraform" },
-    { import = "lazyvim.plugins.extras.lang.docker" },
-    { import = "lazyvim.plugins.extras.lang.go" },
-    -- linting and formatting
+		{ import = 'lazyvim.plugins.extras.lang.rust' },
+		{ import = 'lazyvim.plugins.extras.lang.docker' },
+		{ import = 'lazyvim.plugins.extras.lang.go' },
+		-- linting and formatting
 		{ import = 'lazyvim.plugins.extras.linting.eslint' },
 		{ import = 'lazyvim.plugins.extras.formatting.prettier' },
-    -- debugging
-    { import = "lazyvim.plugins.extras.dap.core" },
-		-- { import = 'lazyvim.plugins.extras.ui.mini-animate' },
-		-- { import = 'lazyvim.plugins.extras.coding.copilot' },
-		-- import/override with your plugins
+		-- debugging
+		{ import = 'lazyvim.plugins.extras.dap.core' },
+		-- import personal plugins
+		{ import = 'langs' },
 		{ import = 'plugins' },
 	},
 	defaults = {
@@ -36,14 +34,14 @@ require('lazy').setup({
 		version = false, -- always use the latest git commit
 		-- version = "*", -- try installing the latest stable version for plugins that support semver
 	},
-	checker = { enabled = true }, -- automatically check for plugin updates
+	checker = { enabled = true, frequency = 60 * 60 * 24 }, -- automatically check for plugin updates every day
 	performance = {
 		rtp = {
 			-- disable some rtp plugins
 			disabled_plugins = {
 				'gzip',
 				-- "matchit",
-				"matchparen",
+				'matchparen',
 				-- "netrwPlugin",
 				'tarPlugin',
 				'tohtml',
