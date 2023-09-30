@@ -117,7 +117,7 @@ zinit as"command" wait lucid for \
     redxtech/switchup
 
 # asdf for managing node, python, go, ...
-zinit light redxtech/zsh-asdf-direnv
+# zinit light redxtech/zsh-asdf-direnv
 
 # completions packages
 zinit ice as"completion" mv"completion.zsh -> _delta" wait lucid
