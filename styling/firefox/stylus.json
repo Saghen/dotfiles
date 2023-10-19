@@ -1,0 +1,805 @@
+[
+  {
+    "settings": {
+      "openEditInWindow": true,
+      "openEditInWindow.popup": false,
+      "windowPosition": {
+        "height": 1060,
+        "left": 281,
+        "top": 190,
+        "width": 1880
+      },
+      "show-badge": true,
+      "disableAll": false,
+      "exposeIframes": false,
+      "exposeStyleName": false,
+      "newStyleAsUsercss": false,
+      "styleViaXhr": false,
+      "patchCsp": false,
+      "urlInstaller": true,
+      "config.autosave": true,
+      "schemeSwitcher.enabled": "system",
+      "schemeSwitcher.nightStart": "18:00",
+      "schemeSwitcher.nightEnd": "06:00",
+      "popup.breadcrumbs": true,
+      "popup.breadcrumbs.usePath": false,
+      "popup.enabledFirst": true,
+      "popup.stylesFirst": true,
+      "popup.autoResort": false,
+      "popup.borders": false,
+      "popup.findSort": "u",
+      "manage.onlyEnabled": false,
+      "manage.onlyLocal": false,
+      "manage.onlyUsercss": false,
+      "manage.onlyEnabled.invert": false,
+      "manage.onlyLocal.invert": false,
+      "manage.onlyUsercss.invert": false,
+      "manage.actions.expanded": true,
+      "manage.backup.expanded": true,
+      "manage.filters.expanded": true,
+      "manage.minColumnWidth": 750,
+      "manage.newUI": true,
+      "manage.newUI.favicons": false,
+      "manage.newUI.faviconsGray": true,
+      "manage.newUI.targets": 3,
+      "manage.newUI.sort": "title,asc",
+      "editor.options": {},
+      "editor.toc.expanded": true,
+      "editor.options.expanded": true,
+      "editor.lint.expanded": true,
+      "editor.publish.expanded": true,
+      "editor.lineWrapping": true,
+      "editor.smartIndent": true,
+      "editor.indentWithTabs": false,
+      "editor.tabSize": 2,
+      "editor.keyMap": "default",
+      "editor.theme": "default",
+      "editor.beautify": {
+        "selector_separator_newline": true,
+        "newline_before_open_brace": false,
+        "newline_after_open_brace": true,
+        "newline_between_properties": true,
+        "newline_before_close_brace": true,
+        "newline_between_rules": false,
+        "preserve_newlines": true,
+        "end_with_newline": false,
+        "indent_conditional": true
+      },
+      "editor.beautify.hotkey": "",
+      "editor.lintDelay": 300,
+      "editor.linter": "csslint",
+      "editor.lintReportDelay": 500,
+      "editor.matchHighlight": "token",
+      "editor.autoCloseBrackets": true,
+      "editor.autocompleteOnTyping": false,
+      "editor.contextDelete": false,
+      "editor.selectByTokens": true,
+      "editor.arrowKeysTraverse": true,
+      "editor.appliesToLineWidget": true,
+      "editor.autosaveDraft": 10,
+      "editor.livePreview": true,
+      "editor.colorpicker": true,
+      "editor.colorpicker.hexUppercase": false,
+      "editor.colorpicker.hotkey": "",
+      "editor.colorpicker.color": "#a5adce",
+      "editor.colorpicker.maxHeight": 300,
+      "hotkey._execute_browser_action": "",
+      "hotkey.openManage": "",
+      "hotkey.styleDisableAll": "",
+      "sync.enabled": "none",
+      "iconset": 0,
+      "badgeDisabled": "#8B0000",
+      "badgeNormal": "#006666",
+      "headerWidth.edit": 200,
+      "headerWidth.install": 200,
+      "headerWidth.manage": 200,
+      "popupWidth": 246,
+      "updateInterval": 24
+    },
+    "order": {
+      "main": [],
+      "prio": []
+    }
+  },
+  {
+    "enabled": true,
+    "installDate": 1611944885171,
+    "name": "Youtube",
+    "sections": [
+      {
+        "code": "html:not(.style-scope)[dark], :not(.style-scope)[dark] {\n    --yt-spec-base-background: var(--sag-bg-500);\n    --yt-spec-raised-background: var(--sag-bg-700);\n    --yt-spec-menu-background: var(--sag-bg-900);\n    --yt-spec-brand-background-solid: var(--sag-bg-500);\n    --yt-spec-brand-background-primary: var(--sag-bg-500);\n    --yt-spec-brand-background-secondary: var(--sag-bg-500);\n    --yt-spec-general-background-a: var(--sag-bg-500);\n    --yt-spec-general-background-b: var(--sag-bg-300);\n    --yt-spec-general-background-c: var(--sag-bg-200);\n    --yt-spec-error-background: #f9f9f9;\n    --yt-spec-text-primary: #fff;\n    --yt-spec-text-primary-inverse: var(--sag-bg-200);\n    --yt-spec-text-secondary: #aaa;\n    --yt-spec-text-disabled: #717171;\n    --yt-spec-call-to-action: var(--sag-accent-primary);\n    --yt-spec-icon-active-other: #fff;\n    --yt-spec-icon-inactive: #909090;\n    --yt-spec-icon-disabled: #606060;\n    --yt-spec-badge-chip-background: rgba(255, 255, 255, 0.1);\n    --yt-spec-verified-badge-background: rgba(255, 255, 255, 0.25);\n    --yt-spec-suggested-action: #23252C;\n    --yt-spec-button-chip-background-hover: rgba(255, 255, 255, 0.2);\n    --yt-spec-touch-response: #fff;\n    --yt-spec-paper-tab-ink: rgba(255, 255, 255, 0.3);\n    --yt-spec-filled-button-text: #030303;\n    --yt-spec-call-to-action-inverse: #065fd4;\n    --yt-spec-brand-icon-active: #fff;\n    --yt-spec-brand-icon-inactive: #909090;\n    --yt-spec-brand-button-background: #E06C75;\n    --yt-spec-brand-link-text: #E06C75;\n    --yt-spec-filled-button-focus-outline: rgba(255, 255, 255, 0.7);\n    --yt-spec-call-to-action-button-focus-outline: rgba(62, 166, 255, 0.3);\n    --yt-spec-brand-text-button-focus-outline: rgba(255, 78, 69, 0.3);\n    --yt-spec-inactive-text-button-focus-outline: #606060;\n    --yt-spec-ad-indicator: #00aaa7;\n    --yt-spec-brand-subscribe-button-background: var(--yt-spec-brand-button-background);\n    --yt-spec-wordmark-text: #fff;\n    --yt-spec-10-percent-layer: rgba(255, 255, 255, 0.02);\n    --yt-spec-snackbar-background: #030303;\n    --yt-spec-selected-nav-text: #fff;\n    --yt-spec-themed-blue: var(--sag-accent-primary);\n    --yt-spec-themed-green: #2ba640;\n    --yt-spec-themed-overlay-background: rgba(0, 0, 0, 0.8);\n    --ytd-searchbox-legacy-button-hover-border-color: #23252C !important;\n    --ytd-searchbox-legacy-button-hover-color: #23252C !important;\n\n    /* These might matter? */\n    --yt-luna-black: var(--sag-bg-500);\n    --yt-opalescence-grey: #888888;\n    --yt-opalescence-soft-grey: #eeeeee;\n    --yt-opalescence-dark-grey: #333333;\n    --yt-red: var(--sag-red);\n    --yt-white: white;\n    --yt-blue: #67cbff;\n    --ad-yellow: #E5C07B;\n    --yt-surface-100: white;\n    --yt-surface-200: #fafafa;\n    --yt-surface-300: whitesmoke;\n    --yt-surface-400: #ededed;\n    --yt-body-500: rgba(0, 0, 0, 0.87);\n    --yt-body-400: rgba(0, 0, 0, 0.74);\n    --yt-body-300: rgba(0, 0, 0, 0.54);\n    --yt-body-200: rgba(0, 0, 0, 0.26);\n    --yt-body-100: rgba(0, 0, 0, 0.04);\n    --yt-opacity-lighten-1: 0.8;\n    --yt-opacity-lighten-2: 0.6;\n    --yt-opacity-lighten-3: 0.4;\n    --yt-opacity-lighten-4: 0.2;\n    --yt-opacity-lighten-5: 0.1;\n    --yt-luna-black-opacity-lighten-1: hsla(0, 0%, 6.7%, var(--yt-opacity-lighten-1));\n    --yt-luna-black-opacity-lighten-2: hsla(0, 0%, 6.7%, var(--yt-opacity-lighten-2));\n    --yt-luna-black-opacity-lighten-2-hex: #707070;\n    --yt-luna-black-opacity-lighten-3: hsla(0, 0%, 6.7%, var(--yt-opacity-lighten-3));\n    --yt-luna-black-opacity-lighten-4: hsla(0, 0%, 6.7%, var(--yt-opacity-lighten-4));\n    --yt-opalescence-grey-opacity-lighten-1: hsla(0, 0%, 53.3%, var(--yt-opacity-lighten-1));\n    --yt-opalescence-grey-opacity-lighten-2: hsla(0, 0%, 53.3%, var(--yt-opacity-lighten-2));\n    --yt-opalescence-grey-opacity-lighten-3: hsla(0, 0%, 53.3%, var(--yt-opacity-lighten-3));\n    --yt-opalescence-grey-opacity-lighten-4: hsla(0, 0%, 53.3%, var(--yt-opacity-lighten-4));\n    --yt-opalescence-grey-opacity-lighten-5: hsla(0, 0%, 53.3%, var(--yt-opacity-lighten-5));\n    --yt-opalescence-soft-grey-opacity-lighten-1: hsla(0, 0%, 93.3%, var(--yt-opacity-lighten-1));\n    --yt-opalescence-soft-grey-opacity-lighten-2: hsla(0, 0%, 93.3%, var(--yt-opacity-lighten-2));\n    --yt-opalescence-soft-grey-opacity-lighten-3: hsla(0, 0%, 93.3%, var(--yt-opacity-lighten-3));\n    --yt-opalescence-soft-grey-opacity-lighten-4: hsla(0, 0%, 93.3%, var(--yt-opacity-lighten-4));\n    --yt-white-opacity-lighten-1: hsla(0, 0%, 100%, var(--yt-opacity-lighten-1));\n    --yt-white-opacity-lighten-2: hsla(0, 0%, 100%, var(--yt-opacity-lighten-2));\n    --yt-white-opacity-lighten-3: hsla(0, 0%, 100%, var(--yt-opacity-lighten-3));\n    --yt-white-opacity-lighten-4: hsla(0, 0%, 100%, var(--yt-opacity-lighten-4));\n    --yt-blue-opacity-lighten-2: hsla(206.1, 79.3%, 52.7%, var(--yt-opacity-lighten-2));\n    --yt-blue-opacity-lighten-4: hsla(206.1, 79.3%, 52.7%, var(--yt-opacity-lighten-4));\n    --yt-playability-button-color: #262626;\n    --yt-blue-light: #167ac6;\n    --yt-blue-suggestive: #f2f8ff;\n    --yt-grey: var(--sag-bg-500);\n    --yt-section-4-light: #e3e3e3;\n    --yt-dark-surface-100: var(--sag-bg-500);\n    --yt-dark-surface-200: var(--sag-bg-500);\n    --yt-dark-surface-200-lighten-1: rgba(28, 28, 28, 0.8);\n    --yt-dark-surface-300: #23252C;\n    --yt-dark-surface-400: #23252C;\n    --yt-dark-body-500: rgba(255, 255, 255, 0.88);\n    --yt-dark-body-400: rgba(255, 255, 255, 0.74);\n    --yt-dark-body-300: rgba(255, 255, 255, 0.5);\n    --yt-dark-body-200: rgba(255, 255, 255, 0.26);\n    --yt-dark-body-100: rgba(255, 255, 255, 0.08);\n    --yt-section-4-dark: #2A2C33;\n    --yt-subscribe-button-count: rgba(255, 255, 255, 0.85);\n\n    /* Not sure if these matter */\n    --yt-spec-white-1: #FFFFFF;\n    --yt-spec-white-2: #F9F9F9;\n    --yt-spec-white-3: #F1F1F1;\n    --yt-spec-white-4: #E9E9E9;\n    --yt-spec-black-1: #282828;\n    --yt-spec-black-2: #1F1F1F;\n    --yt-spec-black-3: #161616;\n    --yt-spec-black-4: #0D0D0D;\n    --yt-spec-black-pure: #000000;\n    --yt-spec-grey-1: #CCCCCC;\n    --yt-spec-grey-2: #AAAAAA;\n    --yt-spec-grey-3: #909090;\n    --yt-spec-grey-4: #717171;\n    --yt-spec-grey-5: #606060;\n    --yt-brand-youtube-red: var(--sag-red);\n    --yt-brand-medium-red: var(--sag-red);\n    --yt-brand-light-red: var(--sag-red);\n    --yt-spec-red-30: var(--sag-red);\n    --yt-spec-red-70: var(--sag-red-dark);\n    --yt-spec-pale-blue: #F2F8FF;\n    --yt-spec-light-blue: var(--sag-accent-primary);\n    --yt-spec-dark-blue: #065FD4;\n    --yt-spec-navy-blue: #252A3A;\n    --yt-spec-light-green: #2BA640;\n    --yt-spec-dark-green: #107516;\n    --yt-spec-yellow: #FBC02D;\n    --yt-spec-black-pure-alpha-5: rgba(0, 0, 0, 0.05);\n    --yt-spec-black-pure-alpha-10: rgba(0, 0, 0, 0.10);\n    --yt-spec-black-pure-alpha-15: rgba(0, 0, 0, 0.15);\n    --yt-spec-black-pure-alpha-30: rgba(0, 0, 0, 0.30);\n    --yt-spec-black-pure-alpha-60: rgba(0, 0, 0, 0.60);\n    --yt-spec-black-pure-alpha-80: rgba(0, 0, 0, 0.80);\n    --yt-spec-black-1-alpha-98: rgba(40, 40, 40, 0.98);\n    --yt-spec-black-1-alpha-95: rgba(40, 40, 40, 0.95);\n    --yt-spec-white-1-alpha-10: rgba(255, 255, 255, 0.10);\n    --yt-spec-white-1-alpha-20: rgba(255, 255, 255, 0.20);\n    --yt-spec-white-1-alpha-25: rgba(255, 255, 255, 0.25);\n    --yt-spec-white-1-alpha-30: rgba(255, 255, 255, 0.30);\n    --yt-spec-white-1-alpha-70: rgba(255, 255, 255, 0.70);\n    --yt-spec-white-1-alpha-95: rgba(255, 255, 255, 0.95);\n    --yt-spec-white-1-alpha-98: rgba(255, 255, 255, 0.98);\n    --yt-brand-medium-red-alpha-90: rgba(204, 0, 0, 0.90);\n    --yt-brand-medium-red-alpha-30: rgba(204, 0, 0, 0.30);\n    --yt-brand-light-red-alpha-30: rgba(255, 78, 69, 0.30);\n    --yt-spec-light-blue-alpha-30: rgba(62, 166, 255, 0.30);\n    --yt-spec-dark-blue-alpha-30: rgba(6, 95, 212, 0.30);\n}\n\n/* disable shorts */\nytd-rich-shelf-renderer[is-shorts] {\n  display: none;\n}\n\nytd-feed-filter-chip-bar-renderer {\n    display: none;\n}\n\n#notification-count {\n    display: none;\n}\n\npath[fill=\"#FF0000\"] {\n    fill: var(--yt-red);\n}\n\nytd-watch-flexy[theater] #player-theater-container.ytd-watch-flexy, ytd-watch-flexy[fullscreen] #player-theater-container.ytd-watch-flexy {\n  background: var(--sag-bg-200);\n}\n",
+        "urlPrefixes": [
+          "https://www.youtube.com",
+          "https://youtube.com"
+        ]
+      }
+    ],
+    "updateDate": 1684123875416,
+    "_id": "66d35e83-0b4b-4ad0-9877-2c14ac97cdd3",
+    "_rev": 1688687260473,
+    "id": 1
+  },
+  {
+    "enabled": true,
+    "installDate": 1611948714985,
+    "name": "Phoronix",
+    "sections": [
+      {
+        "code": "#content-bg,\nbody {\n  background: var(--sag-bg-500);\n}\n\n#content {\n  background: var(--sag-bg-500);\n  color: white;\n}\n\n#headerwrap,\n.b-top-menu__background {\n  background: var(--sag-bg-700);\n}\n\n.b-top-menu__background::before {\n  content: none;\n}\n\n#headerwrap > div {\n  display: flex;\n  justify-content: center;\n}\n\n#headerright {\n  display: none;\n}\n\n#sharebar {\n  display: none !important;\n}\n/*\n#sidebar,\n#menuwrap,\n#sharebar,\n.article-box,\n.after-article,\n#footer,\n#c2c44,\n#wrapper > *:not(#content),\n#sitebuilder-wrapper {\n  display: none !important;\n}*/\n\n/* Menu Bar */\n#menuwrap {\n  background-color: var(--sag-bg-700);\n}\n\n#linklist li.menulink a.linknode:hover, li.menulink span:hover {\n  background-color: var(--sag-green-dark);\n}\n\n#cse-search-box > div > input[type=\"text\"] {\n  filter: invert(100%) contrast(60%);\n  mix-blend-mode: lighten;\n}\n\n#search {\n  background-color: var(--sag-border);\n}\n\n#search input[type=\"submit\"] {\n  background-color: var(--sag-green-dark);\n}\n\n#footer,\n#main,\n#sidebar-wrap,\n#content {\n  border-color: var(--sag-border);\n}\n\narticle {\n  border-style: solid;\n  border-color: var(--sag-border);\n}\n\narticle {\n  color: white;\n}\n\narticle a,\n#sidebar a,\n#litemenu a {\n  color: #67cbff;\n}\n\narticle.important header a::before {\n  background-color: var(--sag-bg-900);\n}\n\narticle.full::after {\n  content: none\n}\n\narticle .details,\narticle .details a,\narticle.full .author,\nblockquote, #sidebar aside header, .article-box header, #about-author header, .wide-article-box header, #sidebar aside {\n  color: #ddd;\n}\n\n/* Main Website Static Nav */\n.pagination {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin-top: 16px;\n  \n  visibility: hidden;\n  \n  font-size: 0.8rem;\n  \n  transform: translateX(-36px);\n}\n\n.pagination a, .pagination a:hover, .pagination a:visited, .pagination span {\n  display: block;\n  \n  font-weight: bold;\n  \n  padding: 2px 8px;\n  border: none;\n  border-radius: 0;\n  margin: 0 2px;\n  \n  background: var(--sag-bg-900);\n  color: white;\n  \n  visibility: visible;\n}\n\n.pagination span {\n  background: #3498DB !important;\n}\n\n/* Forums */\na,\na:active,\na:visited,\n.b-link,\n.ui-widget-content a {\n  color: #67cbff;\n}\n\na:focus,\ninput:focus,\ntextarea:focus,\nbutton:focus,\nselect:focus,\n.js-link:focus,\n.js-button:focus,\n.b-button:focus,\n.ui-state-focus,\n.custom-dropdown:focus,\n.cke_dialog_body .cke_dialog_contents .b-button:focus {\n  outline: none;\n}\n\n.page-title-widget .module-title,\n.page-title-widget .module-title h1 {\n  color: #fff;\n}\n\n#notices, .breadcrumbs-wrapper, .b-top-background__header-mainnav-subnav, #outer-wrapper > #wrapper > #footer {\n  display: none;\n}\n\n#canvas-layout-full > div:nth-child(1) {\n  display: none;\n}\n\n#canvas-layout-full > div:nth-child(2) > div,\n#canvas-layout-full > div:nth-child(2) > div #widget_19 > .widget-header,\n.b-userinfo,\n.b-post-control__label {\n  background: none;\n  color: #fff !important;\n}\n\n\n#canvas-layout-full > div:nth-child(2) > div #widget_175 {\n  display: none;\n}\n\n#canvas-layout-full #widget_20 > div:nth-child(2),\n#footer-copyright {\n  display: none;\n}\n\n#thread-view-tab > .conversation-toolbar-wrapper,\n.b-sharing-menu,\n.b-meter,\n.b-userinfo__additional-info-block {\n  display: none;\n}\n\n#thread-view-tab .conversation-content > ul > li {\n  background: var(--sag-bg-700);\n  color: #fff;\n}\n\n.b-post__body {\n  background: var(--sag-bg-700) !important;\n}\n\n/* SVG charts */\n.content > div > img[type=\"image/svg+xml\"] {\n  filter: invert(100%) hue-rotate(180deg);\n}\n\n/* Forum Static Nav */\n.pagenav-container {\n  display: flex;\n  justify-content: center;\n  margin-top: 16px;\n}\n.js-pagenav {\n  margin: auto;\n  float: none;\n}\n\nbody .b-button,\nbody .b-button:link {\n  border-radius: 0;\n}\n\n.b-button--secondary,\n.b-button--secondary:link,\n.b-button--secondary:visited,\n.cke_dialog_body .cke_dialog_contents .b-button--secondary,\n.cke_dialog_body .cke_dialog_contents .b-button--secondary:link,\n.cke_dialog_body .cke_dialog_contents .b-button--secondary:visited {\n  background: var(--sag-bg-900);\n}\n\n.b-button--primary:hover,\n.b-button--primary,\n.b-button--primary:link {\n  background: #3498DB !important;\n}\n\n.bbcode_container .bbcode_quote {\n  background: var(--sag-bg-800);\n}\n\nspan[style~=\"color:#000000\"] {\n  color: white !important;\n}",
+        "domains": [
+          "phoronix.com"
+        ]
+      }
+    ],
+    "updateDate": 1684808055170,
+    "_id": "6b8aa2ce-8f3b-4a83-9a90-efdc014569d5",
+    "_rev": 1684808055170,
+    "id": 2
+  },
+  {
+    "enabled": true,
+    "installDate": 1611952780595,
+    "name": "GitHub",
+    "sections": [
+      {
+        "code": "[data-color-mode=\"light\"][data-light-theme=\"dark\"], [data-color-mode=\"dark\"][data-dark-theme=\"dark\"],\n.gist, :root, [data-color-mode=\"light\"][data-light-theme*=\"light\"], [data-color-mode=\"dark\"][data-dark-theme*=\"light\"] {\n  --color-scale-black: #010409;\n  --color-scale-white: #f0f6fc;\n  --color-scale-gray-0: #f0f6fc;\n  --color-scale-gray-1: #c9d1d9;\n  --color-scale-gray-2: #b1bac4;\n  --color-scale-gray-3: #8b949e;\n  --color-scale-gray-4: #6e7681;\n  --color-scale-gray-5: #484f58;\n  --color-scale-gray-6: #30363d;\n  --color-scale-gray-7: #21262d;\n  --color-scale-gray-8: #161b22;\n  --color-scale-gray-9: #0d1117;\n  --color-scale-blue-0: #cae8ff;\n  --color-scale-blue-1: #a5d6ff;\n  --color-scale-blue-2: #79c0ff;\n  --color-scale-blue-3: #58a6ff;\n  --color-scale-blue-4: #388bfd;\n  --color-scale-blue-5: #1f6feb;\n  --color-scale-blue-6: #1158c7;\n  --color-scale-blue-7: #0d419d;\n  --color-scale-blue-8: #0c2d6b;\n  --color-scale-blue-9: #051d4d;\n  --color-scale-green-9: #28331f;\n  --color-scale-green-8: #3c4d2f;\n  --color-scale-green-7: #455937;\n  --color-scale-green-6: #597347;\n  --color-scale-green-5: #6d8c57;\n  --color-scale-green-4: #81a667;\n  --color-scale-green-3: #98C379;\n  --color-scale-green-2: #9fcc7e;\n  --color-scale-green-1: #a9d986;\n  --color-scale-green-0: #afe08b;\n  --color-scale-yellow-0: #f8e3a1;\n  --color-scale-yellow-1: #f2cc60;\n  --color-scale-yellow-2: #e3b341;\n  --color-scale-yellow-3: #d29922;\n  --color-scale-yellow-4: #bb8009;\n  --color-scale-yellow-5: #9e6a03;\n  --color-scale-yellow-6: #845306;\n  --color-scale-yellow-7: #693e00;\n  --color-scale-yellow-8: #4b2900;\n  --color-scale-yellow-9: #341a00;\n  --color-scale-orange-0: #ffdfb6;\n  --color-scale-orange-1: #ffc680;\n  --color-scale-orange-2: #ffa657;\n  --color-scale-orange-3: #f0883e;\n  --color-scale-orange-4: #db6d28;\n  --color-scale-orange-5: #bd561d;\n  --color-scale-orange-6: #9b4215;\n  --color-scale-orange-7: #762d0a;\n  --color-scale-orange-8: #5a1e02;\n  --color-scale-orange-9: #3d1300;\n  --color-scale-red-0: #ffdcd7;\n  --color-scale-red-1: #ffc1ba;\n  --color-scale-red-2: #ffa198;\n  --color-scale-red-3: #ff7b72;\n  --color-scale-red-4: #f85149;\n  --color-scale-red-5: #da3633;\n  --color-scale-red-6: #b62324;\n  --color-scale-red-7: #8e1519;\n  --color-scale-red-8: #67060c;\n  --color-scale-red-9: #490202;\n  --color-scale-purple-0: #eddeff;\n  --color-scale-purple-1: #e2c5ff;\n  --color-scale-purple-2: #d2a8ff;\n  --color-scale-purple-3: #bc8cff;\n  --color-scale-purple-4: #a371f7;\n  --color-scale-purple-5: #8957e5;\n  --color-scale-purple-6: #6e40c9;\n  --color-scale-purple-7: #553098;\n  --color-scale-purple-8: #3c1e70;\n  --color-scale-purple-9: #271052;\n  --color-scale-pink-0: #ffdaec;\n  --color-scale-pink-1: #ffbedd;\n  --color-scale-pink-2: #ff9bce;\n  --color-scale-pink-3: #f778ba;\n  --color-scale-pink-4: #db61a2;\n  --color-scale-pink-5: #bf4b8a;\n  --color-scale-pink-6: #9e3670;\n  --color-scale-pink-7: #7d2457;\n  --color-scale-pink-8: #5e103e;\n  --color-scale-pink-9: #42062a;\n  --color-auto-black: #f0f6fc;\n  --color-auto-white: #010409;\n  --color-auto-gray-0: #0d1117;\n  --color-auto-gray-1: #161b22;\n  --color-auto-gray-2: #21262d;\n  --color-auto-gray-3: #30363d;\n  --color-auto-gray-4: #484f58;\n  --color-auto-gray-5: #6e7681;\n  --color-auto-gray-6: #8b949e;\n  --color-auto-gray-7: #b1bac4;\n  --color-auto-gray-8: #c9d1d9;\n  --color-auto-gray-9: #f0f6fc;\n  --color-auto-blue-0: #051d4d;\n  --color-auto-blue-1: #0c2d6b;\n  --color-auto-blue-2: #0d419d;\n  --color-auto-blue-3: #1158c7;\n  --color-auto-blue-4: #1f6feb;\n  --color-auto-blue-5: #388bfd;\n  --color-auto-blue-6: #58a6ff;\n  --color-auto-blue-7: #79c0ff;\n  --color-auto-blue-8: #a5d6ff;\n  --color-auto-blue-9: #cae8ff;\n  --color-auto-green-0: #28331f;\n  --color-auto-green-1: #3c4d2f;\n  --color-auto-green-2: #455937;\n  --color-auto-green-3: #597347;\n  --color-auto-green-4: #6d8c57;\n  --color-auto-green-5: #81a667;\n  --color-auto-green-6: #98C379;\n  --color-auto-green-7: #9fcc7e;\n  --color-auto-green-8: #a9d986;\n  --color-auto-green-9: #afe08b;\n  --color-auto-yellow-0: #341a00;\n  --color-auto-yellow-1: #4b2900;\n  --color-auto-yellow-2: #693e00;\n  --color-auto-yellow-3: #845306;\n  --color-auto-yellow-4: #9e6a03;\n  --color-auto-yellow-5: #bb8009;\n  --color-auto-yellow-6: #d29922;\n  --color-auto-yellow-7: #e3b341;\n  --color-auto-yellow-8: #f2cc60;\n  --color-auto-yellow-9: #f8e3a1;\n  --color-auto-orange-0: #3d1300;\n  --color-auto-orange-1: #5a1e02;\n  --color-auto-orange-2: #762d0a;\n  --color-auto-orange-3: #9b4215;\n  --color-auto-orange-4: #bd561d;\n  --color-auto-orange-5: #db6d28;\n  --color-auto-orange-6: #f0883e;\n  --color-auto-orange-7: #ffa657;\n  --color-auto-orange-8: #ffc680;\n  --color-auto-orange-9: #ffdfb6;\n  --color-auto-red-0: #490202;\n  --color-auto-red-1: #67060c;\n  --color-auto-red-2: #8e1519;\n  --color-auto-red-3: #b62324;\n  --color-auto-red-4: #da3633;\n  --color-auto-red-5: #f85149;\n  --color-auto-red-6: #ff7b72;\n  --color-auto-red-7: #ffa198;\n  --color-auto-red-8: #ffc1ba;\n  --color-auto-red-9: #ffdcd7;\n  --color-auto-purple-0: #271052;\n  --color-auto-purple-1: #3c1e70;\n  --color-auto-purple-2: #553098;\n  --color-auto-purple-3: #6e40c9;\n  --color-auto-purple-4: #8957e5;\n  --color-auto-purple-5: #a371f7;\n  --color-auto-purple-6: #bc8cff;\n  --color-auto-purple-7: #d2a8ff;\n  --color-auto-purple-8: #e2c5ff;\n  --color-auto-purple-9: #eddeff;\n  --color-auto-pink-0: #42062a;\n  --color-auto-pink-1: #5e103e;\n  --color-auto-pink-2: #7d2457;\n  --color-auto-pink-3: #9e3670;\n  --color-auto-pink-4: #bf4b8a;\n  --color-auto-pink-5: #db61a2;\n  --color-auto-pink-6: #f778ba;\n  --color-auto-pink-7: #ff9bce;\n  --color-auto-pink-8: #ffbedd;\n  --color-auto-pink-9: #ffdaec;\n\n  --color-canvas-default-transparent: rgba(13, 17, 23, 0);\n  --color-marketing-icon-primary: var(--sag-accent-secondary);\n  --color-marketing-icon-secondary: var(--sag-accent-primary);\n  --color-diff-blob-addition-num-text: #c9d1d9;\n  --color-diff-blob-addition-fg: #c9d1d9;\n  --color-diff-blob-addition-num-bg: rgba(var(--sag-green-rgb), 0.3);\n  --color-diff-blob-addition-line-bg: rgba(var(--sag-green-rgb), 0.15);\n  --color-diff-blob-addition-word-bg: rgba(var(--sag-green-rgb), 0.4);\n  --color-diff-blob-deletion-num-text: #c9d1d9;\n  --color-diff-blob-deletion-fg: #c9d1d9;\n  --color-diff-blob-deletion-num-bg: rgba(var(--sag-red-rgb), 0.3);\n  --color-diff-blob-deletion-line-bg: rgba(var(--sag-red-rgb), 0.15);\n  --color-diff-blob-deletion-word-bg: rgba(var(--sag-red-rgb), 0.4);\n  --color-diff-blob-hunk-num-bg: rgba(56, 139, 253, 0.4);\n  --color-diff-blob-expander-icon: #8b949e;\n  --color-diff-blob-selected-line-highlight-mix-blend-mode: screen;\n  --color-diffstat-deletion-border: rgba(240, 246, 252, 0.1);\n  --color-diffstat-addition-border: rgba(240, 246, 252, 0.1);\n  --color-diffstat-addition-bg: var(--sag-green);\n  --color-search-keyword-hl: rgba(210, 153, 34, 0.4);\n  --color-prettylights-syntax-comment: #8b949e;\n  --color-prettylights-syntax-constant: #79c0ff;\n  --color-prettylights-syntax-entity: #d2a8ff;\n  --color-prettylights-syntax-storage-modifier-import: #c9d1d9;\n  --color-prettylights-syntax-entity-tag: #7ee787;\n  --color-prettylights-syntax-keyword: #ff7b72;\n  --color-prettylights-syntax-string: #a5d6ff;\n  --color-prettylights-syntax-variable: #ffa657;\n  --color-prettylights-syntax-brackethighlighter-unmatched: #f85149;\n  --color-prettylights-syntax-invalid-illegal-text: #f0f6fc;\n  --color-prettylights-syntax-invalid-illegal-bg: #8e1519;\n  --color-prettylights-syntax-carriage-return-text: #f0f6fc;\n  --color-prettylights-syntax-carriage-return-bg: #b62324;\n  --color-prettylights-syntax-string-regexp: #7ee787;\n  --color-prettylights-syntax-markup-list: #f2cc60;\n  --color-prettylights-syntax-markup-heading: #1f6feb;\n  --color-prettylights-syntax-markup-italic: #c9d1d9;\n  --color-prettylights-syntax-markup-bold: #c9d1d9;\n  --color-prettylights-syntax-markup-deleted-text: #ffdcd7;\n  --color-prettylights-syntax-markup-deleted-bg: #67060c;\n  --color-prettylights-syntax-markup-inserted-text: #aff5b4;\n  --color-prettylights-syntax-markup-inserted-bg: #033a16;\n  --color-prettylights-syntax-markup-changed-text: #ffdfb6;\n  --color-prettylights-syntax-markup-changed-bg: #5a1e02;\n  --color-prettylights-syntax-markup-ignored-text: #c9d1d9;\n  --color-prettylights-syntax-markup-ignored-bg: #1158c7;\n  --color-prettylights-syntax-meta-diff-range: #d2a8ff;\n  --color-prettylights-syntax-brackethighlighter-angle: #8b949e;\n  --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;\n  --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;\n  --color-codemirror-text: #c9d1d9;\n  --color-codemirror-bg: #0d1117;\n  --color-codemirror-gutters-bg: #0d1117;\n  --color-codemirror-guttermarker-text: #0d1117;\n  --color-codemirror-guttermarker-subtle-text: #484f58;\n  --color-codemirror-linenumber-text: #8b949e;\n  --color-codemirror-cursor: #c9d1d9;\n  --color-codemirror-selection-bg: rgba(56, 139, 253, 0.4);\n  --color-codemirror-activeline-bg: rgba(110, 118, 129, 0.1);\n  --color-codemirror-matchingbracket-text: #c9d1d9;\n  --color-codemirror-lines-bg: #0d1117;\n  --color-codemirror-syntax-comment: #8b949e;\n  --color-codemirror-syntax-constant: #79c0ff;\n  --color-codemirror-syntax-entity: #d2a8ff;\n  --color-codemirror-syntax-keyword: #ff7b72;\n  --color-codemirror-syntax-storage: #ff7b72;\n  --color-codemirror-syntax-string: #a5d6ff;\n  --color-codemirror-syntax-support: #79c0ff;\n  --color-codemirror-syntax-variable: #ffa657;\n  --color-checks-bg: var(--sag-bg-200);\n  --color-checks-run-border-width: 1px;\n  --color-checks-container-border-width: 1px;\n  --color-checks-text-primary: #c9d1d9;\n  --color-checks-text-secondary: #8b949e;\n  --color-checks-text-link: #58a6ff;\n  --color-checks-btn-icon: #8b949e;\n  --color-checks-btn-hover-icon: #c9d1d9;\n  --color-checks-btn-hover-bg: rgba(110, 118, 129, 0.1);\n  --color-checks-input-text: #8b949e;\n  --color-checks-input-placeholder-text: #484f58;\n  --color-checks-input-focus-text: #c9d1d9;\n  --color-checks-input-bg: var(--sag-bg-500);\n  --color-checks-input-shadow: 0 0 0 1px (obj)=> get_1.default(obj, path);\n  --color-checks-donut-error: #f85149;\n  --color-checks-donut-pending: #d29922;\n  --color-checks-donut-success: #2ea043;\n  --color-checks-donut-neutral: #8b949e;\n  --color-checks-dropdown-text: #c9d1d9;\n  --color-checks-dropdown-bg: var(--sag-bg-500);\n  --color-checks-dropdown-border: #30363d;\n  --color-checks-dropdown-shadow: rgba(1, 4, 9, 0.3);\n  --color-checks-dropdown-hover-text: #c9d1d9;\n  --color-checks-dropdown-hover-bg: rgba(110, 118, 129, 0.1);\n  --color-checks-dropdown-btn-hover-text: #c9d1d9;\n  --color-checks-dropdown-btn-hover-bg: rgba(110, 118, 129, 0.1);\n  --color-checks-scrollbar-thumb-bg: rgba(110, 118, 129, 0.4);\n  --color-checks-header-label-text: #8b949e;\n  --color-checks-header-label-open-text: #c9d1d9;\n  --color-checks-header-border: #21262d;\n  --color-checks-header-icon: #8b949e;\n  --color-checks-line-text: #8b949e;\n  --color-checks-line-num-text: #484f58;\n  --color-checks-line-timestamp-text: #484f58;\n  --color-checks-line-hover-bg: rgba(110, 118, 129, 0.1);\n  --color-checks-line-selected-bg: rgba(56, 139, 253, 0.15);\n  --color-checks-line-selected-num-text: #58a6ff;\n  --color-checks-line-dt-fm-text: #f0f6fc;\n  --color-checks-line-dt-fm-bg: #9e6a03;\n  --color-checks-gate-bg: rgba(187, 128, 9, 0.15);\n  --color-checks-gate-text: #8b949e;\n  --color-checks-gate-waiting-text: #d29922;\n  --color-checks-step-header-open-bg: var(--sag-bg-400);\n  --color-checks-step-error-text: #f85149;\n  --color-checks-step-warning-text: #d29922;\n  --color-checks-logline-text: #8b949e;\n  --color-checks-logline-num-text: #484f58;\n  --color-checks-logline-debug-text: #a371f7;\n  --color-checks-logline-error-text: #8b949e;\n  --color-checks-logline-error-num-text: #484f58;\n  --color-checks-logline-error-bg: rgba(248, 81, 73, 0.15);\n  --color-checks-logline-warning-text: #8b949e;\n  --color-checks-logline-warning-num-text: #d29922;\n  --color-checks-logline-warning-bg: rgba(187, 128, 9, 0.15);\n  --color-checks-logline-command-text: #58a6ff;\n  --color-checks-logline-section-text: #3fb950;\n  --color-checks-ansi-black: #0d1117;\n  --color-checks-ansi-black-bright: #161b22;\n  --color-checks-ansi-white: #b1bac4;\n  --color-checks-ansi-white-bright: #b1bac4;\n  --color-checks-ansi-gray: #6e7681;\n  --color-checks-ansi-red: #ff7b72;\n  --color-checks-ansi-red-bright: #ffa198;\n  --color-checks-ansi-green: #3fb950;\n  --color-checks-ansi-green-bright: #56d364;\n  --color-checks-ansi-yellow: #d29922;\n  --color-checks-ansi-yellow-bright: #e3b341;\n  --color-checks-ansi-blue: #58a6ff;\n  --color-checks-ansi-blue-bright: #79c0ff;\n  --color-checks-ansi-magenta: #bc8cff;\n  --color-checks-ansi-magenta-bright: #d2a8ff;\n  --color-checks-ansi-cyan: #76e3ea;\n  --color-checks-ansi-cyan-bright: #b3f0ff;\n  --color-project-header-bg: #0d1117;\n  --color-project-sidebar-bg: #161b22;\n  --color-project-gradient-in: #161b22;\n  --color-project-gradient-out: rgba(22, 27, 34, 0);\n  --color-mktg-success: rgba(41, 147, 61, 1);\n  --color-mktg-info: rgba(42, 123, 243, 1);\n  --color-mktg-bg-shade-gradient-top: rgba(1, 4, 9, 0.065);\n  --color-mktg-bg-shade-gradient-bottom: rgba(1, 4, 9, 0);\n  --color-mktg-btn-bg-top: hsla(228, 82%, 66%, 1);\n  --color-mktg-btn-bg-bottom: #4969ed;\n  --color-mktg-btn-bg-overlay-top: hsla(228, 74%, 59%, 1);\n  --color-mktg-btn-bg-overlay-bottom: #3355e0;\n  --color-mktg-btn-text: #f0f6fc;\n  --color-mktg-btn-primary-bg-top: hsla(137, 56%, 46%, 1);\n  --color-mktg-btn-primary-bg-bottom: #2ea44f;\n  --color-mktg-btn-primary-bg-overlay-top: hsla(134, 60%, 38%, 1);\n  --color-mktg-btn-primary-bg-overlay-bottom: #22863a;\n  --color-mktg-btn-primary-text: #f0f6fc;\n  --color-mktg-btn-enterprise-bg-top: hsla(249, 100%, 72%, 1);\n  --color-mktg-btn-enterprise-bg-bottom: #6f57ff;\n  --color-mktg-btn-enterprise-bg-overlay-top: hsla(248, 65%, 63%, 1);\n  --color-mktg-btn-enterprise-bg-overlay-bottom: #614eda;\n  --color-mktg-btn-enterprise-text: #f0f6fc;\n  --color-mktg-btn-outline-text: #f0f6fc;\n  --color-mktg-btn-outline-border: rgba(240, 246, 252, 0.3);\n  --color-mktg-btn-outline-hover-text: #f0f6fc;\n  --color-mktg-btn-outline-hover-border: rgba(240, 246, 252, 0.5);\n  --color-mktg-btn-outline-focus-border: #f0f6fc;\n  --color-mktg-btn-outline-focus-border-inset: rgba(240, 246, 252, 0.5);\n  --color-mktg-btn-dark-text: #f0f6fc;\n  --color-mktg-btn-dark-border: rgba(240, 246, 252, 0.3);\n  --color-mktg-btn-dark-hover-text: #f0f6fc;\n  --color-mktg-btn-dark-hover-border: rgba(240, 246, 252, 0.5);\n  --color-mktg-btn-dark-focus-border: #f0f6fc;\n  --color-mktg-btn-dark-focus-border-inset: rgba(240, 246, 252, 0.5);\n  --color-avatar-bg: rgba(240, 246, 252, 0.1);\n  --color-avatar-border: rgba(240, 246, 252, 0.1);\n  --color-avatar-stack-fade: #30363d;\n  --color-avatar-stack-fade-more: #21262d;\n  --color-avatar-child-shadow: -2px -2px 0 #0d1117;\n  --color-topic-tag-border: rgba(0, 0, 0, 0);\n  --color-select-menu-backdrop-border: #484f58;\n  --color-select-menu-tap-highlight: rgba(48, 54, 61, 0.5);\n  --color-select-menu-tap-focus-bg: #0c2d6b;\n  --color-overlay-shadow: 0 0 0 1px #30363d, 0 16px 32px rgba(1, 4, 9, 0.85);\n  --color-header-text: rgba(240, 246, 252, 0.7);\n  --color-header-bg: var(--sag-bg-500);\n  --color-header-logo: #f0f6fc;\n  --color-header-search-bg: var(--sag-bg-700);\n  --color-header-search-border: var(--sag-bg-900);\n  --color-sidenav-selected-bg: var(--sag-bg-700);\n  --color-menu-bg-active: var(--sag-bg-500);\n  --color-input-disabled-bg: rgba(110, 118, 129, 0);\n  --color-timeline-badge-bg: #21262d;\n  --color-ansi-black: #484f58;\n  --color-ansi-black-bright: #6e7681;\n  --color-ansi-white: #b1bac4;\n  --color-ansi-white-bright: #f0f6fc;\n  --color-ansi-gray: #6e7681;\n  --color-ansi-red: #ff7b72;\n  --color-ansi-red-bright: #ffa198;\n  --color-ansi-green: #3fb950;\n  --color-ansi-green-bright: #56d364;\n  --color-ansi-yellow: #d29922;\n  --color-ansi-yellow-bright: #e3b341;\n  --color-ansi-blue: #58a6ff;\n  --color-ansi-blue-bright: #79c0ff;\n  --color-ansi-magenta: #bc8cff;\n  --color-ansi-magenta-bright: #d2a8ff;\n  --color-ansi-cyan: #39c5cf;\n  --color-ansi-cyan-bright: #56d4dd;\n  --color-btn-text: #c9d1d9;\n  --color-btn-bg: var(--sag-bg-700);\n  --color-btn-border: var(--sag-bg-900);\n  --color-btn-shadow: 0 0 transparent;\n  --color-btn-inset-shadow: 0 0 transparent;\n  --color-btn-hover-bg: var(--sag-bg-800);\n  --color-btn-hover-border: var(--sag-border);\n  --color-btn-active-bg: hsla(212, 12%, 18%, 1);\n  --color-btn-active-border: var(--sag-border);\n  --color-btn-selected-bg: var(--sag-bg-600);\n  --color-btn-focus-bg: var(--sag-bg-700);\n  --color-btn-focus-border: var(--sag-border);\n  --color-btn-focus-shadow: 0 0 0 3px rgba(139, 148, 158, 0.3);\n  --color-btn-shadow-active: inset 0 0.15em 0.3em rgba(1, 4, 9, 0.15);\n  --color-btn-shadow-input-focus: 0 0 0 0.2em rgba(31, 111, 235, 0.3);\n  --color-btn-counter-bg: #30363d;\n  --color-btn-primary-text: #ffffff;\n  --color-btn-primary-bg: var(--sag-green-dark);\n  --color-btn-primary-border: rgba(240, 246, 252, 0);\n  --color-btn-primary-shadow: 0 0 transparent;\n  --color-btn-primary-inset-shadow: 0 0 transparent;\n  --color-btn-primary-hover-bg: var(--sag-green-dark);\n  --color-btn-primary-hover-border: rgba(240, 246, 252, 0.1);\n  --color-btn-primary-selected-bg: var(--sag-green-dark);\n  --color-btn-primary-selected-shadow: 0 0 transparent;\n  --color-btn-primary-disabled-text: rgba(240, 246, 252, 0.5);\n  --color-btn-primary-disabled-bg: rgba(var(--sag-green-dark-rgb), 0.6);\n  --color-btn-primary-disabled-border: rgba(240, 246, 252, 0.1);\n  --color-btn-primary-focus-bg: var(--sag-green-dark);\n  --color-btn-primary-focus-border: rgba(240, 246, 252, 0.1);\n  --color-btn-primary-focus-shadow: 0 0 0 3px rgba(46, 164, 79, 0.4);\n  --color-btn-primary-icon: #f0f6fc;\n  --color-btn-primary-counter-bg: rgba(240, 246, 252, 0.2);\n  --color-btn-outline-text: #58a6ff;\n  --color-btn-outline-hover-text: #58a6ff;\n  --color-btn-outline-hover-bg: #30363d;\n  --color-btn-outline-hover-border: rgba(240, 246, 252, 0.1);\n  --color-btn-outline-hover-shadow: 0 1px 0 rgba(1, 4, 9, 0.1);\n  --color-btn-outline-hover-inset-shadow: inset 0 1px 0 rgba(240, 246, 252, 0.03);\n  --color-btn-outline-hover-counter-bg: rgba(240, 246, 252, 0.2);\n  --color-btn-outline-selected-text: #f0f6fc;\n  --color-btn-outline-selected-bg: #0d419d;\n  --color-btn-outline-selected-border: rgba(240, 246, 252, 0.1);\n  --color-btn-outline-selected-shadow: 0 0 transparent;\n  --color-btn-outline-disabled-text: rgba(88, 166, 255, 0.5);\n  --color-btn-outline-disabled-bg: #0d1117;\n  --color-btn-outline-disabled-counter-bg: rgba(31, 111, 235, 0.05);\n  --color-btn-outline-focus-border: rgba(240, 246, 252, 0.1);\n  --color-btn-outline-focus-shadow: 0 0 0 3px rgba(17, 88, 199, 0.4);\n  --color-btn-outline-counter-bg: rgba(31, 111, 235, 0.1);\n  --color-btn-danger-text: #f85149;\n  --color-btn-danger-hover-text: #f0f6fc;\n  --color-btn-danger-hover-bg: #da3633;\n  --color-btn-danger-hover-border: #f85149;\n  --color-btn-danger-hover-shadow: 0 0 transparent;\n  --color-btn-danger-hover-inset-shadow: 0 0 transparent;\n  --color-btn-danger-hover-icon: #f0f6fc;\n  --color-btn-danger-hover-counter-bg: rgba(255, 255, 255, 0.2);\n  --color-btn-danger-selected-text: #ffffff;\n  --color-btn-danger-selected-bg: #b62324;\n  --color-btn-danger-selected-border: #ff7b72;\n  --color-btn-danger-selected-shadow: 0 0 transparent;\n  --color-btn-danger-disabled-text: rgba(248, 81, 73, 0.5);\n  --color-btn-danger-disabled-bg: #0d1117;\n  --color-btn-danger-disabled-counter-bg: rgba(218, 54, 51, 0.05);\n  --color-btn-danger-focus-border: #f85149;\n  --color-btn-danger-focus-shadow: 0 0 0 3px rgba(248, 81, 73, 0.4);\n  --color-btn-danger-counter-bg: rgba(218, 54, 51, 0.1);\n  --color-btn-danger-icon: #f85149;\n  --color-underlinenav-icon: #484f58;\n  --color-underlinenav-border-hover: rgba(110, 118, 129, 0.4);\n  --color-fg-default: #c9d1d9;\n  --color-fg-muted: #8b949e;\n  --color-fg-subtle: #484f58;\n  --color-fg-on-emphasis: #f0f6fc;\n  --color-fg-success: var(--sag-green);\n  --color-fg-danger: var(--sag-red);\n  --color-canvas-default: var(--sag-bg-500);\n  --color-canvas-overlay: var(--sag-bg-300);\n  --color-canvas-inset: var(--sag-bg-300);\n  --color-canvas-subtle: var(--sag-bg-500);\n  --color-border-default: var(--sag-bg-700);\n  --color-border-muted: var(--sag-bg-600);\n  --color-border-subtle: rgba(240, 246, 252, 0.1);\n  --color-shadow-small: 0 0 transparent;\n  --color-shadow-medium: 0 3px 6px #010409;\n  --color-shadow-large: 0 8px 24px #010409;\n  --color-shadow-extra-large: 0 12px 48px #010409;\n  --color-neutral-emphasis-plus: #6e7681;\n  --color-neutral-emphasis: #6e7681;\n  --color-neutral-muted: var(--sag-bg-700);\n  --color-neutral-subtle: rgba(110, 118, 129, 0.1);\n  --color-accent-fg: var(--sag-accent-secondary);\n  --color-accent-emphasis: var(--sag-accent-primary);\n  --color-accent-muted: rgba(var(--sag-accent-primary-rgb), 0.4);\n  --color-accent-subtle: rgba(var(--sag-accent-primary-rgb), 0.15);\n  --color-success-fg: var(--sag-green);\n  --color-success-emphasis: var(--sag-green-dark);\n  --color-success-muted: rgba(var(--sag-green-rgb), 0.4);\n  --color-success-subtle: rgba(var(--sag-green-rgb), 0.15);\n  --color-attention-fg: #d29922;\n  --color-attention-emphasis: #9e6a03;\n  --color-attention-muted: rgba(187, 128, 9, 0.4);\n  --color-attention-subtle: rgba(187, 128, 9, 0.15);\n  --color-severe-fg: #db6d28;\n  --color-severe-emphasis: #bd561d;\n  --color-severe-muted: rgba(219, 109, 40, 0.4);\n  --color-severe-subtle: rgba(219, 109, 40, 0.15);\n  --color-danger-fg: var(--sag-red);\n  --color-danger-emphasis: var(--sag-red);\n  --color-danger-muted: rgba(var(--sag-red-rgb), 0.4);\n  --color-danger-subtle: rgba(var(--sag-red-rgb), 0.15);\n  --color-done-fg: #a371f7;\n  --color-done-emphasis: #8957e5;\n  --color-done-muted: rgba(163, 113, 247, 0.4);\n  --color-done-subtle: rgba(163, 113, 247, 0.15);\n  --color-sponsors-fg: #db61a2;\n  --color-sponsors-emphasis: #bf4b8a;\n  --color-sponsors-muted: rgba(219, 97, 162, 0.4);\n  --color-sponsors-subtle: rgba(219, 97, 162, 0.15);\n  --color-primer-canvas-backdrop: rgba(1, 4, 9, 0.8);\n  --color-primer-canvas-sticky: rgba(13, 17, 23, 0.95);\n  --color-primer-border-active: #F78166;\n  --color-primer-border-contrast: rgba(240, 246, 252, 0.2);\n  --color-primer-shadow-highlight: 0 0 transparent;\n  --color-primer-shadow-inset: 0 0 transparent;\n  --color-primer-shadow-focus: 0 0 0 3px #0c2d6b;\n  \n  --color-page-header-bg: var(--sag-bg-500);\n}\n\n/* Refined Github */\n:root {\n  --rgh-heat-color: var(--sag-accent-secondary) !important;\n}\n\n.discussion-timeline-actions, .gh-header, .diffbar, .TimelineItem-break {\n  background-color: transparent;\n}\n\n.tabnav-tab.selected, .tabnav-tab[aria-selected=\"true\"], .tabnav-tab[aria-current]:not([aria-current=\"false\"]) {\n  background-color: var(--color-border-default);\n}\n\n.markdown-body .highlight pre, .markdown-body pre {\n  background-color: var(--sag-bg-700);\n}\n\n/* Gists */\n.gist .gist-file,\n.gist .gist-data,\n.gist .gist-meta,\n.gist .highlight {\n  border: none;\n  background-color: var(--sag-bg-700);\n}\n\n.gist .blob-code-inner {\n  color: #ddd;\n}\n\n.gist .pl-k {\n  color: var(--sag-purple);\n}\n\n.gist .pl-ent {\n  color: var(--sag-yellow);\n}\n\n.gist .pl-c1,\n.gist .pl-s .pl-v {\n  color: var(--sag-blue);\n}\n\n.gist .pl-smi,\n.gist .pl-s .pl-s1 {\n  color: var(--sag-purple);\n}\n\n.gist .pl-v,\n.gist .pl-smw {\n  color: var(--sag-red);\n}\n\n.gist .pl-e,\n.gist .pl-en {\n  color: var(--sag-yellow);\n}\n\n.gist .pl-s,\n.gist .pl-pds,\n.gist .pl-s .pl-pse .pl-s1,\n.gist .pl-sr,\n.gist .pl-sr .pl-cce,\n.gist .pl-sr .pl-sre,\n.gist .pl-sr .pl-sra {s\n  color: var(--sag-green);\n}\n\n.gist a {\n  color: var(--sag-accent-secondary) !important;\n}\n\n.UnderlineNav-item.selected,\n.UnderlineNav-item[role=\"tab\"][aria-selected=\"true\"],\n.UnderlineNav-item[aria-current]:not([aria-current=\"false\"]) {\n  border-bottom-color: #58a7db;\n}\n\n.timeline-comment--caret::before,\n.timeline-comment--caret::after {\n  content: none !important;\n}\n\n.pinned-issue-item {\n  background-color: var(--sag-bg-500);\n}\n\n.timeline-comment-label {\n  border: none;\n  background-color: var(--color-scale-gray-8);\n}\n\n\n\n.tab-size {\n  -moz-tab-size: 2 !important;\n  tab-size: 2 !important;\n}\n\nbody {\n  background-color: var(--sag-bg-400);\n}\n\n/* Command palette */\ncommand-palette-item > .color-bg-tertiary { \n  background-color: var(--sag-bg-800) !important;\n}\n\ntable[aria-labelledby=\"folders-and-files\"] > tbody > tr:nth-child(1) > td:nth-child(1) {\n  background: var(--sag-bg-400);\n}\n\n/* Header hamburger menu */\n.Overlay-backdrop--side {\n  background-color: rgba(var(--sag-bg-200-rgb), 0.5)\n}",
+        "urlPrefixes": [
+          "https://github.com"
+        ],
+        "domains": [
+          "betterprogramming.pub"
+        ]
+      }
+    ],
+    "updateDate": 1687978536666,
+    "_id": "7674b5f4-c4ca-47d4-81a6-9bb46801458a",
+    "_rev": 1687978536666,
+    "id": 3
+  },
+  {
+    "enabled": true,
+    "installDate": 1611961108439,
+    "name": "Twitch",
+    "sections": [
+      {
+        "code": ".channel-leaderboard {\n    display: none;\n}\n\n.tw-root--theme-dark .side-nav__overlay-wrapper, .tw-root--theme-dark .chat-room {\n    background-color: var(--sag-bg-500);\n}\n\n.tw-root--theme-dark body {\n    background-color: var(--sag-bg-300);\n}\n\n/* HIDE TIMESTAMPS ON VODS */\n.vod-message__header {\n  max-width: 0;\n  overflow: hidden;\n  margin-left: 8px;\n}\n\n:root, div {\n    --shadow-elevation-1: none;\n    --color-border-base: none;\n    --color-background-base: var(--sag-bg-500);\n    --color-background-body: var(--sag-bg-500);\n    \n    --color-background-input: var(--sag-bg-800);\n    --color-border-input: transparent;\n    \n    --color-text-accessible-red: var(--sag-red);\n    \n    --color-accent: var(--sag-purple-dark) !important;\n    --color-accent-hover: var(--sag-purple-dark) !important;\n    --color-amazon: var(--sag-yellow);\n    --color-black: #000;\n    --color-blue: var(--sag-blue);\n    --color-brand-accent-carrot: #ff6905;\n    --color-brand-accent-cherry: var(--sag-red);\n    --color-brand-accent-dragonfruit: #fa1ed2;\n    --color-brand-accent-eggplant: #421561;\n    --color-brand-accent-grape: var(--sag-purple);\n    --color-brand-accent-lime: var(--sag-lime);\n    --color-brand-accent-marine: var(--sag-blue);\n    --color-brand-accent-seafoam: var(--sag-cyan);\n    --color-brand-accent-slime: #00fa04;\n    --color-brand-accent-sun: var(--sag-yellow);\n    --color-brand-accent-turquoise: #00fafa;\n    --color-brand-accent-wine: #bd0078;\n    --color-brand-muted-blush: #facccc;\n    --color-brand-muted-canary: #feee86;\n    --color-brand-muted-coral: #f66;\n    --color-brand-muted-cupcake: #fab3ff;\n    --color-brand-muted-emerald: #00e6cb;\n    --color-brand-muted-ice: #f0f0ff;\n    --color-brand-muted-lavender: #bda8ff;\n    --color-brand-muted-mint: #bdfae0;\n    --color-brand-muted-mustard: #ffca61;\n    --color-brand-muted-ocean: #0013a3;\n    --color-brand-muted-sky: var(--sag-accent-secondary);\n    --color-brand-muted-smoke: #d1d1e6;\n    --color-error: var(--sag-red);\n    --color-facebook: #3b5998;\n    --color-green: #00e6cb;\n    --color-green-darker: #00ad96;\n    --color-hinted-grey-1: #0e0e10;\n    --color-hinted-grey-10: #c8c8d0;\n    --color-hinted-grey-11: #d3d3d9;\n    --color-hinted-grey-12: #dedee3;\n    --color-hinted-grey-13: #e6e6ea;\n    --color-hinted-grey-14: #efeff1;\n    --color-hinted-grey-15: #f7f7f8;\n    --color-hinted-grey-2: var(--sag-bg-500);\n    --color-hinted-grey-3: var(--sag-bg-500);\n    --color-hinted-grey-4: var(--sag-bg-600);\n    --color-hinted-grey-5: var(--sag-bg-700);\n    --color-hinted-grey-6: var(--sag-bg-800);\n    --color-hinted-grey-7: #53535f;\n    --color-hinted-grey-8: #848494;\n    --color-hinted-grey-9: #adadb8;\n    --color-info: #1f69ff;\n    --color-instagram: #405de6;\n    --color-magenta: #c53dff;\n    --color-opac-b-1: rgba(0, 0, 0, 0.05);\n    --color-opac-b-10: rgba(0, 0, 0, 0.7);\n    --color-opac-b-11: rgba(0, 0, 0, 0.75);\n    --color-opac-b-12: rgba(0, 0, 0, 0.8);\n    --color-opac-b-13: rgba(0, 0, 0, 0.85);\n    --color-opac-b-14: rgba(0, 0, 0, 0.9);\n    --color-opac-b-15: rgba(0, 0, 0, 0.95);\n    --color-opac-b-2: rgba(0, 0, 0, 0.1);\n    --color-opac-b-3: rgba(0, 0, 0, 0.15);\n    --color-opac-b-4: rgba(0, 0, 0, 0.2);\n    --color-opac-b-5: rgba(0, 0, 0, 0.25);\n    --color-opac-b-6: rgba(0, 0, 0, 0.3);\n    --color-opac-b-7: rgba(0, 0, 0, 0.4);\n    --color-opac-b-8: rgba(0, 0, 0, 0.5);\n    --color-opac-b-9: rgba(0, 0, 0, 0.6);\n    --color-opac-p-1: rgba(92, 22, 197, 0.05);\n    --color-opac-p-10: rgba(92, 22, 197, 0.7);\n    --color-opac-p-11: rgba(92, 22, 197, 0.75);\n    --color-opac-p-12: rgba(92, 22, 197, 0.8);\n    --color-opac-p-13: rgba(92, 22, 197, 0.85);\n    --color-opac-p-14: rgba(92, 22, 197, 0.9);\n    --color-opac-p-15: rgba(92, 22, 197, 0.95);\n    --color-opac-p-2: rgba(92, 22, 197, 0.1);\n    --color-opac-p-3: rgba(92, 22, 197, 0.15);\n    --color-opac-p-4: rgba(92, 22, 197, 0.2);\n    --color-opac-p-5: rgba(92, 22, 197, 0.25);\n    --color-opac-p-6: rgba(92, 22, 197, 0.3);\n    --color-opac-p-7: rgba(92, 22, 197, 0.4);\n    --color-opac-p-8: rgba(92, 22, 197, 0.5);\n    --color-opac-p-9: rgba(92, 22, 197, 0.6);\n    --color-opac-w-1: hsla(0, 0%, 100%, 0.05);\n    --color-opac-w-10: hsla(0, 0%, 100%, 0.7);\n    --color-opac-w-11: hsla(0, 0%, 100%, 0.75);\n    --color-opac-w-12: hsla(0, 0%, 100%, 0.8);\n    --color-opac-w-13: hsla(0, 0%, 100%, 0.85);\n    --color-opac-w-14: hsla(0, 0%, 100%, 0.9);\n    --color-opac-w-15: hsla(0, 0%, 100%, 0.95);\n    --color-opac-w-2: hsla(0, 0%, 100%, 0.1);\n    --color-opac-w-3: hsla(0, 0%, 100%, 0.15);\n    --color-opac-w-4: hsla(0, 0%, 100%, 0.2);\n    --color-opac-w-5: hsla(0, 0%, 100%, 0.25);\n    --color-opac-w-6: hsla(0, 0%, 100%, 0.3);\n    --color-opac-w-7: hsla(0, 0%, 100%, 0.4);\n    --color-opac-w-8: hsla(0, 0%, 100%, 0.5);\n    --color-opac-w-9: hsla(0, 0%, 100%, 0.6);\n    --color-orange: #ffca61;\n    --color-paypal: #009cde;\n    --color-paypal-blue: #009cde;\n    --color-paypal-yellow: #fcc439;\n    --color-prime-blue: #0e9bd8;\n    --color-red: var(--sag-red);\n    --color-red-darker: #bb1411;\n    --color-reddit: #ff4500;\n    --color-snapchat: #fffc00;\n    --color-success: #00e6cb;\n    --color-transparent: transparent;\n    --color-twitch-purple: var(--sag-purple);\n    --color-twitch-purple-1: #040109;\n    --color-twitch-purple-10: var(--sag-purple);\n    --color-twitch-purple-11: var(--sag-purple);\n    --color-twitch-purple-12: #d1b3ff;\n    --color-twitch-purple-13: #e3d1ff;\n    --color-twitch-purple-14: #f0e5ff;\n    --color-twitch-purple-15: #fcfaff;\n    --color-twitch-purple-2: #0d031c;\n    --color-twitch-purple-3: #15052e;\n    --color-twitch-purple-4: #24094e;\n    --color-twitch-purple-5: #330c6e;\n    --color-twitch-purple-6: #451093;\n    --color-twitch-purple-7: #5c16c5;\n    --color-twitch-purple-8: var(--sag-purple-dark);\n    --color-twitch-purple-9: var(--sag-purple-dark);\n    --color-twitter: #1da1f2;\n    --color-vk: #45668e;\n    --color-warn: #ffca61;\n    --color-white: #fff;\n    --color-yellow: #ffca61;\n    --color-youtube: #cd201f;\n}",
+        "domains": [
+          "twitch.tv"
+        ]
+      }
+    ],
+    "updateDate": 1618641791226,
+    "_id": "aeb95cc9-d0d8-48c2-9d18-c4ee07fbd933",
+    "_rev": 1674671455831,
+    "id": 4
+  },
+  {
+    "enabled": true,
+    "installDate": 1612033599499,
+    "name": "Reddit",
+    "sections": [
+      {
+        "code": "div[class^=\"SubredditVars\"], div[class^=\"subredditvars\"], div[class^=\"subredditvars\"] > div, div[class^=\"subredditvars\"] > div > div, body {\n    --background: var(--sag-bg-500) !important;\n    \n    --newCommunityTheme-body: var(--sag-bg-500);\n    --newRedditTheme-body: var(--sag-bg-500);\n    --newCommunityTheme-canvas: var(--sag-bg-500);\n    --newRedditTheme-canvas: var(--sag-bg-500);\n    --newRedditTheme-bodyAlpha80: var(--sag-bg-500);\n    \n    --newRedditTheme-line: transparent;\n    --newCommunityTheme-line: transparent;\n    --newRedditTheme-postLine: transparent;\n    --newCommunityTheme-postLine: transparent;\n    \n    --newRedditTheme-field: var(--sag-bg-800);\n    --newCommunityTheme-field: var(--sag-bg-800);\n    \n    --newRedditTheme-widgetColors-sidebarWidgetBackgroundColor: var(--sag-bg-500);\n    --newRedditTheme-widgetColors-sidebarWidgetBorderColor: transparent;\n    --newCommunityTheme-widgetColors-sidebarWidgetBackgroundColor: var(--sag-bg-500);\n    --newCommunityTheme-widgetColors-sidebarWidgetBorderColor: transparent;\n    \n    --newRedditTheme-widgetColors-sidebarWidgetHeaderColor: var(--sag-bg-500);\n    --newCommunityTheme-widgetColors-sidebarWidgetHeaderColor: var(--sag-bg-500);\n    --newRedditTheme-postTransparent20: var(--sag-bg-500);\n    --newCommunityTheme-postTransparent20: var(--sag-bg-500);\n  \n    --comments-overlay-background: var(--sag-bg-500);\n    --fakelightbox-overlay-background: var(--sag-bg-500);\n}\n\ndiv[class^=\"subredditvars\"] > div > div {\n  background: var(--sag-bg-300);\n}\n\n\n#header-search-bar:hover, input:hover {\n    border-color: var(--newRedditTheme-line) !important;\n    background: var(--sag-bg-900) !important;\n}\n\ndiv[id=\"2x-container\"] > div {\n    --background: var(--sag-bg-500) !important;\n    background-color: var(--sag-bg-500) !important;\n}\n\n#SHORTCUT_FOCUSABLE_DIV {\n    background-color: var(--sag-bg-500) !important;\n}\n\n.ListingLayout-backgroundContainer {\n    --pseudo-before-background: var(--sag-bg-300) !important;\n}\n\n#overlayScrollContainer > div:first-child {\n  background: transparent;\n}\n\n/* Posts */\n.scrollerItem {\n    --post-line-color: transparent;\n    --post-icon-color: transparent;\n}\n\n.scrollerItem > div {\n    background: var(--sag-bg-500) !important;\n}\n\n/* lol */\ndiv[style=\"position:static;background:#030303\"] {\n  display: none\n}",
+        "domains": [
+          "reddit.com"
+        ]
+      }
+    ],
+    "updateDate": 1617342165540,
+    "_id": "3375cc86-620b-4427-a4f9-45ffd1ee322c",
+    "_rev": 1674671455831,
+    "id": 5
+  },
+  {
+    "enabled": true,
+    "installDate": 1612653206075,
+    "name": "Crackstreams Fullscreen",
+    "sections": [
+      {
+        "code": ".navbar {\n    display: none;\n}\n\n.container {\n    width: 100%;\n    padding: 0;\n    margin: 0;\n    overflow: hidden;\n}\n\n.container::before, .container > .row::before {\n    content: none;\n}\n\n.container > .row {\n    display: grid;\n    grid-template-columns: 1fr auto;\n    margin: 0;\n    padding: 0;\n}\n\n.container > .row > *:nth-child(1) {\n    display: none;\n}\n\n.container > .row > *:nth-child(2) {\n  transform: scale(1.02);\n}\n\n.container > .row > *:nth-child(2), .container > .row > *:nth-child(3) {\n    width: 100%;\n    height: 100vh;\n}\n\n.container > .row > *:nth-child(3) { \n  z-index: 50;\n}\n\nbr {\n  display: none;\n}\n\n",
+        "urlPrefixes": [
+          "http://crackstreams.is/mmastreams/",
+          "http://crackstreams.is/boxingstreams/"
+        ]
+      }
+    ],
+    "updateDate": 1618715929851,
+    "_id": "bff560db-892c-4902-8c85-ad126356a543",
+    "_rev": 1674671455831,
+    "id": 7
+  },
+  {
+    "enabled": true,
+    "installDate": 1613632267034,
+    "name": "MDN",
+    "sections": [
+      {
+        "code": "body {\n  min-height: 100vh;\n}\n\nbody,\n.titlebar-container {\n  background-color: var(--sag-bg-500) !important;\n  border: none;\n  color: white !important;\n}\n\n.main-nav,\n.locale-container,\n.metadata,\n#nav-footer {\n  display: none !important;\n}\n\n/* Header */\n.page-header-main {\n  background: none;\n}\n\n.logo svg {\n  fill: white;\n}\n\n.search-input-field,\n.header-search form,\n.top-navigation {\n  background-color: var(--sag-bg-700);\n  border: none !important;\n  color: white !important;\n}\n\n.search-button {\n  background: transparent url(/static/media/search.db31d27c.svg) 0 0 no-repeat;\n  filter: invert(1);\n}\n\n.search-icon {\n  fill: white !important;\n}\n\n.search-button {\n  filter: none;\n}\n\n.mdn-cta-container {\n  background-color: var(--sag-bg-700);\n}\n\n/* Hero */\n.mandala-container {\n  background-color: var(--sag-bg-300) !important;\n}\n\n.homepage-hero .homepage-hero-search .search-input-field {\n  background-color: var(--sag-bg-700);\n}\n\n/* Theme options */\n:root:not(.light):not(.dark) {\n  --text-primary: var(--sag-text);\n  --text-secondary: var(--sag-text-secondary);\n  --text-inactive: var(--sag-text-secondary);\n  --text-link: var(--sag-accent-secondary);\n  --text-invert: var(--sag-bg-500);\n  --background-primary: var(--sag-bg-500);\n  --background-secondary: var(--sag-bg-700);\n  --background-tertiary: var(--sag-bg-800);\n  --background-mark-yellow: rgba(232, 140, 102, 0.4);\n  --border-primary: var(--sag-border);\n  --border-secondary: var(--sag-border-secondary);\n  --button-primary-default: var(--sag-bg-900);\n  --button-primary-hover: var(--sag-accent-primary);\n  --button-primary-active: var(--sag-accent-secondary);\n  --button-primary-inactive: var(--sag-bg-900);\n  --button-secondary-default: #2b2a33;\n  --button-secondary-hover: #52525e;\n  --button-secondary-active: #5b5b66;\n  --button-secondary-inactive: #2b2a33;\n  --icon-primary: var(--sag-text);\n  --icon-information: var(--sag-blue);\n  --icon-warning: var(--sag-organge);\n  --icon-critical: var(--sag-red);\n  --icon-success: var(--sag-green);\n  --accent-primary: var(--sag-accent-primary);\n  --accent-primary-engage: rgba(var(--sag-accent-secondary-rgb), 0.1);\n  --accent-secondary: var(--sag-accent-secondary);\n  --shadow-01: 0px 1px 2px rgba(251, 251, 254, 0.2);\n  --shadow-02: 0px 1px 6px rgba(251, 251, 254, 0.2);\n  --focus-01: 0px 0px 0px 3px rgba(var(--sag-border-rgb), 0.5);\n  --field-focus-border: #fbfbfe;\n  --code-token-tag: #a3c6f9;\n  --code-token-punctuation: #9f9fad;\n  --code-token-attribute-name: #f16b8c;\n  --code-token-attribute-value: #6bb86a;\n  --code-token-comment: #9f9fad;\n  --code-token-default: #fbfbfe;\n  --code-token-selector: #c68cfb;\n  --code-background-inline: #2b2a33;\n  --code-background-block: #2b2a33;\n  --scrollbar-color: hsla(0, 0%, 100%, 0.25);\n  --category-color: #74a9f6;\n  --category-color-background: rgba(116, 169, 246, 0.4392156862745098);\n  --code-color: #a3c6f9;\n  --mark-color: #0e4390;\n  --plus-accent-color: #f16b8c;\n  --html-accent-color: #ed3966;\n  --css-accent-color: #74a9f6;\n  --js-accent-color: #e06633;\n  --http-accent-color: #39a038;\n  --apis-accent-color: #b366f9;\n  --learn-accent-color: #d36699;\n  --plus-code-color: #f69cb3;\n  --html-code-color: #f16b8c;\n  --css-code-color: #a3c6f9;\n  --js-code-color: #e88c66;\n  --http-code-color: #6bb86a;\n  --apis-code-color: #c68cfb;\n  --learn-code-color: #de8cb3;\n  --plus-mark-color: #8b0526;\n  --html-mark-color: #8b0526;\n  --css-mark-color: #0e4390;\n  --js-mark-color: #822600;\n  --http-mark-color: #055204;\n  --apis-mark-color: #602695;\n  --learn-mark-color: #78264d;\n  --plus-accent-engage: rgba(237, 57, 102, 0.7);\n  --html-accent-engage: rgba(237, 57, 102, 0.7);\n  --css-accent-engage: rgba(116, 169, 246, 0.7);\n  --js-accent-engage: rgba(224, 102, 51, 0.7);\n  --http-accent-engage: rgba(57, 160, 56, 0.7);\n  --apis-accent-engage: rgba(179, 102, 249, 0.7);\n  --learn-accent-engage: rgba(211, 102, 153, 0.7);\n  --modal-backdrop-color: rgba(21, 20, 26, 0.7);\n  --blend-color: rgba(0, 0, 0, 0.5019607843137255);\n  --text-primary-red: var(--sag-red);\n  --text-primary-green: var(--sag-green);\n  --text-primary-blue: var(--sag-blue);\n  --text-primary-yellow: var(--sag-yellow);\n}\n\n/* Inlines */\n.main-page-content .inline.optional,\n.main-page-content .inline.readonly {\n  background-color: var(--sag-bg-800);\n}\n\n/* Icons */\n.obsolete {\n  fill: var(--sag-red);\n}\n\na,\nh1 > a:hover,\nh2 > a:hover,\nh3 > a:hover,\nh4 > a:hover {\n  color: var(--sag-accent-secondary);\n}\n\nh3 {\n  background-color: transparent;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh1 > a,\nh2 > a,\nh3 > a,\nh4 > a,\nspan,\ndiv,\np,\nfigcaption,\nli {\n  color: white !important;\n}\n\npre,\ncode {\n  background-color: var(--sag-bg-900) !important;\n  border-color: var(--sag-accent-primary);\n}\n\nmark {\n  background-color: var(--sag-accent-primary) !important;\n}\n\n.breadcrumb-locale-container {\n  background: var(--sag-bg-700)\n}\n\n.breadcrumbs li .breadcrumb-penultimate::after,\n.breadcrumbs li .breadcrumb-penultimate::before,\n.breadcrumbs li .breadcrumb::after,\na.external::before,\n.bc-browsers .bc-head-txt-label::before,\n.bc-platforms .bc-platform-desktop::before,\n.bc-platforms .bc-platform-mobile::before,\n.bc-platforms .bc-platform-server::before,\n.notecard.deprecated.inline::before,\n.notecard.deprecated h2::before,\n.notecard.deprecated h3::before,\n.notecard.deprecated h4::before,\n.notecard.draft h2::before,\n.notecard.draft h3::before,\n.notecard.draft h4::before,\n.notecard.experimental h2::before,\n.notecard.experimental h3::before,\n.notecard.experimental h4::before,\n.notecard.secure h2::before,\n.notecard.secure h3::before,\n.notecard.secure h4::before,\n.notecard.warning h2::before,\n.notecard.warning h3::before,\n.notecard.warning h4::before,\n.bc-icons i::before,\n.legend-icons::before,\n.breadcrumbs-container li .breadcrumb-penultimate::after,\n.breadcrumbs-container li .breadcrumb::after,\n.notecard.note h2::before,\n.notecard.note h3::before,\n.notecard.note h4::before {\n  filter: invert(1);\n}\n\n/* Tables */\n.properties {\n  border: none;\n}\n\n.standard-table {\n  border-color: var(--sag-green);\n}\n\n.standard-table th,\n.standard-table td,\ntable th,\ntable td,\n.bc-table {\n  background-color: var(--sag-bg-700) !important;\n  border-color: var(--sag-bg-900) !important;\n}\n\n.bc-table tbody tr:nth-child(2n),\ntr.bc-history dl.bc-notes-list {\n  background-color: var(--sag-bg-800);\n}\n\n.bc-supports-yes {\n  background-color: rgba(var(--sag-green-dark-rgb), 0.8) !important;\n}\n\n.bc-supports-no {\n  background-color: var(--sag-red);\n}\n\n.bc-supports-unknown,\n.bc-supports-yes,\n.bc-table .bc-history {\n  color: white;\n}\n\n.bc-supports-no {\n  background-image: linear-gradient(to bottom right, rgba(var(--sag-red-dark-rgb), .1) 0, rgba(var(--sag-red-dark-rgb), .1) 1px, transparent 0, transparent 67px, rgba(var(--sag-red-dark-rgb), .1) 0, rgba(var(--sag-red-dark-rgb), .1) 73px, transparent 0, transparent 138px, rgba(var(--sag-red-dark-rgb), .1) 0, rgba(var(--sag-red-dark-rgb), .1) 144px, transparent 0), linear-gradient(to bottom left, rgba(var(--sag-red-dark-rgb), .1) 0, rgba(var(--sag-red-dark-rgb), .1) 1px, transparent 0, transparent 67px, rgba(var(--sag-red-dark-rgb), .1) 0, rgba(var(--sag-red-dark-rgb), .1) 73px, transparent 0, transparent 138px, rgba(var(--sag-red-dark-rgb), .1) 0, rgba(var(--sag-red-dark-rgb), .1) 144px, transparent 0);\n  background-color: rgba(var(--sag-red-dark-rgb), 0.5) !important;\n  color: var(--sag-red);\n}\n\n.bc-supports-partial {\n  color: var(--sag-yellow);\n}\n\n/* Code blocks */\npre > code,\n.token.parameter {\n  color: var(--sag-red) !important;\n}\n\n.token.punctuation {\n  color: #ccc !important;\n}\n\n.token.atrule,\n.token.attr-value,\n.token.function {\n  color: var(--sag-blue) !important;\n}\n\n.token.keyword {\n  color: var(--sag-purple) !important;\n}\n\n.token.class-name {\n  color: var(--sag-yellow) !important;\n}\n\n.token.comment {\n  color: var(--sag-blue) !important;\n}\n\n.token.attr-name,\n.token.builtin,\n.token.char,\n.token.inserted,\n.token.selector,\n.token.string {\n  color: var(--sag-green) !important;\n}\n\n.token.boolean {\n  color: var(--sag-orange) !important;\n}\n\n/* Cards */\n.notecard,\n.callout {\n  background-color: var(--sag-bg-800) !important;\n}\n.notecard.deprecated,\n.notecard.negative,\n.notecard.obsolete {\n  border-color: var(--sag-red);\n}\n\n.notecard.draft,\n.notecard.experimental,\n.notecard.secure,\n.notecard.warning {\n  border-color: var(--sag-yellow);\n}\n\n.notecard.note {\n  border-color: var(--sag-blue);\n}\n\n/* Spec CR */\n.spec-cr::before,\n.spec-draft::before,\n.spec-ed::before,\n.spec-lc::before,\n.spec-living::before,\n.spec-obsolete::before,\n.spec-pr::before,\n.spec-rec::before,\n.spec-rfc::before,\n.spec-standard::before,\n.spec-wd::before {\n  background-color: var(--sag-bg-800);\n}\n\n.spec-cr::before,\n.spec-pr::before,\n.spec-rec::before,\n.spec-rfc::before {\n  border-color: var(--sag-green);\n}\n\n.spec-living::before,\n.spec-standard::before {\n  border-color: var(--sag-blue);\n}\n\n.spec-draft::before,\n.spec-lc::before,\n.spec-wd::before {\n  border-color: var(--sag-orange);\n}\n\n.spec-ed::before,\n.spec-obsolete::before {\n  border-color: var(--sag-red);\n}",
+        "domains": [
+          "developer.mozilla.org"
+        ]
+      }
+    ],
+    "updateDate": 1684787898398,
+    "_id": "5ca385ad-3443-49f8-8a3c-6b1881a5879c",
+    "_rev": 1684787898398,
+    "id": 16
+  },
+  {
+    "enabled": true,
+    "installDate": 1614301637581,
+    "name": "StackOverflow",
+    "sections": [
+      {
+        "code": "body.theme-dark,\n.theme-dark__forced {\n  --white: var(--sag-bg-500);\n  --black: #fff;\n  --black-025: var(--sag-bg-500);\n  --black-050: var(--sag-bg-700);\n  --black-075: var(--sag-bg-700);\n  --black-100: var(--sag-bg-700);\n  --black-150: var(--sag-bg-800);\n  --black-200: #697075;\n  --black-300: #7d848d;\n  --black-350: #959ca3;\n  --black-400: #9fa6ad;\n  --black-500: #acb2b8;\n  --black-600: #c4c8cc;\n  --black-700: #cfd2d6;\n  --black-750: #dadee0;\n  --black-800: #e7e8eb;\n  --black-900: #f2f2f3;\n  --orange-050: #473c33;\n  --orange-100: #5e4433;\n  --orange-200: #8d5a2f;\n  --orange-300: var(--sag-orange);\n  --orange-400: var(--sag-orange);\n  --orange-500: var(--sag-orange);\n  --orange-600: #ffa95e;\n  --orange-700: #f8b682;\n  --orange-800: #fcd6b9;\n  --orange-900: #fee7d6;\n  --blue-050: #233e52;\n  --blue-100: #25445f;\n  --blue-200: #295070;\n  --blue-300: #2b5f8a;\n  --blue-400: #3070ab;\n  --blue-500: #378ad3;\n  --blue-600: #3ca4ff;\n  --blue-700: #81c4f8;\n  --blue-800: #b8dffd;\n  --blue-900: #d5ecfd;\n  --powder-050: #414648;\n  --powder-100: #3e4a52;\n  --powder-200: #43525f;\n  --powder-300: #4c6071;\n  --powder-400: #577489;\n  --powder-500: #688eac;\n  --powder-600: #7badd3;\n  --powder-700: #9cc3db;\n  --powder-800: #cde1ee;\n  --powder-900: #e5f3ff;\n  --green-025: #2e4233;\n  --green-050: #344b3a;\n  --green-100: #3d6048;\n  --green-200: #487455;\n  --green-300: #4d815c;\n  --green-400: var(--sag-green-dark);\n  --green-500: var(--sag-green);\n  --green-600: #76c490;\n  --green-700: #93d0a8;\n  --green-800: #b3dec1;\n  --green-900: #d0eada;\n  --yellow-050: #464236;\n  --yellow-100: #524b38;\n  --yellow-200: #675c37;\n  --yellow-300: #7e6f3a;\n  --yellow-400: #9e883b;\n  --yellow-500: #bf9f37;\n  --yellow-600: #dab941;\n  --yellow-700: #f1d056;\n  --yellow-800: #f8df7a;\n  --yellow-900: #fcedaf;\n  --red-050: #572f32;\n  --red-100: #723738;\n  --red-200: #873f3e;\n  --red-300: #9b4544;\n  --red-400: #b24d49;\n  --red-500: #c4524f;\n  --red-600: #d25d5d;\n  --red-700: #de7176;\n  --red-800: #e7929a;\n  --red-900: #f2c1c7;\n  --gold: #ffcc01;\n  --gold-lighter: #5e553c;\n  --silver: #b4b8bc;\n  --silver-lighter: #424242;\n  --bronze: #caa789;\n  --bronze-lighter: #4d433b;\n  --fc-dark: var(--black-900);\n  --fc-medium: var(--black-700);\n  --fc-light: var(--black-500);\n  --focus-ring: rgba(55, 138, 211, 0.15);\n  --focus-ring-success: rgba(72, 116, 85, 0.4);\n  --focus-ring-warning: rgba(158, 136, 59, 0.4);\n  --focus-ring-error: rgba(196, 82, 79, 0.3);\n  --focus-ring-muted: rgba(231, 232, 235, 0.1);\n  --bs-sm: none;\n  --bs-md: 0 1px 3px rgba(0, 0, 0, 0.11), 0 2px 6px rgba(0, 0, 0, 0.11), 0 3px 8px rgba(0, 0, 0, 0.14);\n  --bs-lg: 0 1px 4px rgba(0, 0, 0, 0.14), 0 3px 8px rgba(0, 0, 0, 0.14), 0 4px 13px rgba(0, 0, 0, 0.18);\n  --scrollbar: inherit;\n  --highlight-bg: var(--sag-bg-700);\n  --highlight-color: #fff;\n  --highlight-comment: var(--sag-blue);\n  --highlight-punctuation: #ccc;\n  --highlight-namespace: var(--sag-yellow);\n  --highlight-attribute: var(--sag-blue);\n  --highlight-literal: var(--sag-orange);\n  --highlight-symbol: var(--sag-purple);\n  --highlight-keyword: var(--sag-purple);\n  --highlight-variable: var(--sag-green);\n  --highlight-addition: var(--sag-green);\n  --highlight-deletion: var(--sag-red);\n  \n  --theme-content-border-color: transparent;\n  --theme-topbar-border-top-size: 0;\n  --theme-primary-color: var(--sag-accent-primary);\n}\n\n#sidebar {\n  display: none;\n}\n\n#mainbar {\n  width: 100%\n}",
+        "domains": [
+          "stackoverflow.com",
+          "askubuntu.com"
+        ]
+      }
+    ],
+    "updateDate": 1694884552247,
+    "_id": "bce65344-e695-4df2-b4fa-63d6a2214afb",
+    "_rev": 1694884552247,
+    "id": 21
+  },
+  {
+    "enabled": true,
+    "installDate": 1614477926064,
+    "name": "Twitter",
+    "sections": [
+      {
+        "code": "body {\n  background-color: var(--sag-bg-500) !important;\n}\n\n.r-1igl3o {\n  background-color: var(--sag-bg-500);\n}\n\n.r-kemksi {\n  background: var(--sag-bg-500);\n}\n\n.r-qo02w8 {\n  box-shadow: none;\n  background-color: var(--sag-bg-700);\n}\n\n.r-urgr8i {\n  background-color: var(--sag-accent-primary);\n}\n\n.r-13gxpu9 {\n  color: var(--sag-accent-secondary);\n}\n\n.r-p1n3y5 {\n  border-color: var(--sag-accent-secondary)\n}\n\n.r-z32n2g {\n  background-color: var(--sag-bg-700);\n  border-color: transparent;\n}\n\n.r-k0dy70 {\n  border-color: transparent;\n}\n\n.css-1dbjc4n {\n  border-color: var(--sag-bg-700);\n}\n\n.r-1ysxnx4 {\n  background-color: var(--sag-bg-500);\n}",
+        "domains": [
+          "twitter.com"
+        ]
+      }
+    ],
+    "updateDate": 1617342231593,
+    "_id": "60669587-49eb-4f28-b2f1-6db0a5abaae8",
+    "_rev": 1684787497510,
+    "id": 27
+  },
+  {
+    "enabled": true,
+    "installDate": 1614478575251,
+    "name": "Nexus Mods",
+    "sections": [
+      {
+        "code": ":root {\n  --theme-primary: var(--sag-accent-primary);\n  --theme-secondary: var(--sag-accent-primary);\n}\n\n/* Done to be more specific */\nbody > * {\n  --theme-primary: var(--sag-accent-primary);\n  --theme-secondary: var(--sag-accent-primary);\n}\n\n.rj-standard-button, .bubble, #rj-back-to-top {\n  background-color: var(--theme-primary) !important;\n}\n\na:not(.rj-btn):hover, a:not(.rj-btn):focus, .rj-panel-cta, i.orange {\n  color: var(--sag-accent-secondary) !important;\n}\n\n#head.new-head, #head.new-head .skip-to-content, #head .rj-header-wrap .rj-header-left, #head .rj-header-wrap .rj-header-right {\n  background-color: var(--sag-bg-500);\n}\n\n/* Comment out these lines to disable the background removal */\n\nbody {\n  background-color: var(--sag-bg-500);\n}\n\nbody::before {\n  content: none;\n}\n\n/* -------------------------- */\n\nul.modtabs li a {\n  border-top: 1px solid #000;\n}\n\n.modpage .sideitems, ul.modtabs li, ul.modtabs li a, .rj-nav-game-home {\n  border-color: var(--sag-bg-700) !important\n}\n\n#rj-footer {\n  background-color: var(--sag-bg-500);\n}\n\nsection#rj-vortex, .rj-network-stats, .agroup, .tiles .fadeoff, .premium-block {\n  display: none;\n}\n\nsection#rj-sitemap {\n  border: none;\n}\n\n.modpage .col-1-1.info-details, ul.modtabs, body .home-intro, .static .wrap {\n  background-color: var(--sag-bg-500) !important;\n}\n\nul.tiles li.image-tile .tile-desc .tile-data, body.new-head ul.game-tiles li.image-tile .mod-tile-left {\n  background-color: transparent !important;\n}\n\nul.modtabs li, ul.modtabs li a {\n  background: var(--sag-bg-500);\n}\n\nul.modtabs li a:hover, ul.modtabs li a.selected, .game-home-link, .rj-nav-item:hover, .rj-nav-item.active, .rj-header-tray, ul.rj-mobile-menu-subsections {\n  background: var(--sag-bg-700);\n}\n\n.tabcontent {\n  background: var(--sag-bg-700);\n}\n\n.accordion dt, .accordion dd, .tabcontent-mod-page .accordionitems, .mod-tile-left, .tiles .tile-data {\n  background: var(--sag-bg-800) !important;\n}\n\n.table th, .table td {\n  background: var(--sag-bg-700) !important;\n  border-color: var(--sag-bg-800) !important;\n}\n\n.table td, a.rj-panel {\n  background: var(--sag-bg-800) !important;\n  border-color: var(--sag-bg-900) !important;\n}\n\n.modpage .wrap, .static .wrap, ul.modtabs li {\n  font-weight: normal;\n}",
+        "domains": [
+          "nexusmods.com"
+        ]
+      }
+    ],
+    "updateDate": 1617342141930,
+    "_id": "78adee75-9f8d-4a7a-b050-b3652286a934",
+    "_rev": 1674671455831,
+    "id": 28
+  },
+  {
+    "enabled": false,
+    "installDate": 1614484258184,
+    "name": "Uber Eats",
+    "sections": [
+      {
+        "code": "body {\n  background: var(--sag-bg-500);\n  color: white;\n}\n\nmain {\n  padding-bottom: 48px;\n}\n\n/* Weird icon hack to prevent changing other paths */\n/* Cause UE uses some sick svg stuff that we dont wnt to break */\nbutton svg path, svg[width=\"24px\"] path, svg[width=\"24\"] path, svg[width=\"20px\"] path, svg[width=\"20\"] path, svg[width=\"16px\"] path {\n  fill: white;\n}\n\nimg[alt=\"Uber Eats Home\"] {\n  filter: invert(100%) hue-rotate(240deg)\n}\n\ninput {\n  background: transparent;\n}\n\n.gm-style img {\n  filter: invert(90%) hue-rotate(170deg);\n}\n\nfooter {\n  background-color: var(--sag-bg-500) !important;\n}",
+        "domains": [
+          "ubereats.com"
+        ]
+      }
+    ],
+    "updateDate": 1640982655273,
+    "_id": "6f2c0033-382a-4c37-bfed-d72dd7032566",
+    "_rev": 1674671455831,
+    "id": 29
+  },
+  {
+    "enabled": true,
+    "installDate": 1614489994812,
+    "name": "NME",
+    "sections": [
+      {
+        "code": "#tdi_42_330 {\n  display: none;\n}\n\n.tdb-logo-img {\n  filter: invert(100%) brightness(5);\n}\n\n.td-container-wrap, .post, .td-header-desktop-wrap, .td-header-mobile-wrap, .category-nav-gaming::before, .td-header-desktop-sticky-wrap, .td-header-mobile-sticky-wrap {\n  background-color: var(--sag-bg-500);\n  color: white;\n  border: none;\n}\n\nh1, h2, h3, h4, h5, h6, .td-excerpt, .tdb_single_subtitle p, span, p, .tdi_87_020 .tdb-head-search-btn i, .tdi_60_b6c .tdb-head-search-btn i {\n  color: white !important;\n}\n\na {\n  color: var(--sag-accent-primary) !important;\n}",
+        "domains": [
+          "nme.com"
+        ]
+      }
+    ],
+    "updateDate": 1617342148082,
+    "_id": "ea8a962b-89fa-434c-aabe-ea68de94c2c7",
+    "_rev": 1674671455831,
+    "id": 30
+  },
+  {
+    "enabled": false,
+    "installDate": 1614490516312,
+    "name": "Economist",
+    "sections": [
+      {
+        "code": ":root {\n  --ds-color-economist-red: var(--sag-red);\n  --ds-color-economist-red-60: var(--sag-red);\n  --ds-color-chicago-20: var(--sag-blue);\n  --ds-color-chicago-30: var(--sag-blue);\n  --ds-color-chicago-45: var(--sag-blue);\n  --ds-color-chicago-55: #475ed1;\n  --ds-color-chicago-90: #d6dbf5;\n  --ds-color-chicago-95: #ebedfa;\n  --ds-color-hong-kong-45: #1dc9a4;\n  --ds-color-hong-kong-55: #36e2bd;\n  --ds-color-hong-kong-90: #d2f9f0;\n  --ds-color-hong-kong-95: #e9fcf8;\n  --ds-color-tokyo-45: #c91d42;\n  --ds-color-tokyo-55: #e2365b;\n  --ds-color-tokyo-90: #f9d2db;\n  --ds-color-tokyo-95: #fce9ed;\n  --ds-color-singapore-55: #f97a1f;\n  --ds-color-singapore-65: #fb9851;\n  --ds-color-singapore-75: #fcb583;\n  --ds-color-singapore-90: #fee1cd;\n  --ds-color-new-york-55: #f9c31f;\n  --ds-color-new-york-65: #fbd051;\n  --ds-color-new-york-75: #fcde83;\n  --ds-color-new-york-90: #fef2cd;\n  --ds-color-london-5: #fff;\n  --ds-color-london-10: #ddd;\n  --ds-color-london-20: var(--sag-bg-300);\n  --ds-color-london-35: #aaa;\n  --ds-color-london-70: #999;\n  --ds-color-london-85: var(--sag-bg-900);\n  --ds-color-london-95: var(--sag-bg-600);\n  --ds-color-london-100: var(--sag-bg-500);\n  --ds-color-los-angeles-85: var(--sag-bg-800);\n  --ds-color-los-angeles-90: var(--sag-bg-700);\n  --ds-color-los-angeles-95: var(--sag-bg-600);\n  --ds-color-paris-85: var(--sag-bg-800);\n  --ds-color-paris-90: var(--sag-bg-700);\n  --ds-color-paris-95: var(--sag-bg-600);\n}\n\n\nbody {\n  background-color: var(--sag-bg-500);\n}\n\n#piano-ribbon {\n  display: none;\n}\n\n.ds-section-headline--rule-emphasised::before {\n  background-color: var(--ds-color-london-85);\n}\n\n.ds-masthead-logo g path:first-child {\n  fill: var(--ds-color-economist-red) !important;\n}\n\n#icon-navigation-disclosure path:first-child, #icon-menu-disclosure path:not(:first-child), .ds-share-link.ds-share-link--inverse .path-background, .ds-share-link .path-background {\n  fill: white;\n}\n\n.ds-share-link .path-foreground {\n  fill: var(--sag-bg-500);\n}\n\n.ds-navigation-disclosure--icon.ds-navigation-disclosure--icon-search::before {\n  filter: brightness(5);\n}\n\n#tp-regwall::before {\n  content: none;\n}\n\n.ds-footer, .ds-footer__header, .ds-navigation-link--inverse.ds-navigation-link--secondary.ds-navigation-link--major span {\n  color: white;\n}\n\n.ds-navigation-link--inverse.ds-navigation-link--secondary span, .ds-navigation-link--inverse.ds-navigation-link--secondary span:hover {\n  color: var(--ds-color-economist-red);\n}",
+        "domains": [
+          "economist.com"
+        ]
+      }
+    ],
+    "updateDate": 1617341987738,
+    "_id": "e3d125b7-8260-4b55-814d-a228f8207529",
+    "_rev": 1685403252461,
+    "id": 31
+  },
+  {
+    "enabled": true,
+    "installDate": 1614712446034,
+    "name": "Go Spec",
+    "sections": [
+      {
+        "code": "body {\n  background-color: var(--sag-bg-500);\n  color: white;\n}\n\npre {\n  background: var(--sag-bg-800);\n}\n\na, .exampleHeading .text, .expandAll {\n  color: var(--sag-accent-secondary);\n}\n\nh1, h2, h3, h4 {\n  color: white\n}\n\nh2 {\n  background-color: var(--sag-accent-primary);\n}",
+        "domains": [
+          "golang.org"
+        ]
+      }
+    ],
+    "updateDate": 1617342031355,
+    "_id": "c004ef9b-2f30-4a74-9d1e-2eb7d0f5b3f3",
+    "_rev": 1674671455831,
+    "id": 32
+  },
+  {
+    "enabled": true,
+    "installDate": 1614729981511,
+    "name": "V8 Blog",
+    "sections": [
+      {
+        "code": ":root.dark {\n  --blue: var(--sag-accent-primary);\n  --orange: var(--sag-orange);\n  --yellow: var(--sag-yellow);\n  --black: var(--sag-bg-500);\n  --darkestgray: var(--sag-bg-500);\n  --darkgray: var(--sag-bg-900);\n  \n  --main-and-footer-link-color: var(--sag-accent-secondary);\n}\n\n/* Header */\n#header {\n  background: none;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n\n#header nav .current a, #header nav a:hover {\n  background: var(--sag-bg-700);\n}\n\n#header nav a, #nav-toggle {\n  color: var(--white);\n  background: none;\n}\n\n/* Footer */\n#footer {\n  background-color: transparent;\n}",
+        "domains": [
+          "v8.dev"
+        ]
+      }
+    ],
+    "updateDate": 1617342275631,
+    "_id": "62394463-c3db-42f5-a696-b926730cc783",
+    "_rev": 1674671455831,
+    "id": 33
+  },
+  {
+    "enabled": true,
+    "installDate": 1615790786373,
+    "name": "HLTV",
+    "sections": [
+      {
+        "code": "body, html {\n  background: var(--sag-bg-300);\n}\n\n.bgPadding {\n  background: var(--sag-bg-300);\n}\n\n/* Navbar */\n.navbar {\n  background-color: var(--sag-bg-700);\n  box-shadow: none;\n}\n\n.navbar .nav, .navbar .navburger, .navbar .navevents, .navbar .navfantasy, .navbar .navforums, .navbar .navgalleries, .navbar .navlive, .navbar .navmatches, .navbar .navnews, .navbar .navranking, .navbar .navresults, .navbar .navstats {\n  border-color: transparent;\n}\n\n.navbar .nav:hover, .navbar .navburger:hover, .navbar .navevents:hover, .navbar .navfantasy:hover, .navbar .navforums:hover, .navbar .navgalleries:hover, .navbar .navlive:hover, .navbar .navmatches:hover, .navbar .navnews:hover, .navbar .navranking:hover, .navbar .navresults:hover, .navbar .navstats:hover {\n  background-color: var(--sag-bg-900);\n}\n\n.navbar .nav, .navbar .navburger, .navbar .navevents, .navbar .navfantasy, .navbar .navforums, .navbar .navgalleries, .navbar .navlive, .navbar .navmatches, .navbar .navnews, .navbar .navranking, .navbar .navresults, .navbar .navstats {\n  color: #ddd;\n}\n\n.navbar .navsearchinput {\n  background-color: var(--sag-bg-900);\n  border-color: var(--sag-border);\n}\n\n.navbar .navsearchborder, .navbar .navborder::before {\n  border-color: var(--sag-border);\n}\n\n.navbar .navsignin {\n  color: var(--sag-text);\n}\n\n.a-default:hover, a:hover {\n  color: #fff !important;\n}\n\n/* Generic */\n.button {\n  background-color: var(--sag-bg-900);\n  box-shadow: none;\n}\n\n.won {\n  color: var(--sag-green)\n}\n\n.lost {\n  color: var(--sag-red);\n}\n\n/* Player of the week */\n.playerOfTheWeekContainer {\n  background-color: var(--sag-bg-700);\n  box-shadow: none;\n}\n\n.playerOfTheWeekContainer .playerOfTheWeekBodyshotContainer::before {\n  background-color: var(--sag-bg-900);\n}\n\n.playerOfTheWeekContainer .playerOfTheWeekBodyshotContainer::after {\n  background: linear-gradient(0deg,var(--sag-bg-900),rgba(var(--sag-bg-700-rgb),0))\n}\n\n/* Ranking by and Events */\n.leftCol .live {\n  background-color: var(--sag-red);\n}\n\n.leftCol .col-box-con {\n  background-color: var(--sag-bg-700);\n  box-shadow: none;\n}\n\n.leftCol .event, .leftCol .event:hover {\n  border-color: transparent;\n}\n\n.col-box {\n  border-color: transparent;\n}\n\n/* Today's Matches and Results */\n.rightCol .todaysMatches {\n  background-color: var(--sag-bg-900);\n}\n\n.leftCol .hotmatch-box, .right2Col .hotmatch-box, .rightCol .hotmatch-box {\n  background-color: var(--sag-bg-700);\n}\n\n.leftCol .hotmatch-box:hover, .right2Col .hotmatch-box:hover, .rightCol .hotmatch-box:hover {\n  background-color: var(--sag-bg-900);\n}\n\n.leftCol .hotmatch-box .teambox, .right2Col .hotmatch-box .teambox, .rightCol .hotmatch-box .teambox {\n  border-color: transparent;\n}\n\n.rightCol .result-box {\n  background-color: var(--sag-bg-700);\n  box-shadow: none;\n}\n\n/* Recent Activity */\n.right2Col .col-box-con, .rightCol .col-box-con {\n  background-color: var(--sag-bg-700);\n  box-shadow: none;\n}\n\n.activitylist .activity:hover {\n  background-color: var(--sag-bg-900);\n}\n\n/* News */\n.standard-box {\n  background-color: var(--sag-bg-700);\n  box-shadow: none;\n}\n\n.index .newsline:hover {\n  background-color: var(--sag-bg-900);\n}\n\n.index .newstext {\n  color: var(--sag-text-tertiary);\n}\n\n.index .newsline + .newsline {\n  border-color: transparent;\n}\n\n.index .big-image-news .hero-image {\n  box-shadow: none;\n}\n\n/* News - Event */\n.event-hub .event-hub-indicator.event-live {\n  background: var(--sag-red);\n  box-shadow: none;\n}\n\n.event-hub-title {\n  display: none;\n}\n\n.event-hub .event-hub-top::after {\n  content: none;\n}\n\n/* Matches */\n\n.newMatches .guide-section {\n  background-color: var(--sag-bg-700);\n  box-shadow: none;\n}\n\n.newMatches .guide-section .guide-table tbody tr:nth-child(2n+1) {\n  background-color: var(--sag-bg-700)\n}\n\n.newMatches .guide-section .guide-table .active .guide-same-day-matches, .newMatches .guide-section .guide-table .active .guide-same-day-matches:hover {\n  background-color: var(--sag-bg-900);\n}\n\n.newMatches .liveMatchesContainer .matchDayHeadline, .newMatches .upcomingMatchesContainer .matchDayHeadline {\n  background-color: var(--sag-bg-700);\n  border-color: var(--sag-bg-700);\n}\n\n/* Event Hub */\n.event-hub {\n  background-color: var(--sag-bg-700);\n  box-shadow: none;\n}\n\n.event-hub .event-hub-link {\n  background-color: var(--sag-bg-700);\n  border-color: transparent;\n}\n\n.event-hub .event-hub-link:hover {\n  background-color: var(--sag-bg-900);\n}\n\n/* Transfers */\n.transfer .transfer-filters {\n  background: var(--sag-bg-800);\n  border-bottom: none;\n}\n.transfer .transfer-filters select, .transfer .transfer-filters select:hover, .transfer .transfer-filters .transfer-filter-country, .transfer .transfer-filters .transfer-filter-country:hover {\n  background-color: var(--sag-border);\n  border-color: var(--sag-border);\n  color: var(--sag-text);\n}\n\n.transfer .col-box-con {\n  background: var(--sag-bg-700);\n}\n\n.transfer:not(.transfer-sidebar) .transfer-row  {\n  background: var(--sag-bg-700);\n  border: none;\n}\n\n.transfer:not(.transfer-sidebar) .transfer-row:hover {\n  background: var(--sag-bg-900);\n}",
+        "domains": [
+          "hltv.org"
+        ]
+      }
+    ],
+    "updateDate": 1685137079314,
+    "_id": "b45e786f-baef-4aec-83db-757fbc953979",
+    "_rev": 1685137079314,
+    "id": 36
+  },
+  {
+    "enabled": true,
+    "installDate": 1615864701375,
+    "name": "Instagram",
+    "sections": [
+      {
+        "code": "/* Original for reference */\n.sDN5V {\n    --i1d: 38,38,38;\n    --edc: 199,199,199;\n    --f75: 38,38,38;\n    --fe0: 0,55,107;\n    --d87: 255,255,255;\n    --b3f: 250,250,250;\n    --bb2: 239,239,239;\n    --f23: 255,255,255;\n    --b38: 219,219,219;\n    --b6a: 219,219,219;\n    --ca6: 219,219,219;\n    --cdd: 38,38,38;\n    --e22: 199,199,199;\n    --e62: 245,251,255;\n    --b2f: 88,195,34;\n    --c8c: 168,168,168;\n    --ce3: 239,239,239;\n    --jd9: 0,0,0;\n    --j64: 54,54,54;\n    --a97: 243,243,243;\n    --d20: 38,38,38;\n}\n\n.sDN5V {\n  --i1d: 200, 200, 200;\n  --edc: 180, 180, 180;\n  --f75: 200, 200, 200;\n  --fe0: var(--sag-blue-rgb);\n  --d87: var(--sag-bg-500-rgb);\n  --b3f: var(--sag-bg-500-rgb);\n  --bb2: var(--sag-bg-700-rgb);\n  --f23: var(--sag-bg-500-rgb);\n  --b38: var(--sag-bg-800-rgb);\n  --b6a: var(--sag-bg-800-rgb);\n  --ca6: var(--sag-bg-800-rgb);\n  --cdd: 220, 220, 220;\n  --e22: var(--sag-bg-900-rgb);\n  --e62: 245, 251, 255;\n  --b2f: 88, 195, 34;\n  --c8c: 168, 168, 168;\n  --ce3: var(--sag-bg-700-rgb);\n  --jd9: var(--sag-bg-500-rgb);\n  --j64: var(--sag-bg-700-rgb);\n  --a97: var(--sag-bg-700-rgb);\n  --d20: 220, 220, 220;\n  --d69: var(--sag-blue-rgb)\n}\n\na path, a svg, button path, button svg {\n  fill: #fff\n}\n\nimg[alt=\"Instagram\"] {\n  filter: invert(1) brightness(2);\n}",
+        "domains": [
+          "instagram.com"
+        ]
+      }
+    ],
+    "updateDate": 1617344590170,
+    "_id": "a4ab2b80-e0a3-49c7-9013-af8b61006c06",
+    "_rev": 1674671455831,
+    "id": 37
+  },
+  {
+    "enabled": true,
+    "installDate": 1616260182913,
+    "name": "Youtube Music",
+    "sections": [
+      {
+        "code": "body {\n  background: var(--sag-bg-500);\n}\n\nhtml:not(.style-scope)[dark],\n:not(.style-scope)[dark] {\n  --ytmusic-color-white1: #fff;\n  --ytmusic-color-grey2: #aaa;\n  --ytmusic-color-grey3: #909090;\n  --ytmusic-color-grey4: #717171;\n  --ytmusic-color-grey5: #606060;\n  --ytmusic-color-black1: var(--sag-bg-700);\n  --ytmusic-color-black2: var(--sag-bg-600);\n  ;\n  --ytmusic-color-black4: var(--sag-bg-500);\n  --ytmusic-color-blackpure: #000;\n  --ytmusic-color-lightred: #ff4e45;\n  --ytmusic-color-youtubered: var(--sag-red);\n  --ytmusic-color-mediumred: var(--sag-red);\n  --ytmusic-color-lightblue: #3ea6ff;\n  --ytmusic-color-yellow: #fbc02d;\n  --ytmusic-color-lightgreen: #2ba640;\n  --ytmusic-color-lightteal: #00AAA7;\n  --ytmusic-color-white1-alpha10: rgba(255, 255, 255, .1);\n  --ytmusic-color-white1-alpha15: rgba(255, 255, 255, .15);\n  --ytmusic-color-white1-alpha20: rgba(255, 255, 255, .2);\n  --ytmusic-color-white1-alpha30: rgba(255, 255, 255, .3);\n  --ytmusic-color-white1-alpha50: rgba(255, 255, 255, .5);\n  --ytmusic-color-white1-alpha70: rgba(255, 255, 255, .7);\n  sv --ytmusic-color-blackpure-alpha0: rgba(0, 0, 0, 0);\n  --ytmusic-color-blackpure-alpha10: rgba(0, 0, 0, .1);\n  --ytmusic-color-blackpure-alpha60: rgba(0, 0, 0, .6);\n  --ytmusic-color-mediumred-alpha90: rgba(204, 0, 0, .9);\n  --ytmusic-color-white-opacity-0-05: rgba(255, 255, 255, .05);\n  --ytmusic-color-white-opacity-0-5: rgba(255, 255, 255, .5);\n  --ytmusic-color-black-opacity-0-4: rgba(0, 0, 0, .4);\n  --ytmusic-color-blue-1: #065fd4;\n  --ytmusic-color-green-1: #3a923f;\n  --ytmusic-color-grey-4: #ccc;\n  --ytmusic-white-5: #4e4e4e;\n  --ytmusic-opalescence-soft-grey: hsl(0, 0%, 93.3%);\n  --ytmusic-opalescence-dark-grey: hsl(0, 0%, 20%);\n}\n\n#progress-bar.ytmusic-player-bar {\n  --paper-progress-active-color: var(--sag-red);\n}\n\nytmusic-like-button-renderer {\n  display: flex;\n  flex-direction: row-reverse;\n}",
+        "domains": [
+          "music.youtube.com"
+        ]
+      }
+    ],
+    "updateDate": 1617342296359,
+    "_id": "1d3f41df-6da0-4213-8784-2d0a5a284656",
+    "_rev": 1674671455831,
+    "id": 38
+  },
+  {
+    "enabled": true,
+    "installDate": 1616369194394,
+    "name": "BTTV",
+    "sections": [
+      {
+        "code": "body {\n  background-color: var(--sag-bg-300);\n}\n\n.bg-dark {\n  background-color: var(--sag-bg-500) !important;\n}\n\n*[class^=\"EmoteCards_emoteCard_\"], *[class^=\"UserCards_userCard_\"] {\n  background-color: var(--sag-bg-700);\n}\n\n*[class^=\"EmoteCards_emoteCard_\"]:hover, *[class^=\"UserCards_userCard_\"]:hover {\n  background-color: var(--sag-bg-800);\n}\n\n.nav-pills .nav-link.active, .nav-pills .show > .nav-link {\n  background-color: var(--sag-accent-primary);\n}\n\na, .btn-link {\n  color: var(--sag-accent-secondary);\n  outline: none;\n}\n\na:hover, .btn-link:hover {\n  color: var(--sag-accent-primary);\n}",
+        "domains": [
+          "betterttv.com"
+        ]
+      }
+    ],
+    "updateDate": 1617341934446,
+    "_id": "6e70d821-87e3-4dc0-bad3-e36f983c59a3",
+    "_rev": 1674671455831,
+    "id": 39
+  },
+  {
+    "enabled": true,
+    "installDate": 1617341922805,
+    "name": "Nouveaou Colors",
+    "sections": [
+      {
+        "code": "body {\n  tab-size: 2;\n}\n\n:root {\n  --sag-text: #fff;\n  --sag-text-secondary: #ddd;\n  --sag-text-tertiary: #ccc;\n  \n   --sag-bg-200: #0f1014;\n   --sag-bg-300: #13151a;\n   --sag-bg-400: #17191f;\n   --sag-bg-500: #1b1d24;\n   --sag-bg-600: #1d1e24;\n   --sag-bg-700: #23252C;\n   --sag-bg-800: #2A2C33;\n   --sag-bg-900: #2E3038;\n\n   --sag-bg-200-rgb: 15, 16, 20;\n   --sag-bg-300-rgb: 19, 21, 26;\n   --sag-bg-400-rgb: 23, 25, 31;\n   --sag-bg-500-rgb: 27, 29, 36;\n   --sag-bg-600-rgb: 29, 30, 36;\n   --sag-bg-700-rgb: 35, 37, 44;\n   --sag-bg-800-rgb: 42, 44, 51;\n   --sag-bg-900-rgb: 46, 48, 56;\n\n   --sag-border: #3d3f49;\n   --sag-border-rgb: 61, 63, 73;\n   --sag-border-secondary: #3d3f49;\n\n   --sag-accent-primary: #3498DB;\n   --sag-accent-primary-rgb: 52, 152, 219;\n   --sag-accent-secondary: #67cbff;\n   --sag-accent-secondary-rgb: 103, 203, 255;\n\n   --sag-red: #E06C75;\n   --sag-red-dark: #8c4349;\n   --sag-red-rgb: 224, 108, 117;\n   --sag-red-dark-rgb: 140, 67, 73;\n\n   --sag-green: #98C379;\n   --sag-green-dark: #5f7a4c;\n   --sag-green-rgb: 152, 195, 121;\n   --sag-green-dark-rgb: 95, 122, 76;\n\n   --sag-yellow: #E5C07B;\n   --sag-yellow-dark: #8c764c;\n   --sag-yellow-rgb: 229, 192, 123;\n\n   --sag-blue: #61AFEF;\n   --sag-blue-dark: #3498DB;\n   --sag-blue-rgb: 97, 175, 239;\n\n   --sag-purple: #C678DD;\n   --sag-purple-dark: #9f60b3;\n   --sag-purple-rgb: 198, 120, 221;\n   --sag-purple-dark-rgb: 159, 96, 179;\n\n   --sag-cyan: #56B6C2;\n   --sag-cyan-rgb: 86, 182, 194;\n\n   --sag-orange: #e08d6c;\n   --sag-orange-rgb: 224, 141, 108;\n\n   --sag-lime: #a9c379;\n   --sag-lime-rgb: 169, 195, 121;\n }\n\n:root {\n   --sag-bg-200: #131019;\n   --sag-bg-300: #1B1923;\n   --sag-bg-400: #1c1a24;\n   --sag-bg-500: #1E1E28;\n   --sag-bg-600: #20202b;\n   --sag-bg-700: #232330;\n   --sag-bg-800: #2d2939;\n   --sag-bg-900: #332E41;\n\n   --sag-bg-200-rgb: 19, 16, 25;\n   --sag-bg-300-rgb: 27, 25, 35;\n   --sag-bg-400-rgb: 28, 26, 36;\n   --sag-bg-500-rgb: 30, 30, 40;\n   --sag-bg-600-rgb: 32, 32, 43;\n   --sag-bg-700-rgb: 35, 35, 48;\n   --sag-bg-800-rgb: 45, 41, 57;\n   --sag-bg-900-rgb: 51, 46, 65;\n\n   --sag-border: #393348;\n   --sag-border-rgb: 57, 51, 72;\n   --sag-border-secondary: #393348; /* Should be darker */\n }\n\n\n/*\n:root {\n   --sag-bg-200: #15121C;\n   --sag-bg-300: #15121C;\n   --sag-bg-400: #15121C;\n   --sag-bg-500: #1B1923;\n   --sag-bg-600: #1B1923;\n   --sag-bg-700: #1E1E28;\n   --sag-bg-800: #332E41;\n   --sag-bg-900: #332E41;\n\n   --sag-bg-200-rgb: 15, 16, 20;\n   --sag-bg-300-rgb: 19, 21, 26;\n   --sag-bg-400-rgb: 23, 25, 31;\n   --sag-bg-500-rgb: 27, 29, 36;\n   --sag-bg-600-rgb: 29, 30, 36;\n   --sag-bg-700-rgb: 35, 37, 44;\n   --sag-bg-800-rgb: 42, 44, 51;\n   --sag-bg-900-rgb: 46, 48, 56;\n\n   --sag-border: #3d3f49;\n\n   --sag-accent-primary: #3498DB;\n   --sag-accent-primary-rgb: 52, 152, 219;\n   --sag-accent-secondary: #67cbff;\n   --sag-accent-secondary-rgb: 103, 203, 255;\n\n   --sag-red: #E38C8F;\n   --sag-red-dark: #8c4349;\n   --sag-red-rgb: 224, 108, 117;\n   --sag-red-dark-rgb: 140, 67, 73;\n\n   --sag-green: #B1E1A6;\n   --sag-green-dark: #5f7a4c;\n   --sag-green-rgb: 152, 195, 121;\n   --sag-green-dark-rgb: 95, 122, 76;\n\n   --sag-yellow: #ECDDAA;\n   --sag-yellow-dark: #8c764c;\n   --sag-yellow-rgb: 229, 192, 123;\n\n   --sag-blue: #A3B9EF;\n   --sag-blue-dark: #3498DB;\n   --sag-blue-rgb: 97, 175, 239;\n\n   --sag-purple: #C678DD;\n   --sag-purple-dark: #9f60b3;\n   --sag-purple-rgb: 198, 120, 221;\n   --sag-purple-dark-rgb: 159, 96, 179;\n\n   --sag-cyan: #B7E5E6;\n   --sag-cyan-rgb: 86, 182, 194;\n\n   --sag-orange: #F7BE95;\n   --sag-orange-rgb: 224, 141, 108;\n\n   --sag-lime: #a9c379;\n   --sag-lime-rgb: 169, 195, 121;\n }*/"
+      }
+    ],
+    "updateDate": 1649655294600,
+    "_id": "83e2d154-a148-4e18-88be-bf26aecd9a4c",
+    "_rev": 1683599433239,
+    "id": 40
+  },
+  {
+    "enabled": true,
+    "installDate": 1617343153853,
+    "name": "NodeJS Dev",
+    "sections": [
+      {
+        "code": ".dark-mode {\n  --color-brand-primary: var(--sag-accent-primary);\n  --color-text-primary: var(--black4);\n  --color-text-secondary: var(--black6);\n  --color-text-accent: var(--sag-accent-primary);\n  --color-border-primary: var(--black4);\n  --color-border-secondary: var(--black3);\n  --color-border-accent: var(--sag-accent-primary);\n  --color-fill-app: var(--sag-bg-500);\n  --color-fill-body: var(--sag-bg-500);\n  --color-fill-canvas: var(--sag-bg-500);\n  --color-fill-side-nav: var(--sag-bg-700);\n  --color-fill-top-nav: var(--sag-bg-500);\n  --color-fill-action: var(--sag-accent-primary);\n  --color-fill-button: var(--pink5);\n}\n\nbody {\n  --brand2: var(--sag-accent-secondary);\n  --brand3: var(--sag-accent-secondary);\n  --brand4: var(--sag-accent-primary);\n  --brand5: var(--sag-accent-primary);\n  --brand6: var(--sag-accent-primary);\n  --brand7: var(--sag-accent-primary);\n}\n\n.nav__logo {\n  filter: hue-rotate(100deg) brightness(1.1);\n}",
+        "domains": [
+          "nodejs.dev"
+        ]
+      }
+    ],
+    "updateDate": 1617343346410,
+    "_id": "61f556d1-85ab-418c-8ee7-2f19f45a024e",
+    "_rev": 1674671455831,
+    "id": 41
+  },
+  {
+    "enabled": true,
+    "installDate": 1617343359059,
+    "name": "NodeJS",
+    "sections": [
+      {
+        "code": ":root {\n  --black: var(--sag-bg-200);\n  --black1: var(--sag-bg-500);\n  --black2: var(--sag-bg-700);\n  --black3: var(--sag-bg-700);\n}\n\nbody > header, footer, .openjsfoundation-footer, .highlight-box, #column2.interior, #column2 ul {\n  background-color: var(--sag-bg-700);\n}\n\n.dark #main, [data-theme=\"dark\"] body #main, [data-theme=\"dark\"] body, body.dark {\n  background-color: var(--sag-bg-500);\n  color: white;\n}\n\nheader li.active::after {\n  border-top-color: var(--sag-bg-700);\n}\n\n.dark header li::after, [data-theme=\"dark\"] body header li::after {\n  border-top-color: var(--sag-green) !important;\n}\n\na, a:link, a:active, a:visited {\n  color: var(--sag-accent-secondary);\n}\n\na:hover, .has-side-nav nav .active > a, .has-side-nav nav .active > a:hover {\n  background-color: var(--sag-accent-secondary);\n  color: white;\n}\n\nhr, hr.line {\n  background-color: var(--sag-border) !important;\n  border-color: var(--sag-border) !important;\n}\n\n.home-downloadbutton {\n  background-color: var(--sag-green-dark);\n}\n\n.home-downloadbutton:hover {\n  background-color: var(--sag-green);\n}\n\n.dark #main a, [data-theme=\"dark\"] body #main a {\n  color: var(--sag-green);\n  border-color: var(--sag-green);\n}\n\n.dark .dark-theme-switcher img, .dark .lang-picker-toggler img, .dark header, [data-theme=\"dark\"] body .dark-theme-switcher img, [data-theme=\"dark\"] body .lang-picker-toggler img, [data-theme=\"dark\"] body header {\n  background-color: var(--sag-bg-900)\n}\n\n/* HLJS Styling */\npre, code {\n  background-color: var(--sag-bg-700);\n  color: white;\n}\n\n.hljs-keyword {\n  color: var(--sag-purple);\n}\n\n.hljs-built_in {\n  color: var(--sag-red);\n}\n\n.hljs-string {\n  color: var(--sag-green);\n}\n\n.hljs-comment {\n  color: var(--sag-blue);\n}",
+        "domains": [
+          "nodejs.org"
+        ]
+      }
+    ],
+    "updateDate": 1684808164633,
+    "_id": "e20c60cc-a523-4c9b-a1bb-1e01f16c19bd",
+    "_rev": 1684808164633,
+    "id": 42
+  },
+  {
+    "enabled": true,
+    "installDate": 1617344641153,
+    "name": "Todoist",
+    "sections": [
+      {
+        "code": "/* I'm so sorry */\n.theme_dark #quick_find .quick_find__input, .theme_dark #left_menu.left_menu_project_iconongraphy #top_filters > li.current, .theme_dark #left_menu.left_menu_project_iconongraphy #top_filters > li:hover, .theme_dark #left_menu.left_menu_project_iconongraphy .generic_left_list .current table, .theme_dark #left_menu.left_menu_project_iconongraphy .generic_left_list table:hover, .theme_dark #left_menu.left_menu_project_iconongraphy .listItem:hover .listItemContent, .theme_dark #left_menu.left_menu_project_iconongraphy .listItemHighlighted .listItemContent, .theme_dark #left_menu.left_menu_project_iconongraphy .listItemSelected .listItemContent, .theme_dark #left_menu.left_menu_project_iconongraphy .SidebarListItem.SidebarListItem--selected, .theme_dark #left_menu.left_menu_project_iconongraphy .SidebarListItem:hover, .theme_dark #left_menu.new_side_bar_design #top_filters > li.current, .theme_dark #left_menu.new_side_bar_design #top_filters > li:hover, .theme_dark #left_menu.new_side_bar_design .generic_left_list .current table, .theme_dark #left_menu.new_side_bar_design .generic_left_list table:hover, .theme_dark #left_menu.new_side_bar_design .listItem:hover .listItemContent, .theme_dark #left_menu.new_side_bar_design .listItemHighlighted .listItemContent, .theme_dark #left_menu.new_side_bar_design .listItemSelected .listItemContent, .theme_dark #left_menu.new_side_bar_design .SidebarListItem.SidebarListItem--selected, .theme_dark #left_menu.new_side_bar_design .SidebarListItem:hover, .theme_dark .user_menu hr, .theme_dark .expansion_panel .expansion_panel__header .adder_icon:not(:disabled):focus, .theme_dark .expansion_panel .expansion_panel__header .adder_icon:not(:disabled):hover, .theme_dark .menu_list .menu_item:hover, .theme_dark .task_list_item__actions > button:not(:disabled):focus, .theme_dark .task_list_item__actions > button:not(:disabled):hover, .theme_dark .task_list_item__actions a:not(:disabled):focus, .theme_dark .task_list_item__actions a:not(:disabled):hover, .theme_dark .task_list_item__collapser:hover, .theme_dark .task_list_item__drag_handle:hover, .theme_dark .icon_pill:hover, .theme_dark .task_editor__extra_fields button[aria-expanded=\"true\"], .theme_dark .item_actions .item_action:not(:disabled):focus, .theme_dark .item_actions .item_action:not(:disabled):hover, [data-reach-tooltip], .theme_dark .board_task {\n  background: var(--sag-bg-900);\n}\n\n.theme_dark .section header {\n  background-color: var(--sag-bg-500);\n}\n\n.theme_dark #top_bar, .theme_dark #left_menu, .theme_dark .expansion_panel .expansion_panel__header, .theme_dark .user_menu, .theme_dark .menu_list, .theme_dark .reminders_picker_options, .theme_dark .task_editor__editing_area, .theme_dark .task_list_item:hover .task_list_item__actions, .theme_dark .task_list_item__actions__active, .theme_dark .scheduler, .theme_dark .scheduler-timepicker, .theme_dark .scheduler-timezone-list, .theme_dark .comments_textarea_holder, .theme_dark .comments_textarea_holder textarea, .theme_dark .board_section, .theme_dark .quick_add__body, .theme_dark .quick_add .task_editor .task_editor__description_field, .theme_dark .quick_add .task_editor .task_editor__editing_area {\n  background-color: var(--sag-bg-700) !important;\n}\n\n.theme_dark .user_menu, .theme_dark .task_editor__editing_area, .theme_dark .scheduler-suggestions, .theme_dark .comments_textarea_holder, .theme_dark .comments_textarea_holder .comments_textarea_buttons, .theme_dark .board_task, .theme_dark .quick_add {\n  border-color: var(--sag-bg-900)\n}\n\n.theme_dark .user_menu, .theme_dark .task_editor__editing_area:focus-within, .theme_dark .icon_pill, .subsection_header {\n  border-color: var(--sag-border);\n}\n\n.theme_dark #content, .theme_dark .view_header, .theme_dark .task_list_item, .theme_dark .reactist_modal_box {\n  background-color: var(--sag-bg-500);\n}\n\n.theme_dark .item_detail .sub_items_tab_container .task_list_item, .theme_dark .reactist_modal_box__body .task_list_item--project_hidden .task_list_item__actions__active, .theme_dark .reactist_modal_box__body .task_list_item--project_hidden:hover .task_list_item__actions {\n  background: transparent !important;\n}\n\n.theme_dark .ist_button_red {\n  background-color: var(--sag-accent-primary);\n}\n\n.theme_dark .ist_button_red:hover {\n  background-color: var(--sag-accent-secondary) !important;\n  border-color: transparent !important;\n}\n\n.task_list_item__actions {\n  padding-left: 0;\n}\n\n.theme_dark .task_list_item:hover .task_list_item__actions, .theme_dark .task_list_item__actions__active {\n  background-image: none;\n}\n\n.task_list_item__actions > button {\n  margin-left: 0;\n}\n\n.task_list_item__actions > button + button {\n  margin-left: 8px\n}\n\n.theme_dark #top_bar {\n  box-shadow: none;\n}",
+        "domains": [
+          "todoist.com"
+        ]
+      }
+    ],
+    "updateDate": 1648410331800,
+    "_id": "4c14252c-e752-43ec-8861-c5099eaf5da0",
+    "_rev": 1674671455831,
+    "id": 43
+  },
+  {
+    "enabled": true,
+    "installDate": 1618803151933,
+    "name": "w2g.tv",
+    "sections": [
+      {
+        "code": "@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');\n\nbody { \n  font-family: \"Noto Sans\", system-ui, sans-serif;\n}\n\n.w2g-main-container, .w2g-color-wrapper {\n  background-color: var(--sag-bg-500) !important;\n}\n\n.w2g-topbar {\n  background: var(--sag-bg-500);\n}\n\n.w2g-top-message-small {\n  background: var(--sag-bg-800);\n  color: white;\n}\n\ni.red.icon:not(:is(#yo)) {\n  color: var(--sag-red);\n}\n\n#w2g-editorial, .w2g-main-right, .w2g-user-avatar {\n  display: none;\n}\n\n#userbar, .w2g-panel-menu {\n  background-color: var(--sag-bg-700) !important;\n  color: white;\n}\n\n.w2g-user:not(.available) {\n  display: none;\n}\n\n.w2g-user.available {\n  border: 0;\n  border-radius: 0;\n  background: var(--sag-bg-900);\n  \n  width: auto;\n  min-width: 80px;\n  max-width: 200px;\n  \n  display: flex;\n  justify-content: center;\n  \n  background-color: var(--sag-green-dark);\n}\n\n.w2g-user-menu {\n  display: none !important;\n}\n\n.w2g-userbar.w2g-panel-bottom {\n  left: 50%;\n  right: auto;\n  transform: translateX(-50%) !important;\n}\n\n.w2g-userbar {\n  min-height: 40px;\n  height: auto;\n}\n\n.w2g-userbar.w2g-panel-bottom.w2g-panel-hidden {\n  bottom: -44px;\n}\n\n.w2g-hide-userbar {\n  display: none;\n}\n\n.w2g-userctrl {\n  display: none;\n}\n.w2g-userctrl {\n  flex-direction: row;\n}\n\n.w2g-userbar-list {\n  padding: 0;\n}\n\n.w2g-user-name {\n  color: white;\n  justify-self: center;\n  font-size: 1rem;\n\n  text-overflow: clip;\n  margin: 0 4px;\n}\n\n.available .w2g-user-name {\n  background-color: transparent;\n}\n\n.w2g-user.self .w2g-user-name {\n  text-decoration: none;\n}\n\n.w2g-panel-bottom {\n  box-shadow: none;\n}\n\n.w2g-center-plus {\n  display: none !important;\n}\n\n.w2g-video-container {\n  overflow: visible !important;\n  max-height: calc(100vh - 100px);\n}\n\n.w2g-video-container::before {\n  padding-top: 56.25%;\n}\n\n.w2g-player-search {\n  max-width: calc((100vh - 100px) * 1.77);\n  margin-top: 0;\n  position: static;\n}\n\n.w2g-main-lower {\n  padding: 0;\n  overflow-y: auto;\n}\n\n.w2g-scroll-vertical {\n  overflow: visible !important;\n}\n\n.w2g-player-container {\n  position: relative;\n  overflow: visible;\n}\n\n.w2g-player-container::before {\n  content: \"\";\n  width: 200vw;\n  transform: translateX(-100vw);\n  height: 100%;\n  background: var(--sag-bg-200);\n  \n  position: absolute;\n}\n\n.w2g-player-menu {\n  width: 100vw;\n  position: absolute;\n  bottom: 0;\n  z-index: 500;\n  left: min(-0px, calc((100vh * 1.77 - 100vw) / 2  - 100px + 1em));\n}\n\n.ui.inverted.menu {\n  background: var(--sag-bg-400);\n  left: 0;\n}\n\n.ui.inverted.menu .item::before {\n  content: none;\n}\n\n.w2g-timeslider {\n  background-color: var(--sag-border);\n}\n\n.w2g-timeslider-fill {\n  background-color: var(--sag-red);\n}\n\n#search-bar-input {\n  border: 0;\n}\n\n#search-bar-input ~ .ui.button {\n  background-color: var(--sag-accent-primary) !important;\n  color: white !important;\n  padding-left: 1.2em;\n  padding-right: 1.2em;\n}\n\n.ui.primary.button {\n  color: white !important;\n}\n\n.ui.primary.button, .ui.primary.buttons .button {\n  background-color: var(--sag-accent-primary) !important;\n}\n\n.w2g-active-icon {\n  background-color: var(--sag-bg-900);\n}\n\n[data-w2g=\"['video.canSetVolume', ['css', [null, 'w2g-disabled']]]\"] > .w2g-dropdown {\n  display: block;\n  position: relative;\n  bottom: auto;\n  padding: 0;\n}\n\n.player-volume {\n  display: flex;\n  align-items: center;\n  background-color: transparent;\n  margin-right: 24px;\n}\n\n.player-volume .w2g-vertical-slider {\n  display: flex;\n  width: auto;\n  height: auto;\n}\n\n.player-volume .slider {\n  transform: none !important;\n}\n\n.w2g-invite .action.input input, .ui.form input:not([type]), .ui.form input[type=\"date\"], .ui.form input[type=\"datetime-local\"], .ui.form input[type=\"email\"], .ui.form input[type=\"file\"], .ui.form input[type=\"number\"], .ui.form input[type=\"password\"], .ui.form input[type=\"search\"], .ui.form input[type=\"tel\"], .ui.form input[type=\"text\"], .ui.form input[type=\"time\"], .ui.form input[type=\"url\"] {\n  background-color: var(--sag-bg-900);\n  color: white;\n}\n\n.ui.input.focus > input, .ui.input > input:focus {\n  border: none;\n  background-color: var(--sag-border) !important;\n  color: white !important;\n}\n\n.ui.input > input, .ui.action.input > .button:last-child, .ui.action.input > .buttons:last-child > .button, .ui.action.input > .dropdown:last-child, .w2g-active-icon {\n  border-radius: 0;\n}\n\n/* Remove this to enable the provider selection on the left of the search bar */\n.w2g-intro-search > *:nth-child(1) {\n  display: none\n}\n\n/* AND ENABLE THIS */\n/*#search-bar-input {\n  padding-left: 0;\n}*/\n\nimg[alt=\"Active Provider\"] ~ div {\n  display: none;\n}\n\n\n.player-volume input[type=range].slider {\n  width: 100%;\n  margin: 4.5px 0;\n  background-color: transparent;\n  -webkit-appearance: none;\n}\n.player-volume input[type=range].slider:focus {\n  outline: none;\n}\n.player-volume input[type=range].slider::-webkit-slider-runnable-track {\n  background: #ccc;\n  border: 0;\n  border-radius: 25px;\n  width: 100%;\n  height: 3px;\n  cursor: pointer;\n}\n.player-volume input[type=range].slider::-webkit-slider-thumb {\n  margin-top: -4.5px;\n  width: 12px;\n  height: 12px;\n  background: #ffffff;\n  border: 0;\n  border-radius: 12px;\n  cursor: pointer;\n  -webkit-appearance: none;\n}\n.player-volume input[type=range].slider:focus::-webkit-slider-runnable-track {\n  background: #ffffff;\n}\n.player-volume input[type=range].slider::-moz-range-track {\n  background: #ccc;\n  border: 0;\n  border-radius: 25px;\n  width: 100%;\n  height: 3px;\n  cursor: pointer;\n}\n.player-volume input[type=range].slider::-moz-range-thumb {\n  width: 12px;\n  height: 12px;\n  background: #ffffff;\n  border: 0;\n  border-radius: 12px;\n  cursor: pointer;\n}\n.player-volume input[type=range].slider::-ms-track {\n  background: transparent;\n  border-color: transparent;\n  border-width: 4.5px 0;\n  color: transparent;\n  width: 100%;\n  height: 3px;\n  cursor: pointer;\n}\n.player-volume input[type=range].slider::-ms-fill-lower {\n  background: #ffffff;\n  border: 0;\n  border-radius: 50px;\n}\n.player-volume input[type=range].slider::-ms-fill-upper {\n  background: #ffffff;\n  border: 0;\n  border-radius: 50px;\n}\n.player-volume input[type=range].slider::-ms-thumb {\n  width: 12px;\n  height: 12px;\n  background: #ffffff;\n  border: 0;\n  border-radius: 12px;\n  cursor: pointer;\n  margin-top: 0px;\n  /*Needed to keep the Edge thumb centred*/\n}\n.player-volume input[type=range].slider:focus::-ms-fill-lower {\n  background: #ffffff;\n}\n.player-volume input[type=range].slider:focus::-ms-fill-upper {\n  background: #ffffff;\n}\n\n.w2g-color-wrapper {\n  min-height: auto;\n  padding: 0;\n}\n\n.w2g-search-spacer {\n  display: none;\n}\n\n/* Search Result Cards */\n.darker-item {\n  background-color: rgba(255, 255, 255, 0.03);\n  border: none;\n  padding: 4px;\n}\n\n::selection {\n  background: var(--sag-accent-primary) !important;\n  color: white !important;\n}\n\n/* Auto complete */\n.autocomplete-suggestions {\n  background: var(--sag-bg-700);\n  border: none;\n  overflow: hidden;\n  transform: translateY(-1px);\n}\n\n.autocomplete-suggestion {\n  color: white;\n}\n\n.autocomplete-suggestion > b {\n  color: var(--sag-accent-secondary);\n}\n\n.autocomplete-suggestion.selected {\n  background: var(--sag-bg-900);\n}",
+        "domains": [
+          "w2g.tv"
+        ]
+      }
+    ],
+    "updateDate": 1618888795818,
+    "_id": "6da7b65e-a870-4494-b32b-ee2a45118d12",
+    "_rev": 1674671455858,
+    "id": 46
+  },
+  {
+    "enabled": true,
+    "installDate": 1618810918879,
+    "name": "OpenBenchmarking Graph Embed",
+    "sections": [
+      {
+        "code": "svg > rect:nth-child(1) {\n  fill: var(--sag-bg-700) !important;\n}\n\nsvg > text {\n  fill: white;\n}\n\ntext[fill=\"#231f20\"] {\n  fill: white !important;\n}\n\na > path {\n  stroke: white !important;\n}\n\ng[fill=\"#065695\"] {\n  fill: var(--sag-accent-secondary);\n}\n\ng[fill=\"#231f20\"] {\n  fill: white;\n}\n\ng[stroke=\"#949494\"] {\n  stroke: transparent;\n}\n\ng[fill=\"#949494\"] {\n  fill: var(--sag-bg-900);\n}\n\ng[stroke=\"#005a00\"] {\n  stroke: none;\n}\n\nrect[fill=\"#77b900\"] {\n  fill: var(--sag-accent-primary);\n}\n\nrect[fill=\"#FEFEFE\"] {\n  fill: var(--sag-bg-700);\n}\n\na > text {\n  fill: var(--sag-accent-secondary);\n}\n\npolygon[stroke=\"#949494\"][fill=\"#065695\"] {\n  stroke: none;\n  fill: white;\n}",
+        "urlPrefixes": [
+          "https://openbenchmarking.org/embed.php"
+        ]
+      }
+    ],
+    "updateDate": 1618847862918,
+    "_id": "395eeee5-1060-4431-9fd9-550047e05826",
+    "_rev": 1674671455858,
+    "id": 47
+  },
+  {
+    "enabled": false,
+    "installDate": 1618978188862,
+    "name": "Stylus",
+    "sections": [
+      {
+        "code": "body, html, .firefox body, .menu-items-wrapper {\n  background-color: var(--sag-bg-500);\n  color: white !important;\n  \n  --header-width: 320px;\n}\n\n#header {\n  background-color: var(--sag-bg-700);\n  border: none;\n  padding-left: 2rem;\n}\n\nselect {\n  color: white;\n}\n\n#svg-icon-select-arrow {\n  fill: white;\n}\n\n.style-name:hover::before {\n  background: linear-gradient(to right, rgba(var(--sag-accent-primary-rgb), 0.2), rgba(var(--sag-accent-primary-rgb), 0.05) 50%, transparent) !important;\n}\n\n.style-name-link {\n  color: white;\n}\n\n.style-name:hover > .style-name-link {\n  color: var(--sag-accent-secondary) !important;\n}\n\nbutton {\n  border: none;\n  background: white;\n}\n\na {\n  color: var(--sag-accent-secondary);\n  transition: color .15s;\n}\n\na:hover {\n  color: var(--sag-accent-primary);\n}\n\n/* Checkbox */\n\n.checkmate {\n  width: 18px;\n  height: 18px;\n  margin: 0 1rem 0 0 !important;\n}\n\ntextarea {\n  color: #000 !important;\n}\n\ninput[type=\"checkbox\"]:not(.slider) {\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  \n  background-color: white;\n  \n  width: 18px;\n  height: 18px;\n  \n  border: none;\n  border-radius: 0;\n}\n\n.svg-icon.checked {\n  width: 10px;\n  height: 10px;\n}\n\ninput[type=\"checkbox\"]:not(.slider):checked + .svg-icon.checked {\n  left: 2px;\n  top: 2px;\n}\n\n#header .filter-selection label {\n  height: auto;\n  padding: 4px 0 4px 8px;\n}\n\n*:not(.filter-selection) > .select-resizer > select {\n  background: white;\n  color: black;\n}\n\n.filter-selection .select-resizer {\n  top: 50%;\n  transform: translateY(-50%);\n  left: 30px;\n}\n\nlabel {\n  padding-left: 24px;\n  padding-top: 4px;\n  padding-bottom: 4px;\n}\n\n.option {\n  display: flex;\n}\n\n#basic-info-enabled input {\n  margin: 0;\n}\n\n#basic-info-enabled svg {\n  margin: 2px 0 0 2px;\n}\n\n/* Syntax highlighting */\n/* NOTE: USE DEFAULT THEME FOR THIS TO WORK */\n.CodeMirror {\n  background: var(--sag-bg-500);\n  color: #ccc;\n  border: none !important;\n  box-shadow: none;\n  \n  /* Just some random fonts that came to mind */\n  font-family: 'Fira Code', 'MonoLisa', 'Liberation Mono', monospace;\n  font-size: 0.85rem;\n}\n\n.CodeMirror-focused .CodeMirror-selected, .CodeMirror ::selection, .CodeMirror ::-moz-selection {\n  background: var(--sag-border) !important;\n}\n\n.CodeMirror-activeline-background {\n  background: var(--sag-bg-700);\n}\n\n.CodeMirror-matchingbracket {\n  color: inherit !important;\n  background: var(--sag-border);\n}\n\n.CodeMirror-cursor {\n  border-color: currentColor;\n}\n\n.CodeMirror-scroll {\n  scrollbar-width: thin;\n}\n\n.CodeMirror-gutters {\n  border: none;\n  background: transparent;\n}\n\n.CodeMirror-activeline .CodeMirror-linenumber {\n  color: #ddd;\n}\n\n.cm-variable-2 {\n  color: var(--sag-red) !important;\n}\n\n.cm-variable-3, .cm-variable.cm-callee {\n  color: var(--sag-cyan) !important;\n}\n\n.cm-tag, .cm-error, .cm-number {\n  color: var(--sag-red) !important;\n}\n\n.cm-qualifier, .cm-atom {\n  color: var(--sag-yellow) !important;\n}\n\n.cm-builtin, .cm-comment {\n  color: var(--sag-blue) !important;\n}\n\n.cm-keyword {\n  color: var(--sag-purple) !important;\n}",
+        "urlPrefixes": [
+          "moz-extension://349a0186-5281-48c6-8182-0f816ba0561d/edit.html",
+          "moz-extension://349a0186-5281-48c6-8182-0f816ba0561d/manage.html"
+        ]
+      }
+    ],
+    "updateDate": 1626215106204,
+    "_id": "26a41012-e535-4dcd-9bd2-fd30016678b0",
+    "_rev": 1684809374912,
+    "id": 48
+  },
+  {
+    "enabled": true,
+    "installDate": 1619748646202,
+    "name": "Docker",
+    "sections": [
+      {
+        "code": "body.night {\n  background-color: var(--sag-bg-500);\n}\n\nbody.night .sidebar, body.night .col-nav, body.night .nav-secondary {\n  background-color: var(--sag-bg-700);\n}\n\nbody.night pre, body.night code {\n  background-color: var(--sag-bg-700) !important;\n  border-color: var(--sag-border);\n}\n\nbody.night code {\n  color: #ddd !important;\n}\n\n.tabs li a:hover {\n  background: transparent !important;\n  opacity: 1;\n  border-color: var(--sag-border);\n}\n\nbody.night .nav-tabs > li.active > a, body.night .nav-tabs > li.active > a:focus, body.night .nav-tabs > li.active > a:hover, body.night .nav-sidebar ul li a.active, body.night .nav-sidebar.nav > li > a:focus, body.night .toc-nav li a.active {\n  background-color: var(--sag-bg-900);\n}\n\nbody.night .nav-tabs {\n  border-color: var(--sag-border);\n}\n\nbody.night a {\n  color: #ddd;\n}\n\n.toc-nav li a.active {\n  color: var(--sag-accent-secondary);\n}\n\nbody.night .nav-sidebar ul li a.active, body.night .nav-sidebar.nav > li > a:focus, body.night .toc-nav li a.active, .nav-sidebar ul li li a, body.night .tabs li.active a {\n  border-color: var(--sag-accent-primary);\n}\n\n.highlight .na, .highlight .nb {\n  color: var(--sag-green);\n}\n\n.highlight .s, .highlight .se {\n  color: var(--sag-red) !important;\n}\n\n.highlight .nt, .highlight .kc {\n  color: var(--sag-purple) !important;\n}\n\n.highlight .no, .highlight .nv {\n  color: var(--sag-blue);\n}",
+        "domains": [
+          "docs.docker.com"
+        ]
+      }
+    ],
+    "updateDate": 1619749264266,
+    "_id": "94d8a30a-a93c-44d5-a225-57e28bbda5d3",
+    "_rev": 1674671455858,
+    "id": 49
+  },
+  {
+    "enabled": true,
+    "installDate": 1625527844766,
+    "name": "jcline.org",
+    "sections": [
+      {
+        "code": "@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap');\n\nbody {\n  font-family: 'Roboto Slab', sans-serif;\n  background: var(--sag-bg-500);\n  color: white;\n}\n\npre, code, .highlighter-rouge .highlight {\n  background: var(--sag-bg-900);\n  border: none\n}\n\na {\n  color: var(--sag-accent-primary);\n}\n\na:hover, .site-nav .page-link:hover {\n  color: var(--sag-accent-secondary);\n}\n\na:visited {\n  color: var(--sag-purple);\n}\n\nblockquote {\n  color: #ccc;\n}\n\n.site-title, .site-title:visited, .site-nav .page-link {\n  color: white;\n}\n\n.site-header, .site-footer {\n  border: none;\n}\n",
+        "domains": [
+          "jcline.org"
+        ]
+      }
+    ],
+    "updateDate": 1625528461366,
+    "_id": "3289b720-ac70-457e-b35b-638dcf122bca",
+    "_rev": 1674671455858,
+    "id": 56
+  },
+  {
+    "enabled": true,
+    "installDate": 1625801203670,
+    "name": "astro.build",
+    "sections": [
+      {
+        "code": ":root {\n  --theme-accent: var(--sag-accent-secondary);\n  --theme-accent-rgb: var(--sag-accent-secondary-rgb);\n  --theme-accent-opacity: .1;\n  --theme-divider: #ccc;\n  --theme-text: white;\n  --theme-text-light: #eee;\n  --theme-text-lighter: #ddd;\n  --theme-bg: var(--sag-bg-500);\n  --theme-bg-offset: var(--sag-bg-800);\n  --theme-bg-accent: rgba(var(--sag-accent-primary-rgb), var(--theme-accent-opacity));\n  --theme-code-inline-bg: var(--color-gray-100);\n  --theme-code-text: #;\n  --theme-code-bg: var(--sag-bg-800);\n  \n  --color-green: var(--sag-green);\n  --color-red: var(--sag-red);\n  --color-orange: var(--sag-orange);\n  --color-blue: var(--sag-blue);\n}\n\n.logo > #a {\n  fill: white;\n}\n\n.logo > #flame {\n  fill: var(--sag-orange);\n}",
+        "domains": [
+          "astro.build"
+        ]
+      }
+    ],
+    "updateDate": 1625852254805,
+    "_id": "37f28f67-88a0-4b01-9389-a989411f4477",
+    "_rev": 1674671455858,
+    "id": 57
+  },
+  {
+    "enabled": true,
+    "installDate": 1626227822931,
+    "name": "GNU Emacs Docs",
+    "sections": [
+      {
+        "code": "html, body {\n  background: var(--sag-bg-500);\n  color: white;\n  border: none;\n  max-width: 60em;\n  margin: auto;\n}\n\n.chapter {\n  color: white;\n}\n\n.header {\n  background-color: var(--sag-bg-800) !important;\n}\n\na[href] {\n  color: var(--sag-accent-secondary);\n  text-decoration: none;\n}\n\na[href]:visited {\n  color: var(--sag-purple);\n}\n\na[href]:hover {\n  color: var(--sag-accent-secondary);\n  text-decoration: underline;\n}\n\n.node a:hover, .header a:hover {\n  background: none;\n}",
+        "urlPrefixes": [
+          "https://www.gnu.org/software/emacs/manual/html_node/emacs/"
+        ]
+      }
+    ],
+    "updateDate": 1626228508074,
+    "_id": "9eee3d18-314c-42ac-b6ac-651b46c4b2ab",
+    "_rev": 1674671455858,
+    "id": 58
+  },
+  {
+    "enabled": true,
+    "installDate": 1627405546174,
+    "name": "notion.so",
+    "sections": [
+      {
+        "code": ".notion-frame, .notion-frame > div {\n  background: var(--sag-bg-300) !important;\n}\n\n.notion-sidebar-container {\n  background: var(--sag-bg-700) !important;\n}\n\n*[style*=\"rgb(71, 76, 80) none repeat scroll 0% 0%\"] {\n  background: var(--sag-bg-900) !important;\n}\n\n*[style*=\"rgb(63, 68, 71) none repeat scroll 0% 0%\"], *[style*=\"rgb(64, 68, 71)\"], *[style*=\"rgb(47, 52, 55) none repeat scroll 0% 0%\"] {\n  background: var(--sag-bg-700) !important;\n}\n\n*[style*=\"1px solid rgb(77, 81, 83)\"] {\n  border-color: var(--sag-border) !important;\n}\n\n*[style*=\"rgb(47, 52, 55) -3px 0px 0px, rgb(77, 81, 83) 0px 1px 0px\"] {\n  box-shadow: var(--sag-bg-500) -3px 0px 0px, var(--sag-border) 0px 1px 0px !important; \n}\n\n*[style*=\"background: rgb(25, 25, 25)\"] {\n  background: var(--sag-bg-700) !important;\n}",
+        "domains": [
+          "notion.so"
+        ]
+      }
+    ],
+    "updateDate": 1684782532634,
+    "_id": "01916366-dd63-45a6-9152-b3fefeb5cff9",
+    "_rev": 1684782532634,
+    "id": 60
+  },
+  {
+    "enabled": true,
+    "installDate": 1629006504326,
+    "name": "devblogs.microsoft.com",
+    "sections": [
+      {
+        "code": "body { \n  background: var(--sag-bg-300) !important;\n  color: white;\n}\n\n#featured, .cattagsarea {\n  background-color: var(--sag-bg-500);\n  color: white;\n}\n\n.developer-blog-links .post-card, .related-articles article .post-card, .postcontent pre, .postcontent pre.prettyprinted, article.comment header , article.comment .comment-content, .commentlist li footer, .bottomright, .bottomcenter, .c-uhff, .c-uhff-base, .landing-main, .search-main, .box-style, .bottomleft, .social-icon-bar-mobile > a {\n  background: var(--sag-bg-700) !important;\n  color: white;\n}\n\na, .postcontent a, .related-articles article .article-title, .author-details .author-name, .related-articles .post-comments a, .author-name, .parent-author-name, .bottomright a:link, .bottomright a:visited, .bottomcenter a:link, .bottomcenter a:visited, .c-uhff-nav .c-heading-4, .c-uhff-nav a.c-uhff-link, .c-uhff-base > a.c-uhff-link.c-uhff-lang-selector, .c-uhff-base ul.c-list, a.c-uhff-link:focus, a.c-uhff-link:hover, a.stayinformedsite, a.stayinformedsite:hover, .bottomleft a:link, .bottomleft a:visited {\n  color: var(--sag-accent-secondary);\n}\n\n.related-articles article .post-card .post-desc, .related-articles article .post-card .post-desc em, .related-articles article .post-card .post-desc p, .author-details .post-date, .bottomcenter h5, .bottomleft h5, .bottomright h5, .c-uhff-nav .c-heading-4, h2.stayinformedtitle, .land-desc {\n  color: white;\n}\n\n.entry-meta > p {\n  border-color: var(--sag-border);\n  color: #fff !important;\n}\n\n.postcontent code {\n  color: var(--sag-red);\n}\n\n.postcontent pre.prettyprinted span[style*=\"#0000ff\"] {\n  color: var(--sag-blue) !important;\n}\n\n.postcontent pre.prettyprinted span[style*=\"#a31515\"] {\n  color: var(--sag-red) !important;\n}\n\n.postcontent pre.prettyprinted span[style*=\"#148A14\"] {\n  color: var(--sag-green) !important;\n}\n\n.postcontent pre.prettyprinted span[style*=\"#09885A\"] {\n  color: var(--sag-green) !important;\n}\n\n.postcontent pre.prettyprinted span[style*=\"#267F99\"] {\n  color: var(--sag-cyan) !important;\n}\n\n.prettyprinted > span {\n  color: var(--sag-accent-secondary) !important;\n}\n\n.prettyprinted .pln:not(#increase-selector-specifity), .prettyprinted .pun:not(#increase-selector-specifity) {\n  color: #fff;\n}\n\n.prettyprinted .str:not(#increase-selector-specifity) {\n  color: var(--sag-green);\n}\n\n.prettyprinted span[style*=\"color: #000000\"]:not(#increase-selector-specifity) span {\n  color: white;\n}\n\n.prettyprinted span[style*=\"color: #0451A5\"]:not(#increase-selector-specifity) span {\n  color: var(--sag-red);\n}\n\n.prettyprinted span[style*=\"color: #001080\"]:not(#increase-selector-specifity) span {\n  color: var(--sag-red);\n}\n\n.prettyprinted span[style*=\"color: #795E26\"]:not(#increase-selector-specifity) span {\n  color: var(--sag-blue);\n}\n\n.prettyprinted span[style*=\"color: #008000\"]:not(#increase-selector-specifity) span {\n  color: var(--sag-blue);\n}\n\n.prettyprinted span[style*=\"color: #0000FF\"]:not(#increase-selector-specifity) span {\n  color: var(--sag-purple);\n}\n\n.prettyprinted span[style*=\"color: #267F99\"]:not(#increase-selector-specifity) span {\n  color: var(--sag-yellow);\n}\n\n.prettyprinted span[style*=\"color: #AF00DB\"]:not(#increase-selector-specifity) span {\n  color: var(--sag-purple);\n}\n\n.prettyprinted span[style*=\"color: #0000FF\"]:not(#increase-selector-specifity) span {\n  color: var(--sag-purple);\n}\n\n.prettyprinted .kwd:not(#increase-selector-specifity) {\n  color: var(--sag-purple);\n}\n\n/* Because it's a bunch of inline shit */\n*[aria-label=\"Top Bloggers\"] {\n  display: none;\n}\n\n.page-link {\n  color: white;\n}\n\n.page-link:hover {\n  background: transparent;\n}",
+        "domains": [
+          "devblogs.microsoft.com"
+        ]
+      }
+    ],
+    "updateDate": 1649653805500,
+    "_id": "7bf8d19c-307e-4a09-a6aa-821d4a8f4cec",
+    "_rev": 1674671455858,
+    "id": 61
+  },
+  {
+    "enabled": true,
+    "installDate": 1641163668653,
+    "name": "Discord",
+    "sections": [
+      {
+        "code": "html {\n  --bg-primary: #1E1E28;\n  --bg-secondary: #232330;\n  --bg-tertiary: #332E41;\n\n  --primary: #3498db;\n  --primary-rgb: 52, 152, 219;\n  --secondary: #67cbff;\n}\n\n.theme-dark {\n  --background-tertiary: var(--bg-primary);\n  --background-secondary: var(--bg-primary);\n  --background-secondary-alt: var(--bg-primary);\n  --background-message-hover: var(--bg-primary);\n  --background-primary: var(--bg-primary);\n  --background-accent: var(--bg-tertiary);\n  --background-floating: var(--bg-tertiary);\n  --background-modifier-selected: var(--bg-secondary);\n  --activity-card-background: var(--bg-secondary);\n  --deprecated-panel-background: var(--bg-primary);\n  --channeltextarea-background: var(--bg-secondary);\n\n  --text-link: var(--secondary);\n}\n\nhtml.newBrand {\n  --font-display: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n\n  --brand-experiment: var(--primary);\n  --brand-experiment-05a: rgba(var(--primary-rgb), 0.05);\n  --brand-experiment-10a: rgba(var(--primary-rgb), 0.1);\n  --brand-experiment-15a: rgba(var(--primary-rgb), 0.15);\n  --brand-experiment-20a: rgba(var(--primary-rgb), 0.2);\n  --brand-experiment-25a: rgba(var(--primary-rgb), 0.25);\n  --brand-experiment-30a: rgba(var(--primary-rgb), 0.3);\n  --brand-experiment-35a: rgba(var(--primary-rgb), 0.35);\n  --brand-experiment-40a: rgba(var(--primary-rgb), 0.4);\n  --brand-experiment-45a: rgba(var(--primary-rgb), 0.45);\n  --brand-experiment-50a: rgba(var(--primary-rgb), 0.5);\n  --brand-experiment-55a: rgba(var(--primary-rgb), 0.55);\n  --brand-experiment-60a: rgba(var(--primary-rgb), 0.6);\n  --brand-experiment-65a: rgba(var(--primary-rgb), 0.65);\n  --brand-experiment-70a: rgba(var(--primary-rgb), 0.7);\n  --brand-experiment-75a: rgba(var(--primary-rgb), 0.75);\n  --brand-experiment-80a: rgba(var(--primary-rgb), 0.8);\n  --brand-experiment-85a: rgba(var(--primary-rgb), 0.85);\n  --brand-experiment-90a: rgba(var(--primary-rgb), 0.9);\n  --brand-experiment-95a: rgba(var(--primary-rgb), 0.95);\n\n  /* Generate with https://coolors.co/3498db SHADES AND TINTS */\n  --brand-experiment-100: #F0F8FC;\n  --brand-experiment-130: #F0F8FC;\n  --brand-experiment-160: #E2F0FA;\n  --brand-experiment-200: #E2F0FA;\n  --brand-experiment-230: #D3E9F7;\n  --brand-experiment-260: #C5E2F5;\n  --brand-experiment-300: #A8D3F0;\n  --brand-experiment-330: #99CBED;\n  --brand-experiment-360: #8BC4EA;\n  --brand-experiment-400: #7CBDE8;\n  --brand-experiment-430: #6DB5E5;\n  --brand-experiment-460: #429FDE;\n  --brand-experiment-500: var(--primary);\n  --brand-experiment-530: #268FD5;\n  --brand-experiment-560: #2384C5;\n  --brand-experiment-600: #2384C5;\n  --brand-experiment-630: #2079B5;\n  --brand-experiment-660: #1D6EA4;\n  --brand-experiment-700: #175883;\n  --brand-experiment-730: #144D73;\n  --brand-experiment-760: #114262;\n  --brand-experiment-800: #0E3752;\n  --brand-experiment-830: #0C2C42;\n  --brand-experiment-860: #092131;\n  --brand-experiment-900: #061621;\n}\n\n/* Activity */\n.theme-dark .container-1D34oG {\n  background-color: var(--bg-primary);\n}\n\n/* Modal */\n\n.theme-dark .uploadModal-2ifh8j {\n  background-color: var(--bg-primary);\n}\n\n.theme-dark .footer-3mqk7D {\n  background-color: var(--bg-secondary);\n  box-shadow: none;\n}\n\n/* Autocomplete */\n\n.theme-dark .autocomplete-1vrmpx {\n  background-color: var(--bg-primary);\n}\n\n.theme-dark .selectorSelected-1_M1WV {\n  background-color: var(--bg-secondary);\n}\n\n/* Scrollbar */\n\n.theme-dark\n  .scrollerThemed-2oenus.themedWithTrack-q8E3vB\n  .scroller-2FKFPG::-webkit-scrollbar-track-piece {\n  background: transparent;\n}\n\n.scrollerThemed-2oenus.themeDark-2cjlUp\n  .scroller-2FKFPG::-webkit-scrollbar-thumb,\n.theme-dark .scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-thumb,\n.theme-dark\n  .scrollerThemed-2oenus.themeGhostHairline-DBD-2d\n  .scroller-2FKFPG::-webkit-scrollbar-thumb {\n  background-color: var(--bg-secondary) !important;\n  border: 0;\n}\n\n.scroller-2FKFPG::-webkit-scrollbar {\n  width: 8px;\n}\n\n.theme-dark\n  .scrollerThemed-2oenus.themedWithTrack-q8E3vB\n  .scroller-2FKFPG::-webkit-scrollbar-track-piece {\n  border: 0;\n}\n\n/* Hide retarded reaction popup */\n.message-2qnXI6.selected-2P5D_Z .buttons-cl5qTG,\n.mouse-mode .message-2qnXI6:hover .buttons-cl5qTG {\n  display: none;\n}\n\n/* More space on new message */\n.divider-JfaTT5 {\n  margin-top: 11px !important;\n  margin-bottom: 12px !important;\n}\n\n*[class^=\"markup\"] code {\n  background: var(--bg-secondary);\n  border-color: var(--bg-tertiary);\n}",
+        "domains": [
+          "discord.com"
+        ]
+      }
+    ],
+    "updateDate": 1641163677802,
+    "_id": "0fc299e4-6995-40ec-b872-2fdbd0dd8c7f",
+    "_rev": 1684787945420,
+    "id": 62
+  },
+  {
+    "enabled": true,
+    "installDate": 1643332365655,
+    "name": "jestjs.io",
+    "sections": [
+      {
+        "code": "html[data-theme=\"dark\"] {\n  --ifm-color-scheme: dark;\n\n  --ifm-background-color: var(--sag-bg-500);\n  --ifm-background-surface-color: var(--sag-bg-700);\n  --ifm-hover-overlay: hsla(0, 0%, 100%, .05);\n  --ifm-color-content-secondary: #fff;\n  --ifm-breadcrumb-separator-filter: invert(64%) sepia(11%) saturate(0%) hue-rotate(149deg) brightness(99%) contrast(95%);\n  --ifm-code-background: var(--sag-bg-900);\n  --ifm-scrollbar-track-background-color: #444;\n  --ifm-scrollbar-thumb-background-color: #686868;\n  --ifm-scrollbar-thumb-hover-background-color: #7a7a7a;\n  --ifm-color-primary-contrast-background: #102445;\n  --ifm-color-primary-contrast-foreground: #ebf2fc;\n  --ifm-color-secondary-contrast-background: #474748;\n  --ifm-color-secondary-contrast-foreground: #fdfdfe;\n  --ifm-color-success-contrast-background: #003100;\n  --ifm-color-success-contrast-foreground: #e6f6e6;\n  --ifm-color-info-contrast-background: #193c47;\n  --ifm-color-info-contrast-foreground: #eef9fd;\n  --ifm-color-warning-contrast-background: #4d3800;\n  --ifm-color-warning-contrast-foreground: #fff8e6;\n  --ifm-color-danger-contrast-background: #4b1113;\n  --ifm-color-danger-contrast-foreground: #ffebec;\n  --docsearch-text-color: #f5f6f7;\n  --docsearch-container-background: rgba(9, 10, 17, .8);\n  --docsearch-modal-background: #15172a;\n  --docsearch-modal-shadow: inset 1px 1px 0 0 #2c2e40, 0 3px 8px 0 #000309;\n  --docsearch-searchbox-background: var(--sag-bg-200);\n  --docsearch-searchbox-focus-background: #000;\n  --docsearch-hit-color: #bec3c9;\n  --docsearch-hit-shadow: none;\n  --docsearch-hit-background: var(--sag-bg-200);\n  --docsearch-key-gradient: linear-gradient(-26.5deg, var(--sag-border), var(--sag-bg-900));\n  --docsearch-key-shadow: inset 0 -2px 0 0 var(--sag-bg-800), inset 0 0 1px 1px var(--sag-border), 0 2px 2px 0 rgba(3, 4, 9, .3);\n  --docsearch-footer-background: var(--sag-bg-500);\n  --docsearch-footer-shadow: inset 0 1px 0 0 rgba(73, 76, 106, .5), 0 -4px 8px 0 rgba(0, 0, 0, .2);\n  --docsearch-logo-color: #fff;\n  --docsearch-muted-color: #7f8497;\n}\n\n.prism-code {\n  background-color: var(--sag-bg-800) !important;\n}\n\n.prism-code :is(.function) {\n  color: var(--sag-purple) !important;\n}\n\n.prism-code :is(.string) {\n  color: var(--sag-yellow) !important;\n}\n\n.prism-code :is(.keyword) {\n  color: var(--sag-green) !important;\n}\n\n.prism-code :is(.number) {\n  color: var(--sag-blue) !important;\n}\n\n.prism-code :is(.constant) {\n  color: var(--sag-orange) !important;\n}\n\n.prism-code :is(.operator) {\n  color: #ccc !important;\n}",
+        "domains": [
+          "jestjs.io"
+        ]
+      }
+    ],
+    "updateDate": 1643332665897,
+    "_id": "e74134ef-7001-4b64-a9f0-6d59746aaca6",
+    "_rev": 1690918094739,
+    "id": 63
+  },
+  {
+    "enabled": true,
+    "installDate": 1644017261650,
+    "name": "manpages.debian.org",
+    "sections": [
+      {
+        "code": "body {\n  background: var(--sag-bg-500);\n  color: #fff;\n}\n\n#logo img {\n  filter: invert(100%) hue-rotate(180deg);\n}\n\n#navbar a:hover, #navbar a:visited:hover {\n  background-color: transparent;\n  border-color: transparent;\n}\n\n#navbar a, .list-group-item a, #breadcrumbs a, #footer a, a {\n  color: var(--sag-accent-secondary);\n}\n\n#breadcrumbs {\n  background-color: var(--sag-bg-700);\n  border-color: transparent;\n}\n\n.panel {\n  background-color: transparent;\n  border-color: var(--sag-border);\n}\n\n.list-group {\n  background-color: transparent;\n}\n.list-group-item {\n  background-color: var(--sag-bg-700);\n  border-color: var(--sag-bg-700);\n}\n\n.list-group-item:hover, .list-group-item.active {\n  background-color: var(--sag-bg-900);\n  border-color: var(--sag-bg-900);\n}\n\n#footer {\n  background-color: var(--sag-bg-700);\n  border-color: var(--sag-border);\n}\n\nhr {\n  border-color: var(--sag-border);\n  background-color: var(--sag-border);\n}",
+        "domains": [
+          "manpages.debian.org"
+        ]
+      }
+    ],
+    "updateDate": 1644017629587,
+    "_id": "99afdd1a-8425-48eb-974a-078297fa9a8f",
+    "_rev": 1674671455858,
+    "id": 64
+  },
+  {
+    "enabled": true,
+    "installDate": 1659924335984,
+    "name": "blog.cr.yp.to",
+    "sections": [
+      {
+        "code": "body {\n  max-width: 800px;\n  margin: auto;\n  font-size: 18px;\n  background: var(--sag-bg-500);\n  color: #fff;\n}\n\na {\n  color: var(--sag-blue);\n}",
+        "urlPrefixes": [
+          "https://blog.cr.yp.to/20220805-nsa.html"
+        ]
+      }
+    ],
+    "updateDate": 1659924393903,
+    "_id": "11e8786a-4b53-4ab3-8789-3cf1a134d020",
+    "_rev": 1674671455858,
+    "id": 65
+  },
+  {
+    "enabled": true,
+    "installDate": 1684679984795,
+    "name": "chat.openai.com",
+    "sections": [
+      {
+        "code": ".dark .dark\\:bg-gray-700 {\n  background-color: var(--sag-bg-700);\n}\n\n.dark .dark\\:bg-gray-800 {\n  background-color: var(--sag-bg-500);\n}\n\n.dark .dark\\:bg-\\[\\#444654\\], .hover\\:bg-gray-800:hover {\n  background-color: var(--sag-bg-700);\n}\n\n.dark .dark\\:md\\:bg-vert-dark-gradient {\n  background-image: none;\n}\n\n.bg-gray-700 {\n  background-color: var(--sag-bg-700);\n}\n\n.bg-gray-800, .radix-state-active\\:bg-gray-800[data-state=\"active\"] {\n  background-color: var(--sag-bg-900);\n}\n\n.hover\\:bg-\\[\\#2A2B32\\]:hover, .hover\\:bg-gray-800:hover {\n  background-color: var(--sag-bg-900);\n}\n\n.bg-gray-900, .dark .dark\\:bg-gray-900 {\n  background-color: var(--sag-bg-300);\n}\n\n.bg-gradient-to-l {\n  background-image: none;\n}\n\npre > .bg-black {\n  background-color: var(--sag-bg-200);\n}\n\n.hljs-addition, .hljs-attribute, .hljs-meta-string, .hljs-regexp, .hljs-string {\n  color: var(--sag-green);\n}\n\n.dark .btn-neutral {\n  background-color: var(--sag-border);\n  border-color: var(--sag-border);\n}\n\n.dark .btn-neutral:hover {\n  background-color: var(--sag-border);\n}\n\n.group:where([data-headlessui-state~=\"open\"]) .group-ui-open\\:bg-gray-800 {\n  background-color: var(--sag-bg-900);\n}\n\n.bg-\\[\\#050509\\] {\n  background-color: var(--sag-bg-200);\n}\n\n.btn-danger {\n  background-color: var(--sag-red);\n}\n.btn-danger:hover {\n  background-color: var(--sag-red-dark);\n}\n\n.radix-state-checked\\:bg-green-600[data-state=\"checked\"] {\n  background-color: var(--sag-green);\n}",
+        "domains": [
+          "chat.openai.com"
+        ]
+      }
+    ],
+    "updateDate": 1684782927608,
+    "_id": "67abe2f7-2e90-4655-b235-5af70465093e",
+    "_rev": 1684782927608,
+    "id": 67
+  },
+  {
+    "enabled": true,
+    "installDate": 1684808316288,
+    "name": "Jellyfin",
+    "sections": [
+      {
+        "code": "/* Main */\n.backgroundContainer {\n  background-color: var(--sag-bg-300);\n}\n\n/* Header */\n.skinHeader-withBackground {\n  background-color: var(--sag-bg-500);\n}\n\n/* Sidebar */\n.mainDrawer, .drawer-open {\n  background-color: var(--sag-bg-500);\n  box-shadow: none;\n}\n\n.navMenuOption:hover {\n  background-color: var(--sag-bg-900);\n}\n\n.navMenuOption-selected {\n  background: var(--sag-accent-primary) !important;\n}\n\n/* Show/Movie Page */\n.detailRibbon {\n  background: rgba(var(--sag-bg-300-rgb), 0.8)\n}\n\n/* Settings */\n.listItem:hover {\n  background-color: var(--sag-bg-900);\n}\n\n.listItem-border {\n  border-color: var(--sag-border) !important;\n}\n\n.collapseContent, .formDialogFooter:not(.formDialogFooter-clear), .formDialogHeader:not(.formDialogHeader-clear), .paperList, .visualCardBox {\n  background-color: var(--sag-bg-700)\n}\n\n/* Generic */\n.emby-input, .emby-textarea, .emby-select-withcolor, .fab, .raised {\n  background: var(--sag-bg-700);\n  border-color: var(--sag-bg-700);\n}\n\n.dialog {\n  background-color: var(--sag-bg-500);\n}",
+        "domains": [
+          "watch.super.fish"
+        ]
+      }
+    ],
+    "updateDate": 1684808840678,
+    "_id": "d1f1134b-4c21-4eb6-817a-125e7a9e0c31",
+    "_rev": 1684808840678,
+    "id": 69
+  },
+  {
+    "enabled": true,
+    "installDate": 1684811556533,
+    "name": "hacker news",
+    "sections": [
+      {
+        "code": "body, table {\n  background-color: var(--sag-bg-500);\n  color: white;\n}\n\na:link, .c00, .c00 a:link, .pagetop a:visited, .pagetop a {\n  color: var(--sag-text);\n}\n\n.subtext, .subtext a:link, .subtext a:visited {\n  color: var(--sag-text-secondary)\n}\n\n.athing {\n  display: block;\n}\n\n.athing + tr {\n  display: block;\n  margin-bottom: 8px;\n}\n\nform[action=\"comment\"] {\n  display: none;\n}",
+        "domains": [
+          "news.ycombinator.com"
+        ]
+      }
+    ],
+    "updateDate": 1687794324928,
+    "_id": "b7eb2551-cb78-4abe-b994-940022a529ff",
+    "_rev": 1687794324928,
+    "id": 70
+  },
+  {
+    "enabled": true,
+    "installDate": 1690323169490,
+    "name": "app.slack.com",
+    "sections": [
+      {
+        "code": ".p-top_nav {\n  background: var(--sag-bg-500);\n  box-shadow: none;\n}\n\n/* Sidebar */\n.p-channel_sidebar--iap1 .p-channel_sidebar__section_heading, .p-drag_layer .p-channel_sidebar__section_heading {\n  background: var(--sag-bg-500);\n}\n\n.p-workspace__sidebar::after {\n  background: transparent;\n}\n\n.p-ia__sidebar_header__team_name:hover, .p-channel_sidebar--iap1 .p-channel_sidebar__section_heading_button:hover, .p-channel_sidebar--iap1 .p-channel_sidebar__emoji:hover, .p-channel_sidebar__section_heading_button--coachmark-open, .p-channel_sidebar__static_list__item:hover .p-channel_sidebar__link--page:not(.p-channel_sidebar__link--selected), .p-channel_sidebar__static_list__item:hover .p-channel_sidebar__channel:not(.p-channel_sidebar__channel--selected), .p-channel_sidebar__static_list__item:hover .p-channel_sidebar__section-heading--pages-drawer, .p-channel_sidebar__static_list__item:hover .p-channel_sidebar__link--all-threads:not(.p-channel_sidebar__link--selected) {\n  background-color: var(--sag-bg-900);\n}\n\n/* Messages */\n.p-client_desktop--ia-top-nav .c-message_list__day_divider__label__pill, .p-ia4_client .c-message_list__day_divider__label__pill, .p-window_layout_wrapper .c-message_list__day_divider__label__pill{\n  box-shadow: none;\n}\n\n.c-message_list__day_divider__line {\n  border: none;\n}\n\n.c-wysiwyg_container--theme_dark_bordered {\n  border-color: var(--sag-border);\n}\n\n.sk-client-theme--dark {\n  --sk_primary_foreground: 209, 210, 211;\n  --sk_primary_background: var(--sag-bg-300-rgb);\n  --sk_inverted_foreground: var(--sag-bg-500-rgb);\n  --sk_inverted_background: 209, 210, 211;\n  --sk_foreground_max: 232, 232, 232;\n  --sk_foreground_high: 232, 232, 232;\n  --sk_foreground_mid: 232, 232, 232;\n  --sk_foreground_low: 232, 232, 232;\n  --sk_foreground_soft: 232, 232, 232;\n  --sk_foreground_min: 232, 232, 232;\n  --sk_foreground_max_solid: 171, 171, 173;\n  --sk_foreground_high_solid: 129, 131, 133;\n  --sk_foreground_mid_solid: 81, 84, 87;\n  --sk_foreground_low_solid: var(--sag-border-rgb);\n  --sk_foreground_soft_solid: var(--sag-bg-900-rgb);\n  --sk_foreground_min_solid: var(--sag-bg-700-rgb);\n  --sk_highlight: 29, 155, 209;\n  --sk_highlight_hover: 64, 179, 228;\n  --sk_highlight_accent: 29, 155, 209;\n  --sk_secondary_highlight: 242, 199, 68;\n\n  --p-channel_sidebar__column-bg: var(--sag-bg-500);\n  --p-channel_sidebar__computed-text-color: rgba(209, 210, 211, 0.7);\n  --p-channel_sidebar__muted-text-color: rgba(209, 210, 211, 0.5);\n  --p-channel_sidebar__navigation-bar-color: rgba(209, 210, 211, 0.15);\n  --p-channel_sidebar__navigation-bar-color--hover: rgba(209, 210, 211, 0.2);\n  --p-channel_sidebar__navigation-bar-color--active: rgba(209, 210, 211, 0.25);\n  --p-channel_sidebar__focus-outline-box-shadow: 0 0 0 1px #D1D2D3, 0 0 0 5px rgba(209, 210, 211, 0.3);\n  --p-channel_sidebar__top-nav-text: #D1D2D3;\n  --p-channel_sidebar__top-nav-bg: #121016;\n  --p-channel_sidebar__top-nav-text--opacity-20: rgba(209, 210, 211, 0.2);\n  --p-channel_sidebar__top-nav-text--opacity-23: rgba(209, 210, 211, 0.23);\n  --p-channel_sidebar__top-nav-text--opacity-80: rgba(209, 210, 211, 0.8);\n  --p-channel_sidebar__theme-text: #D1D2D3;\n  --p-channel_sidebar__theme-text--opacity-11: rgba(209, 210, 211, 0.11);\n  --p-channel_sidebar__theme-text--opacity-20: rgba(209, 210, 211, 0.2);\n  --p-channel_sidebar__theme-text--opacity-89: rgba(209, 210, 211, 0.89);\n  --p-channel_sidebar__active-badge-text-color: #FFFFFF;\n  --p-channel_sidebar__active-badge-bg: #CE5628;\n  --p-channel_sidebar__badge-color: #CE5628;\n  --p-channel_sidebar__badge-text-color: #FFFFFF;\n  --p-channel_sidebar__unreads-banner-color: #19171D;\n  --p-channel_sidebar__unreads-banner-bg: rgb(191, 191, 193);\n  --p-channel_sidebar__mentions-banner-color: #FFFFFF;\n  --p-channel_sidebar__mentions-banner-bg: #CE5628;\n\n  --dt_color-base-pry: var(--sag-bg-500);\n  --dt_color-base-pry-hover: #f8f8f814;\n  --dt_color-base-pry-pressed: #f8f8f82e;\n  --dt_color-base-sec: var(--sag-bg-500);\n  --dt_color-base-sec-hover: #f8f8f814;\n  --dt_color-base-sec-pressed: #f8f8f82e;\n  --dt_color-base-ter: var(--sag-bg-700);\n  --dt_color-base-ter-hover: #f8f8f814;\n  --dt_color-base-ter-pressed: #f8f8f82e;\n  --dt_color-base-hgl-1: #001a2d;\n  --dt_color-base-hgl-1-hover: #d8eef614;\n  --dt_color-base-hgl-1-pressed: #d8eef62e;\n  --dt_color-base-hgl-2: #05281e;\n  --dt_color-base-hgl-2-hover: #f8f8f814;\n  --dt_color-base-hgl-2-pressed: #f8f8f82e;\n  --dt_color-base-hgl-3: #261f12;\n  --dt_color-base-hgl-3-hover: #f8f8f814;\n  --dt_color-base-hgl-3-pressed: #f8f8f82e;\n  --dt_color-base-imp: #300005;\n  --dt_color-base-imp-hover: #f7dce414;\n  --dt_color-base-imp-pressed: #f7dce42e;\n  --dt_color-base-inv-pry: #252425;\n  --dt_color-base-inv-pry-hover: #f8f8f814;\n  --dt_color-base-inv-pry-pressed: #f8f8f82e;\n  --dt_color-base-inv-hgl-1: #004d76;\n  --dt_color-base-inv-hgl-1-hover: #d8eef614;\n  --dt_color-base-inv-hgl-1-pressed: #d8eef62e;\n  --dt_color-base-inv-hgl-2: #00553d;\n  --dt_color-base-inv-hgl-2-hover: #d8f5e914;\n  --dt_color-base-inv-hgl-2-pressed: #d8f5e92e;\n  --dt_color-base-inv-hgl-3: #7e5800;\n  --dt_color-base-inv-hgl-3-hover: #f7f0d514;\n  --dt_color-base-inv-hgl-3-pressed: #f7f0d52e;\n  --dt_color-base-inv-imp: #b41541;\n  --dt_color-base-inv-imp-hover: #f7dce414;\n  --dt_color-base-inv-imp-pressed: #f7dce42e;\n  --dt_color-base-modal: #f8f8f8b3;\n  --dt_color-base-modal-hover: #f8f8f814;\n  --dt_color-base-modal-pressed: #f8f8f82e;\n  --dt_color-ctr-pry: #252425;\n  --dt_color-ctr-pry-hover: #f8f8f814;\n  --dt_color-ctr-pry-pressed: #f8f8f82e;\n  --dt_color-ctr-sec: #252425;\n  --dt_color-ctr-sec-hover: #f8f8f814;\n  --dt_color-ctr-sec-pressed: #f8f8f82e;\n  --dt_color-surf-pry: #cbcccf21;\n  --dt_color-surf-pry-hover: #f8f8f814;\n  --dt_color-surf-pry-pressed: #f8f8f82e;\n  --dt_color-surf-sec: #cbcccf33;\n  --dt_color-surf-sec-hover: #f8f8f814;\n  --dt_color-surf-sec-pressed: #f8f8f82e;\n  --dt_color-surf-hgl-1: #03669640;\n  --dt_color-surf-hgl-1-hover: #d8eef614;\n  --dt_color-surf-hgl-1-pressed: #d8eef62e;\n  --dt_color-surf-hgl-2: #106f4d54;\n  --dt_color-surf-hgl-2-hover: #d8f5e914;\n  --dt_color-surf-hgl-2-pressed: #d8f5e92e;\n  --dt_color-surf-hgl-3: #a0730040;\n  --dt_color-surf-hgl-3-hover: #f7f0d514;\n  --dt_color-surf-hgl-3-pressed: #f7f0d52e;\n  --dt_color-surf-imp: #b4154140;\n  --dt_color-surf-imp-hover: #f7dce414;\n  --dt_color-surf-imp-pressed: #f7dce42e;\n  --dt_color-content-pry: #f8f8f8;\n  --dt_color-content-sec: #c4c4c7;\n  --dt_color-content-ter: #9d9da1;\n  --dt_color-content-hgl-1: #2ba5ce;\n  --dt_color-content-hgl-2: #3daa7c;\n  --dt_color-content-hgl-3: #dea700;\n  --dt_color-content-imp: #de678a;\n  --dt_color-content-inv-pry: #f8f8f8;\n  --dt_color-content-inv-sec: #c4c4c7;\n  --dt_color-content-inv-hgl-1: #2ba5ce;\n  --dt_color-content-inv-hgl-2: #3daa7c;\n  --dt_color-content-inv-hgl-3: #dea700;\n  --dt_color-content-inv-imp: #de678a;\n  --dt_color-otl-pry: #86858a;\n  --dt_color-otl-sec: #86858a80;\n  --dt_color-otl-ter: #86858a4d;\n  --dt_color-otl-hgl-1: #2ba5ce;\n  --dt_color-otl-hgl-1-sec: #1699ca33;\n  --dt_color-otl-hgl-2: #259b69;\n  --dt_color-otl-hgl-2-sec: #63c29a33;\n  --dt_color-otl-hgl-3: #d29c00;\n  --dt_color-otl-hgl-3-sec: #b3820033;\n  --dt_color-otl-imp: #b41541;\n  --dt_color-otl-imp-sec: #d94c7540;\n  --dt_color-plt-gray-0: 18, 18, 19;\n  --dt_color-plt-gray-5: 29, 28, 29;\n  --dt_color-plt-gray-10: 37, 36, 37;\n  --dt_color-plt-gray-20: 48, 47, 49;\n  --dt_color-plt-gray-30: 69, 68, 70;\n  --dt_color-plt-gray-40: 102, 100, 104;\n  --dt_color-plt-gray-50: 134, 133, 138;\n  --dt_color-plt-gray-60: 157, 157, 161;\n  --dt_color-plt-gray-70: 185, 186, 189;\n  --dt_color-plt-gray-80: 196, 196, 199;\n  --dt_color-plt-gray-90: 224, 224, 224;\n  --dt_color-plt-gray-100: 248, 248, 248;\n  --dt_color-plt-gray-hover: #f8f8f814;\n  --dt_color-plt-gray-pressed: #f8f8f82e;\n  --dt_color-plt-tomato-0: 53, 8, 3;\n  --dt_color-plt-tomato-5: 90, 16, 5;\n  --dt_color-plt-tomato-10: 110, 21, 7;\n  --dt_color-plt-tomato-20: 130, 29, 11;\n  --dt_color-plt-tomato-30: 162, 43, 20;\n  --dt_color-plt-tomato-40: 181, 56, 30;\n  --dt_color-plt-tomato-50: 208, 80, 56;\n  --dt_color-plt-tomato-60: 216, 101, 85;\n  --dt_color-plt-tomato-70: 223, 132, 124;\n  --dt_color-plt-tomato-80: 231, 167, 162;\n  --dt_color-plt-tomato-90: 239, 194, 192;\n  --dt_color-plt-tomato-100: 247, 224, 224;\n  --dt_color-plt-tomato-hover: #f7e0e014;\n  --dt_color-plt-tomato-pressed: #f7e0e02e;\n  --dt_color-plt-paprika-0: 56, 13, 0;\n  --dt_color-plt-paprika-5: 87, 21, 0;\n  --dt_color-plt-paprika-10: 115, 29, 2;\n  --dt_color-plt-paprika-20: 141, 39, 7;\n  --dt_color-plt-paprika-30: 166, 55, 19;\n  --dt_color-plt-paprika-40: 174, 68, 34;\n  --dt_color-plt-paprika-50: 193, 94, 60;\n  --dt_color-plt-paprika-60: 208, 118, 88;\n  --dt_color-plt-paprika-70: 210, 146, 124;\n  --dt_color-plt-paprika-80: 221, 173, 158;\n  --dt_color-plt-paprika-90: 235, 202, 192;\n  --dt_color-plt-paprika-100: 247, 229, 224;\n  --dt_color-plt-paprika-hover: #f7e5e014;\n  --dt_color-plt-paprika-pressed: #f7e5e02e;\n  --dt_color-plt-tangerine-0: 56, 16, 0;\n  --dt_color-plt-tangerine-5: 92, 29, 0;\n  --dt_color-plt-tangerine-10: 122, 37, 0;\n  --dt_color-plt-tangerine-20: 152, 46, 0;\n  --dt_color-plt-tangerine-30: 180, 62, 8;\n  --dt_color-plt-tangerine-40: 191, 77, 26;\n  --dt_color-plt-tangerine-50: 213, 106, 55;\n  --dt_color-plt-tangerine-60: 218, 128, 86;\n  --dt_color-plt-tangerine-70: 228, 160, 127;\n  --dt_color-plt-tangerine-80: 231, 185, 161;\n  --dt_color-plt-tangerine-90: 240, 208, 193;\n  --dt_color-plt-tangerine-100: 247, 227, 218;\n  --dt_color-plt-tangerine-hover: #f7e3da14;\n  --dt_color-plt-tangerine-pressed: #f7e3da2e;\n  --dt_color-plt-campfire-0: 50, 22, 0;\n  --dt_color-plt-campfire-5: 75, 34, 0;\n  --dt_color-plt-campfire-10: 97, 44, 0;\n  --dt_color-plt-campfire-20: 123, 58, 0;\n  --dt_color-plt-campfire-30: 149, 71, 0;\n  --dt_color-plt-campfire-40: 164, 80, 1;\n  --dt_color-plt-campfire-50: 191, 101, 10;\n  --dt_color-plt-campfire-60: 204, 119, 31;\n  --dt_color-plt-campfire-70: 220, 157, 86;\n  --dt_color-plt-campfire-80: 225, 178, 123;\n  --dt_color-plt-campfire-90: 235, 207, 171;\n  --dt_color-plt-campfire-100: 246, 232, 213;\n  --dt_color-plt-campfire-hover: #f6e8d514;\n  --dt_color-plt-campfire-pressed: #f6e8d52e;\n  --dt_color-plt-honeycomb-0: 54, 30, 0;\n  --dt_color-plt-honeycomb-5: 77, 44, 0;\n  --dt_color-plt-honeycomb-10: 105, 63, 0;\n  --dt_color-plt-honeycomb-20: 124, 76, 0;\n  --dt_color-plt-honeycomb-30: 155, 97, 0;\n  --dt_color-plt-honeycomb-40: 170, 108, 0;\n  --dt_color-plt-honeycomb-50: 196, 131, 5;\n  --dt_color-plt-honeycomb-60: 205, 150, 37;\n  --dt_color-plt-honeycomb-70: 220, 172, 82;\n  --dt_color-plt-honeycomb-80: 230, 188, 107;\n  --dt_color-plt-honeycomb-90: 237, 209, 153;\n  --dt_color-plt-honeycomb-100: 244, 233, 206;\n  --dt_color-plt-honeycomb-hover: #f4e9ce14;\n  --dt_color-plt-honeycomb-pressed: #f4e9ce2e;\n  --dt_color-plt-sunflower-0: 47, 30, 0;\n  --dt_color-plt-sunflower-5: 76, 52, 0;\n  --dt_color-plt-sunflower-10: 103, 72, 0;\n  --dt_color-plt-sunflower-20: 126, 88, 0;\n  --dt_color-plt-sunflower-30: 160, 115, 0;\n  --dt_color-plt-sunflower-40: 179, 130, 0;\n  --dt_color-plt-sunflower-50: 210, 156, 0;\n  --dt_color-plt-sunflower-60: 222, 167, 0;\n  --dt_color-plt-sunflower-70: 230, 190, 48;\n  --dt_color-plt-sunflower-80: 230, 209, 110;\n  --dt_color-plt-sunflower-90: 238, 225, 166;\n  --dt_color-plt-sunflower-100: 247, 240, 213;\n  --dt_color-plt-sunflower-hover: #f7f0d514;\n  --dt_color-plt-sunflower-pressed: #f7f0d52e;\n  --dt_color-plt-grass-0: 21, 34, 3;\n  --dt_color-plt-grass-5: 33, 52, 5;\n  --dt_color-plt-grass-10: 42, 66, 6;\n  --dt_color-plt-grass-20: 53, 80, 9;\n  --dt_color-plt-grass-30: 71, 104, 13;\n  --dt_color-plt-grass-40: 85, 119, 18;\n  --dt_color-plt-grass-50: 110, 148, 31;\n  --dt_color-plt-grass-60: 128, 165, 46;\n  --dt_color-plt-grass-70: 157, 190, 75;\n  --dt_color-plt-grass-80: 183, 207, 119;\n  --dt_color-plt-grass-90: 209, 226, 166;\n  --dt_color-plt-grass-100: 234, 245, 208;\n  --dt_color-plt-grass-hover: #eaf5d014;\n  --dt_color-plt-grass-pressed: #eaf5d02e;\n  --dt_color-plt-cilantro-0: 16, 35, 16;\n  --dt_color-plt-cilantro-5: 18, 49, 17;\n  --dt_color-plt-cilantro-10: 22, 64, 18;\n  --dt_color-plt-cilantro-20: 15, 80, 5;\n  --dt_color-plt-cilantro-30: 29, 103, 11;\n  --dt_color-plt-cilantro-40: 43, 118, 22;\n  --dt_color-plt-cilantro-50: 69, 146, 42;\n  --dt_color-plt-cilantro-60: 93, 164, 66;\n  --dt_color-plt-cilantro-70: 129, 188, 105;\n  --dt_color-plt-cilantro-80: 165, 207, 148;\n  --dt_color-plt-cilantro-90: 195, 225, 183;\n  --dt_color-plt-cilantro-100: 229, 244, 222;\n  --dt_color-plt-cilantro-hover: #e5f4de14;\n  --dt_color-plt-cilantro-pressed: #e5f4de2e;\n  --dt_color-plt-mojito-0: 0, 36, 15;\n  --dt_color-plt-mojito-5: 10, 51, 25;\n  --dt_color-plt-mojito-10: 13, 64, 31;\n  --dt_color-plt-mojito-20: 16, 93, 44;\n  --dt_color-plt-mojito-30: 24, 116, 57;\n  --dt_color-plt-mojito-40: 33, 130, 66;\n  --dt_color-plt-mojito-50: 54, 157, 86;\n  --dt_color-plt-mojito-60: 77, 173, 104;\n  --dt_color-plt-mojito-70: 115, 196, 135;\n  --dt_color-plt-mojito-80: 156, 212, 169;\n  --dt_color-plt-mojito-90: 187, 228, 196;\n  --dt_color-plt-mojito-100: 221, 246, 226;\n  --dt_color-plt-mojito-hover: #ddf6e214;\n  --dt_color-plt-mojito-pressed: #ddf6e22e;\n  --dt_color-plt-jade-0: 5, 36, 27;\n  --dt_color-plt-jade-5: 6, 50, 37;\n  --dt_color-plt-jade-10: 8, 63, 46;\n  --dt_color-plt-jade-20: 0, 85, 61;\n  --dt_color-plt-jade-30: 16, 111, 77;\n  --dt_color-plt-jade-40: 23, 126, 86;\n  --dt_color-plt-jade-50: 37, 155, 105;\n  --dt_color-plt-jade-60: 61, 170, 124;\n  --dt_color-plt-jade-70: 99, 194, 154;\n  --dt_color-plt-jade-80: 141, 210, 181;\n  --dt_color-plt-jade-90: 176, 228, 206;\n  --dt_color-plt-jade-100: 216, 245, 233;\n  --dt_color-plt-jade-hover: #d8f5e914;\n  --dt_color-plt-jade-pressed: #d8f5e92e;\n  --dt_color-plt-aquarium-0: 1, 28, 35;\n  --dt_color-plt-aquarium-5: 3, 49, 58;\n  --dt_color-plt-aquarium-10: 5, 60, 72;\n  --dt_color-plt-aquarium-20: 8, 73, 86;\n  --dt_color-plt-aquarium-30: 15, 95, 110;\n  --dt_color-plt-aquarium-40: 25, 111, 126;\n  --dt_color-plt-aquarium-50: 44, 142, 155;\n  --dt_color-plt-aquarium-60: 67, 161, 171;\n  --dt_color-plt-aquarium-70: 102, 190, 196;\n  --dt_color-plt-aquarium-80: 144, 209, 212;\n  --dt_color-plt-aquarium-90: 178, 227, 228;\n  --dt_color-plt-aquarium-100: 216, 245, 245;\n  --dt_color-plt-aquarium-hover: #d8f5f514;\n  --dt_color-plt-aquarium-pressed: #d8f5f52e;\n  --dt_color-plt-lagoon-0: 0, 26, 45;\n  --dt_color-plt-lagoon-5: 0, 47, 75;\n  --dt_color-plt-lagoon-10: 0, 61, 97;\n  --dt_color-plt-lagoon-20: 0, 77, 118;\n  --dt_color-plt-lagoon-30: 3, 102, 150;\n  --dt_color-plt-lagoon-40: 10, 119, 167;\n  --dt_color-plt-lagoon-50: 22, 153, 202;\n  --dt_color-plt-lagoon-60: 43, 165, 206;\n  --dt_color-plt-lagoon-70: 88, 189, 222;\n  --dt_color-plt-lagoon-80: 135, 204, 227;\n  --dt_color-plt-lagoon-90: 174, 221, 236;\n  --dt_color-plt-lagoon-100: 216, 238, 246;\n  --dt_color-plt-lagoon-hover: #d8eef614;\n  --dt_color-plt-lagoon-pressed: #d8eef62e;\n  --dt_color-plt-ocean-0: 8, 21, 54;\n  --dt_color-plt-ocean-5: 6, 39, 85;\n  --dt_color-plt-ocean-10: 7, 51, 104;\n  --dt_color-plt-ocean-20: 11, 67, 121;\n  --dt_color-plt-ocean-30: 19, 87, 149;\n  --dt_color-plt-ocean-40: 30, 100, 165;\n  --dt_color-plt-ocean-50: 48, 126, 192;\n  --dt_color-plt-ocean-60: 68, 141, 204;\n  --dt_color-plt-ocean-70: 99, 165, 219;\n  --dt_color-plt-ocean-80: 136, 187, 226;\n  --dt_color-plt-ocean-90: 176, 211, 237;\n  --dt_color-plt-ocean-100: 219, 235, 246;\n  --dt_color-plt-ocean-hover: #dbebf614;\n  --dt_color-plt-ocean-pressed: #dbebf62e;\n  --dt_color-plt-indigo-0: 4, 11, 61;\n  --dt_color-plt-indigo-5: 10, 22, 90;\n  --dt_color-plt-indigo-10: 18, 32, 108;\n  --dt_color-plt-indigo-20: 25, 41, 127;\n  --dt_color-plt-indigo-30: 38, 59, 156;\n  --dt_color-plt-indigo-40: 51, 73, 171;\n  --dt_color-plt-indigo-50: 77, 101, 197;\n  --dt_color-plt-indigo-60: 101, 122, 206;\n  --dt_color-plt-indigo-70: 137, 155, 220;\n  --dt_color-plt-indigo-80: 171, 183, 225;\n  --dt_color-plt-indigo-90: 199, 206, 235;\n  --dt_color-plt-indigo-100: 228, 232, 244;\n  --dt_color-plt-indigo-hover: #e4e8f414;\n  --dt_color-plt-indigo-pressed: #e4e8f42e;\n  --dt_color-plt-aubergine-0: 32, 2, 33;\n  --dt_color-plt-aubergine-5: 48, 12, 49;\n  --dt_color-plt-aubergine-10: 67, 19, 73;\n  --dt_color-plt-aubergine-20: 95, 37, 101;\n  --dt_color-plt-aubergine-30: 125, 57, 134;\n  --dt_color-plt-aubergine-40: 150, 82, 162;\n  --dt_color-plt-aubergine-50: 178, 110, 195;\n  --dt_color-plt-aubergine-60: 188, 128, 206;\n  --dt_color-plt-aubergine-70: 207, 161, 222;\n  --dt_color-plt-aubergine-80: 216, 186, 225;\n  --dt_color-plt-aubergine-90: 227, 206, 235;\n  --dt_color-plt-aubergine-100: 239, 225, 245;\n  --dt_color-plt-aubergine-hover: #efe1f514;\n  --dt_color-plt-aubergine-pressed: #efe1f52e;\n  --dt_color-plt-sangria-0: 50, 0, 21;\n  --dt_color-plt-sangria-5: 68, 11, 36;\n  --dt_color-plt-sangria-10: 89, 24, 54;\n  --dt_color-plt-sangria-20: 107, 31, 66;\n  --dt_color-plt-sangria-30: 142, 51, 94;\n  --dt_color-plt-sangria-40: 152, 64, 104;\n  --dt_color-plt-sangria-50: 182, 96, 135;\n  --dt_color-plt-sangria-60: 194, 120, 153;\n  --dt_color-plt-sangria-70: 212, 153, 180;\n  --dt_color-plt-sangria-80: 220, 178, 197;\n  --dt_color-plt-sangria-90: 233, 202, 216;\n  --dt_color-plt-sangria-100: 246, 228, 235;\n  --dt_color-plt-sangria-hover: #f6e4eb14;\n  --dt_color-plt-sangria-pressed: #f6e4eb2e;\n  --dt_color-plt-flamingo-0: 48, 0, 5;\n  --dt_color-plt-flamingo-5: 83, 2, 15;\n  --dt_color-plt-flamingo-10: 107, 5, 24;\n  --dt_color-plt-flamingo-20: 142, 11, 42;\n  --dt_color-plt-flamingo-30: 180, 21, 65;\n  --dt_color-plt-flamingo-40: 192, 43, 84;\n  --dt_color-plt-flamingo-50: 217, 76, 117;\n  --dt_color-plt-flamingo-60: 222, 103, 138;\n  --dt_color-plt-flamingo-70: 230, 139, 167;\n  --dt_color-plt-flamingo-80: 230, 167, 186;\n  --dt_color-plt-flamingo-90: 238, 193, 207;\n  --dt_color-plt-flamingo-100: 247, 220, 228;\n  --dt_color-plt-flamingo-hover: #f7dce414;\n  --dt_color-plt-flamingo-pressed: #f7dce42e;\n  --dt_color-plt-rose-0: 48, 0, 0;\n  --dt_color-plt-rose-5: 82, 5, 7;\n  --dt_color-plt-rose-10: 108, 17, 20;\n  --dt_color-plt-rose-20: 138, 26, 31;\n  --dt_color-plt-rose-30: 175, 48, 54;\n  --dt_color-plt-rose-40: 195, 67, 74;\n  --dt_color-plt-rose-50: 217, 99, 107;\n  --dt_color-plt-rose-60: 217, 126, 133;\n  --dt_color-plt-rose-70: 230, 155, 161;\n  --dt_color-plt-rose-80: 230, 178, 182;\n  --dt_color-plt-rose-90: 238, 199, 202;\n  --dt_color-plt-rose-100: 247, 220, 222;\n  --dt_color-plt-rose-hover: #f7dcde14;\n  --dt_color-plt-rose-pressed: #f7dcde2e;\n  --dt_color-plt-horchata-0: 42, 23, 7;\n  --dt_color-plt-horchata-5: 56, 32, 10;\n  --dt_color-plt-horchata-10: 72, 42, 15;\n  --dt_color-plt-horchata-20: 84, 50, 19;\n  --dt_color-plt-horchata-30: 107, 68, 30;\n  --dt_color-plt-horchata-40: 121, 81, 41;\n  --dt_color-plt-horchata-50: 148, 106, 62;\n  --dt_color-plt-horchata-60: 163, 125, 84;\n  --dt_color-plt-horchata-70: 186, 155, 119;\n  --dt_color-plt-horchata-80: 202, 180, 155;\n  --dt_color-plt-horchata-90: 219, 203, 185;\n  --dt_color-plt-horchata-100: 235, 227, 217;\n  --dt_color-plt-horchata-hover: #ebe3d914;\n  --dt_color-plt-horchata-pressed: #ebe3d92e;\n}",
+        "domains": [
+          "app.slack.com"
+        ]
+      }
+    ],
+    "updateDate": 1690325963226,
+    "_id": "39ceaa94-6356-4145-83ee-46634b339dc2",
+    "_rev": 1690325963227,
+    "id": 71
+  },
+  {
+    "enabled": true,
+    "installDate": 1694237536943,
+    "name": "kagi.com",
+    "sections": [
+      {
+        "code": ".theme_dark {\n  --background-color: var(--sag-bg-300);\n  --header-bg: var(--sag-bg-500);\n  --header-border: transparent;\n  \n  --nav_n_se_line: var(--sag-accent-primary);\n  \n  --search-result-gap: 24px;\n}\n\n.k_ui_toggle_switch.--mini {\n  --knob-bg-color: var(--sag-bg-500);\n}\n\n.k_ui_toggle_switch.--mini .k_ui_toggle_switch_bar {\n  --border-color: var(--sag-bg-200);\n  --bg-color: #ccc;\n}\n\n#top-parent {\n  display: none !important;\n}\n",
+        "domains": [
+          "kagi.com"
+        ]
+      }
+    ],
+    "updateDate": 1694239242974,
+    "_id": "212032b9-3393-498f-a101-fceeb1762bbb",
+    "_rev": 1694239242974,
+    "id": 72
+  }
+]

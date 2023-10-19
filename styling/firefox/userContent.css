@@ -1,0 +1,43 @@
+@import url("userChrome.css");
+
+/* Removes white loading page */
+@-moz-document url(about:blank), url(about:newtab), url(about:home) {
+  html:not(#ublock0-epicker),
+  html:not(#ublock0-epicker) body,
+  #newtab-customize-overlay {
+    background: var(--sag-bg-500) !important;
+  }
+}
+
+/* Hide scrollbar */
+
+:root {
+  /*scrollbar-width: none !important;*/
+  scrollbar-color: var(--mff-scrollbar-primary) var(--mff-bg);
+}
+
+@-moz-document url(about:privatebrowsing) {
+  :root {
+    /*scrollbar-width: none !important;*/
+    scrollbar-color: var(--mff-scrollbar-primary) var(--mff-primary);
+  }
+}
+
+:root {
+  --in-content-page-background: var(--sag-bg-500) !important;
+  --in-content-box-background: var(--sag-bg-700) !important;
+  --in-content-box-border-color: var(--sag-border) !important;
+  --in-content-table-background: var(--sag-bg-700) !important;
+
+  --checkbox-unchecked-bgcolor: var(--sag-bg-900) !important;
+  --checkbox-checked-bgcolor: var(--sag-accent-secondary) !important;
+  --checkbox-checked-hover-bgcolor: var(--sag-accent-secondary) !important;
+  --checkbox-checked-active-bgcolor: var(--sag-accent-secondary) !important;
+
+  --in-content-button-background: var(--sag-bg-800) !important;
+  --in-content-button-background-hover: var(--sag-bg-900) !important;
+  --in-content-button-background-active: var(--sag-bg-900) !important;
+  --in-content-primary-button-background: var(--sag-accent-primary) !important;
+  --in-content-primary-button-background-hover: var(--sag-accent-secondary) !important;
+  --in-content-primary-button-background-active: var(--sag-accent-secondary) !important;
+}
