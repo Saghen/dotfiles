@@ -171,7 +171,7 @@ hyper + shift + r
 #   bspc node $(xdo id -N obsidian) -g hidden -f
 
 hyper + e ; hyper + {d,c,f,s,n,w,v}
-  {discord,code -n,mercury-browser,spotify,nautilus,slack,neovide}
+  {discord,code -n,mercury-browser,spotify,nautilus,slack,kitty --class neovim -o window_padding_width=0 -o font_size=11 nvim}
 
 super + {d,c,f,s,n,w,b}
   wmctrl -a {discord,code,mercury-browser,spotify,nautilus,slack,"google chrome"}

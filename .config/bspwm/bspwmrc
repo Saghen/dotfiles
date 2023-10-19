@@ -17,7 +17,6 @@ gap=8
 
 # Simple gap
 bspc config window_gap $gap
-5
 # Various settings
 bspc config gapless_monocle true
 bspc config borderless_monocle true
@@ -67,6 +66,7 @@ bspc rule -a Code state=tiled
 bspc rule -a Code:\*:'Open Folder' state=floating
 bspc rule -a Code:\*:'Open File' state=floating
 bspc rule -a neovide state=tiled
+bspc rule -a neovim state=tiled
 bspc rule -a Logseq state=tiled desktop='^3'
 bspc rule -a obsidian state=tiled desktop='^3'
 # bspc rule -a obsidian sticky=on hidden=on rectangle=1600x1080
@@ -83,12 +83,12 @@ bspc rule -a Emacs rectangle=1920x1200+0+0
 # Polybar
 # Setup pomodoro timer module
 rm /tmp/polypomo.status
-~/scripts/polybar/polypomo.py --worktime 6000 --breaktime 1200 >/tmp/polypomo.status &
+~/scripts/polybar/polypomo.py --worktime 3120 --breaktime 1020 >/tmp/polypomo.status &
 ~/scripts/polybar/launch.sh --catppuccin # Launch the bar
 
 # Desktop Wallpaper
 
-export WALLPAPER=~/pictures/wallpapers/r-wallpaper/mountain-retreat.jpg
+export WALLPAPER=~/pictures/wallpapers/cyberpunk/johnny-help-catppuccin.png
 
 # Always run feh because fig does not allow us to click on an empty monitor to focus it
 # Running feh behind fig fixes the issue
