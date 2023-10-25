@@ -8,7 +8,7 @@ html {
   --secondary: #67cbff;
 }
 
-.theme-dark {
+html.theme-dark {
   --background-tertiary: var(--bg-primary);
   --background-secondary: var(--bg-primary);
   --background-secondary-alt: var(--bg-primary);
