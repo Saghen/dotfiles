@@ -2,6 +2,7 @@ import urllib.request
 import json
 from dataclasses import dataclass
 import os
+import pickle
 
 # helpers
 @dataclass
@@ -37,11 +38,23 @@ channels = [
     Channel(name="clintstevens", display_name="⌚")
 ]
 
-# main
+# load previous live channels
+if not os.path.exists("/tmp/twitch-live-channels"):
+    with open("/tmp/twitch-live-channels", "wb") as f:
+        pickle.dump([], f)
+with open("/tmp/twitch-live-channels", "rb") as f:
+    previous_live_channels = pickle.load(f)
+
+# get current live channels
 user_logins = "&".join([f"user_login={channel.name}" for channel in channels])
 result = make_http_request(f"https://api.twitch.tv/helix/streams?{user_logins}")["data"]
-
 live_channels = [channel for channel in channels if any([channel.name == stream["user_login"] for stream in result])]
+with open("/tmp/twitch-live-channels", "wb") as f:
+    pickle.dump(live_channels, f)
 
+# print output and send notifications for new live channels
 if len(live_channels) > 0:
     print(" ".join([f"%{{A1:xdg-open https\\://twitch.tv/{channel.name}:}}{channel.display_name}%{{A}}" for channel in live_channels]))
+    new_live_channels = [channel for channel in live_channels if channel not in previous_live_channels]
+    for channel in new_live_channels:
+        os.system(f"notify-send -i twitch '{channel.name.capitalize()} has gone live'")
