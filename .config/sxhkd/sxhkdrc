@@ -3,24 +3,24 @@
 #
 
 # terminal
-hyper + Return
+super + Return
   term
 
-hyper + shift + Return
+super + shift + Return
   bspc rule -a kitty -o rectangle=1920x1080+0+0;\
   term
 
 # show shortcuts
-hyper + slash
+super + slash
   showkeys
 
 # program launcher
-hyper + space
+super + space
   program-launcher
 
 # make sxhkd reload its configuration files:
 # TODO: Should be something else
-hyper + Escape
+super + Escape
 	pkill -USR1 -x sxhkd
 
 # screenshot
@@ -46,8 +46,8 @@ shift + XF86AudioNext
 shift + XF86AudioPrev
   ~/scripts/audio/change-spotify-volume.py -10%
 
-hyper + XF86AudioPlay
-	playerctl --player=firefox-nightly play-pause
+super + XF86AudioPlay
+	playerctl --player=firefox-nigly play-pause
 
 # Note: Make sure to isntall the mpv-mpris package
 ctrl + XF86AudioPlay
@@ -64,19 +64,19 @@ ctrl + XF86AudioPrev
 #
 
 # quit/restart bspwm
-hyper + alt + {n,m}
+super + alt + {n,m}
 	bspc {quit,wm -r}
 
 # close window if not fullscreen
-hyper + w
+super + w
   [[ ! $(bspc query -n focused -T | jq .client.state | grep "fullscreen") ]] && bspc node -c
 
 # close window regardless of type
-hyper + alt + w
+super + alt + w
   bspc node -c
 
 # kill window
-hyper + shift + w
+super + shift + alt + w
   bspc node -k
 
 #
@@ -84,21 +84,21 @@ hyper + shift + w
 #
 
 # set the window state
-hyper + f
+super + f
 	if [ -z "$(bspc query -N -n focused.floating)" ]; then \
       bspc node focused -t floating; \
   else \
       bspc node focused -t tiled; \
   fi
 
-hyper + shift + f
+super + shift + f
   bspc node -t \~fullscreen
 
-hyper + shift + s
+super + shift + s
   bspc node -g sticky
 
 # alternate between the tiled and monocle layout
-hyper + m
+super + m
 	bspc desktop -l next
 
 #
@@ -106,21 +106,21 @@ hyper + m
 #
 
 # move a window
-hyper + ctrl + {h,j,k,l}
+super + ctrl + {Left,Down,Up,Right}
 	bspc node -v {-200 0,0 200,0 -200,200 0}
 
 # center
-hyper + g
+super + d
   ~/scripts/bspwm/center-window.sh
 
 # expand
-hyper + x
-  bspc node -z bottom_right 200 120;\
+super + x
+  bspc node -z bottom_rig 200 120;\
   bspc node -z top_left -200 -120
 
 # contract
-hyper + z
-  bspc node -z bottom_right -200 -120;\
+super + z
+  bspc node -z bottom_rig -200 -120;\
   bspc node -z top_left 200 120
 
 #
@@ -128,53 +128,53 @@ hyper + z
 #
 
 # focus/swap/send the node in the given direction
-hyper + {_,shift + ,alt + }{h,j,k,l}
+super + {_,shift + ,alt + }{Left,Down,Up,Right}
 	bspc node -{f,s,n} {west,south,north,east} --follow
 
 # focus the next/previous window in the current desktop
-hyper + {c,v}
+super + {p,t}
 	bspc node -f {next,prev}.local.!hidden.window
 
 # focus/send to the given desktop
-hyper + {_,shift + }{1-9,0}
+super + {_,shift + }{1-9,0}
   ~/scripts/bspwm/select-local-desktop.sh "{desktop -f,node -d}" {1-9,10} --follow
 
 # focus/send to other monitor and follow
-hyper + {q,a}
+super + {q,a}
 	bspc {monitor -f,node -m} next --follow
 
 # send node to last local desktop and follow
-hyper + ctrl + a
+super + ctrl + a
 	bspc node -d last.local --follow
 
 # swap with other monitor
-hyper + s
-	bspc desktop focused -s any.active.\!local
+super + s
+	bspc desktop focused -s any.active.\!local --follow
 
 # reset swapped desktops
-hyper + shift + s
+super + shift + s
   node ~/scripts/bspwm/reset-desktops.js $DISPLAY1 $DISPLAY2
 
 # return focus to last node
-hyper + r
+super + r
   bspc node -f last
 
 # return to the last local desktop
-hyper + shift + r
+super + shift + r
 	bspc desktop -f last.local
 
 #
 # applications
 #
 # Obsidian scratch pad
-# hyper + n
+# super + n
 #   bspc node $(xdo id -N obsidian) -g hidden -f
 
-hyper + e ; hyper + {d,c,f,s,n,w,v}
-  {discord,code -n,mercury-browser,spotify,nautilus,slack,kitty --class neovim -o window_padding_width=0 -o font_size=11 nvim}
+super + c ; super + {f,c,shift + c}
+  {nautilus,neovide,kitty --class neovim -o window_padding_width=0 -o font_size=12 zsh -c nvim}
 
-super + {d,c,f,s,n,w,b}
-  wmctrl -a {discord,code,mercury-browser,spotify,nautilus,slack,"google chrome"}
+# super + {d,c,f,s,n,w,b}
+#   wmctrl -a {discord,code,firefox-developer-edition,spotify,nautilus,slack,"google chrome"}
 
-hyper + d
-  wmctrl -a discord
+# super + d
+#   wmctrl -a discord
