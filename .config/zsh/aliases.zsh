@@ -1,8 +1,5 @@
 #!/usr/bin/env zsh
 
-# allow sudo alias
-alias sudo="sudo "
-
 # some ls shortcuts
 alias la="ls -al"
 alias ll="ls -l"
@@ -174,11 +171,35 @@ abbr claer="clear"
 npr() {
     npm run --silent $1 -- ${@:2}
 }
+pnpr() {
+    if [ "$#" -le 1 ]; then
+        pnpm run --silent $1
+    else
+        pnpm run --silent $1 -- ${@:2}
+    fi
+}
 
 # nvim
 nvim() {
+  # check if in neovim and run with support for flatten.nvim
+  if [ -n "$NVIM" ]; then
+    nvim --cmd 'let g:flatten_wait=1' $@
+    return
+  fi
+  # check if not in kitty and run normally
+  if [ -z "$KITTY_WINDOW_ID" ]; then
+    /usr/bin/nvim $@
+    return
+  fi
   kitty @ set-spacing padding=0
   /usr/bin/nvim $@
   kitty @ set-spacing padding=default
 }
 alias nv="neovide --multigrid"
+
+# helix
+helix() {
+  kitty @ set-spacing padding=0
+  /usr/bin/helix $@
+  kitty @ set-spacing padding=default
+}

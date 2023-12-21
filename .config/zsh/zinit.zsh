@@ -30,6 +30,7 @@ zinit light starship/starship
 zinit light olets/zsh-abbr
 
 # lazy-load plugins with turbo mode
+# OMZP::docker \
 zinit wait lucid for \
   ael-code/zsh-colored-man-pages \
   Aloxaf/fzf-tab \
@@ -39,7 +40,6 @@ zinit wait lucid for \
     laggardkernel/zsh-thefuck \
   LucasLarson/gunstage \
   OMZP::command-not-found \
-	OMZP::docker \
 	OMZP::docker-compose \
   OMZP::github \
   OMZP::kubectl \
@@ -47,6 +47,7 @@ zinit wait lucid for \
   OMZP::transfer \
   wait"2" atload="__kitty_complete" \
     redxtech/zsh-kitty \
+  redxtech/zsh-containers \
   redxtech/zsh-load-module \
   redxtech/zsh-unix-simple \
   voronkovich/gitignore.plugin.zsh \
@@ -104,8 +105,6 @@ zinit wait lucid from'gh-r' as"command" for \
     @sharkdp/bat \
   mv'rip* ripgrep' sbin'**/rg(.exe|) -> rg' \
     BurntSushi/ripgrep \
-  sbin"**/bin/nvim -> nvim" ver"nightly" \
-    neovim/neovim \
   mv"yq* yq" sbin'**/yq(.exe|) -> yq' \
     mikefarah/yq
 
