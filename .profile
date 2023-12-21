@@ -1,5 +1,4 @@
 export STEAM_FRAME_FORCE_CLOSE=1
-export PATH="$HOME/.cargo/env:$HOME/.local/bin:$HOME/scripts/bin:$GOPATH/bin:$HOME/.linkerd2/bin:$PATH"
 export DISPLAY1=DP-0
 export DISPLAY2=DP-2
 export WLR_RENDERER=vulkan
@@ -17,5 +16,9 @@ fi
 # kubectl
 export KUBECONFIG="$HOME/.config/kube/config"
 
-# pnpm
+# npm / pnpm
 export PNPM_HOME="$HOME/.local/share/pnpm"
+export NPM_CONFIG_PREFIX="$HOME/.local/share/npm"
+
+# path
+export PATH="$HOME/.cargo/env:$HOME/.local/bin:$HOME/scripts/bin:$GOPATH/bin:$HOME/.linkerd2/bin:$NPM_CONFIG_PREFIX/bin:$PATH"
