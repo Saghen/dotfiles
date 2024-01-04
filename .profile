@@ -16,9 +16,26 @@ fi
 # kubectl
 export KUBECONFIG="$HOME/.config/kube/config"
 
-# npm / pnpm
+# home dir for assorted tools
 export PNPM_HOME="$HOME/.local/share/pnpm"
 export NPM_CONFIG_PREFIX="$HOME/.local/share/npm"
+export CARGO_HOME="${HOME}/.local/share/cargo"
+export RUSTUP_HOME="${HOME}/.local/share/rust"
+export GOPATH="${HOME}/.local/share/go"
+export RIPGREP_CONFIG_PATH="${HOME}/.config/ripgrep/ripgreprc"
+
+# xdg
+# todo: set this dynamically: export XDG_CURRENT_DESKTOP=sway
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_DATA_HOME="$HOME/.local/share"
+
+# editor and viewers
+export EDITOR='nvim'
+export VISUAL='nvim'
+export PAGER='less'
+export MANPAGER='nvimpager'
 
 # path
 export PATH="$HOME/.cargo/env:$HOME/.local/bin:$HOME/scripts/bin:$GOPATH/bin:$HOME/.linkerd2/bin:$NPM_CONFIG_PREFIX/bin:$PATH"
+. "/home/saghen/.local/share/cargo/env"
