@@ -29,7 +29,8 @@ def make_http_request(url):
 channels = [
     Channel(name="ster2ster", display_name="⭐"), 
     Channel(name="ster", display_name="⭐"), 
-    Channel(name="Simply", display_name="🎩"), 
+    Channel(name="simply", display_name="🎩"), 
+    Channel(name="tarik", display_name="🔫"),
     Channel(name="moonmoon", display_name="🌛"),
     Channel(name="atrioc", display_name="💰"),
     Channel(name="jerma985", display_name="👴"),
@@ -47,14 +48,18 @@ with open("/tmp/twitch-live-channels", "rb") as f:
 
 # get current live channels
 user_logins = "&".join([f"user_login={channel.name}" for channel in channels])
-result = make_http_request(f"https://api.twitch.tv/helix/streams?{user_logins}")["data"]
-live_channels = [channel for channel in channels if any([channel.name == stream["user_login"] for stream in result])]
+raw_channels = make_http_request(f"https://api.twitch.tv/helix/streams?{user_logins}")["data"]
+live_channels = [channel for channel in channels if any([channel.name == stream["user_login"] for stream in raw_channels])]
 with open("/tmp/twitch-live-channels", "wb") as f:
     pickle.dump(live_channels, f)
 
 # print output and send notifications for new live channels
 if len(live_channels) > 0:
-    print(" ".join([f"%{{A1:xdg-open https\\://twitch.tv/{channel.name}:}}{channel.display_name}%{{A}}" for channel in live_channels]))
+    print(" ".join([f"%{{A1:xdg-open https\\://twitch.tv/{channel.name}:}}{channel.display_name}%{{A}}" for channel in live_channels]) + " ")
     new_live_channels = [channel for channel in live_channels if channel not in previous_live_channels]
     for channel in new_live_channels:
-        os.system(f"notify-send -i twitch '{channel.name.capitalize()} has gone live'")
+        channel_icon = make_http_request(f"https://api.twitch.tv/helix/users?login={channel.name}")["data"][0]["profile_image_url"]
+        if not os.path.exists(f"/tmp/twitch-{channel.name}-icon"):
+            urllib.request.urlretrieve(channel_icon, f"/tmp/twitch-{channel.name}-icon")
+        raw_channel = [stream for stream in raw_channels if stream["user_login"] == channel.name][0]
+        os.system(f"notify-send --expire-time 15000 -i /tmp/twitch-{channel.name}-icon '{channel.name.capitalize()} has gone live' '{raw_channel['game_name']}'")
